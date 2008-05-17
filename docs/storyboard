@@ -1,0 +1,147 @@
+After the Storm - Storyboard
+----------------------------
+By Ignacio R. Morelle (Shadow Master/ShikadiLord).
+
+Global defeat conditions:
+- Death of Galas
+- Death of Elynia
+- Death of Mal Keshar
+
+Scenario 1: 
+
+Elynia, Mal Keshar and Galas have travelled for long towards the Aragwaith country.
+They stop by a town in a valley, and defend it against a group of Chaos followers
+led by Magus Ilce'than. The peasants tell them news of the elvish revolt.
+
+Side 1: Galas (Elvish Wayfarer) (leader) (resilient+quick)
+        Elynia (Sylvan Faerie)
+        Mal Keshar (Ancient Lich)
+        Recruit list: Skeleton, Skeleton Archer, Walking Corpse, Sprite, Vampire Bat
+        Gold: {DIFF 170 190 210}
+        Team: Galas
+
+Side 2: Morzey (Sergeant) (leader) (quick+strong)
+        Recruit list: Peasant, Woodsman, Ruffian
+        Gold: {DIFF 150 140 130}
+        Team: Galas
+
+Side 3: Ilce'than (Chaos Magus) (leader) (strong+intelligent)
+        Recruit list: Chaos Invoker, Chaos Invader, Chaos Headhunter
+        Gold: {DIFF 180 210 250}
+        Team: Chaos
+
+Victory conditions: standard
+
+
+Scenario 2: High Pass
+
+The group moves across the mountains, and stumble upon undead. They must defeat the
+lich that leads them, Mal Ciphan. When destroying him they learn it was another servant
+to Yechnagoth, and find a prisoner in his keep, Kri'tan - a small boy who barely
+remembers his name.
+
+Side 2: Mal Ciphan (Lich) (leader) (undead+resilient)
+        Recruit list: Ghoul, Walking Corpse, Ghost, Skeleton, Skeleton Archer
+        Gold: {DIFF 170 190 220}
+        Team: Undead
+
+Side 3: Nyadien (Draug) (leader) (undead)
+        Recruit list: Skeleton, Skeleton Archer, Walking Corpse
+        Gold: {DIFF 150 180 210}
+        Team: Undead
+
+Side 4: Kri'tan (???) (strong+quick)
+        Team: Galas
+        (dummy side)
+
+Acquired side 1 units: Kri'tan (???) (strong+quick)
+
+Victory conditions: standard
+
+
+Scenario 3: Civil War
+
+The group finally finds the elves - fighting each other (wild elves vs. sylvans), however,
+and they do not recognize Galas as a leader, nor Elynia as an authority.
+They can either defeat all enemy leaders, or wait for the end of turns, when Arnesius appears
+to discuss a new treaty with the elvish factions.
+
+Side 2: Celán (Sidhe Wardancer) (leader) (intelligent+strong)
+        Recruit list: Sidhe Warrior, Sidhe Fury, Sidhe Hoarfroster, Sidhe Raindancer, Sidhe Wanderer
+        Gold: {DIFF 230 270 320}
+        Team: Sidhe Elves
+
+Side 3: Unidë (Elvish Avenger) (female) (leader) (resilient+quick)
+        Recruit List: Sprite, Elvish Shaman, Elvish Archer, Elvish Fighter, Elvish Scout
+        Gold: {DIFF 250 280 330}
+        Team: Forest Elves
+
+Side 4: Arnesius
+        Team: Galas
+        (dummy side)
+
+Victory conditions: enemy defeat OR end of turns
+
+Scenario 4: Terror at Dusk
+
+After having settled the treaty with the elves, the group heads for the western shores of Tirigaz.
+They decide to rest for the night in the borders of the forest, but something wrong happens. Horrible
+sounds of pain and death are heard - Elynia sights a group of shaxthal creatures coming towards the forest.
+They must defeat them before they take over the lands.
+
+Side 2: (Shaxthal War Drone) (leader) (biomechanical, intelligent)
+        Recruit list: Shaxthal Drone, Shaxthal Runner Drone, Shaxthal Larva, Shaxthal Razorbird,
+                      Shaxthal Rayblade
+        Gold: {DIFF 250 300 350}
+        Team: shaxthals
+
+Side 3: (Shaxthal Assault Drone) (leader) (biomechanical, armored)
+        Recruit list: Shaxthal Runner Drone, Shaxthal Razorbird, Shaxthal Rayblade
+        Gold: {DIFF 250 280 310}
+        Team: shaxthals
+
+Side 4: Darglen (Chaos Lore) (leader) (biomechanical, strong)
+        Recruit list: Shaxthal Runner Drone, Chaos Invader, Shaxthal Rayblade, Automaton, Chaos Headhunter
+        Gold: {DIFF 270 300 340}
+        Team: shaxthals
+
+Victory conditions: standard
+
+
+Scenario 5: Bay of Tirigaz
+
+Help the inhabitants of Tirigaz defend against a horde of desperate saurians.
+
+Side 2: Lt. Lemyr (Lieutenant) (leader) (strong, intelligent)
+        Recruit list: Peasant, Ruffian, Woodsman, Bowman, Spearman, Mage
+        Gold: {DIFF 250 225 200}
+        Team: Galas
+
+Side 3: Nyx Szal (Saurian Flanker) (leader) (quick, strong)
+        Recruit list: Saurian Skirmisher, Saurian Augur, Naga Fighter
+        Gold: {DIFF 220 240 260}
+        Team: Enemies
+
+Side 4: Kirizzex (Naga Myrmidon) (leader) ()
+        Recruit list: Naga Fighter, Water Serpent
+        Gold: {DIFF 200 240 280}
+        Team: Enemies
+
+
+Scenario 6: The Vast Ocean
+
+Side 2: ()
+        Team: sea creatures
+
+
+Scenario 7: The Elves of Quenoth Isle
+A: Cutscene with view of whole Isle
+B: Cutscene under the Great Tree
+
+
+Scenario 8: Searching for the Past
+
+Elynia and the rest enter a cave leading deeper underground, to the Black Citadel.
+
+
+
