@@ -1,5 +1,19 @@
-After the Storm - Storyboard
-----------------------------
+|After the Storm
+\
+ \_ Episode I:  Transition
+ |  \_ This episode tell us of the wanderings of Galas, Mal Keshar and Elynia searching for the truth.
+ |     While at it, they make a terrible discovering about the Chaos Emperor's legacy.
+ |
+ |_ Episode II: Surreal
+ | \_ Now Elynia is alone in an unknown place, where enemies abound, and friends are nought. Can she
+ |    survive the final challenge?
+ |
+ |_ IftU and AtS - unified epilogue / Thunderstone prologue
+
+
+========================================
+AFTER THE STORM - EPISODE I - STORYBOARD
+========================================
 By Ignacio R. Morelle (Shadow Master/ShikadiLord).
 
 Global defeat conditions:
@@ -7,7 +21,9 @@ Global defeat conditions:
 - Death of Elynia
 - Death of Mal Keshar
 
+********************
 Scenario 1: Skirmish
+********************
 
 Elynia, Mal Keshar and Galas have travelled for long towards the Aragwaith country.
 They stop by a town in a valley, and defend it against a group of Chaos followers
@@ -32,8 +48,96 @@ Side 3: Ilce'than (Chaos Magus) (leader) (strong+intelligent)
 
 Victory conditions: standard
 
+-- WML event: start
 
+Dialogue:
+    - Guard #1: Night breaks, and the scouts reported by midday that those cursed soldiers were heading towards our town.
+    - Guard #2: Yeah, so it was not enough for them to burn and ransack Tyannes... Blast it. The elders and their warriors,
+                blast it, why don't they send us help?
+    - Guard #1: Since the beginning of the War, little they have cared about safety, not only ours, but theirs too.
+                Rumors indicate that the country itself is poorly defended currently. Easy prey for foreign invaders.
+    - Guard #2: Not only foreign. I heard that... <hidden>(the elves)</hidden>
+    - Guard #3: On guard! Three strangers approach from the southern road!
+
+<PSEUDOCODE>
+[move_unit_fake]
+    Galas
+    x0,y0: southern edge of the map across the road
+    x,y: first side's starting location
+[/move_unit_fake]
+[move_unit_fake]
+    Mal Keshar
+    x0,y0: southern edge of the map across the road
+    x,y: adjacent to first side's starting location
+[/move_unit_fake]
+[move_unit_fake]
+    Elynia
+    x0,y0: southern edge of the map across the road
+    x,y: adjacent to first side's starting location
+[/move_unit_fake]
+
+[unit]
+    Spawn: Elynia, Mal Keshar
+    x,y: adjacent to first side's starting location
+[/unit]
+
+[unstore_unit]
+    Galas
+[/unstore_unit]
+</PSEUDOCODE>
+
+Dialogue:
+    - Guard #1: Stop! Identify yourselves, strangers!
+    - Galas: We are traveling and don't plan to stay in your town for more than one night. You don't need to know who we are.
+    - Guard #2: Sorry, but we were ordered not to let anybody... pa... she's... beautiful.
+    - Guard #3: Oh my, a fairy?
+    - Elynia: Yes.
+    - Guard #3: And you are an elf? What is one of your kind doing so far from the green northern lands?
+    - Galas: As I said before, we are traveling, and don't plan to stay in your town for more than one night. Just let us in.
+    - Guard #1: Who is that? Hey, the cloaked one!
+    - Mal Keshar: Eh?
+    - Guard #1: Aaah!!
+    - Guard #3: Necromancer! A...
+    - Elynia: You are not signaling the entire town of his presence, are you? Such a handsome man could spend the night doing... more interesting things, than fighting us...
+    - Guard #3: *gulp* Eh, I...
+    - Guard #1: I don't know what the hell is your purpose here, but we do have important things to do this night, such as defending the town from your cursed henchmen!
+    - Galas: Henchmen? Do you see anyone else accompaining us?
+    - Guard #1: Eh... uhm... well, no?
+    - Galas: Well, then...
+[move_unit_fake]
+    galas steps forward
+[/move_unit_fake]
+    - Guard #1: Eh! That you don't bring anyone with you does not mean you cannot call upon them! We heard rumors of the cursed warriors coming to our valley!
+    - Galas: Cursed, you say?
+    - Mal Keshar: Clad in black armor, bringing flags with impaled skulls at the top, and smelling specially nasty?
+    - Guard #2: Yes, yes. Do you know them?
+    - Mal Keshar: Yeah, and I'd like to kill a few of them, just for fun.
+    - Elynia: Actually, they are our enemies. We know better than you of their flaws, so we could be of help, *if* you let us pass inside the town.
+    - Morzey: Let them come in! We are in need of all the help we can get if we do not want to suffer the same fate of our comrades at Tyannes, and it is not the first time I hear of a necromancer helping our cause.
+    - Guard #1: Yes, sir!
+    - Guard #3: As you desire, sir!
+[move_unit_fake]
+    everyone of side1 moves close to Morzey
+[/move_unit_fake]
+    - Morzey: Strangers, please help us. I am sure the gate guards already told you of the situation...
+    - Galas: Yes, they did.
+    - Morzey: Well, I think you can be trusted. Please aid us in this battle; plagues have decimated most of our capable warriors, and all we have left is the town militia...
+    - Galas: We'll do. Just don't ask names.
+    - Morzey: Very well. I don't know when or whether they'll arrive or not, so stay alert.
+
+-- WML event: 
+
+
+
+
+
+
+
+
+
+*********************
 Scenario 2: High Pass
+*********************
 
 The group moves across the mountains, and stumble upon undead. They must defeat the
 lich that leads them, Mal Ciphan. When destroying him they learn it was another servant
@@ -81,6 +185,7 @@ Side 4: Arnesius
         (dummy side)
 
 Victory conditions: enemy defeat OR end of turns
+
 
 Scenario 4: Terror at Dusk
 
