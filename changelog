@@ -21,3 +21,6 @@ Terrains:
     * Imported wasteland terrain from "Invasion from the Unknown"
     * Imported terrain types may have got their strings modified for editor
       compatibility with other campaign-specific terrain definitions
+
+Units:
+    * Made Shaxthal Rayblade female
