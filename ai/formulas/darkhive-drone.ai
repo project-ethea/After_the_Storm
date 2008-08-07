@@ -1,0 +1,2 @@
+if(attack, attack, move(me.loc, choose(unit_moves(me.loc), -distance_between(self, me.vars.guard_loc))))
+    where attack = choose(filter(attacks, units = [me.loc] and distance_between(me.vars.guard_loc, target) <= me.vars.guard_radius), avg_damage_inflicted)
