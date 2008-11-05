@@ -1,10 +1,18 @@
+$Id$
+
+WARNING: this information is REALLY PRELIMINARY and may CHANGE AT ANY TIME without previous notice to content creators. If you depend on the storyline continuum of UtBS-IftU-AtS, then forget about using this information as a base for content.
+
+WARNING: Espreon should be kept as far as possible from this text.
+
+***
+
 |After the Storm
 \
  \_ Episode I:  Transition
  |  \_ This episode tell us of the wanderings of Galas, Mal Keshar and Elynia searching for the truth.
- |     While at it, they make a terrible discovering about the Chaos Emperor's legacy.
+ |     While at it, they make a terrible discovery about the Chaos Emperor's legacy.
  |
- |_ Episode II: Surreal
+ |_ Episode II: Zenith
  | \_ Now Elynia is alone in an unknown place, where enemies abound, and friends are nought. Can she
  |    survive the final challenge?
  |
@@ -56,7 +64,7 @@ Dialogue:
                 blast it, why don't they send us help?
     - Guard #1: Since the beginning of the War, little they have cared about safety, not only ours, but theirs too.
                 Rumors indicate that the country itself is poorly defended currently. Easy prey for foreign invaders.
-    - Guard #2: Not only foreign. I heard that... <hidden>(the elves)</hidden>
+    - Guard #2: Not only foreign. I heard that the elves have...
     - Guard #3: On guard! Three strangers approach from the southern road!
 
 <PSEUDOCODE>
@@ -88,17 +96,17 @@ Dialogue:
 
 Dialogue:
     - Guard #1: Stop! Identify yourselves, strangers!
-    - Galas: We are traveling and don't plan to stay in your town for more than one night. You don't need to know who we are.
+    - Galas: We are traveling and have no intention to stay in your town for more than one night. You don't need to know who we are.
     - Guard #2: Sorry, but we were ordered not to let anybody... pa... she's... beautiful.
     - Guard #3: Oh my, a fairy?
     - Elynia: Yes.
     - Guard #3: And you are an elf? What is one of your kind doing so far from the green northern lands?
-    - Galas: As I said before, we are traveling, and don't plan to stay in your town for more than one night. Just let us in.
+    - Galas: As I said earlier, we are traveling, and we don't plan to stay in your town for more than one night. Just let us in.
     - Guard #1: Who is that? Hey, the cloaked one!
     - Mal Keshar: Eh?
     - Guard #1: Aaah!!
-    - Guard #3: Necromancer! A...
-    - Elynia: You are not signaling the entire town of his presence, are you? Such a handsome man could spend the night doing... more interesting things, than fighting us...
+    - Guard #3: Necromancer! Alert the...
+    - Elynia: You are not signaling the entire town of his presence, are you? Such a handsome man could spend the night doing... more interesting activities, than fighting us...
     - Guard #3: *gulp* Eh, I...
     - Guard #1: I don't know what the hell is your purpose here, but we do have important things to do this night, such as defending the town from your cursed henchmen!
     - Galas: Henchmen? Do you see anyone else accompaining us?
@@ -111,8 +119,8 @@ Dialogue:
     - Galas: Cursed, you say?
     - Mal Keshar: Clad in black armor, bringing flags with impaled skulls at the top, and smelling specially nasty?
     - Guard #2: Yes, yes. Do you know them?
-    - Mal Keshar: Yeah, and I'd like to kill a few of them, just for fun.
-    - Elynia: Actually, they are our enemies. We know better than you of their flaws, so we could be of help, *if* you let us pass inside the town.
+    - Mal Keshar: Yeah, and I'd like to kill a few of them just for fun.
+    - Elynia: Actually, they are our enemies. We know better than you of their flaws, so we could be of help, *if* you would let us pass inside the town.
     - Morzey: Let them come in! We are in need of all the help we can get if we do not want to suffer the same fate of our comrades at Tyannes, and it is not the first time I hear of a necromancer helping our cause.
     - Guard #1: Yes, sir!
     - Guard #3: As you desire, sir!
@@ -121,18 +129,25 @@ Dialogue:
 [/move_unit_fake]
     - Morzey: Strangers, please help us. I am sure the gate guards already told you of the situation...
     - Galas: Yes, they did.
-    - Morzey: Well, I think you can be trusted. Please aid us in this battle; plagues have decimated most of our capable warriors, and all we have left is the town militia...
+    - Morzey: Well, I suppose you can be trusted. Please aid us in this battle; plagues have decimated most of our capable warriors, and all we have left is the town militia...
     - Galas: We'll do. Just don't ask names.
-    - Morzey: Very well. I don't know when or whether they'll arrive or not, so stay alert.
+    - Morzey: Very well. We don't know exactly when or where they'll arrive from, so stay alert.
 
--- WML event: 
+-- WML event: last breath [id=Ilce'than]
+    Dialogue:
+        - primary_unit: Curse you, heretics! The Iron Council shall punish you for your deeds!
+-- WML event: die [id=Ilce'than]
+    Dialogue:
+        - Elynia: I do not think so.
+        - Morzey: We will be eternally thankful for your help, travelers! If there is anything we can do to pay back...
+        - Galas: No problem; we just need a few provisions for our journey to the Northern country.
+        - Morzey: Are you traveling North then? There is a mountain pass there, to the north-east. It should take you faster to the country, but rumor has it that undead roam about the place since the beginning of the War.
+        - Elynia: Thanks for the information, we will go through that pass.
+        - Morzey: Are you sure?
+        - Mal Keshar: I *control* the dead, no need to worry about them.
 
-
-
-
-
-
-
+A signpost somewhere:
+"Sometimes your beloved ones must will to sacrifice their lives for a greatest cause."
 
 
 *********************
@@ -158,10 +173,72 @@ Side 4: Kri'tan (???) (strong+quick)
         Team: Galas
         (dummy side)
 
-Acquired side 1 units: Kri'tan (???) (strong+quick)
+Acquired side 1 units at end of scenario: Kri'tan (???) (strong+quick)
 
 Victory conditions: standard
 
+-- WML event: start
+    Dialogue:
+        - Galas: this place gives me chills. Perhaps it was not a good choice of path
+                 after all.
+        - Mal Keshar: pah. Put your worries in your backpack, there is nothing to...
+
+        < spawn unit near side 1 start location: Necrophage >
+        < spawn unit near side 1 start location: Necrophage >
+
+        - <necrophage>: groaaar!!!
+
+        - Mal Keshar: and who called upon you?
+        - Elynia: so the rumors are true. This pass is infested with undead. We'll
+                  have to give them a rest before we can continue on.
+        - Mal Keshar: this will be boring.
+
+-- WML event: sighted [id=Mal Ciphan]
+    Dialogue:
+        - Mal Ciphan: aah, the traitors! You are not seeing the sunlight anymore,
+                      I'll feed your souls to Yechnagoth!
+        - Mal Keshar: the same old tune. These goons need a hobby or something.
+
+-- WML event: sighted [id=Nyadien]
+    Dialogue:
+        - Nyadien: you, Galas! You abandoned us in the valley! You let all of us
+                   die! You shall perish, and your soul will be tortured as you
+                   deserve it!
+        - Galas: Nyadien... but...
+        - Mal Keshar: Do you know him?
+        - Galas: yes, he was the leader of the patrol group that replaced mine
+                 just before the loyalists invaded our valley.
+        - Elynia: Elf, know that Galas did not have the power to stop that invasion,
+                  but we have just demolished the Empire. There is nothing that
+                  ties you to roam this world anymore!
+        - Nyadien: I will personally make sure you don't go unpunished, traitor!
+        - Mal Keshar: There is no use in trying to deal with this pile of bones.
+                      The necromancer who arose him probably used some malign trick
+                      to fill him of hatred towards you.
+        - Galas: in that case, all we can do is finish it.
+
+-- WML event: last breath [id=Mal Ciphan]
+    Dialogue:
+        - Mal Ciphan: I am vanquished, but I curse your race to never see days of
+                      peace and joy again for the rest of eternity!
+-- WML event: victory
+    Dialogue in Mal Ciphan's keep:
+        - <fake unit: Skeleton>: Sirs, you must see this!
+        [<spawn Kri'tan; HP=1>]
+        - Elynia: a little boy! And he is tortured... what did they beasts want from
+                  him.
+        - Mal Keshar: these fanatics love to torture people. Do they need a reason
+                      for this?
+        [<Elynia heals Kri'tan to full HP>]
+        - Elynia: here, this should make you feel better. Child, can you hear us?
+        - Kri'tan:  *cries of pain*
+        - Elynia: what's your name?
+        - Kri'tan: I... my name is... my name is... Kri'tan.
+        - Elynia: what happened to your family? What did those creatures want from you?
+        - Kri'tan: I... augh... I can't... remember...
+        - Mal Keshar: hey, let him have some rest at least! We should set up camp here
+                      and continue our journey tomorrow. This was a very long day already.
+        - Galas: Indeed. Let's rest here.
 
 
 *********************
@@ -189,6 +266,11 @@ Side 4: Arnesius
 
 Victory conditions: enemy defeat OR end of turns
 
+-- WML event: start
+    Dialogue:
+        - Elynia: look! Elves... and fighting...
+        - Mal Keshar: ... each other. What the hell?!
+        - Galas: This is not possible. 
 
 
 **************************
@@ -249,14 +331,14 @@ Side 2: ()
 
 
 *************************************
-Scenario 7: The Elves of Quenoth Isle
+Scenario 6: The Elves of Quenoth Isle
 *************************************
 A: Cutscene with view of whole Isle
 B: Cutscene under the Great Tree
 
 
 **********************************
-Scenario 8: Searching for the Past
+Scenario 7: Searching for the Past
 **********************************
 
 Elynia and the rest enter a cave leading deeper underground. They
@@ -282,23 +364,334 @@ clues of their locations (besides the Wesmere one), and the only place where mor
 could be found was buried into Hell - Argan's Lair.
 
 
-*************************
-Scenario 9: One must fall
-*************************
+**********************************
+Scenario 8: One must fall (Part A)
+**********************************
 
-Galas and the rest travel back to the Great Continent, but when reaching the coastline,
-they are attacked by war ships controlled by the Iron Triad. The ship is sank, but they
-manage to escape the slaughter -- only to land at enemy territory. They have arrived
-to the Kalari Peninsula, where the Iron Triad headquarters are located. Eventually, they
-get crushed by the triad members and Galas destroys Mal Kendria in a desperate attempt
-to allow Elynia and Mal Keshar to escape, but gets himself killed by Mal Hekuba.
+Galas and the rest travel back to the Great Continent, but when reaching the
+coastline, a storm destroys the ship. They manage to escape -- but only to land
+on enemy territory. They have arrived to the Kalari Peninsula, where the Iron
+Triad headquarters are located.
+
+Victory conditions: standard
+
+The player can recruit/recall units on first turn only, then the encampment is
+dismantled.
+
+Start event:
+
+< move_unit_fake a transport galleon >
+
+< move_unit_fake heroes to shore >
+
+- Elynia: that was a close call... is everyone all right?
+- Galas: barely... we have lost our provisions. Where are we?
+- Mal Keshar: judging by the palm trees, I'd say a jungle.
+- Elynia: this is the Kalari Peninsula - in my times it was often said that this
+  place was cursed.
+- Mal Keshar: Wasn't the same said of a thousand other perfectly nice locations?
+- Kri'tan: There's something familiar to me about this place. I don't exactly
+  know what it is.
+- Galas: Elynia, how far are we from Wesmere then?
+- Elynia: Um... if it serves as a reference, if we go north-east, we'll find
+  again that path we used to go North before.
+- Galas: That's good. Let's move then.
+
+Sighted enemies:
+
+- Enemy unit: Intruders! Alert the masters!
+- Other enemy unit: As you command, sir!
+
+< move_unit_fake this other enemy unit to somewhere not visible >
+
+- Enemy unit: How you dare step in the Iron Council's territory, vermin!
+- Mal Keshar: Iron Council?! Oh, nuts. Of all the places where we could land
+              on...
+- Elynia: This is not good. Our forces are too weak from the accident! We cannot
+          fight them!
+- Galas: But it is a peninsula... the only way out, if not by sea, is through.
+- Elynia: Right... I pray that we won't fall to their forces.
+
+Defeated enemy leaders:
+
+- Elynia: we did it!
+- Galas: uhh...
+
+< spawn high-level chaos soldiers around heroes >
+
+- Mal Keshar: No! We are surrounded!
+
+
+**********************************
+Scenario 8: One must fall (Part B)
+**********************************
+
+The heroes are brought to the deeper reaches of the Council's monastery. Elynia
+and Mal Keshar are chained up to prevent them from using their powers. Galas has
+been tied and rid of their weapons. Elynia has been rid of her staff, too, and a
+guard has it in his hands.
+
+This guard is Iveryl.
+
+Elynia and Mal Keshar are set to half their HP at start. The 3 heroes have the
+'slowed' status activated.
+
+< disable recalls and recruits for this scenario >
+
+< spawn Mal Hekuba (Ancient Lich), Mal Kendria (female Necromancer) and
+  Nar-hamoth (Chaos Warlord) after MUFing them >
+
+- Mal Hekuba: What do we have here? The fish have trapped themselves in the net!
+- Elynia: you... again...
+- Mal Hekuba: You are nothing without your stupid Union, girl. How pathetic.
+- Galas: you cruel monster, set them free from those chains, you are torturing
+         them!
+- Mal Kendria: that's exactly what we want! Hahahaha! May them burn with the
+               cold iron for the rest of their days!
+- Iveryl: masters, the filthy fairy was wielding this staff! She tried with all
+          her will to get it back, so we decided to chain her up.
+
+* Iveryl hands the staff to Mal Hekuba *
+
+- Nar-hamoth: Wise decission, and excellent acquisition!
+- Iveryl: there was a small boy, too, but we couldn't capture him...
+- Nar-hamoth: that doesn't matter. The sentry drones will soon find and devour
+              him. You, murderers of the Shadow Master, do you know what this
+              is?
+- Mal Kendria: the ancient race kept a great weapon as a symbol of their
+               high dinasties, and it was inherited amongst generations.
+- Elynia: the sceptre... of... fire...
+- Mal Hekuba: haha! Exactly! We have been looking for it for centuries, and it
+              has miracleously [FIXME] come to us by itself! The Ruby always had
+              its own will, and it is why the leaders of the ancient race
+              decided to lock down its power under the sceptre's hard and dense
+              metal shell.
+- Mal Kendria: when the old Kingdom of Wesnoth was teared apart by the barbarian
+               invaders of the damned eastern lands, the sceptre was thought
+               lost, but the great Lord Demon informed us that the elves had
+               sent this girl to recover it!
+- Mal Hekuba: and those stinky midgets helped her remove the core and hide it
+              in her staff. Good plan, but futile in the end. You tried to stop
+              the enemies of ancient race from using it against them.
+- Elynia: yes... the likes of you... should not possess such... power...
+- Mal Hekuba: but the Ruby searches for us! From my ancestor, the Lord Jevyan,
+              to the Triad of the Iron Council! You couldn't prevent or predict
+              that.
+- Mal Keshar: listen... that thing will be... your doom if you... misuse its
+              power...
+- Mal Hekuba: shut up, you, tainted necromancer. You are not in position to
+              teach us anything!
+- Galas: now it is clear... but what do you want to do with it?
+- Nar-hamoth: use it, of course. But not to kill insignificant creatures; we'll
+              need all the power of this artifact to open the connection that
+              was lost when the Shadow Master was assassined.
+- Elynia: no... no...
+- Mal Hekuba: (imitating) 'No, no, no!' Pathetic!
+- Nar-hamoth: When we bring the Inferno and Uria to this world, you will be at
+              the top of the list of sacrifices! Uria is really thirsty of
+              revenge on you all!
+
+< MUF some kind of fake boulder projectile and make it "hit" one of the guards,
+  killing him >
+< recall/spawn Kri'tan in middle of the room, along with two L2 skeletons and a
+  Dark Adept; all of them adjacent to the heroes >
+
+- Sumnur (other guard): the boy!
+- Mal Kendria: kill him!
+
+< Kri'tan quickly sets Galas free (unslow) >
+
+- Galas: <dark adept name> free them from those chains!
+- <dark adept>: yes, master Galas!
+
+< Mal Keshar and Elynia are set free (unslowed) and fully healed >
+
+- Mal Hekuba: Not so fast! The castle is well guarded and Iviel is not going to
+              allow you to leave this room now!
+
+< MUF and spawn Ivyel (boss unit) - L3+1 Shaxthal Rayblade >
+
+{BOSS_AMBIENTANCE}
+
+- Ivyel: you aren't going anywhere, foolish creatures!
+- Mal Keshar: whoa... Argan's first creation.
+- Elynia: he is right... we are at disadvantage here.
+
+< Mal Kendria descends from the keep and approaches them >
+
+- Galas: Elynia, Mal Keshar, Kri'tan... it is still possible that you escape if
+         the Triad gets slowed down long enough.
+- Mal Keshar: eh... how?
+- Mal Keshar: wait lad... you aren't suggesting...
+- Elynia: Galas, what will you do!?
+- Galas: I will attempt to stop them from attacking you, but you must make haste
+         to the exit, NOW!
+- Elynia: Galas... no...
+- Galas: Elynia... I love you... now run!
+- Mal Keshar: lad...
+- Galas: GO! GET TO THE EXIT!       <this line is a Predator reference, got it?>
+
+< set the Impassable overlay ( ^Zb ) around the keep so the other triad members
+  cannot approach the party or viceversa; Nar-hamoth and Mal Hekuba are switched
+  to a enemy side which uses the idle_ai algorithm. >
+
+< set player objectives:
+
+    Victory
+        - Mal Keshar, Elynia and Kri'tan defeat Ivyel and exit the room
+        -       and
+        - Galas must vanquish Mal Kendria afterwards (not before)
+
+    Defeat
+        - Death of Elynia
+        - Death of Mal Keshar
+        - Death of Kri'tan
+        - Death of Galas before Mal Kendria is vanquished
+        - Death of Mal Kendria before Mal Keshar, Elynia and Kri'tan escape
+
+    Notes
+        - Your supporting units should exit the room to escape, otherwise they
+          won't be carried over to next scenario.
+>
+
+Event: last breath [Ivyel]
+
+- Ivyel: Noooo!!!
+
+
+Event: last breath [Galas]
+# Used both for normal death and a forced [kill] with fire_event=yes
+
+- Galas: I love you... Elynia...
+# following may occur even when Elynia has escaped - it doesn't matter
+- Elynia: Galas, NOO!!!
+# if the heroes have not escaped, the sole fact that there are no player units
+# with canrecruit=yes will cause instant defeat.
+
+
+Event: die [Mal Kendria - before the heroes escape*]
+
+- Galas: no! This was not the plan!
+- Mal Hekuba: by the power passed unto me, I call upon the flames of the Ruby of
+              Fire, may it burn our enemies!
+< lighting effects, sounds of flame >
+< remaining player units are killed (fire_event=yes side=1 animate=yes) >
+
+
+Event: victory
+
+If Galas is still here for some really weird reason, kill him. Make Elynia a
+canrecruit=yes unit.
+
+
+Event: moveto <exit locations> [Mal Keshar or Elynia or Kri'tan]
+
+The hero that moves to this location is put to recall list.
+If Galas moves to this location, nothing happens.
+Other units may move to this location; then they are put into the recall list.
+Now check if the three heroes managed to escape. If that condition is true, the
+following event handlers are created.*
+*
+*   Event: last breath [Mal Kendria - after the heroes escape*]
+*
+*   - Mal Kendria: curse you, tree-shagger!
+*
+*   Event: die [Mal Kendria - after the heroes escape*]
+*
+*   < remove the impassable overlays from the keep >
+*
+*   - Mal Hekuba: ha ha ha, well done! Very good for a simple fighter.
+*   - Galas: now it's just you and me!
+*   - Nar-hamoth: this will be your end, elf.
+*
+*   < set player objectives:
+*       Victory
+*           - Try to defeat the other two members of the Triad
+*       Defeat
+*           - Death of Galas
+*       Notes
+*           - Your defeat here is not the end of this history.
+*   >
+*
+*   Event: an attack hits Mal Hekuba or Nar-hamoth below 50% their max_hitpoints
+*
+*   - Mal Hekuba: by the power passed unto me, I call upon the flames of the
+*                 Ruby of Fire! May it destroy our enemy!
+*   - Galas: oh no...
+*   <lighting effects, sounds of flame>
+*   - Galas: aaaaaaaahhhhh...
+*   <kill Galas (fire_event=yes animate=yes)>
+*   - Nar-hamoth: and so passes Galas, one of the murderers of the great Shadow
+*                 Master!
+*   - Mal Hekuba: perhaps not so great after all... at least not without this!
+*                 The Ruby of Fire would have secured his power!
+*   <if there are other player units remaining
+*     <lighting effects, sounds of flame>
+*     <kill other player units on map (fire_event=yes animate=yes)>
+*   >
+*
+*   {ENDLEVEL_CONTINUE}
+*
+
+(*) WML variable tricks here.
 
 
 **************************************
 Scenario 10: Tears - Return to Wesmere
 **************************************
 
-A
+< Story block
+    Elynia cried and cried, for she knew that Galas would not survive to the
+    power of the Iron Triad.
+
+    < still in story block, use dialogue format
+        - Elynia: how could... how could I let this happen?
+
+        - Mal Keshar: don't blame yourself. The elements wanted us to arrive to
+                      that cursed peninsula; nobody could possibly predict that
+                      accident. We didn't know what was in there either...
+
+        - Elynia: first it was Argan... now Galas. It seems that anyone who gets
+                  too close to... my heart, will suffer a terrible death.
+
+        - Mal Keshar: aw, come on! Don't be silly. These are... just coincidences...
+
+        - Elynia: you can't know how it feels.
+
+        - Mal Keshar: ah, what you say? If you did not notice already, I also have
+                      emotions, and for me, Galas was my only friend in the world.
+                      He accepted me, and we helped each other in times of difficulty.
+
+        - Mal Keshar: Nobody else would accept a necromancer as companion! Nobody
+                      had given me a second oportunity of proving that I didn't want
+                      to do so much harm at the beginning!
+
+        - Elynia: well... I feel sorry for saying that...
+    >
+
+    Elynia cleared the tears from her face, and looked towards the North mountains.
+
+    <
+        - Elynia: what will we do now? The enemy has the Ruby. They will shortly use
+                  its power to summon Inferno again, and this time nobody will be
+                  able to stop them... and those biomechanical creatures are there to
+                  help them destroy the lands.
+
+        - Mal Keshar: what about the power of the Union?
+
+        - Elynia: the prophecy said that the Union could be summoned only when two
+                  beings, wielding the essence of light and darkness, were tied
+                  together by the 'Unbreakable' force. That force was love.
+        
+        - Mal Keshar: oh.
+
+        - Elynia: so it's not an option. When Argan died, the powers must have
+                  been left free in his lair, now buried in that other world.
+
+        - Elynia: the only option left is to return and recover the Ruby
+                  before it's too late.
+    >
+>
 
 
 
