@@ -1,55 +1,83 @@
-$Id$
+            ===================================================
+                         AFTER THE STORM - STORYBOARD
+            ===================================================
+             By Ignacio R. Morelle (Shadow Master/ShikadiLord)
 
-WARNING: this information is REALLY PRELIMINARY and may CHANGE AT ANY TIME without previous notice to content creators. If you depend on the storyline continuum of UtBS-IftU-AtS, then forget about using this information as a base for content.
+Revision: $Revision$
+Revision date: $Date$
+Last author: $Author$
 
-WARNING: Espreon should be kept as far as possible from this text.
+WARNING: this is work in progress. Only scenarios 1 and 2 are probably
+definitive in this storyboard.
 
-***
-
-|After the Storm
-\
- \_ Episode I:  Transition
- |  \_ This episode tell us of the wanderings of Galas, Mal Keshar and Elynia searching for the truth.
- |     While at it, they make a terrible discovery about the Chaos Emperor's legacy.
- |
- |_ Episode II: Zenith
- | \_ Now Elynia is alone in an unknown place, where enemies abound, and friends are nought. Can she
- |    survive the final challenge?
- |
- |_ IftU and AtS - unified epilogue / Thunderstone prologue
-
-
-========================================
-AFTER THE STORM - EPISODE I - STORYBOARD
-========================================
-By Ignacio R. Morelle (Shadow Master/ShikadiLord).
+-
+|- UNDER THE BURNING SUNS
+|\
+| |- In the distant future a small band of elves struggles to survive amidst the
+| | ruins of fallen empires. Lead your people out of the desert on an epic
+| | journey to find a new home.
+| -
+|
+|- INVASION FROM THE UNKNOWN
+|\
+| |- Episode I:  Seeking the Light
+| |  Long after the Fall, the last forest elves are forced to abandon their safe
+| |  valley, and find themselves resorting to the dark means of necromancy in
+| |  order to survive the perils and challenges of this new harsh world. May
+| |  they finally free the Great Continent from its chaos, or perish in the
+| |  foolish attempt of restoring peace and life to the lands.
+| |
+| |- Episode II: Armageddon
+| |  As the shadow of Chaos covers the entire continent, an assorted group of
+| |  foolish heroes prepares a counter-attack to the Empire, with one unique
+| |  goal in their minds: defeat the evil Emperor, whoever it is. Lead these
+| |  courageous living and non-living warriors to victory, and rediscover lost
+| |  secrets of the history.
+| -
+|
+|- AFTER THE STORM
+|\
+| |- After putting a definitive end to the evil reign of Argan over the Great
+| |  Continent, an unknown band of heroes finds out that the twisted members of
+| |  the Iron Council still control substantial part of his army, and are
+| |  preparing themselves for a retaliation war. With new war beasts awaiting to
+| |  be set free for destructing the known lands, there is only one thing our
+| |  heroes can do to remedy the situation...
+| -
+-
 
 Global defeat conditions:
 - Death of Galas
 - Death of Elynia
 - Death of Mal Keshar
 
-********************
-Scenario 1: Skirmish
-********************
+--------------------
+SCENARIO 1: SKIRMISH
+--------------------
 
-Elynia, Mal Keshar and Galas have travelled for long towards the Aragwaith country.
-They stop by a town in a valley, and defend it against a group of Chaos followers
-led by Magus Ilce'than. The peasants tell them news of the elvish revolt.
+Elynia, Mal Keshar and Galas have travelled for long towards the Aragwaith
+country.They stop by a town in a valley, and defend it against a group of Chaos
+followers led by Magus Ilce'than. The peasants tell them news of the elvish
+revolt.
 
-Side 1: Galas (Elvish Wayfarer) (leader) (resilient+quick)
+SIDE 1:
+    LEADER:
+        Galas (Elvish Wayfarer) (resilient+quick)
+    UNITS:
         Elynia (Sylvan Faerie)
         Mal Keshar (Ancient Lich)
-        Recruit list: Skeleton, Skeleton Archer, Walking Corpse, Sprite, Vampire Bat
-        Gold: {DIFF 170 190 210}
-        Team: Galas
+    RECRUIT LIST: Skeleton, Skeleton Archer, Walking Corpse, Sprite, Vampire Bat
+    GOLD: {DIFF 170 190 210}
+    TEAM: Galas
 
-Side 2: Morzey (Sergeant) (leader) (quick+strong)
-        Recruit list: Peasant, Woodsman, Ruffian
-        Gold: {DIFF 150 140 130}
-        Team: Galas
+SIDE 2:
+    LEADER:
+        Morzey (Sergeant) (quick+strong)
+    RECRUIT LIST: Peasant, Woodsman, Ruffian
+    GOLD: {DIFF 150 140 130}
+    TEAM: Galas
 
-Side 3: Ilce'than (Chaos Magus) (leader) (strong+intelligent)
+SIDE 3: Ilce'than (Chaos Magus) (leader) (strong+intelligent)
         Recruit list: Chaos Invoker, Chaos Invader, Chaos Headhunter
         Gold: {DIFF 180 210 250}
         Team: Chaos
@@ -695,3 +723,4 @@ Scenario 10: Tears - Return to Wesmere
 
 
 
+; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
