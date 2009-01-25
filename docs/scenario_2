@@ -1,0 +1,91 @@
+---------------------
+SCENARIO 2: HIGH PASS
+---------------------
+
+The group moves across the mountains, and stumble upon undead. They must defeat the
+lich that leads them, Mal Ciphan. When destroying him they learn it was another servant
+to Yechnagoth, and find a prisoner in his keep, Kri'tan - a small boy who barely
+remembers his name.
+
+Side 2: Mal Ciphan (Lich) (leader) (undead+resilient)
+        Recruit list: Ghoul, Walking Corpse, Ghost, Skeleton, Skeleton Archer
+        Gold: {DIFF 170 190 220}
+        Team: Undead
+
+Side 3: Nyadien (Draug) (leader) (undead)
+        Recruit list: Skeleton, Skeleton Archer, Walking Corpse
+        Gold: {DIFF 150 180 210}
+        Team: Undead
+
+Side 4: Kri'tan (???) (strong+quick)
+        Team: Galas
+        (dummy side)
+
+Acquired side 1 units at end of scenario: Kri'tan (???) (strong+quick)
+
+Victory conditions: standard
+
+-- WML event: start
+    Dialogue:
+        - Galas: this place gives me chills. Perhaps it was not a good choice of path
+                 after all.
+        - Mal Keshar: pah. Put your worries in your backpack, there is nothing to...
+
+        < spawn unit near side 1 start location: Necrophage >
+        < spawn unit near side 1 start location: Necrophage >
+
+        - <necrophage>: groaaar!!!
+
+        - Mal Keshar: and who called upon you?
+        - Elynia: so the rumors are true. This pass is infested with undead. We'll
+                  have to give them a rest before we can continue on.
+        - Mal Keshar: this will be boring.
+
+-- WML event: sighted [id=Mal Ciphan]
+    Dialogue:
+        - Mal Ciphan: aah, the traitors! You are not seeing the sunlight anymore,
+                      I'll feed your souls to Yechnagoth!
+        - Mal Keshar: the same old tune. These goons need a hobby or something.
+
+-- WML event: sighted [id=Nyadien]
+    Dialogue:
+        - Nyadien: you, Galas! You abandoned us in the valley! You let all of us
+                   die! You shall perish, and your soul will be tortured as you
+                   deserve it!
+        - Galas: Nyadien... but...
+        - Mal Keshar: Do you know him?
+        - Galas: yes, he was the leader of the patrol group that replaced mine
+                 just before the loyalists invaded our valley.
+        - Elynia: Elf, know that Galas did not have the power to stop that invasion,
+                  but we have just demolished the Empire. There is nothing that
+                  ties you to roam this world anymore!
+        - Nyadien: I will personally make sure you don't go unpunished, traitor!
+        - Mal Keshar: There is no use in trying to deal with this pile of bones.
+                      The necromancer who arose him probably used some malign trick
+                      to fill him of hatred towards you.
+        - Galas: in that case, all we can do is finish it.
+
+-- WML event: last breath [id=Mal Ciphan]
+    Dialogue:
+        - Mal Ciphan: I am vanquished, but I curse your race to never see days of
+                      peace and joy again for the rest of eternity!
+-- WML event: victory
+    Dialogue in Mal Ciphan's keep:
+        - <fake unit: Skeleton>: Sirs, you must see this!
+        [<spawn Kri'tan; HP=1>]
+        - Elynia: a little boy! And he is tortured... what did they beasts want from
+                  him.
+        - Mal Keshar: these fanatics love to torture people. Do they need a reason
+                      for this?
+        [<Elynia heals Kri'tan to full HP>]
+        - Elynia: here, this should make you feel better. Child, can you hear us?
+        - Kri'tan:  *cries of pain*
+        - Elynia: what's your name?
+        - Kri'tan: I... my name is... my name is... Kri'tan.
+        - Elynia: what happened to your family? What did those creatures want from you?
+        - Kri'tan: I... augh... I can't... remember...
+        - Mal Keshar: hey, let him have some rest at least! We should set up camp here
+                      and continue our journey tomorrow. This was a very long day already.
+        - Galas: Indeed. Let's rest here.
+
+; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;

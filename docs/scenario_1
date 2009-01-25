@@ -1,0 +1,127 @@
+--------------------
+SCENARIO 1: SKIRMISH
+--------------------
+
+Elynia, Mal Keshar and Galas have travelled for long towards the Aragwaith
+country.They stop by a town in a valley, and defend it against a group of Chaos
+followers led by Magus Ilce'than. The peasants tell them news of the elvish
+revolt.
+
+SIDE 1:
+    LEADER:
+        Galas (Elvish Wayfarer) (resilient+quick)
+    UNITS:
+        Elynia (Sylvan Faerie)
+        Mal Keshar (Ancient Lich)
+    RECRUIT LIST: Skeleton, Skeleton Archer, Walking Corpse, Sprite, Vampire Bat
+    GOLD: {DIFF 170 190 210}
+    TEAM: Galas
+
+SIDE 2:
+    LEADER:
+        Morzey (Sergeant) (quick+strong)
+    RECRUIT LIST: Peasant, Woodsman, Ruffian
+    GOLD: {DIFF 150 140 130}
+    TEAM: Galas
+
+SIDE 3: Ilce'than (Chaos Magus) (leader) (strong+intelligent)
+        Recruit list: Chaos Invoker, Chaos Invader, Chaos Headhunter
+        Gold: {DIFF 180 210 250}
+        Team: Chaos
+
+Victory conditions: standard
+
+-- WML event: start
+
+Dialogue:
+    - Guard #1: Night breaks, and the scouts reported by midday that those cursed soldiers were heading towards our town.
+    - Guard #2: Yeah, so it was not enough for them to burn and ransack Tyannes... Blast it. The elders and their warriors,
+                blast it, why don't they send us help?
+    - Guard #1: Since the beginning of the War, little they have cared about safety, not only ours, but theirs too.
+                Rumors indicate that the country itself is poorly defended currently. Easy prey for foreign invaders.
+    - Guard #2: Not only foreign. I heard that the elves have...
+    - Guard #3: On guard! Three strangers approach from the southern road!
+
+<PSEUDOCODE>
+[move_unit_fake]
+    Galas
+    x0,y0: southern edge of the map across the road
+    x,y: first side's starting location
+[/move_unit_fake]
+[move_unit_fake]
+    Mal Keshar
+    x0,y0: southern edge of the map across the road
+    x,y: adjacent to first side's starting location
+[/move_unit_fake]
+[move_unit_fake]
+    Elynia
+    x0,y0: southern edge of the map across the road
+    x,y: adjacent to first side's starting location
+[/move_unit_fake]
+
+[unit]
+    Spawn: Elynia, Mal Keshar
+    x,y: adjacent to first side's starting location
+[/unit]
+
+[unstore_unit]
+    Galas
+[/unstore_unit]
+</PSEUDOCODE>
+
+Dialogue:
+    - Guard #1: Stop! Identify yourselves, strangers!
+    - Galas: We are traveling and have no intention to stay in your town for more than one night. You don't need to know who we are.
+    - Guard #2: Sorry, but we were ordered not to let anybody... pa... she's... beautiful.
+    - Guard #3: Oh my, a fairy?
+    - Elynia: Yes.
+    - Guard #3: And you are an elf? What is one of your kind doing so far from the green northern lands?
+    - Galas: As I said earlier, we are traveling, and we don't plan to stay in your town for more than one night. Just let us in.
+    - Guard #1: Who is that? Hey, the cloaked one!
+    - Mal Keshar: Eh?
+    - Guard #1: Aaah!!
+    - Guard #3: Necromancer! Alert the...
+    - Elynia: You are not signaling the entire town of his presence, are you? Such a handsome man could spend the night doing... more interesting activities, than fighting us...
+    - Guard #3: *gulp* Eh, I...
+    - Guard #1: I don't know what the hell is your purpose here, but we do have important things to do this night, such as defending the town from your cursed henchmen!
+    - Galas: Henchmen? Do you see anyone else accompaining us?
+    - Guard #1: Eh... uhm... well, no?
+    - Galas: Well, then...
+[move_unit_fake]
+    galas steps forward
+[/move_unit_fake]
+    - Guard #1: Eh! That you don't bring anyone with you does not mean you cannot call upon them! We heard rumors of the cursed warriors coming to our valley!
+    - Galas: Cursed, you say?
+    - Mal Keshar: Clad in black armor, bringing flags with impaled skulls at the top, and smelling specially nasty?
+    - Guard #2: Yes, yes. Do you know them?
+    - Mal Keshar: Yeah, and I'd like to kill a few of them just for fun.
+    - Elynia: Actually, they are our enemies. We know better than you of their flaws, so we could be of help, *if* you would let us pass inside the town.
+    - Morzey: Let them come in! We are in need of all the help we can get if we do not want to suffer the same fate of our comrades at Tyannes, and it is not the first time I hear of a necromancer helping our cause.
+    - Guard #1: Yes, sir!
+    - Guard #3: As you desire, sir!
+[move_unit_fake]
+    everyone of side1 moves close to Morzey
+[/move_unit_fake]
+    - Morzey: Strangers, please help us. I am sure the gate guards already told you of the situation...
+    - Galas: Yes, they did.
+    - Morzey: Well, I suppose you can be trusted. Please aid us in this battle; plagues have decimated most of our capable warriors, and all we have left is the town militia...
+    - Galas: We'll do. Just don't ask names.
+    - Morzey: Very well. We don't know exactly when or where they'll arrive from, so stay alert.
+
+-- WML event: last breath [id=Ilce'than]
+    Dialogue:
+        - primary_unit: Curse you, heretics! The Iron Council shall punish you for your deeds!
+-- WML event: die [id=Ilce'than]
+    Dialogue:
+        - Elynia: I do not think so.
+        - Morzey: We will be eternally thankful for your help, travelers! If there is anything we can do to pay back...
+        - Galas: No problem; we just need a few provisions for our journey to the Northern country.
+        - Morzey: Are you traveling North then? There is a mountain pass there, to the north-east. It should take you faster to the country, but rumor has it that undead roam about the place since the beginning of the War.
+        - Elynia: Thanks for the information, we will go through that pass.
+        - Morzey: Are you sure?
+        - Mal Keshar: I *control* the dead, no need to worry about them.
+
+A signpost somewhere:
+"Sometimes your beloved ones must will to sacrifice their lives for a greatest cause."
+
+; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;

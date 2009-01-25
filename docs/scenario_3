@@ -1,0 +1,32 @@
+---------------------
+SCENARIO 3: CIVIL WAR
+---------------------
+
+The group finally finds the elves - fighting each other (wild elves vs. sylvans), however,
+and they do not recognize Galas as a leader, nor Elynia as an authority.
+They can either defeat all enemy leaders, or wait for the end of turns, when Arnesius appears
+to discuss a new treaty with the elvish factions.
+
+Side 2: Celán (Sidhe Wardancer) (leader) (intelligent+strong)
+        Recruit list: Sidhe Warrior, Sidhe Fury, Sidhe Hoarfroster, Sidhe Raindancer, Sidhe Wanderer
+        Gold: {DIFF 230 270 320}
+        Team: Sidhe Elves
+
+Side 3: Unidë (Elvish Avenger) (female) (leader) (resilient+quick)
+        Recruit List: Sprite, Elvish Shaman, Elvish Archer, Elvish Fighter, Elvish Scout
+        Gold: {DIFF 250 280 330}
+        Team: Forest Elves
+
+Side 4: Arnesius
+        Team: Galas
+        (dummy side)
+
+Victory conditions: enemy defeat OR end of turns
+
+-- WML event: start
+    Dialogue:
+        - Elynia: look! Elves... and fighting...
+        - Mal Keshar: ... each other. What the hell?!
+        - Galas: This is not possible. 
+
+; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
