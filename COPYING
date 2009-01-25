@@ -1,7 +1,7 @@
 
-   Invasion from the Unknown: Armageddon
+   After the Storm
 
-   Copyright (C) 2006-2008 by Ignacio R. Morelle <shadowm2006@gmail.com>
+   Copyright (C) 2006, 2008, 2009 by Ignacio R. Morelle <shadowm2006@gmail.com>
    Add-on for the Battle for Wesnoth Project, http://www.wesnoth.org/
 
    This program is free software; you can redistribute it and/or modify
@@ -15,7 +15,13 @@
    license terms; it has been ensured by all means that they are compatible
    in redistribution terms. Exceptions:
 
+   * The unit sprite art for Elynia is (C) 2007, 2008, 2009 by Ignacio R. Morelle
+     (Shadow Master/ShikadiLord), and is redistributed under the terms of the GNU
+     GPL version 2, or at option of redistributers, any later version. The provided
+     form should be considered the "source code" for these items.
+
    * Miscellaneous props/tiles by Reiner Prokein <http://www.reinerstileset.de/>
+     Verbatim license terms follow:
 
         All the graphics and meshes are freeware. Even for commercial Games. I just want
         my name in the Credits in the commercial case: Reiner "Tiles" Prokein. You can
@@ -40,15 +46,8 @@
 
         http://www.reinerstileset.de
 
-   * The unit sprite art for Elynia is (C) 2007, 2008 by Ignacio R. Morelle
-     (Shadow Master/ShikadiLord), and is redistributed under the terms of the GNU
-     GPL version 2, or at option of redistributers, any later version. However, only
-     a form that is resultant of a layered format conversion is distributed in this
-     campaign; the original layered form can be made available upon request by
-     non-public mediums, as it may include artistic content that could be deemed
-     offensive by certain people.
-
-   The full license terms for the package itself are described below.
+A complete and verbatim copy of the GNU General Public License version 2, as
+published by the Free Software Foundation, follows.
 
 ----------------------------------------------------
 
