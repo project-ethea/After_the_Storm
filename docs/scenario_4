@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------
+                            SCENARIO 4: TERROR AT DUSK
+--------------------------------------------------------------------------------
+
+The group heads for the western shores of Tirigaz. They decide to rest for the
+night in the borders of the forest, but something wrong happens. Horrible sounds
+of pain and fear are heard - Elynia sights a group of shaxthal creatures coming
+towards the forest. They must defeat them before they take over the lands.
+
+*** SIDES:
+
+    SIDE 2: (Shaxthal War Drone) (leader) (biomechanical, intelligent)
+            Recruit list: Shaxthal Drone, Shaxthal Runner Drone, Shaxthal Larva,
+                          Shaxthal Razorbird, Shaxthal Rayblade
+            Gold: {DIFF 250 300 350}
+            Team: shaxthals
+
+    SIDE 3: (Shaxthal Assault Drone) (leader) (biomechanical, armored)
+            Recruit list: Shaxthal Runner Drone, Shaxthal Razorbird, Shaxthal
+                          Rayblade
+            Gold: {DIFF 250 280 310}
+            Team: shaxthals
+
+    SIDE 4: Darglen (Chaos Lore) (leader) (biomechanical, strong)
+            Recruit list: Shaxthal Runner Drone, Chaos Invader, Shaxthal
+                          Rayblade, Automaton, Chaos Headhunter
+            Gold: {DIFF 270 300 340}
+            Team: shaxthals
+
+****************
+WML EVENT: START
+****************
+
+TODO
+
+; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
