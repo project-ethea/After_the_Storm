@@ -67,446 +67,161 @@ definitive in this storyboard.
 | | | |-
 | | |- 10. RETURN TO WESMERE
 | | |
+| | |- 11. THE QUEEN
 | | |
 | | |
 | | |
 | | |
 | | |
-| | |
 
-| -
--
-
-Global defeat conditions:
-- Death of Galas
-- Death of Elynia
-- Death of Mal Keshar
-
-
-
-
-
-
-**************************
-Scenario 4: Terror at Dusk
-**************************
-
-After having settled the treaty with the elves, the group heads for the western shores of Tirigaz.
-They decide to rest for the night in the borders of the forest, but something wrong happens. Horrible
-sounds of pain and death are heard - Elynia sights a group of shaxthal creatures coming towards the forest.
-They must defeat them before they take over the lands.
-
-Side 2: (Shaxthal War Drone) (leader) (biomechanical, intelligent)
-        Recruit list: Shaxthal Drone, Shaxthal Runner Drone, Shaxthal Larva, Shaxthal Razorbird,
-                      Shaxthal Rayblade
-        Gold: {DIFF 250 300 350}
-        Team: shaxthals
-
-Side 3: (Shaxthal Assault Drone) (leader) (biomechanical, armored)
-        Recruit list: Shaxthal Runner Drone, Shaxthal Razorbird, Shaxthal Rayblade
-        Gold: {DIFF 250 280 310}
-        Team: shaxthals
-
-Side 4: Darglen (Chaos Lore) (leader) (biomechanical, strong)
-        Recruit list: Shaxthal Runner Drone, Chaos Invader, Shaxthal Rayblade, Automaton, Chaos Headhunter
-        Gold: {DIFF 270 300 340}
-        Team: shaxthals
-
-Victory conditions: standard
-
-
-
-**************************
-Scenario 5: Bay of Tirigaz
-**************************
-
-Help the inhabitants of Tirigaz defend against a horde of desperate saurians.
-
-Side 2: Lt. Lemyr (Lieutenant) (leader) (strong, intelligent)
-        Recruit list: Peasant, Ruffian, Woodsman, Bowman, Spearman, Mage
-        Gold: {DIFF 250 225 200}
-        Team: Galas
-
-Side 3: Nyx Szal (Saurian Flanker) (leader) (quick, strong)
-        Recruit list: Saurian Skirmisher, Saurian Augur, Naga Fighter
-        Gold: {DIFF 220 240 260}
-        Team: Enemies
-
-Side 4: Kirizzex (Naga Myrmidon) (leader) ()
-        Recruit list: Naga Fighter, Water Serpent
-        Gold: {DIFF 200 240 280}
-        Team: Enemies
-
-
-Scenario 6: The Vast Ocean
-
-Side 2: ()
-        Team: sea creatures
-
-
-*************************************
-Scenario 6: The Elves of Quenoth Isle
-*************************************
-A: Cutscene with view of whole Isle
-B: Cutscene under the Great Tree
-
-
-**********************************
-Scenario 7: Searching for the Past
-**********************************
-
-Elynia and the rest enter a cave leading deeper underground. They
-eventually find the scattered remains of Yechnagoth's core, and then, a gigantic
-steel door, which cannot be opened except via a switch hidden underwater.
-
-After activating the switch, they find behind the door a big chamber, filled with
-corpses of different creatures, many of them severely mangled. Beneath a hidden
-wall they find another chamber, filled with broken glyphs, except for two - one that
-grants Elynia a spell of teleportation (apparently crafted by Argan), and another that talks about Argan's discovery
-of Yechnagoth's heart in a 'fallen star'. The corpses are of creatures which she fed upon
-to grow up. Yechnagoth's psychic influence over other creatures allowed him to gain their
-trust and respect, and call upon more of her kind "from the skies" to help him build the
-army of hell Uria wanted to send to take over Irdya once a great enough connection was
-made between both worlds.
-
-Elynia remembers the Glyph that she had found in Argan's lair before. She reads it during
-the Long Night, and learns the awful truth: the shaxthals won't stop consuming Irdya until
-it is turned into a giant sphere of dirt.
-
-The group decides that the remaining shaxthal hives must be destroyed - but they need
-clues of their locations (besides the Wesmere one), and the only place where more information
-could be found was buried into Hell - Argan's Lair.
-
-
-**********************************
-Scenario 8: One must fall (Part A)
-**********************************
-
-Galas and the rest travel back to the Great Continent, but when reaching the
-coastline, a storm destroys the ship. They manage to escape -- but only to land
-on enemy territory. They have arrived to the Kalari Peninsula, where the Iron
-Triad headquarters are located.
-
-Victory conditions: standard
-
-The player can recruit/recall units on first turn only, then the encampment is
-dismantled.
-
-Start event:
-
-< move_unit_fake a transport galleon >
-
-< move_unit_fake heroes to shore >
-
-- Elynia: that was a close call... is everyone all right?
-- Galas: barely... we have lost our provisions. Where are we?
-- Mal Keshar: judging by the palm trees, I'd say a jungle.
-- Elynia: this is the Kalari Peninsula - in my times it was often said that this
-  place was cursed.
-- Mal Keshar: Wasn't the same said of a thousand other perfectly nice locations?
-- Kri'tan: There's something familiar to me about this place. I don't exactly
-  know what it is.
-- Galas: Elynia, how far are we from Wesmere then?
-- Elynia: Um... if it serves as a reference, if we go north-east, we'll find
-  again that path we used to go North before.
-- Galas: That's good. Let's move then.
-
-Sighted enemies:
-
-- Enemy unit: Intruders! Alert the masters!
-- Other enemy unit: As you command, sir!
-
-< move_unit_fake this other enemy unit to somewhere not visible >
-
-- Enemy unit: How you dare step in the Iron Council's territory, vermin!
-- Mal Keshar: Iron Council?! Oh, nuts. Of all the places where we could land
-              on...
-- Elynia: This is not good. Our forces are too weak from the accident! We cannot
-          fight them!
-- Galas: But it is a peninsula... the only way out, if not by sea, is through.
-- Elynia: Right... I pray that we won't fall to their forces.
-
-Defeated enemy leaders:
-
-- Elynia: we did it!
-- Galas: uhh...
-
-< spawn high-level chaos soldiers around heroes >
-
-- Mal Keshar: No! We are surrounded!
-
-
-**********************************
-Scenario 8: One must fall (Part B)
-**********************************
-
-The heroes are brought to the deeper reaches of the Council's monastery. Elynia
-and Mal Keshar are chained up to prevent them from using their powers. Galas has
-been tied and rid of their weapons. Elynia has been rid of her staff, too, and a
-guard has it in his hands.
-
-This guard is Iveryl.
-
-Elynia and Mal Keshar are set to half their HP at start. The 3 heroes have the
-'slowed' status activated.
-
-< disable recalls and recruits for this scenario >
-
-< spawn Mal Hekuba (Ancient Lich), Mal Kendria (female Necromancer) and
-  Nar-hamoth (Chaos Warlord) after MUFing them >
-
-- Mal Hekuba: What do we have here? The fish have trapped themselves in the net!
-- Elynia: you... again...
-- Mal Hekuba: You are nothing without your stupid Union, girl. How pathetic.
-- Galas: you cruel monster, set them free from those chains, you are torturing
-         them!
-- Mal Kendria: that's exactly what we want! Hahahaha! May them burn with the
-               cold iron for the rest of their days!
-- Iveryl: masters, the filthy fairy was wielding this staff! She tried with all
-          her will to get it back, so we decided to chain her up.
-
-* Iveryl hands the staff to Mal Hekuba *
-
-- Nar-hamoth: Wise decission, and excellent acquisition!
-- Iveryl: there was a small boy, too, but we couldn't capture him...
-- Nar-hamoth: that doesn't matter. The sentry drones will soon find and devour
-              him. You, murderers of the Shadow Master, do you know what this
-              is?
-- Mal Kendria: the ancient race kept a great weapon as a symbol of their
-               high dinasties, and it was inherited amongst generations.
-- Elynia: the sceptre... of... fire...
-- Mal Hekuba: haha! Exactly! We have been looking for it for centuries, and it
-              has miracleously [FIXME] come to us by itself! The Ruby always had
-              its own will, and it is why the leaders of the ancient race
-              decided to lock down its power under the sceptre's hard and dense
-              metal shell.
-- Mal Kendria: when the old Kingdom of Wesnoth was teared apart by the barbarian
-               invaders of the damned eastern lands, the sceptre was thought
-               lost, but the great Lord Demon informed us that the elves had
-               sent this girl to recover it!
-- Mal Hekuba: and those stinky midgets helped her remove the core and hide it
-              in her staff. Good plan, but futile in the end. You tried to stop
-              the enemies of ancient race from using it against them.
-- Elynia: yes... the likes of you... should not possess such... power...
-- Mal Hekuba: but the Ruby searches for us! From my ancestor, the Lord Jevyan,
-              to the Triad of the Iron Council! You couldn't prevent or predict
-              that.
-- Mal Keshar: listen... that thing will be... your doom if you... misuse its
-              power...
-- Mal Hekuba: shut up, you, tainted necromancer. You are not in position to
-              teach us anything!
-- Galas: now it is clear... but what do you want to do with it?
-- Nar-hamoth: use it, of course. But not to kill insignificant creatures; we'll
-              need all the power of this artifact to open the connection that
-              was lost when the Shadow Master was assassined.
-- Elynia: no... no...
-- Mal Hekuba: (imitating) 'No, no, no!' Pathetic!
-- Nar-hamoth: When we bring the Inferno and Uria to this world, you will be at
-              the top of the list of sacrifices! Uria is really thirsty of
-              revenge on you all!
-
-< MUF some kind of fake boulder projectile and make it "hit" one of the guards,
-  killing him >
-< recall/spawn Kri'tan in middle of the room, along with two L2 skeletons and a
-  Dark Adept; all of them adjacent to the heroes >
-
-- Sumnur (other guard): the boy!
-- Mal Kendria: kill him!
-
-< Kri'tan quickly sets Galas free (unslow) >
-
-- Galas: <dark adept name> free them from those chains!
-- <dark adept>: yes, master Galas!
-
-< Mal Keshar and Elynia are set free (unslowed) and fully healed >
-
-- Mal Hekuba: Not so fast! The castle is well guarded and Iviel is not going to
-              allow you to leave this room now!
-
-< MUF and spawn Ivyel (boss unit) - L3+1 Shaxthal Rayblade >
-
-{BOSS_AMBIENTANCE}
-
-- Ivyel: you aren't going anywhere, foolish creatures!
-- Mal Keshar: whoa... Argan's first creation.
-- Elynia: he is right... we are at disadvantage here.
-
-< Mal Kendria descends from the keep and approaches them >
-
-- Galas: Elynia, Mal Keshar, Kri'tan... it is still possible that you escape if
-         the Triad gets slowed down long enough.
-- Mal Keshar: eh... how?
-- Mal Keshar: wait lad... you aren't suggesting...
-- Elynia: Galas, what will you do!?
-- Galas: I will attempt to stop them from attacking you, but you must make haste
-         to the exit, NOW!
-- Elynia: Galas... no...
-- Galas: Elynia... I love you... now run!
-- Mal Keshar: lad...
-- Galas: GO! GET TO THE EXIT!       <this line is a Predator reference, got it?>
-
-< set the Impassable overlay ( ^Zb ) around the keep so the other triad members
-  cannot approach the party or viceversa; Nar-hamoth and Mal Hekuba are switched
-  to a enemy side which uses the idle_ai algorithm. >
-
-< set player objectives:
-
-    Victory
-        - Mal Keshar, Elynia and Kri'tan defeat Ivyel and exit the room
-        -       and
-        - Galas must vanquish Mal Kendria afterwards (not before)
-
-    Defeat
-        - Death of Elynia
-        - Death of Mal Keshar
-        - Death of Kri'tan
-        - Death of Galas before Mal Kendria is vanquished
-        - Death of Mal Kendria before Mal Keshar, Elynia and Kri'tan escape
-
-    Notes
-        - Your supporting units should exit the room to escape, otherwise they
-          won't be carried over to next scenario.
->
-
-Event: last breath [Ivyel]
-
-- Ivyel: Noooo!!!
-
-
-Event: last breath [Galas]
-# Used both for normal death and a forced [kill] with fire_event=yes
-
-- Galas: I love you... Elynia...
-# following may occur even when Elynia has escaped - it doesn't matter
-- Elynia: Galas, NOO!!!
-# if the heroes have not escaped, the sole fact that there are no player units
-# with canrecruit=yes will cause instant defeat.
-
-
-Event: die [Mal Kendria - before the heroes escape*]
-
-- Galas: no! This was not the plan!
-- Mal Hekuba: by the power passed unto me, I call upon the flames of the Ruby of
-              Fire, may it burn our enemies!
-< lighting effects, sounds of flame >
-< remaining player units are killed (fire_event=yes side=1 animate=yes) >
-
-
-Event: victory
-
-If Galas is still here for some really weird reason, kill him. Make Elynia a
-canrecruit=yes unit.
-
-
-Event: moveto <exit locations> [Mal Keshar or Elynia or Kri'tan]
-
-The hero that moves to this location is put to recall list.
-If Galas moves to this location, nothing happens.
-Other units may move to this location; then they are put into the recall list.
-Now check if the three heroes managed to escape. If that condition is true, the
-following event handlers are created.*
-*
-*   Event: last breath [Mal Kendria - after the heroes escape*]
-*
-*   - Mal Kendria: curse you, tree-shagger!
-*
-*   Event: die [Mal Kendria - after the heroes escape*]
-*
-*   < remove the impassable overlays from the keep >
-*
-*   - Mal Hekuba: ha ha ha, well done! Very good for a simple fighter.
-*   - Galas: now it's just you and me!
-*   - Nar-hamoth: this will be your end, elf.
-*
-*   < set player objectives:
-*       Victory
-*           - Try to defeat the other two members of the Triad
-*       Defeat
-*           - Death of Galas
-*       Notes
-*           - Your defeat here is not the end of this history.
-*   >
-*
-*   Event: an attack hits Mal Hekuba or Nar-hamoth below 50% their max_hitpoints
-*
-*   - Mal Hekuba: by the power passed unto me, I call upon the flames of the
-*                 Ruby of Fire! May it destroy our enemy!
-*   - Galas: oh no...
-*   <lighting effects, sounds of flame>
-*   - Galas: aaaaaaaahhhhh...
-*   <kill Galas (fire_event=yes animate=yes)>
-*   - Nar-hamoth: and so passes Galas, one of the murderers of the great Shadow
-*                 Master!
-*   - Mal Hekuba: perhaps not so great after all... at least not without this!
-*                 The Ruby of Fire would have secured his power!
-*   <if there are other player units remaining
-*     <lighting effects, sounds of flame>
-*     <kill other player units on map (fire_event=yes animate=yes)>
-*   >
-*
-*   {ENDLEVEL_CONTINUE}
-*
-
-(*) WML variable tricks here.
-
-
-**************************************
-Scenario 10: Tears - Return to Wesmere
-**************************************
-
-< Story block
-    Elynia cried and cried, for she knew that Galas would not survive to the
-    power of the Iron Triad.
-
-    < still in story block, use dialogue format
-        - Elynia: how could... how could I let this happen?
-
-        - Mal Keshar: don't blame yourself. The elements wanted us to arrive to
-                      that cursed peninsula; nobody could possibly predict that
-                      accident. We didn't know what was in there either...
-
-        - Elynia: first it was Argan... now Galas. It seems that anyone who gets
-                  too close to... my heart, will suffer a terrible death.
-
-        - Mal Keshar: aw, come on! Don't be silly. These are... just coincidences...
-
-        - Elynia: you can't know how it feels.
-
-        - Mal Keshar: ah, what you say? If you did not notice already, I also have
-                      emotions, and for me, Galas was my only friend in the world.
-                      He accepted me, and we helped each other in times of difficulty.
-
-        - Mal Keshar: Nobody else would accept a necromancer as companion! Nobody
-                      had given me a second oportunity of proving that I didn't want
-                      to do so much harm at the beginning!
-
-        - Elynia: well... I feel sorry for saying that...
-    >
-
-    Elynia cleared the tears from her face, and looked towards the North mountains.
-
-    <
-        - Elynia: what will we do now? The enemy has the Ruby. They will shortly use
-                  its power to summon Inferno again, and this time nobody will be
-                  able to stop them... and those biomechanical creatures are there to
-                  help them destroy the lands.
-
-        - Mal Keshar: what about the power of the Union?
-
-        - Elynia: the prophecy said that the Union could be summoned only when two
-                  beings, wielding the essence of light and darkness, were tied
-                  together by the 'Unbreakable' force. That force was love.
-        
-        - Mal Keshar: oh.
-
-        - Elynia: so it's not an option. When Argan died, the powers must have
-                  been left free in his lair, now buried in that other world.
-
-        - Elynia: the only option left is to return and recover the Ruby
-                  before it's too late.
-    >
->
-
-
-
-; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
+*************************
+EPISODE I: FEAR AND DEATH
+*************************
+
+After defeating the Shadow Master, the group of Galas, Elynia and Mal Keshar
+set on a quest to learn what Yechnagoth's fate really was, and what her relation
+with the Chaos followers is. In their route to Zocthanol Isle, they discover
+that the continental elves are in a bitter civil war again. The Council of War
+of the renewed Northern Alliance suspects that followers of Uria were sent to
+commit the elvish lord's murder in order to cause strife amongst elves. Elynia
+also finds an amnesiac and tortured human kid, Kri'Tan, in the dungeon of an
+undead lord, follower of Uria. Elynia soon starts treating the child as her own.
+
+In Zocthanol isle, Galas, Elynia and Mal Keshar learn that Yechnagoth was not
+completely destroyed, because Uria ordered Argan to remove her core and move it
+to the shaxthal breeding facilities in the ruined plains of Wesmere in order to
+preserve the creature's powers. In the mean time, Elynia learns from a glyph a
+spell of teleportation, supposedly used by Argan for traveling back and forth
+between Zocthanol and the valley of Weldyn.
+
+The group is attacked by shaxthal creatures when close to land back to the
+Great Continent, but after the enemies abandon thinking their targets are
+destroyed, Elynia and the rest make it to land at the Kalari Peninsula, were
+their presence is quickly noticed by the Iron Triad and they are captured, and
+brought chained up to the court of the triad. There, Mal Kendria, Mal Hekuba
+and Nar-hamoth attempt to steal the Ruby of Fire, which had been embedded into
+Elynia's staff ("the Staff of Elynia-Niryone") during the times of the Kingdom
+of Wesnoth. Their plan is frustrated by the appareance of the only oponent whom
+they could not find at the peninsula, Kri'tan, and Elynia gets her staff back;
+however, Galas sacrifices his life to allow Elynia, Kri'tan and Mal Keshar to
+escape the cultists. Despite his sacrifice, Elynia and the rest have to fight an
+enemy boss when escaping the dark keep: Ivyel, a L3 shaxthal rayblade. They
+cannot defeat her, but manage to severely harm and get pass her.
+
+A beset Elynia secures the help from the dwarves again, to destroy the breeding
+facilities at Wesmere, with Yechnagoth's core, using powerful explosive
+chemicals. Kri'tan is left behind by Elynia with the dwarves, as she could not
+bear a possible loss of the child.
+
+Mal Keshar and Elynia, alone, descend into the Wesmere hive and try to find
+Yechnagoth's core. At the deepest reaches they stumble upon a colossal shaxthal
+creature, dubbed 'The Queen' by them. Mal Keshar and Elynia believe this
+creature has Yechnagoth's core inside of its body. They are surrounded by the
+creatures, and Mal Keshar notices that the tube system inside the hive carries
+inflammable liquids. He decides to sacrifice himself by using the dwarven
+ammunitions to destroy the whole hive taking advantage of the flow system
+tubes. After struggling to convince Elynia that it's the only fate possible for
+him, and that must leave for Kri'tan needs her help, Mal Keshar sacrifices
+himself to destroy the hive. However, his plan fails, and not only Elynia is
+surrounded at an upper level and the hive and does not manage to escape before
+Mal Keshar is forced to detonate the bomb, but also the explosion covers a
+broader area of the surface than expected.
+
+Kri'tan and the dwarves quickly appear and start searching for Elynia and Mal
+Keshar, but they can't find one or another amongst the scattered remainings of
+shaxthal exoskeletons; however, they come across Elynia's staff's top, damaged
+and covered in dry blood. They are certain that Elynia and Mal Keshar were
+destroyed by the explosion.
+
+Meanwhile, at an unknown breeding facility, Mal Kendria and Mal Hekuba insert a
+strange device inside Ivyel's body, which is now mostly covered by skin that
+almost perfectly resembles Elynia's.
+
+
+*****************************************************
+EPISODE II: IMITATION OF LIFE (Int. Thunderstone Era)
+*****************************************************
+
+An elf, which very closely resembles Elynia except for her lack of faerie wings
+and missing staff, arrives at the territory of the northmost fraction of the
+conflicting Sylvans. She claims to be Elynia, attacked and tortured by soldiers
+under the command of the Northern Alliance, who was only saved by the discovery
+of interesting approaches to life substenance in a shaxthal hive. She displays
+extremely advanced powers in order to further convince the elves that she's the
+true Elynia.
+
+At an unknown forest, Elynia wakes up, naked and injured; she remembers the
+explosion, and that she used the teleportation spell when she was surrounded by
+heavy attack drones. Not being able to control the spell correctly, she was
+caught by the explosion while casting it, and gets thrown away at an unknown
+distant location in the future without her clothes and her master's staff. She
+is helped by a band of human hunters and learns that she is in the Moon Valley,
+between the Heart Mountains.
+
+Receving supplies and clothes from the hunters, Elynia fights her way to
+the north of the Great Continent, and meets the Aragwaith in the Grand Council,
+not without being treated like an enemy first. She finds a 14 years older
+Kri'tan - 5 years passed since the destruction of the Wesmere hive. The members
+of the Northern Alliance reveal to her that war has not passed, and that they
+are currently fighting rebel elvish troops in the south-eastern forests who are
+suspected to be closely related to the swarms of shaxthal creatures who have
+begun to spread all over the continent. Elynia learns that an elvish warlord of
+her same appearance is guiding the rebels and usurping her title of Lady of
+Light.
+
+Kri'tan gives Elynia her restored staff, and both travel to the south-eastern
+frontiers of the country along with the dark sorceress Zynavu-Malal, one of Mal
+Keshar's former disciples.
+
+A clash of armies occurs, and they meet not only elves at the frontier, but also
+highly advanced shaxthal creatures that intended to invade the lands of the
+Northern Alliance. Surrounded and only protected by their undead minions,
+Elynia, Kri'tan and Zynavu-Malal try to resist for as long as possible, until an
+elvish battalion appears to fight for the Alliance. The band is led out of the
+crossfire by the Elvish High Lord Retnaen and the Elvish Avatar Unarye. They are
+informed of a possible backdoor through a river that, although well guarded,
+leads directly to the place whence the shaxthal swarms seem to come from - the
+valley of Elynia.
+
+Elynia, Kri'tan and Zynavu-Malal follow the river through the vast desert.
+However, when they are at the "gates of Hell", Zynavu-Malal reveals to be
+Mal-Zynara, sent by Mal Kendria and Nar-hamoth to protect the Shaxthal hive of
+Ivyel, in which Mal Hekuba is attempting to unleash the forces of Uria yet
+again. Mal-Zynara turns her undead minions against Elynia and Kri'tan to obtain
+the Ruby of Fire, which Mal Hekuba needs to obtain the power required to merge
+the location with Inferno.
+
+However, Elynia reveals that she can (and has) used the Ruby of Fire in the
+past to raise the undead, including Mal Keshar when she once destroyed his body
+believing he was an enemy seeking the Ruby in the depths of Knalga. She also
+raises undead minions and overcomes Mal-Zynara's forces. That calls upon
+Ivyel's attention, who emerges from the hive to defend the entrance along with a
+group of elvish cultists. Elynia meets Ivyel again, this time disguised as
+herself with identical skin, hair and eyes, features not natural to a Shaxthal
+creature. While fighting, Ivyel acknowledges that her insides and her skin are
+copies of the original Elynia, built from samples of her bodily fluids taken by
+Argan's minions at the dark keep on Weldyn, improved by powers provided by the
+core of the alien Yechnagoth. Elynia uses the sheer power of the Ruby of Fire
+to incinerate Ivyel, and since the latter disappears, she believes she has
+already killed her for good, and after gaining the trust of a few elves (who
+notice they have been deceived), enters the dark hive with Kri'tan, who has
+begun to recall dark memories from his past.
+
+Once inside the hive, Elynia and the rest stumble upon all kinds of drone and
+are forced to leave some units behind to distract them so they can reach Mal
+Hekuba and terminate the existence of the most powerful member of the Iron
+Triad.
+
+They do not only meet new weaponry and creatures at the center of the hive, but
+also a heavy-armored Mal Hekuba powered by shaxthal machinery. The lich becomes
+confused when he detects Kri'tan's identity - he doesn't get to reveal it, as
+Ivyel reappears with most of her skin gone first and starts fighting Elynia and
+Kri'tan. Hekuba, however, flees to summon new powers from Inferno, as he's
+almost completed his foul objective. Elynia forces Ivyel to give up her fight -
+she tries to convince her that she should not obey her creator's will, and that
+she must think for herself in order to 
+
+
+
+
+TODO TODO
