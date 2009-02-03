@@ -7,22 +7,4 @@ $Id$
 Version 0.0.0+svn:
 ------------------
 
-General:
-    * Implemented loader macros and basic directory hierarchy
-
-Scenarios:
-    * (See docs/storyboard)
-
-Terrains:
-    * Imported hive terrains from "Invasion from the Unknown" and made
-      pits overlay-only tiles
-    * Imported campfire terrains from "Invasion from the Unknown" and made
-      them overlay-only tiles
-    * New overlay-only tile which makes all underlying terrain impassable
-    * Imported volcanic abyss terrain from "Invasion from the Unknown"
-    * Imported wasteland terrain from "Invasion from the Unknown"
-    * Imported terrain types may have got their strings modified for editor
-      compatibility with other campaign-specific terrain definitions
-
-Units:
-    * Made Shaxthal Rayblade female
+<Initial>
