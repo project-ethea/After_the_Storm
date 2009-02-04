@@ -1,0 +1,54 @@
+--------------------------------------------------------------------------------
+                            SCENARIO 11: THE QUEEN
+--------------------------------------------------------------------------------
+
+In the Shaxthal hive of Wesmere, shaxthal reproduction and breeding is
+unattended; they have developed their own means of survival there after the
+Chaos forces withdrew. However, as a result, the hive is now governed by the
+only shaxthal capable of giving birth to larvae: the Queen.
+
+The map begins as a continuation of the earlier scenario, that leads the player
+to an antechamber guarded by some rayblades and a powerful Devastator Drone.
+Once the guards are defeated, the player can proceed into the central area with
+the hive queen.
+
+The scenario is speechless only until the point the heroes reach the
+antechamber. Then everything turns chatty.
+
+After Elynia and Mal Keshar enter the main chamber, their original path is
+blocked and a new path is opened once it is the apropriate moment.
+
+*** SIDES:
+
+    SIDE 2: Queen (Shaxthal Queen) (leader) (armored, slow = lots of HP!)
+            "Recruit" list: Shaxthal Larva, Shaxthal Assault Drone,
+                            Shaxthal Sentry Drone, Shaxthal Rayblade,
+                            Shaxthal Drone, Shaxthal Runner Drone,
+                            Shaxthal Protector Drone
+            Virtually unlimited gold. The AI is not able to recruit at will;
+            the WML will be in charge of controlling this aspect of the enemy.
+
+    SIDE 3: Random drones, Shaxthal Wyrm As and respawn locations.
+
+    SIDE 4: Shaxthal Wyrm Bs controller.
+
+*** INITIAL OBJECTIVES:
+
+    - Find Yechnagoth's core
+
+    DEFEAT:
+        - Death of Elynia
+        - Death of Mal Keshar
+        - Turns run out
+
+*** LATER OBJECTIVES:
+
+    - Elynia must reach the 'safe area'
+
+    DEFEAT:
+        - Death of Elynia
+        - Death of Mal Keshar before Elynia reaches the 'safe area'
+        - Turns run out
+
+
+; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;

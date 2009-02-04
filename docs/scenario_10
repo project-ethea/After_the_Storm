@@ -1,0 +1,47 @@
+--------------------------------------------------------------------------------
+                        SCENARIO 10: RETURN TO WESMERE
+--------------------------------------------------------------------------------
+
+With the dwarvish explosives in their hands, Elynia and Mal Keshar return to
+the ruins of Wesmere and enter the underground hive.
+
+Most of the first half of this scenario's map is identical to IftU's "Legend of
+Wesmere" map, with the notable difference being that the entrance to the hive
+is a tad closer to the player's startup position, and the surface area is now
+plagued with shaxthal creatures, and no walking corpses are around. The normal
+post-Fall ToD sequence doesn't apply, like IftU: all day times are changed to
+Short Dark.
+
+This is mostly a speechless scenario, and the player cannot recruit or recall
+units after turn 1.
+
+*** SIDES:
+
+    SIDE 2: Oonamus (Shaxthal War Drone) (leader) (resilient+armoured)
+            Recruit list: Shaxthal Drone, Shaxthal Runner Drone, Shaxthal
+                          Rayblade, Shaxthal Thunderbird, Shaxthal Wyrm A
+
+    SIDE 3: no leader
+            Many shaxthal respawn locations with:
+                * Shaxthal Drone, Shaxthal Runner Drone
+                * Shaxthal Sentry Drone, Shaxthal Assault Drone, Shaxthal Wyrm A
+                * Shaxthal Wyrm A
+                * Shaxthal Larva, Shaxthal Drone
+                * Shaxthal Protector Drone, Shaxthal Sentry Drone
+
+    SIDE 4: no leader
+            Many shaxthal respawn locations with:
+                * Shaxthal Wyrm B
+
+*** OBJECTIVES:
+
+    VICTORY:
+        - Proceed to the underground hive
+
+    DEFEAT:
+        - Death of Elynia
+        - Death of Mal Keshar
+        - Turns run out
+
+
+; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
