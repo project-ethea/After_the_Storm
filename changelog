@@ -4,7 +4,7 @@ AFTER THE STORM - CHANGELOG
 
 $Id$
 
-Version 0.1.0+svn:
+Version 0.1.1+svn:
 ------------------
 
 - Scenarios:
@@ -13,6 +13,14 @@ Version 0.1.0+svn:
 
     - 04 (Terror at Dusk):
         - Completed development.
+
+
+Version 0.1.1:
+--------------
+
+- Scenarios:
+    - 04 (Terror at Dusk):
+        - Add a note about this scenario not being complete.
 
 
 Version 0.1.0:
