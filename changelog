@@ -4,7 +4,23 @@ AFTER THE STORM - CHANGELOG
 
 $Id$
 
-Version 0.0.0+svn:
+Version 0.1.0+svn:
 ------------------
 
-<Initial>
+- Scenarios:
+    - 01 (The Skimish):
+        - Removed a command that defeated the custom gold carryover system.
+
+    - 04 (Terror at Dusk):
+        - Completed development.
+
+
+Version 0.1.0:
+--------------
+
+- Initial version. 4 scenarios of Episode I complete.
+
+
+; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
+
+
