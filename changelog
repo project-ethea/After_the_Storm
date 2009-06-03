@@ -7,6 +7,8 @@ $Id$
 Version 0.2.0-svn:
 ------------------
 
+- First version that works with the 1.7 engine.
+
 - Graphics:
     - New baseframes: Elynia.
 
