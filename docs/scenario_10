@@ -5,33 +5,23 @@
 With the dwarvish explosives in their hands, Elynia and Mal Keshar return to
 the ruins of Wesmere and enter the underground hive.
 
-Most of the first half of this scenario's map is identical to IftU's "Legend of
-Wesmere" map, with the notable difference being that the entrance to the hive
-is a tad closer to the player's startup position, and the surface area is now
-plagued with shaxthal creatures, and no walking corpses are around. The normal
-post-Fall ToD sequence doesn't apply, like IftU: all day times are changed to
-Short Dark.
+The start of this scenario begins in a map area resembling the lower half of
+IftU's "Legend of Wesmere". The entrance to the hive is more or less in the
+same location (shifted around), but the hive itself replaces the underground
+roads that were used by Galas' band in IftU's "Under the Sands".
 
-This is mostly a speechless scenario, and the player cannot recruit or recall
-units after turn 1.
+The normal post-Fall ToD sequence does not apply - besides the fact that Wesmere
+is implied to be cursed forever by the powers of the still-alive Zhangor, most
+of the map uses a custom Dark Hive ToD with a different color shift, and the
+outdoor hexes are under a permanent Long Dark ToD schedule as far as the game
+engine is concerned. The outdoors action is supposed to take place in a very
+small timespan (less than a few hours, before the hypothetical dawn).
 
-*** SIDES:
+In their way down, Elynia and Mal Keshar encounter a few powerful midbosses. At
+the final chamber, the scenario shifts to #11 for the actual boss fight.
 
-    SIDE 2: Oonamus (Shaxthal War Drone) (leader) (resilient+armoured)
-            Recruit list: Shaxthal Drone, Shaxthal Runner Drone, Shaxthal
-                          Rayblade, Shaxthal Thunderbird, Shaxthal Wyrm A
-
-    SIDE 3: no leader
-            Many shaxthal respawn locations with:
-                * Shaxthal Drone, Shaxthal Runner Drone
-                * Shaxthal Sentry Drone, Shaxthal Assault Drone, Shaxthal Wyrm A
-                * Shaxthal Wyrm A
-                * Shaxthal Larva, Shaxthal Drone
-                * Shaxthal Protector Drone, Shaxthal Sentry Drone
-
-    SIDE 4: no leader
-            Many shaxthal respawn locations with:
-                * Shaxthal Wyrm B
+The player can only recruit or recall {DIFF 4 3 2} units on the first turn.
+Nobody can stay behind more than 8 hexes away from each other.
 
 *** OBJECTIVES:
 
