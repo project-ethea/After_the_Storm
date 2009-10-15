@@ -1,0 +1,59 @@
+--------------------------------------------------------------------------------
+                        SCENARIO 8, PART 4: BLOOD
+--------------------------------------------------------------------------------
+
+This cutscene uses the same map as scenario 8 part 2.
+
+There is some a pool of blood where Galas might have died; there is no corpse.
+
+
+*** SIDES:
+
+    SIDE 2:
+        Units:
+            Elyssa (Shaxthal Warlord, female, level 5) (leader)
+                   (biomechanical+intelligent)
+
+            Mal Kendria (Necromancer, female, level 4) (resilient+quick)
+
+            Nar-hamoth (Shaxthal Warlord, level 4) (biomechanical+armored)
+
+            Mal Hekuba (Ancient Lich) (undead)
+
+        Recruit list: none
+
+
+*** WML EVENT (START):
+
+    Mal Kendria: My lady, Ivyel was defeated... and it seems the fairy and the
+                 lich escaped from the fortress too...
+
+    <pause>
+
+    Mal Kendria: My lady?
+
+    Elyssa: Was Ivyel destroyed too?
+
+    Mal Kendria: No, she retreated as I instructed her to do.
+
+    <pause>
+
+    Elyssa: Send her back to the hive. We'll proceed with the backup plan.
+
+    Mal Kendria: Very well, my lady.
+
+    <pause>
+
+    Elyssa: And I want the test units sent to the Wesmere hive now.
+
+    Mal Kendria: But... my lady, why? They have not even been-
+
+    Elyssa: Just do it. I don't want to waste this oportunity to put them to
+            good use. We'll produce more of them later in any case.
+
+    Mal Kendria: Well, then.
+
+    <Fade out screen, continue to next scenario>
+
+
+; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;

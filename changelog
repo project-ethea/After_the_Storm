@@ -5,46 +5,6 @@ AFTER THE STORM - CHANGELOG
 Version 0.2.0-svn:
 ------------------
 
-- First version that works with the 1.7 engine.
-
-- Graphics:
-    - New baseframes: Elynia.
-
-- Plot, storyline and background:
-    - Renamed Yanqui to Zhangor (reflects mainline change).
-
-- Scenarios:
-    - 04 (Terror at Dusk):
-        - Use surface palette for the shaxthals.
-    - 05 (Bay of Tirigaz):
-        - Completed development.
-
-
-Version 0.1.2:
---------------
-
-- Scenarios:
-    - 01 (The Skimish):
-        - Removed a command that defeated the custom gold carryover system.
-
-    - 04 (Terror at Dusk):
-        - Completed development.
-
-
-Version 0.1.1:
---------------
-
-- Scenarios:
-    - 04 (Terror at Dusk):
-        - Add a note about this scenario not being complete.
-
-
-Version 0.1.0:
---------------
-
-- Initial version. 4 scenarios of Episode I complete.
-
+- Restarted development.
 
 ; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
-
-

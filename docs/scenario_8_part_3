@@ -1,0 +1,82 @@
+--------------------------------------------------------------------------------
+                        SCENARIO 8, PART 3: STEEL
+--------------------------------------------------------------------------------
+
+Elynia and Mal Keshar run across the fortress' passages trying to find an exit.
+They finally exit by following a subterranean river.
+
+
+*** SIDES:
+
+    SIDE 2:
+        Units:
+            Ivyel (Shaxthal Rayblade, level 3) (leader) (biomechanical+strong)
+
+            Additional shaxthal cannon fodder units
+
+        Recruit list: none
+
+    SIDE 3:
+        Units:
+            Additional assorted cannon fodder units
+
+        Recruit list: none
+
+    SIDE 4:
+        Units:
+            Additional assorted cannon fodder units
+
+        Recruit list: none
+
+
+*** WML EVENT (START):
+
+    Elynia and Mal Keshar start with less HP than their maximum. The exact
+    amount of HP is a random percentage of their maximum, above 75% and below
+    100%.
+
+    Elynia: Why did he... why did he have to...
+
+    Mal Keshar: There's no time for this, lass! We need to get out of this
+            place now if we want to have any chance to destroy that monster and
+            avenge... avenge the... avange Galas!
+
+    <Set objectives:
+        Victory: Find a way to exit the Dark Fortress
+        Defeat: Death of Elynia or Mal Keshar
+    >
+
+*** WML EVENT (MOVETO, NEAR IVYEL):
+
+    Ivyel: She says I must defeat you. She commands me to destroy you.
+
+    Mal Keshar: This thing... this abomination speaks!
+
+    Ivyel: I shall destroy you.
+
+    Elynia: You'll not succeed.
+
+*** WML EVENT (LAST BREATH, IVYEL):
+
+    Ivyel: She says I must retreat. She commands me to go back home.
+
+    <Ivyel moves "into" the walls>
+
+    Mal Keshar: Where the hell is that thing going?
+
+    Mal Keshar: It seems we have reached a dead end.
+
+    Elynia: No... that cannot be possible! It cannot be in vain! It CANNOT!
+
+    <Elynia blasts a certain wall hex revealing a watery path>
+
+    Mal Keshar: Uhm, well that was not a useful thing to do, was it? Wait -
+                there is a canal behind that wall. Maybe we could escape
+                following the stream.
+
+    Elynia: Let's go then.
+
+    <Fade out screen, continue to part 4>
+
+
+; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
