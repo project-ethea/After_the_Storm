@@ -2,6 +2,12 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
+Version 0.1.99.1:
+-----------------
+
+- Restore a missing unit required for scenario 2 to work properly.
+
+
 Version 0.1.99.0:
 ------------------
 
