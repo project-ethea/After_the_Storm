@@ -4,6 +4,10 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.1.99.1+svn:
 ---------------------
+* Scenarios:
+    * 1.04 - Terror at Dusk
+        * This scenario is now balanced against the 1.7.x AI, instead of the
+          dumber 1.5.x AI.
 * Units:
     * Balancing:
         * Decreased Shaxthal Razordbird's HP from 32 to 26
