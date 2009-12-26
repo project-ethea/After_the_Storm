@@ -2,8 +2,12 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
+Version 0.2.0+svn:
+------------------
+
+
 Version 0.2.0:
----------------------
+--------------
 * Scenarios:
     * 1.04 - Terror at Dusk
         * This scenario is now balanced against the 1.7.x AI, instead of the
