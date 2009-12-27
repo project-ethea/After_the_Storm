@@ -2,8 +2,13 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.2.1:
+Version 0.2.1+svn:
 ------------------
+
+
+
+Version 0.2.1:
+--------------
 * Scenarios:
     * 1.05 - Bay of Tirigaz
         * New scenario completed
@@ -29,5 +34,6 @@ Version 0.1.99.1:
 Version 0.1.99.0:
 ------------------
 * Restarted development.
+
 
 ; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
