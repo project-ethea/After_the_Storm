@@ -6,9 +6,17 @@ Version 0.2.1+svn:
 ------------------
 * Scenarios:
     * Elynia and Mal Keshar are supposed to be unrenamable and silently loyal
+    * Minor changes in story text.
     * 1.05 - Bay of Tirigaz
-        * Minor balancing
+        * Minor balancing and other changes
         * Removed an inexistant defeat condition from the player's objectives
+    * 1.06 - Quenoth Isle
+        * New cutscene divided across two scenarios.
+    * 1.07 - The Search for the Past
+        * New exploration scenario.
+
+* Units:
+    * Added more units from IftU, TSL and/or UtBS.
 
 
 Version 0.2.1:
