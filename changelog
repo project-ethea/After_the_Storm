@@ -2,50 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.2.1+svn:
-------------------
-* Scenarios:
-    * Elynia and Mal Keshar are supposed to be unrenamable and silently loyal
-    * Minor changes in story text.
-    * 1.05 - Bay of Tirigaz
-        * Minor balancing and other changes
-        * Removed an inexistant defeat condition from the player's objectives
-    * 1.06 - Quenoth Isle
-        * New cutscene divided across two scenarios.
-    * 1.07 - The Search for the Past
-        * New exploration scenario.
-
-* Units:
-    * Added more units from IftU, TSL and/or UtBS.
-
-
-Version 0.2.1:
+Version 0.3.0:
 --------------
-* Scenarios:
-    * 1.05 - Bay of Tirigaz
-        * New scenario completed
-
-
-Version 0.2.0:
---------------
-* Scenarios:
-    * 1.04 - Terror at Dusk
-        * This scenario is now balanced against the 1.7.x AI, instead of the
-          dumber 1.5.x AI.
-* Units:
-    * Balancing:
-        * Decreased Shaxthal Razordbird's HP from 32 to 26
-        * Decreased Shaxthal Thunderbird's HP from 44 to 39
-
-
-Version 0.1.99.1:
------------------
-* Restore a missing unit required for scenario 2 to work properly.
-
-
-Version 0.1.99.0:
-------------------
-* Restarted development.
-
+* Way too many changes to list.
 
 ; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
