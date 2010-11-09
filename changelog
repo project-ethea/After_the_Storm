@@ -9,6 +9,7 @@ Version 0.3.0+svn:
     * Silenced some spurious variable engine warnings.
   * 05 - Bay of Tirigaz:
     * Fixed a loophole with the treasure spawns.
+    * Fixed warnings about image file extensions with animated fountains.
 
 
 Version 0.3.0:
