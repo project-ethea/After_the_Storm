@@ -4,6 +4,11 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.3.0+svn:
 ------------------
+* Scenarios:
+  * 01 - The Skirmish:
+    * Silenced some spurious variable engine warnings.
+  * 05 - Bay of Tirigaz:
+    * Fixed a loophole with the treasure spawns.
 
 
 Version 0.3.0:
