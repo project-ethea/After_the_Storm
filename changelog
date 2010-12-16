@@ -2,6 +2,10 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
+Version 0.3.2+svn:
+------------------
+
+
 Version 0.3.2:
 --------------
 * Graphics:
@@ -11,7 +15,6 @@ Version 0.3.2:
   * 08 - Fear:
     * New scenario.
 
-
 Version 0.3.1:
 --------------
 * Scenarios:
@@ -20,7 +23,6 @@ Version 0.3.1:
   * 05 - Bay of Tirigaz:
     * Fixed a loophole with the treasure spawns.
     * Fixed warnings about image file extensions with animated fountains.
-
 
 Version 0.3.0:
 --------------
