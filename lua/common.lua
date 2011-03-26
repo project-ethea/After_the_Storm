@@ -1,5 +1,17 @@
 local helper = wesnoth.require "lua/helper.lua"
 
+function safe_random(arg)
+	wesnoth.fire("set_variable", {
+		name = "random",
+		rand = arg,
+	})
+
+	local r = wesnoth.get_variable("random")
+	wesnoth.set_variable("random")
+
+	return r
+end
+
 ---
 -- Installs mechanical "Door" units on *^Z\ and *^Z/ hexes
 -- using the given owner side.
