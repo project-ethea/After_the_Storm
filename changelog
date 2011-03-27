@@ -8,6 +8,8 @@ Version 0.3.2+svn:
   * 03 - Civil War:
     * Fixed a little oversight causing gold to be actually carried over to the
       next scenario.
+  * 09 - The Triad:
+    * New scenario.
 * Units:
   * Removed help markup from the Sylvan Essence ability special notes to avoid
     issues in Pango contexts (e.g. sidebar tooltips).
