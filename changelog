@@ -5,9 +5,13 @@ AFTER THE STORM - CHANGELOG
 Version 0.3.2+svn:
 ------------------
 * Scenarios:
+  * 01 - The Skirmish:
+    * Fix minor dialogue typo.
   * 03 - Civil War:
     * Fixed a little oversight causing gold to be actually carried over to the
       next scenario.
+  * 05 - Bay of Tirigaz:
+    * Fix minor dialogue typo.
   * 09 - The Triad:
     * New scenario.
 * Units:
