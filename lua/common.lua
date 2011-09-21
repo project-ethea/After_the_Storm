@@ -61,3 +61,28 @@ function wesnoth.wml_actions.store_unit_ids(cfg)
 		idx = idx + 1
 	end
 end
+
+---
+-- Places an item in the map. Just like [item], but without the implicit [redraw].
+--
+-- [item_fast]
+--     ... SLF ...
+--     image=foo/bar.png
+--     halo=baz/bat.png
+-- [/item_fast]
+---
+function wesnoth.wml_actions.item_fast(cfg)
+	local locs = wesnoth.get_locations(cfg)
+	cfg = helper.parsed(cfg)
+
+	if not cfg.image and not cfg.halo then
+		--Nothing to do
+		return
+	end
+
+	for i, loc in ipairs(locs) do
+		-- FIXME: these items aren't going to be removed, so I'm
+		-- not bothering with state tracking right now.
+		wesnoth.add_tile_overlay(loc[1], loc[2], cfg)
+	end
+end
