@@ -34,3 +34,12 @@ sbin/
 etc/
 docs/
 docs_useless/
+#*#
+*.swp
+_info.cfg
+*.scr
+*.o
+*.project
+*.wesnoth
+Thumbs.db
+__MACOSX/
