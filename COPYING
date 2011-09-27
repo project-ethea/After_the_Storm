@@ -1,29 +1,29 @@
+After the Storm
+Copyright (C) 2006, 2008, 2009, 2010, 2011 by Ignacio Riquelme Morelle
+<shadowm2006@gmail.com>
 
-   After the Storm
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License version 2
+or at your option any later version.
 
-   Copyright (C) 2006, 2008, 2009, 2010, 2011 by Ignacio R. Morelle <shadowm2006@gmail.com>
-   Add-on for the Battle for Wesnoth Project, http://www.wesnoth.org/
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY.
 
-   This program is free software; you can redistribute it and/or modify
-   it under the terms of the GNU General Public License version 2
-   or at your option any later version.
+--------------------------------------------------------------------------------
 
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY.
+This package contains parts that are distributed under their own
+license terms; it has been ensured by all means that they are compatible
+in redistribution terms. Exceptions:
 
-   This package contains parts that are distributed under their own
-   license terms; it has been ensured by all means that they are compatible
-   in redistribution terms. Exceptions:
-
-   * The unit sprite art for Elynia is (C) 2007, 2008, 2009 by Ignacio R. Morelle
-     (Shadow Master/ShikadiLord), and is redistributed under the terms of the GNU
-     GPL version 2, or at option of redistributers, any later version. The provided
-     form should be considered the "source code" for these items.
+ * The unit sprite art for Elynia is Copyright (C) 2007, 2008, 2009 by
+   Ignacio R. Morelle (shadowmaster/ShikadiLord), and is to be distributed
+   under the terms of the GNU GPL version 2, or any later version. The
+   provided form should be considered the "source code" for these items.
 
 A complete and verbatim copy of the GNU General Public License version 2, as
 published by the Free Software Foundation, follows.
 
-----------------------------------------------------
+--------------------------------------------------------------------------------
 
 		    GNU GENERAL PUBLIC LICENSE
 		       Version 2, June 1991
