@@ -6,9 +6,13 @@ Version 0.4.2-svn:
 ------------------
 * Scenarios:
   * Removed player income in scenario 6 and 7 cutscenes.
+  * 06 - Quenoth Isle/Elves of a Different Land:
+    * Fixed gold carryover for scenario 07.
   * 07 - The Search for the Past:
     * Remove poison/slowed/ambush status from units at the end to avoid recall
       issues in later scenarios.
+  * 07 - Resolutions:
+    * Fixed gold carryover for scenario 08.
 
 Version 0.4.1:
 --------------
