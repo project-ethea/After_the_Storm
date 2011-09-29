@@ -4,6 +4,10 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.4.2-svn:
 ------------------
+* Scenarios:
+  * 07 - The Search for the Past:
+    * Remove poison/slowed/ambush status from units at the end to avoid recall
+      issues in later scenarios.
 
 Version 0.4.1:
 --------------
