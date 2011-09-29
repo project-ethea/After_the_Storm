@@ -2,11 +2,12 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.4.2+svn:
-------------------
+Version 0.4.3:
+--------------
 * Scenarios:
   * 07 - The Search for the Past:
-    * Fix the poisoned recalls bug for real now.
+    * Fix the poisoned recalls bug for real now; this also fixes an ugly case
+      of saved game corruption resulting from that.
   * 09 - The Triad (part 1):
     * Don't allow cutscene helpers to be put into the recall list.
 
