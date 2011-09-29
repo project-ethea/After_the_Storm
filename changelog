@@ -7,6 +7,8 @@ Version 0.4.2+svn:
 * Scenarios:
   * 07 - The Search for the Past:
     * Fix the poisoned recalls bug for real now.
+  * 09 - The Triad (part 1):
+    * Don't allow cutscene helpers to be put into the recall list.
 
 Version 0.4.2:
 --------------
