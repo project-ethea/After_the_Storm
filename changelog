@@ -8,6 +8,8 @@ Version 0.4.3+svn:
   * 10 - Tears:
     * Made significantly easier.
     * Fixed missing gold carryover from scenario 08.
+* Units:
+  * New NPC bird behavior code.
 
 Version 0.4.3:
 --------------
