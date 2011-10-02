@@ -10,6 +10,7 @@ Version 0.4.3+svn:
     * Fixed missing gold carryover from scenario 08.
 * Units:
   * New NPC bird behavior code.
+  * Added units: Demon, Demon Zephyr, Demon Grunt, Demon Warrior.
 
 Version 0.4.3:
 --------------
