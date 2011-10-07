@@ -8,6 +8,8 @@ Version 0.4.3+svn:
   * 10 - Tears:
     * Made significantly easier.
     * Fixed missing gold carryover from scenario 08.
+  * 11 - Return to Wesmere (part 1):
+    * New scenario.
 * Units:
   * New NPC bird behavior code.
   * Added units: Demon, Demon Zephyr, Demon Grunt, Demon Warrior.
