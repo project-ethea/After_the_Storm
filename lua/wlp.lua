@@ -65,10 +65,10 @@ function wesnoth.wml_actions.set_shroud(cfg)
 		local locs_y = table.concat( rows, "," )
 
 		if not wesnoth.get_side( team_number ).__cfg.shroud then
-			wml_actions.modify_side { side = team_number, shroud = true } -- in case that shroud was removed by modify_side
+			wesnoth.wml_actions.modify_side { side = team_number, shroud = true } -- in case that shroud was removed by modify_side
 		end
 
-		wml_actions.place_shroud { side = team_number, x = string.format("%d-%d", 1 - border, height + border ), y = string.format("%d-%d", 1 - border, width + border ) }
-		wml_actions.remove_shroud { side = team_number, x = locs_x, y = locs_y }
+		wesnoth.wml_actions.place_shroud { side = team_number, x = string.format("%d-%d", 1 - border, height + border ), y = string.format("%d-%d", 1 - border, width + border ) }
+		wesnoth.wml_actions.remove_shroud { side = team_number, x = locs_x, y = locs_y }
 	end
 end
