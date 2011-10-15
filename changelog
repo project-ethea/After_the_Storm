@@ -4,6 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.4.4+svn:
 ------------------
+* Scenarios:
+  * 09 - The Triad (part 3):
+    * Fixed problems with the final cutscene on Wesnoth 1.9.8 and earlier.
 * Units:
   * Removed Skirmisher ability from Elynia.
 
