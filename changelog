@@ -9,6 +9,8 @@ Version 0.5.0-svn:
     * Fixed problems with the final cutscene on Wesnoth 1.9.8 and earlier.
 * Units:
   * Removed Skirmisher ability from Elynia.
+  * Spawners have a small chance of deactivating themselves after spawning a
+    unit.
 
 Version 0.4.4:
 --------------
