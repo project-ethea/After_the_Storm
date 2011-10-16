@@ -7,6 +7,9 @@ Version 0.5.0-svn:
 * Scenarios:
   * 09 - The Triad (part 3):
     * Fixed problems with the final cutscene on Wesnoth 1.9.8 and earlier.
+  * 11 - Return to Wesmere (part 2):
+    * New scenario.
+  * Completed episode I.
 * Units:
   * Removed Skirmisher ability from Elynia.
   * Spawners have a small chance of deactivating themselves after spawning a
