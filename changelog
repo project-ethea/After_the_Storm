@@ -4,6 +4,8 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.5.1-svn:
 ------------------
+* Scenarios:
+  * Fixed several inconsistencies regarding cutscene linger mode.
 * Units:
   * Turned Galas' bolas attack into an AMLA.
   * Turned Galas' ambush ability into an AMLA.
