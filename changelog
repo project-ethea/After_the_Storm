@@ -8,6 +8,9 @@ Version 0.5.1-svn:
   * Turned Galas' bolas attack into an AMLA.
   * Turned Galas' ambush ability into an AMLA.
   * Gave Galas more AMLAs: Strength I, Strength II.
+* User interface:
+  * Cutscene-only scenarios now use custom UI themes lacking sidebars and other
+    useless cruft.
 
 Version 0.5.0a:
 ---------------
