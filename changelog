@@ -7,6 +7,7 @@ Version 0.5.1+svn:
 * Scenarios:
   * 12 - The Queen:
     * Fixed a case where Mal Keshar could speak when he isn't supposed to.
+    * Minor improvements.
 
 Version 0.5.1:
 --------------
