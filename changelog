@@ -5,6 +5,8 @@ AFTER THE STORM - CHANGELOG
 Version 0.5.1+svn:
 ------------------
 * Scenarios:
+  * 06 - Quenoth Isle:
+    * Minor improvements.
   * 12 - The Queen:
     * Fixed a case where Mal Keshar could speak when he isn't supposed to.
     * Minor improvements.
