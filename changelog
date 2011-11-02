@@ -2,8 +2,9 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.5.2+svn:
-------------------
+Version 0.5.2a:
+---------------
+* Fixed a "unknown unit" error on scenario 06.
 
 Version 0.5.2:
 --------------
