@@ -8,6 +8,8 @@ Version 0.5.1+svn:
   * 12 - The Queen:
     * Fixed a case where Mal Keshar could speak when he isn't supposed to.
     * Minor improvements.
+* User interface:
+  * Removed map borders overlay from fullscreen cutscene UI.
 
 Version 0.5.1:
 --------------
