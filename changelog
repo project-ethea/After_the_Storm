@@ -4,6 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.5.3+svn:
 ------------------
+* Scenarios:
+  * 01 - The Skirmish:
+    * The death of the ally leader is supposed to be a defeat condition.
 * Units:
   * Removed Kri'tan.
 
