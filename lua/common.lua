@@ -24,6 +24,7 @@ function wesnoth.wml_actions.setup_doors(cfg)
 	local locs = wesnoth.get_locations {
 		terrain = "*^Z\\",
 		{ "or", { terrain = "*^Z/" } },
+		{ "not", { { "filter", {} } } },
 	}
 
 	for k, loc in ipairs(locs) do
