@@ -95,7 +95,6 @@ end
 --     ... SLF ...
 -- [/remove_terrain_overlays]
 ---
-
 function wesnoth.wml_actions.remove_terrain_overlays(cfg)
 	local locs = wesnoth.get_locations(cfg)
 
