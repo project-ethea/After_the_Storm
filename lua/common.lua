@@ -86,3 +86,20 @@ function wesnoth.wml_actions.item_fast(cfg)
 		wesnoth.add_tile_overlay(loc[1], loc[2], cfg)
 	end
 end
+
+---
+-- Removes the terrain overlay from every hex matching a given SLF.
+--
+-- [remove_terrain_overlays]
+--     ... SLF ...
+-- [/remove_terrain_overlays]
+---
+
+function wesnoth.wml_actions.remove_terrain_overlays(cfg)
+	local locs = wesnoth.get_locations(cfg)
+
+	for i, loc in ipairs(locs) do
+		local locstr = wesnoth.get_terrain(loc[1], loc[2])
+		wesnoth.set_terrain(loc[1], loc[2], string.gsub(locstr, "%^.*$", ""))
+	end
+end
