@@ -4,6 +4,7 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.5.3+svn:
 ------------------
+* The campaign passes wmllint validation now.
 * Scenarios:
   * Various spelling fixes.
   * 01 - The Skirmish:
