@@ -2,8 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.5.4:
---------------
+Version 0.5.4+svn:
+------------------
 * The campaign passes wmllint validation now.
 
 * Scenarios:
