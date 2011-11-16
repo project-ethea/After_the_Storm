@@ -11,10 +11,9 @@ Version 0.5.4:
   * E1S1 - The Skirmish:
     * The death of the ally leader is supposed to be a defeat condition.
   * E2 - codename "Fate":
-    * Very early work on E2S0 (Transience) and E2S1 (By the Moonlight); since
-      the storyline isn't still fixed yet and there is only one playable
-      scenario at this time, this episode is currently unavailable in regular
-      gameplay.
+    * Very early work on E2S0 (Transience) and E2S1 (By the Moonlight). Since
+      the storyline isn't fixed yet and there is only one playable scenario at
+      this time, this episode is currently unavailable in regular gameplay.
 
 * Units:
   * Various spelling fixes.
