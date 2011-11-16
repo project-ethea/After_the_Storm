@@ -5,6 +5,7 @@ AFTER THE STORM - CHANGELOG
 Version 0.5.3+svn:
 ------------------
 * The campaign passes wmllint validation now.
+
 * Scenarios:
   * Various spelling fixes.
   * E1S1 - The Skirmish:
@@ -14,21 +15,26 @@ Version 0.5.3+svn:
       the storyline isn't still fixed yet and there is only one playable
       scenario at this time, this episode is currently unavailable in regular
       gameplay.
+
 * Units:
   * Various spelling fixes.
   * Removed Kri'tan.
+
 
 Version 0.5.3:
 --------------
 * Graphics:
   * New or updated unit graphics: Shaxthal Drone, Shaxthal Runner Drone,
     Shaxthal Sentry Drone, Shaxthal Enforcer Drone, Shaxthal Hive Queen.
+
 * Units:
   * Updated AMLA XP requirements to match mainline on 1.9.10 and later.
+
 
 Version 0.5.2a:
 ---------------
 * Fixed a "unknown unit" error on scenario 06.
+
 
 Version 0.5.2:
 --------------
@@ -40,24 +46,30 @@ Version 0.5.2:
   * 12 - The Queen:
     * Fixed a case where Mal Keshar could speak when he isn't supposed to.
     * Minor improvements.
+
 * User interface:
   * Removed map borders overlay from fullscreen cutscene UI.
+
 
 Version 0.5.1:
 --------------
 * Scenarios:
   * Fixed several inconsistencies regarding cutscene linger mode.
+
 * Units:
   * Turned Galas' bolas attack into an AMLA.
   * Turned Galas' ambush ability into an AMLA.
   * Gave Galas more AMLAs: Strength I, Strength II.
+
 * User interface:
   * Cutscene-only scenarios now use custom UI themes lacking sidebars and other
     useless cruft.
 
+
 Version 0.5.0a:
 ---------------
 * Fixed a minor issue with the credits screen background.
+
 
 Version 0.5.0:
 --------------
@@ -67,10 +79,12 @@ Version 0.5.0:
   * 11 - Return to Wesmere (part 2):
     * New scenario.
   * Completed episode I.
+
 * Units:
   * Removed Skirmisher ability from Elynia.
   * Spawners have a small chance of deactivating themselves after spawning a
     unit.
+
 
 Version 0.4.4:
 --------------
@@ -80,8 +94,10 @@ Version 0.4.4:
     * Fixed missing gold carryover from scenario 08.
   * 11 - Return to Wesmere (part 1):
     * New scenario.
+
 * Units:
   * New NPC bird behavior code.
+
 
 Version 0.4.3:
 --------------
@@ -91,6 +107,7 @@ Version 0.4.3:
       of saved game corruption resulting from that.
   * 09 - The Triad (part 1):
     * Don't allow cutscene helpers to be put into the recall list.
+
 
 Version 0.4.2:
 --------------
@@ -106,6 +123,7 @@ Version 0.4.2:
   * 09 - The Triad (part 1):
     * Fixed undead and faerie units in the recall list being killed in turn 2.
 
+
 Version 0.4.1:
 --------------
 * Scenarios:
@@ -113,8 +131,10 @@ Version 0.4.1:
   * Minor wording changes, some of them contributed by tr0ll.
   * 10 - Tears:
     * New scenario.
+
 * Units:
   * Renamed Chaos Lore to Chaos Lorekeeper.
+
 
 Version 0.4.0:
 --------------
@@ -128,18 +148,22 @@ Version 0.4.0:
     * Fix minor dialogue typo.
   * 09 - The Triad:
     * New scenario.
+
 * Units:
   * Removed help markup from the Sylvan Essence ability special notes to avoid
     issues in Pango contexts (e.g. sidebar tooltips).
+
 
 Version 0.3.2:
 --------------
 * Graphics:
   * New or updated unit graphics: Shaxthal War Drone, Shaxthal Enforcer Drone,
     Sylvan Warden, Chaos Warlord
+
 * Scenarios:
   * 08 - Fear:
     * New scenario.
+
 
 Version 0.3.1:
 --------------
@@ -149,6 +173,7 @@ Version 0.3.1:
   * 05 - Bay of Tirigaz:
     * Fixed a loophole with the treasure spawns.
     * Fixed warnings about image file extensions with animated fountains.
+
 
 Version 0.3.0:
 --------------
