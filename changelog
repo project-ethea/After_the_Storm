@@ -6,6 +6,9 @@ Version 0.6.0-svn:
 ------------------
 * Increased minimum Wesnoth version requirement from 1.9.5 to 1.9.7.
 
+* Scenarios:
+  * Reworked character recall logic.
+
 
 Version 0.5.4:
 --------------
