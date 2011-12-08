@@ -9,6 +9,10 @@ Version 0.6.0-svn:
 * Scenarios:
   * Reworked character recall logic.
 
+* Units:
+  * Reduced Sprite's required XP to advance from 70 to 40.
+  * Reduced Fire Faerie's required XP to advance from 100 to 70.
+
 
 Version 0.5.4:
 --------------
