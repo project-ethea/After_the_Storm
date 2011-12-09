@@ -8,6 +8,9 @@ Version 0.6.0-svn:
 
 * Scenarios:
   * Reworked character recall logic.
+  * Episode 2 (Fate):
+    * Scenarios 1 and 2 completed.
+    * Scenario 3 completed, consisting of two cutscenes.
 
 * Units:
   * Reduced Sprite's required XP to advance from 70 to 40.
