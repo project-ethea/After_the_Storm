@@ -7,6 +7,12 @@ Version 0.6.0+svn:
 * Graphics:
   * New or updated unit graphics: Sylvan Warden (chained).
 
+* Scenarios:
+  * E1S3 - Civil War in the North:
+    * Removed deprecated flower terrain.
+  * E1S5 - Bay of Tirigaz:
+    * Removed deprecated flower terrain.
+
 
 Version 0.6.0:
 --------------
