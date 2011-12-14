@@ -14,6 +14,9 @@ Version 0.6.0+svn:
     * Removed deprecated flower terrain.
   * E1S9.1 - The Triad (part 1):
     * Don't set Elynia's initial status to slowed.
+  * E2S2 - The Heart Forest:
+    * Increased turn limit.
+    * Reduced initial gold amounts for enemy sides.
 
 * Units:
   * Increased Dryad's HP from 43 to 46.
