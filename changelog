@@ -17,6 +17,8 @@ Version 0.6.0+svn:
   * E2S2 - The Heart Forest:
     * Increased turn limit.
     * Reduced initial gold amounts for enemy sides.
+  * E2S3.2 - Revelations:
+    * Corrected unit facings.
   * E2S4 - Shifting Allegiances:
     * New scenario.
 
