@@ -1,11 +1,37 @@
+General:
+--------
+* E1S1 requires rebalancing to increase difficulty.
+* E1S3 requires rebalancing and/or rewriting to decrease difficulty while also
+  making it harder to win by just sitting in a map corner.
+* E1S5 requires rebalancing to increase difficulty.
+* E1S7 requires rebalancing to increase difficulty.
+* E1S8 requires rebalancing to increase difficulty.
+* E1S9.2's sequence with Ivyel needs to be rewritten and the unit baseframe has
+  to be completely remade. Also, increase overall difficulty.
+* E1S10 requires rebalancing to decrease difficulty.
+* E1S11.1 requires rebalancing to increase difficulty; in particular, there's
+  one side using defensive grouping, which makes gameplay far too easy. It's
+  not possible to change the grouping without changing other attributes to make
+  sure this enemy side doesn't become nigh-invincible.
+* E1S11.2 requires rebalancing to increase difficulty.
+* E1S12 is planned to include a short appearance of Uria (projected) while
+  Elynia is dying.
+* E2S1 requires rebalancing to increase difficulty.
+* E2S2 requires rebalancing to decrease difficulty.
+* E2S4's ending cutscene needs to be revised to remove/rewrite bits of text to
+  make the sequence as concise and unobtrusive as possible.
+
+
 Version 0.9.0:
 --------------
 * Episode II complete.
+
 
 Version 1.0.0:
 --------------
 * Balancing.
 * Outstanding art issues resolved.
+
 
 Version 2.0.0 (tentative):
 --------------------------
