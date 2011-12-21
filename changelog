@@ -12,6 +12,8 @@ Version 0.6.0+svn:
     * Removed deprecated flower terrain.
   * E1S5 - Bay of Tirigaz:
     * Removed deprecated flower terrain.
+  * E1S6.2 - Elves of a Different Land:
+    * Fixed a dialog line wrapped in double parentheses.
   * E1S9.1 - The Triad (part 1):
     * Don't set Elynia's initial status to slowed.
   * E2S2 - The Heart Forest:
