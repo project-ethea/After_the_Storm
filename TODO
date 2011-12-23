@@ -23,6 +23,14 @@ General:
   make the sequence as concise and unobtrusive as possible.
 
 
+Version 0.6.x:
+--------------
+* Drop any kind of compatibility with 1.9.9 and earlier:
+  * Use 1.9.10 WML features (e.g. SLF in item/remove_item)
+  * Use the regional Coastal Reef terrain variations in maps
+  * Use the Rotting Bridge terrain in maps
+
+
 Version 0.9.0:
 --------------
 * Episode II complete.
