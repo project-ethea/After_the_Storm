@@ -4,6 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.6.1+svn:
 ------------------
+* Graphics:
+  * New or updated unit graphics: Dusk Faerie.
+
 * Scenarios:
   * E2S7 - Proximus:
     * Added a hint regarding the enemy leader's chance-to-hit override to
