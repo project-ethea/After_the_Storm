@@ -19,6 +19,7 @@ Version 0.6.1+svn:
   * Revised Shaxthal unit descriptions.
   * Shaxthal Runner Drones can no longer advance to Assault Drones.
   * Added a custom teleport animation for Nightshade Fire.
+  * Added unit type descriptions for Night Nymph and Nightshade Fire.
 
 
 Version 0.6.1:
