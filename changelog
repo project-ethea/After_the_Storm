@@ -18,6 +18,7 @@ Version 0.6.1+svn:
   * New unit: Shaxthal Worm (replaces the Shaxthal Wyrm).
   * Revised Shaxthal unit descriptions.
   * Shaxthal Runner Drones can no longer advance to Assault Drones.
+  * Added a custom teleport animation for Nightshade Fire.
 
 
 Version 0.6.1:
