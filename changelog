@@ -20,6 +20,8 @@ Version 0.6.1+svn:
   * Shaxthal Runner Drones can no longer advance to Assault Drones.
   * Added a custom teleport animation for Nightshade Fire.
   * Added unit type descriptions for Night Nymph and Nightshade Fire.
+  * Decreased Nightshade Fire's ranged arcane attack strength from 12-3 to 11-3.
+  * Decreased Nightshade Fire's ranged cold attack strength from 13-2 to 12-2.
 
 
 Version 0.6.1:
