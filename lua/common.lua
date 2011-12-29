@@ -103,3 +103,33 @@ function wesnoth.wml_actions.remove_terrain_overlays(cfg)
 		wesnoth.set_terrain(loc[1], loc[2], string.gsub(locstr, "%^.*$", ""))
 	end
 end
+
+---
+-- Matches a standard location filter and stores the resultant coordinates
+-- list in a container with two attributes that are comma-separated lists, .x and .y.
+--
+-- [simplify_location_filter]
+--     ... SLF ...
+--     variable="location"
+-- [/simplify_location_filter]
+---
+function wesnoth.wml_actions.simplify_location_filter(cfg)
+	local var = cfg.variable or "location"
+	local locs = wesnoth.get_locations(cfg)
+	local xstr, ystr = "", ""
+
+	wesnoth.set_variable(var)
+
+	for i, loc in ipairs(locs) do
+		if i > 1 then
+			xstr = xstr .. string.format(",%d", loc[1])
+			ystr = ystr .. string.format(",%d", loc[2])
+		else
+			xstr = string.format("%d", loc[1])
+			ystr = string.format("%d", loc[2])
+		end
+	end
+
+	wesnoth.set_variable(var .. ".x", xstr)
+	wesnoth.set_variable(var .. ".y", ystr)
+end
