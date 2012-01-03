@@ -12,6 +12,23 @@ function safe_random(arg)
 	return r
 end
 
+-- NOTE: taken from data/lua/wml-tags.lua:
+-- "when using these, make sure that nothing can throw over the call to end_var_scope"
+local function start_var_scope(name)
+	local var = helper.get_variable_array(name) --containers and arrays
+	if #var == 0 then var = wesnoth.get_variable(name) end --scalars (and nil/empty)
+	wesnoth.set_variable(name)
+	return var
+end
+local function end_var_scope(name, var)
+	wesnoth.set_variable(name)
+	if type(var) == "table" then
+		helper.set_variable_array(name, var)
+	else
+		wesnoth.set_variable(name, var)
+	end
+end
+
 ---
 -- Installs mechanical "Door" units on *^Z\ and *^Z/ hexes
 -- using the given owner side.
@@ -132,4 +149,158 @@ function wesnoth.wml_actions.simplify_location_filter(cfg)
 
 	wesnoth.set_variable(var .. ".x", xstr)
 	wesnoth.set_variable(var .. ".y", ystr)
+end
+
+---
+-- Simpler alternative to the harm_unit action with less options, which
+-- uses animate_unit.animate for concurrent animations. It can only work with
+-- single attackers and defenders.
+---
+function wesnoth.wml_actions.animate_attack(cfg)
+	local attacker_filter = helper.get_child(cfg, "filter_second") or helper.wml_error("[animate_attack] missing required [filter_second] tag")
+	local defender_filter = helper.get_child(cfg, "filter") or helper.wml_error("[animate_attack] missing required [filter] tag")
+	local weapon_filter = helper.get_child(cfg, "filter_attack") or helper.wml_error("[animate_attack] missing required [filter_attack] tag")
+
+	-- we need to use shallow_literal field, to avoid raising an error if $this_unit (not yet assigned) is used
+	if not cfg.__shallow_literal.amount then helper.wml_error("[harm_unit] has missing required amount= attribute") end
+
+	local attacker = wesnoth.get_units(attacker_filter)[1]
+	if not attacker then
+		helper.wml_error("[animate_attack]: Could not match any attackers")
+	end
+
+	local defender = wesnoth.get_units(defender_filter)[1]
+	if not defender then
+		helper.wml_error("[animate_attack]: Could not match any defenders")
+	end
+
+	local _ = wesnoth.textdomain "wesnoth"
+	-- #textdomain wesnoth
+
+	local this_unit = start_var_scope("this_unit")
+
+	wesnoth.set_variable("this_unit") -- clearing this_unit
+	wesnoth.set_variable("this_unit", defender.__cfg) -- cfg field needed
+
+	local animate = cfg.animate
+	local fire_event = cfg.fire_event
+	local amount = tonumber(cfg.amount)
+	local kill = cfg.kill
+	-- NOTE: excluded from this implementation
+	-- local experience = cfg.experience
+
+	-- NOTE: taken from data/lua/wml-tags.lua:
+	-- "the two functions below are taken straight from the C++ engine, util.cpp and actions.cpp, with a few unuseful parts removed
+	-- may be moved in helper.lua in 1.11"
+	local function round_damage( base_damage, bonus, divisor )
+		local rounding
+		if base_damage == 0 then return 0
+		else
+			if bonus < divisor or divisor == 1 then
+				rounding = divisor / 2 - 0
+			else
+				rounding = divisor / 2 - 1
+			end
+			return math.max( 1, math.floor( ( base_damage * bonus + rounding ) / divisor ) )
+		end
+	end
+	local function calculate_damage( base_damage, alignment, tod_bonus, resistance )
+		local damage_multiplier = 100
+		if alignment == "lawful" then
+			damage_multiplier = damage_multiplier + tod_bonus
+		elseif alignment == "chaotic" then
+			damage_multiplier = damage_multiplier - tod_bonus
+		elseif alignment == "liminal" then
+			damage_multiplier = damage_multiplier - math.abs( tod_bonus )
+		else -- neutral, do nothing
+		end
+		damage_multiplier = damage_multiplier * resistance -- at this point, a resistance_modifier can be added, as asked by fendrin
+		local damage = round_damage( base_damage, damage_multiplier, 10000 ) -- if harmer.status.slowed, this may be 20000 ?
+		return damage
+	end
+	
+	-- Calculate damage first to determine if the defender dies or not
+
+	local damage = calculate_damage(
+		amount, (cfg.alignment or "neutral"),
+		wesnoth.get_time_of_day( { defender.x, defender.y, true } ).lawful_bonus,
+		wesnoth.unit_resistance( defender, cfg.damage_type or "dummy" )
+	)
+
+	local hit_animation_type = true
+
+	if defender.hitpoints <= damage then
+		if kill == false then
+			damage = defender.hitpoints - 1
+		else
+			damage = defender.hitpoints
+			hit_animation_type = "kill"
+		end
+	end
+
+	local text = string.format("%d%s", damage, "\n")
+	local add_tab = false
+	local gender = defender.__cfg.gender
+
+	-- NOTE: also from data/lua/wml-tags.lua
+	local function set_status(name, male_string, female_string, sound)
+		if not cfg[name] or defender.status[name] then return end
+		if gender == "female" then
+			text = string.format("%s%s%s", text, tostring(female_string), "\n")
+		else
+			text = string.format("%s%s%s", text, tostring(male_string), "\n")
+		end
+
+		defender[name] = true
+		add_tab = true
+
+		if animate and sound then -- for unhealable, that has no sound
+			wesnoth.play_sound(sound)
+		end
+	end
+
+	if not defender.status.not_living then
+		set_status("poisoned", _"poisoned", _"female^poisoned", "poison.ogg")
+	end
+	set_status("slowed", _"slowed", _"female^slowed", "slowed.wav")
+	set_status("petrified", _"petrified", _"female^petrified", "petrified.ogg")
+	set_status("unhealable", _"unhealable", _"female^unhealable")
+
+	if add_tab then
+		text = string.format("%s%s", "\t", text)
+	end
+
+	if animate then
+		wesnoth.scroll_to_tile(attacker.x, attacker.y, true)
+		wesnoth.wml_actions.animate_unit( {
+			flag = "attack",
+			hits = hit_animation_type,
+			with_bars = true,
+			{ "filter", { id = attacker.id } },
+			{ "primary_attack", weapon_filter },
+			{ "facing", { x = defender.x, y = defender.y } },
+			{ "animate", {
+				flag = "defend",
+				{ "filter", { id = defender.id } },
+				{ "primary_attack", weapon_filter },
+				text = text,
+				red = 255,
+				with_bars = true,
+				hits = hit_animation_type,
+			} }
+		} )
+	else
+		wesnoth.float_label( defender.x, defender.y, string.format( "<span foreground='red'>%s</span>", text ) )
+	end
+
+	defender.hitpoints = defender.hitpoints - damage
+
+	if kill ~= false and defender.hitpoints <= 0 then
+		wesnoth.wml_actions.kill({ id = defender.id, animate = animate, fire_event = fire_event })
+	end
+
+	wesnoth.wml_actions.redraw {}
+
+	wesnoth.set_variable ( "this_unit" ) -- clearing this_unit
+	end_var_scope("this_unit", this_unit)
 end
