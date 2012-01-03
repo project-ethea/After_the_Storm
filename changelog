@@ -13,6 +13,7 @@ Version 0.6.1+svn:
   * E2S7 - Proximus:
     * Added a hint regarding the enemy leader's chance-to-hit override to
       objectives.
+    * Fixed animation glitches.
   * E2S8 - And then there was Chaos:
     * New scenario.
   * E2S9 - New Hive:
