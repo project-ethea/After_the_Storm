@@ -30,6 +30,42 @@ local function end_var_scope(name, var)
 end
 
 ---
+-- Gets the relative direction of a source hex to a target hex.
+-- Useful to determine in which direction a unit should be facing
+-- (from the source) to look at another unit (at the target).
+--
+-- NOTE: This initial implementation only handles southwest and
+-- southeast. The C++ code handling these calculations isn't exposed
+-- to Lua yet, but direction.lua provides an attempt at translating
+-- it.
+--
+-- [store_direction]
+--     from_x,from_y= ...
+--     to_x,to_y= ...
+--     variable="direction"
+-- [/store_direction]
+---
+function wesnoth.wml_actions.store_direction(cfg)
+	local a = { x = cfg.from_x, y = cfg.from_y }
+	local b = { x = cfg.to_x  , y = cfg.to_y   }
+
+	if not a.x or not a.y or not b.x or not b.y then
+		helper.wml_error "[store_direction] missing coordinate!"
+	end
+
+	local variable = cfg.variable or "direction"
+
+	-- local facing = loc_relative_direction(b, a) or "sw"
+	-- wesnoth.set_variable(variable, facing)
+
+	if a.x < b.x then
+		wesnoth.set_variable(variable, "se")
+	else
+		wesnoth.set_variable(variable, "sw")
+	end
+end
+
+---
 -- Installs mechanical "Door" units on *^Z\ and *^Z/ hexes
 -- using the given owner side.
 --
