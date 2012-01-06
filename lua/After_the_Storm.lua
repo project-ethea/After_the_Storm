@@ -54,7 +54,7 @@ function wesnoth.wml_actions.deactivate_and_serialize_sides(cfg)
 	wesnoth.set_variable(variable)
 
 	for t, side_number in helper.get_sides(cfg) do
-		wesnoth.message("WML", string.format("store side %u", side_number))
+		-- wesnoth.message("WML", string.format("store side %u", side_number))
 		local side_store = string.format("%s[%u]", variable, array_index)
 
 		wesnoth.wml_actions.store_side {
