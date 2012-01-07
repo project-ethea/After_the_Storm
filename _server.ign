@@ -44,3 +44,4 @@ _info.cfg
 Thumbs.db
 __MACOSX/
 base-maint.cfg
+Makefile
