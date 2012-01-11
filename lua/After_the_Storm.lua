@@ -81,7 +81,7 @@ function wesnoth.wml_actions.unserialize_and_activate_sides(cfg)
 	for index, side_data in ipairs(data_set) do
 		wesnoth.wml_actions.modify_side {
 			side = side_data.side, gold = side_data.gold, village_gold = side_data.village_gold,
-			income = side_data.income, controller = side_data.controller, hidden = false
+			income = side_data.income, controller = side_data.controller, hidden = side_data.hidden
 		}
 
 		local units = helper.get_variable_array(variable .. string.format("[%u].units", index - 1))
