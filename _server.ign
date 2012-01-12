@@ -45,3 +45,4 @@ Thumbs.db
 __MACOSX/
 base-maint.cfg
 Makefile
+*.kate-swp
