@@ -95,3 +95,18 @@ function wesnoth.wml_actions.unserialize_and_activate_sides(cfg)
 	end
 end
 
+-----------
+-- E2S11 --
+-----------
+
+function wesnoth.wml_actions.store_unit_can_move_on_current_terrain(cfg)
+	local var = cfg.variable or helper.wml_error("[store_unit_can_move_on_current_terrain]: Missing variable!")
+	local u = wesnoth.get_units(cfg)[1]
+
+	if not u then
+		helper.wml_error("[store_unit_can_move_on_current_terrain]: Could not match anything!")
+	end
+
+	wesnoth.set_variable(var,
+		(wesnoth.unit_movement_cost(u, wesnoth.get_terrain(u.x, u.y)) < u.max_moves))
+end

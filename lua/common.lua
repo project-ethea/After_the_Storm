@@ -330,6 +330,13 @@ function wesnoth.wml_actions.animate_attack(cfg)
 		text = string.format("%s%s", "\t", text)
 	end
 
+	-- HACK: do not display floating label when
+	-- the inflicted damage is zero
+
+	if damage == 0 then
+		text = ""
+	end
+
 	if animate then
 		wesnoth.scroll_to_tile(attacker.x, attacker.y, true)
 		wesnoth.wml_actions.animate_unit( {
