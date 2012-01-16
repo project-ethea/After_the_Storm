@@ -379,7 +379,7 @@ end
 -- Displays an error message in a popup dialog.
 --
 -- This is intended to be used as an exit mechanism when the WML detects an
--- inconsistency (see the BUG and BUG_ON macros in base-utils.cfg
+-- inconsistency (see the BUG and BUG_ON macros in base-debug.cfg
 --
 -- [bug]
 --     message= <...>
