@@ -11,6 +11,9 @@ Version 0.6.1+svn:
   * New or updated terrain graphics: Dark Hive Floor (transitions).
 
 * Scenarios:
+  * E1S5 - Bay of Tirigaz:
+    * Rewrote shipwreck generator code so the message strings can actually
+      be translated.
   * E1S8 - Fear:
     * Updated to use a Wesnoth 1.9.10 terrain.
   * E2S1 - By the Moonlight:
