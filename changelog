@@ -29,8 +29,9 @@ Version 0.6.1+svn:
 * Units:
   * New unit: Shaxthal Worm (replaces the Shaxthal Wyrm).
   * Balancing:
-    * Reduced Nightshade Fire's ranged arcane attack strength from 12-3 to 11-3.
-    * Reduced Nightshade Fire's ranged cold attack strength from 13-2 to 12-2.
+    * Reduced Nightshade Fire's ranged arcane attack strength from 12-3 to 10-3.
+    * Reduced Nightshade Fire's ranged cold attack strength from 13-2 to 11-2.
+    * Reduced Night Nymph's ranged arcane attack strength from 9-3 to 8-3.
     * Increased Errant Soul's ranged attack strength from 2-1 to 2-2.
     * Reduced Chaos Headhunter's ranged attack strength from 6-3 to 5-3.
     * Reduced Chaos Marauder's axe attack strength from 10-2 to 8-2.
