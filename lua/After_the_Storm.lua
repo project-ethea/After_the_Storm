@@ -110,3 +110,13 @@ function wesnoth.wml_actions.store_unit_can_move_on_current_terrain(cfg)
 	wesnoth.set_variable(var,
 		(wesnoth.unit_movement_cost(u, wesnoth.get_terrain(u.x, u.y)) < u.max_moves))
 end
+
+-----------
+-- E2S12 --
+-----------
+
+function wesnoth.wml_actions.hidden_unit(cfg)
+	local u = wesnoth.create_unit(cfg)
+	u.hidden = true
+	wesnoth.put_unit(u)
+end
