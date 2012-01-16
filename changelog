@@ -11,8 +11,16 @@ Version 0.6.1+svn:
   * New or updated terrain graphics: Dark Hive Floor (transitions).
 
 * Scenarios:
+  * E1S8 - Fear:
+    * Updated to use a Wesnoth 1.9.10 terrain.
+  * E2S1 - By the Moonlight:
+    * Updated to use a Wesnoth 1.9.10 terrain.
+  * E2S2 - The Heart Forest:
+    * Updated to use a Wesnoth 1.9.10 terrain.
   * E2S4 - Shifting Allegiances:
     * Fixed a local variable leak.
+  * E2S6 - The Voyage Home:
+    * Updated to use a Wesnoth 1.9.10 terrain.
   * E2S7 - Proximus:
     * Added a hint regarding the enemy leader's chance-to-hit override to
       objectives.
