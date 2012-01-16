@@ -11,6 +11,8 @@ Version 0.6.1+svn:
   * New or updated terrain graphics: Dark Hive Floor (transitions).
 
 * Scenarios:
+  * E2S4 - Shifting Allegiances:
+    * Fixed a local variable leak.
   * E2S7 - Proximus:
     * Added a hint regarding the enemy leader's chance-to-hit override to
       objectives.
