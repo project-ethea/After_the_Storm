@@ -4,6 +4,8 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.7.0+svn:
 ------------------
+* Units:
+  * Removed compatibility with pre-Wesnoth 1.9.10 AMLA XP requirements.
 
 
 Version 0.7.0:
