@@ -9,6 +9,8 @@ Version 0.7.0+svn:
     Mystic, Elvish Avatar.
 
 * Scenarios:
+  * E2S8 - And then there was Chaos:
+    * Applied minor prose suggestions from Muspilli.
   * E2S11 - A Final Confrontation:
     * Remove "turns run out" condition from the Objectives display whenever
       appropriate
