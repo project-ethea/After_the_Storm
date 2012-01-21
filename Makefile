@@ -27,4 +27,4 @@ optipng:
 
 clean:
 	$(WMLLINT) --clean $(realpath .)
-	@find \( -name '*.new' -o -name '*.tmp' \) -type f -print | xargs rm -f
+	find \( -name '*.new' -o -name '*.tmp' \) -type f -print | xargs rm -f
