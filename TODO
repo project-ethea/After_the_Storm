@@ -11,7 +11,7 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
       mainline code
 
 * Balancing [M]
-  * [!] E1S1 (increase difficulty)
+  * [x] E1S1 (increase difficulty)
   * [L] E1S3 (decrease raw difficulty and make it harder to win by just sitting
     in a map corner)
   * [L] E1S5 (increase difficulty)
