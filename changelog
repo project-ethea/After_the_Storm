@@ -16,6 +16,7 @@ Version 0.7.0+svn:
       of the game map.
     * Made this scenario easier.
   * E1S5 - Bay of Tirigaz:
+    * Made the defeat condition involving the ally leader actually work.
     * Removed unintended forced recall.
   * E2S8 - And then there was Chaos:
     * Applied minor prose suggestions from Muspilli.
