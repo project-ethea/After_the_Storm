@@ -18,6 +18,8 @@ Version 0.7.0+svn:
   * E1S5 - Bay of Tirigaz:
     * Made the defeat condition involving the ally leader actually work.
     * Removed unintended forced recall.
+  * E1S7 - The Search for the Past:
+    * Added villages, minor difficulty changes.
   * E2S8 - And then there was Chaos:
     * Applied minor prose suggestions from Muspilli.
   * E2S11 - A Final Confrontation:
