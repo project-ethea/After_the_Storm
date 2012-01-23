@@ -29,7 +29,7 @@ Version 0.7.0+svn:
 * Units:
   * Fixed a missing image error with one of Galas' AMLA options.
   * Optimized or fixed unit animations: Fire Sprite unit tree, Control Spire,
-    Flow System.
+    Flow System, Matrix Core.
   * Removed compatibility with pre-Wesnoth 1.9.10 AMLA XP requirements.
 
 
