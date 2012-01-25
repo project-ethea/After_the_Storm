@@ -31,6 +31,12 @@ Version 0.7.0+svn:
       appropriate
 
 * Units:
+  * Balancing:
+    * Increased Shaxthal Infiltrator's resistances:
+      * Blade: 0% -> 20%
+      * Pierce: 0% -> 30%
+      * Impact: -10% -> 0%
+      * Cold: 0% -> 10%
   * Fixed a missing image error with one of Galas' AMLA options.
   * Optimized or fixed unit animations: Fire Sprite unit tree, Control Spire,
     Flow System, Matrix Core, Shaxthal Runner Drone line, Shaxthal Drone tree.
