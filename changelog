@@ -32,6 +32,12 @@ Version 0.7.0+svn:
 
 * Units:
   * Balancing:
+    * Increased Shaxthal Stormblade's resistances:
+      * Fire: -10% -> 10%
+      * Arcane: -50% -> -10%
+    * Increased Shaxthal Stormblade's movement from 5 to 6.
+    * Increased Shaxthal Stormblade's HP from 49 to 67.
+    * Added a ranged attack for the Shaxthal Stormblade.
     * Increased Shaxthal Infiltrator's resistances:
       * Blade: 0% -> 20%
       * Pierce: 0% -> 30%
