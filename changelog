@@ -4,6 +4,10 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.7.1+svn:
 ------------------
+* Scenarios:
+  * E1S9.3 - The Triad, part 3:
+    * Fix problem causing Mal Keshar to be recalled in the next scenario with
+      no movements for the first turn.
 
 
 Version 0.7.1:
