@@ -7,8 +7,20 @@ DEFSCOPE ?= macro-scope-check
 WMLLINT ?= wmllint
 WMLINDENT ?= wmlindent
 OPTIPNG ?= wesnoth-optipng
+WML_PREPROCESS ?= wesnoth -p
 
 MAKEFLAGS += -rR --no-print-directory
+
+# Internal variables
+
+targetdir := $(realpath .)
+
+difficulties := EASY NORMAL HARD
+packs := \
+	CAMPAIGN_AFTER_THE_STORM_EPISODE_I \
+	CAMPAIGN_AFTER_THE_STORM_EPISODE_II
+
+preprocesscmd = $(WML_PREPROCESS) $(targetdir) $(scratchdir) --preprocess-defines CAMPAIGN_AFTER_THE_STORM,$(diffsym),$(packsym)
 
 all: defscope lint
 
@@ -19,12 +31,29 @@ defscope:
 	$(DEFSCOPE) $(wildcard ./episode?/scenarios)
 
 lint:
-	$(WMLLINT) $(WESNOTH_CORE_DIR) $(realpath .)
+	$(WMLLINT) $(WESNOTH_CORE_DIR) $(targetdir)
 
+test:
+	@echo "Running preprocessor test pass..."
+	@echo "  Difficulties: $(difficulties)"
+	@echo "  Episodes:     $(packs)"
+
+	@for p in $(packs); do for d in $(difficulties); do \
+		echo "    TEST    $$p -> $$d"; \
+		if $(WML_PREPROCESS) $(targetdir) .preprocessor.out --preprocess-defines CAMPAIGN_AFTER_THE_STORM,$$d,$$p 2>&1 | fgrep ' error '; then \
+			exit 1; \
+		else \
+			true; \
+		fi; \
+		rm -rf .preprocessor.out; \
+	done; done
+
+	@echo "No errors found."
 
 optipng:
 	$(OPTIPNG)
 
 clean:
-	$(WMLLINT) --clean $(realpath .)
+	$(WMLLINT) --clean $(targetdir)
 	find \( -name '*.new' -o -name '*.tmp' \) -type f -print | xargs rm -f
+	rm -rf .preprocessor.out
