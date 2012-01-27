@@ -1,5 +1,6 @@
 # Run validation tests
 
+WESNOTH_VERSION ?= $(shell wesnoth --version 2>&1 | tail -n 1)
 WESNOTH_DATA_DIR ?= $(shell wesnoth --path 2>&1 | tail -n 1)
 WESNOTH_CORE_DIR ?= $(WESNOTH_DATA_DIR)/data/core
 
@@ -34,21 +35,16 @@ lint:
 	$(WMLLINT) $(WESNOTH_CORE_DIR) $(targetdir)
 
 test:
-	@echo "Running preprocessor test pass..."
+	@echo "Running preprocessor/parser test pass..."
+	@echo "  Version:      $(WESNOTH_VERSION)"
 	@echo "  Difficulties: $(difficulties)"
 	@echo "  Episodes:     $(packs)"
 
 	@for p in $(packs); do for d in $(difficulties); do \
 		echo "    TEST    $$p -> $$d"; \
-		if $(WML_PREPROCESS) $(targetdir) .preprocessor.out --preprocess-defines CAMPAIGN_AFTER_THE_STORM,$$d,$$p 2>&1 | fgrep ' error '; then \
-			exit 1; \
-		else \
-			true; \
-		fi; \
+		$(WML_PREPROCESS) $(targetdir) .preprocessor.out --preprocess-defines CAMPAIGN_AFTER_THE_STORM,$$d,$$p 2>&1 | tail -n +5 ; \
 		rm -rf .preprocessor.out; \
 	done; done
-
-	@echo "No errors found."
 
 optipng:
 	$(OPTIPNG)
