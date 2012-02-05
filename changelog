@@ -12,6 +12,8 @@ Version 0.7.1+svn:
     * Minor cutscene sequence changes.
   * E2S11 - A Final Confrontation:
     * Minor cutscene sequence changes.
+  * E2S12 - The Queen:
+    * Do not let petrified units level-up.
 
 
 Version 0.7.1:
