@@ -14,6 +14,7 @@ Version 0.7.1+svn:
     * Minor cutscene sequence changes.
   * E2S12 - The Queen:
     * Do not let petrified units level-up.
+    * Fixed typo ("where" -> "were").
 
 
 Version 0.7.1:
