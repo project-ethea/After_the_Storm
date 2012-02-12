@@ -10,6 +10,9 @@ Version 0.7.1+svn:
       no movements for the first turn.
   * E1S11.1 - Return to Wesmere, part 1:
     * Minor difficulty tweaks by vultraz.
+  * E1S11.2 - Return to Wesmere, part 2:
+    * Reduced chance of the player being unwittingly attacked by drones from
+      offscreen at the start.
   * E2S10 - The Betrayal:
     * Minor cutscene sequence changes.
   * E2S11 - A Final Confrontation:
