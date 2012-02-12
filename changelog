@@ -21,6 +21,8 @@ Version 0.7.1+svn:
   * E2S12 - The Queen:
     * Do not let petrified units level-up.
     * Fixed typo ("where" -> "were").
+* Units:
+  * Force a shroud/fog refresh whenever a door is destroyed.
 
 
 Version 0.7.1:
