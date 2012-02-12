@@ -4,6 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.7.2+svn:
 ------------------
+* Scenarios:
+  * E1S12 - The Queen:
+    * Fixed multiple "cannot show message" warnings.
 
 
 Version 0.7.2:
