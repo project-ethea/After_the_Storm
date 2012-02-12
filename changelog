@@ -14,13 +14,14 @@ Version 0.7.1+svn:
     * Reduced chance of the player being unwittingly attacked by drones from
       offscreen at the start.
     * Minor difficulty tweaks.
+  * E1S12 - The Queen:
+    * Do not let petrified units level-up.
+    * Fixed typo ("where" -> "were").
+    * Minor difficulty tweaks.
   * E2S10 - The Betrayal:
     * Minor cutscene sequence changes.
   * E2S11 - A Final Confrontation:
     * Minor cutscene sequence changes.
-  * E2S12 - The Queen:
-    * Do not let petrified units level-up.
-    * Fixed typo ("where" -> "were").
 * Units:
   * Force a shroud/fog refresh whenever a door is destroyed.
 
