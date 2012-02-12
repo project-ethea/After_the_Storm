@@ -18,10 +18,12 @@ Version 0.7.1+svn:
     * Do not let petrified units level-up.
     * Fixed typo ("where" -> "were").
     * Minor difficulty tweaks.
+    * Minor cutscene sequence changes.
   * E2S10 - The Betrayal:
     * Minor cutscene sequence changes.
   * E2S11 - A Final Confrontation:
     * Minor cutscene sequence changes.
+
 * Units:
   * Force a shroud/fog refresh whenever a door is destroyed.
 
