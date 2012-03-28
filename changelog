@@ -4,6 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.7.2+svn:
 ------------------
+* Graphics:
+  * New or updated unit graphics: Dusk Faerie, Night Nymph, Nightshade Fire.
+
 * Scenarios:
   * E1S12 - The Queen:
     * Fixed multiple "cannot show message" warnings.
