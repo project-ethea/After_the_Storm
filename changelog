@@ -10,6 +10,9 @@ Version 0.7.2+svn:
 * Scenarios:
   * E1S12 - The Queen:
     * Fixed multiple "cannot show message" warnings.
+  * E2S2 - The Heart Forest:
+    * Tweaked the initial spawn locations of Allyna and her pursuers in an
+      attempt to make the ambush event a little less frustrating.
   * E2S12 - Fate:
     * Minor graphic improvements.
 
