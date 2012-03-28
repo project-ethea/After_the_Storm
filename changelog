@@ -21,7 +21,7 @@ Version 0.7.2+svn:
     Faerie, Dryad, Forest Spirit.
   * Balancing:
     * Increased Forest Spirit's resistance to fire damage from 0% to 20%.
-      * Note that this is partly a bugfix; the original fire resistance
+      * Note that this is actually a bugfix; the original fire resistance
         specified was 20%, but there was spurious left-over code switching
         it to 0%.
     * Increased Forest Spirit's resistance to arcane damage from -20% to -10%.
