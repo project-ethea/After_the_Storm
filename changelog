@@ -8,6 +8,9 @@ Version 0.7.2+svn:
   * New or updated unit graphics: Dusk Faerie, Night Nymph, Nightshade Fire.
 
 * Scenarios:
+  * E1S7 - The Search for the Past:
+    * Update objectives accordingly to remind the player to move Elynia to the
+      sealed glyph when she doesn't find it first.
   * E1S12 - The Queen:
     * Fixed multiple "cannot show message" warnings.
   * E2S2 - The Heart Forest:
