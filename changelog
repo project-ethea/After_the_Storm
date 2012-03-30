@@ -28,7 +28,7 @@ Version 0.7.2+svn:
   * Improved unit animations: Dusk Faerie, Night Nymph, Nightshade Fire, Faerie
     Avatar, Shaxthal Queen.
   * Optimized or fixed unit animations: Goliath, Sylvan Warden, Sprite, Fire
-    Faerie, Dryad, Forest Spirit.
+    Faerie, Dryad, Forest Spirit, Shaxthal Warlord.
   * Balancing:
     * Increased Forest Spirit's resistance to fire damage from 0% to 20%.
       * Note that this is actually a bugfix; the original fire resistance
