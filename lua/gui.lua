@@ -17,39 +17,39 @@ local T = helper.set_wml_tag_metatable {}
 ---
 function wesnoth.wml_actions.bug( cfg )
 	local alert_dialog = {
-			maximum_width = 800,
-			maximum_height = 600,
-			T.helptip { id="tooltip_large" }, -- mandatory field
-			T.tooltip { id="tooltip_large" }, -- mandatory field
-			T.grid { -- Title, will be the object name
-				T.row {
-					T.column {
-						horizontal_alignment = "left",
-						grow_factor = 1, -- this one makes the title bigger and golden
-						border = "all",
-						border_size = 5,
-						T.label { definition = "title", id = "title" }
-					}
-				},
-				T.row {
-					T.column {
-						vertical_alignment = "center",
-						horizontal_alignment = "center",
-						border = "all",
-						border_size = 5,
-						T.label { id = "message" }
-					}
-				},
-				T.row {
-					T.column {
-						horizontal_alignment = "center",
-						border = "all",
-						border_size = 5,
-						T.button { id = "ok", return_value = 1 }
-					}
+		maximum_width = 800,
+		maximum_height = 600,
+		T.helptip { id="tooltip_large" }, -- mandatory field
+		T.tooltip { id="tooltip_large" }, -- mandatory field
+		T.grid { -- Title, will be the object name
+			T.row {
+				T.column {
+					horizontal_alignment = "left",
+					grow_factor = 1, -- this one makes the title bigger and golden
+					border = "all",
+					border_size = 5,
+					T.label { definition = "title", id = "title" }
+				}
+			},
+			T.row {
+				T.column {
+					vertical_alignment = "center",
+					horizontal_alignment = "center",
+					border = "all",
+					border_size = 5,
+					T.label { id = "message" }
+				}
+			},
+			T.row {
+				T.column {
+					horizontal_alignment = "center",
+					border = "all",
+					border_size = 5,
+					T.button { id = "ok", return_value = 1 }
 				}
 			}
 		}
+	}
 
 	local function preshow()
 		local _ = nil
