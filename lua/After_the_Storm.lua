@@ -1,3 +1,8 @@
+---
+-- Lua WML actions that are intended specifically for use in the After the Storm
+-- campaign.
+---
+
 local helper = wesnoth.require "lua/helper.lua"
 
 ----------

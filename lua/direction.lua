@@ -1,5 +1,3 @@
-local helper = wesnoth.require "lua/helper.lua"
-
 ---
 -- Half-assed attempt at translating the algorithm in map_location::get_relative_dir()
 -- to Lua. It doesn't work correctly in at least one case, when the destination hex is
@@ -9,6 +7,8 @@ local helper = wesnoth.require "lua/helper.lua"
 --
 -- Kept in here for now in case I decide to revisit it later.
 ---
+
+local helper = wesnoth.require "lua/helper.lua"
 
 local function loc_neg(a)
 	return { x = -a.x, y = -a.y }

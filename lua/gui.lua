@@ -1,3 +1,7 @@
+---
+-- Lua WML actions implementing custom GUI2 dialogs.
+---
+
 local helper = wesnoth.require "lua/helper.lua"
 
 -- metatable for GUI tags

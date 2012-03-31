@@ -1,3 +1,7 @@
+---
+-- General-purpose Lua WML actions.
+---
+
 local helper = wesnoth.require "lua/helper.lua"
 
 function safe_random(arg)
