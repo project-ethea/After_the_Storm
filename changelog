@@ -4,6 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.7.3+svn:
 ------------------
+* Scenarios:
+  * Healing glyphs no longer render affected units unable to attack on the
+    same turn.
 
 
 Version 0.7.3:
