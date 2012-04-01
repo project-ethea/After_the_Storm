@@ -8,7 +8,7 @@ local helper = wesnoth.require "lua/helper.lua"
 -- [npc_bird_behavior]
 --     types=... # list of unit types that will be considered for movement
 --     side=...  # side whose units will be considered; defaults to the current
---               # playing side if $side_number is set
+--               # playing side
 --     x1,y1=... # top left corner of the movement area
 --     x2,y2=... # bottom right corner of the movement area
 -- [/npc_bird_behavior]
@@ -30,8 +30,7 @@ function wesnoth.wml_actions.npc_bird_behavior(cfg)
 
 	local types = cfg.types or do_error("no unit types specified")
 
-	local side_num = cfg.side or wesnoth.get_variable("side_number") or
-		do_error("no side specified, and $side_number is not set")
+	local side_num = cfg.side or wesnoth.current.side
 
 	local x1 = cfg.x1 or 1
 	local y1 = cfg.y1 or 1
