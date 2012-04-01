@@ -10,6 +10,9 @@ Version 0.7.3+svn:
   * Healing glyphs no longer render affected units unable to attack on the
     same turn.
 
+* Units:
+  * Reimplemented NPC bird behavior code in Lua.
+
 
 Version 0.7.3:
 --------------
