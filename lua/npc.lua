@@ -127,6 +127,7 @@ function wesnoth.wml_actions.npc_bird_behavior(cfg)
 			if not oob then
 				npc.x = endpoint.x
 				npc.y = endpoint.y
+				npc.facing = path.direction
 
 				wesnoth.put_unit(npc)
 			end
