@@ -8,6 +8,64 @@ local helper = wesnoth.require "lua/helper.lua"
 local T = helper.set_wml_tag_metatable {}
 
 ---
+-- Displays a transparent message box that's dimissed when clicked.
+--
+-- [transient_message]
+--     caption=(tstring)
+--     message=(tstring)
+--     transparent=(boolean)
+-- [/transient_message]
+---
+function wesnoth.wml_actions.transient_message(cfg)
+	local dd = {
+		maximum_width = 800,
+		maximum_height = 600,
+		click_dismiss = true,
+		T.helptip { id="tooltip_large" }, -- mandatory field
+		T.tooltip { id="tooltip_large" }, -- mandatory field
+		T.grid {
+			T.row {
+				T.column {
+					border = "all", border_size = 5,
+					vertical_alignment = "top",
+					horizontal_alignment = "left",
+					T.label {
+						id = "caption",
+						definition = "title"
+					}
+				}
+			},
+			T.row {
+				T.column {
+					border = "all", border_size = 5,
+					vertical_alignment = "top",
+					horizontal_alignment = "left",
+					T.label {
+						id = "message",
+						definition = "wml_message",
+						wrap = true
+					}
+				}
+			}
+		}
+	}
+
+	if cfg.transparent then
+		dd.definition = "message"
+	end
+
+	local function preshow()
+		wesnoth.set_dialog_value(cfg.caption, "caption")
+		wesnoth.set_dialog_value(cfg.message, "message")
+	end
+
+	local function postshow() end
+
+	wesnoth.show_dialog(dd, preshow, postshow)
+end
+
+
+---
 -- Displays an error message in a popup dialog.
 --
 -- This is intended to be used as an exit mechanism when the WML detects an
