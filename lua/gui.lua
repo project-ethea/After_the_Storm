@@ -59,9 +59,7 @@ function wesnoth.wml_actions.transient_message(cfg)
 		wesnoth.set_dialog_value(cfg.message, "message")
 	end
 
-	local function postshow() end
-
-	wesnoth.show_dialog(dd, preshow, postshow)
+	wesnoth.show_dialog(dd, preshow, nil)
 end
 
 ---
@@ -102,9 +100,7 @@ function wesnoth.wml_actions.show_image(cfg)
 		wesnoth.set_dialog_value(img, "image")
 	end
 
-	local function postshow() end
-
-	wesnoth.show_dialog(dd, preshow, postshow)
+	wesnoth.show_dialog(dd, preshow, nil)
 end
 
 ---
@@ -119,7 +115,7 @@ end
 --
 -- Most of the code has been shamelessly stolen from Wesnoth Lua Pack.
 ---
-function wesnoth.wml_actions.bug( cfg )
+function wesnoth.wml_actions.bug(cfg)
 	local alert_dialog = {
 		maximum_width = 800,
 		maximum_height = 600,
@@ -175,9 +171,5 @@ function wesnoth.wml_actions.bug( cfg )
 		wesnoth.set_dialog_value(ok , "ok")
 	end
 
-	local function postshow()
-		-- here get all widget values
-	end
-	wesnoth.show_dialog( alert_dialog, preshow, postshow )
-	-- no syncronization, as we aren't interested in returned values
+	wesnoth.show_dialog(alert_dialog, preshow, nil)
 end
