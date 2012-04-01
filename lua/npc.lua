@@ -115,8 +115,7 @@ function wesnoth.wml_actions.npc_bird_behavior(cfg)
 				type = npc.type,
 				gender = npc.gender,
 				variation = npc.variation,
-				-- TODO:
-				-- image_mods = npc.image_mods,
+				image_mods = npc.image_mods,
 				side = npc.side,
 				x = path.x,
 				y = path.y
