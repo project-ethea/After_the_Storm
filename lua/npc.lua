@@ -110,12 +110,14 @@ function wesnoth.wml_actions.npc_bird_behavior(cfg)
 
 			-- wesnoth.message(string.format("x = %s; y = %s", path.x, path.y))
 
+			local npc_cfg = npc.__cfg
+
 			wesnoth.wml_actions.move_unit_fake {
-				type = npc.type,
-				gender = npc.gender,
-				variation = npc.variation,
+				type = npc_cfg.type,
+				gender = npc_cfg.gender,
+				variation = npc_cfg.variation,
 				image_mods = npc.image_mods,
-				side = npc.side,
+				side = npc_cfg.side,
 				x = path.x,
 				y = path.y
 			}
