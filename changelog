@@ -7,6 +7,7 @@ Version 0.7.3+svn:
 * Scenarios:
   * E2S9 - New Hive:
     * Fixed Shaxthal Worms changing colors when moving.
+    * Reduced starting gold.
   * E2S10 - The Betrayal:
     * Reduced starting gold.
   * Healing glyphs no longer render affected units unable to attack on the
