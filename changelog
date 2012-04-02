@@ -11,6 +11,9 @@ Version 0.7.3+svn:
     same turn.
 
 * Units:
+  * Balancing:
+    * Increased arcane damage resistance for most Shaxthal units from -50% to
+      -20%.
   * Reimplemented NPC bird behavior code in Lua.
 
 
