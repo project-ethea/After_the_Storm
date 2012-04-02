@@ -9,6 +9,7 @@ Version 0.7.3+svn:
     * Fixed Shaxthal Worms changing colors when moving.
     * Reduced starting gold.
   * E2S10 - The Betrayal:
+    * Fixed multiple "invalid WML array index" warnings at the start.
     * Reduced starting gold.
   * Healing glyphs no longer render affected units unable to attack on the
     same turn.
