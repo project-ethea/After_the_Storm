@@ -5,6 +5,8 @@ AFTER THE STORM - CHANGELOG
 Version 0.7.3+svn:
 ------------------
 * Scenarios:
+  * E2S8 - And then there was Chaos:
+    * Fixed elves not getting the Loyal trait.
   * E2S9 - New Hive:
     * Fixed Shaxthal Worms changing colors when moving.
     * Reduced starting gold.
