@@ -24,6 +24,8 @@ Version 0.7.3+svn:
     * Increased arcane damage resistance for most Shaxthal units from -50% to
       -20%.
   * Reimplemented NPC bird behavior code in Lua.
+  * Renamed "Shaxthal Warlord" unit type to "Shaxthal Warlord Narhamoth";
+    this breaks old saved games of E1S9.1 (The Triad, part 1) during turns.
 
 
 Version 0.7.3:
