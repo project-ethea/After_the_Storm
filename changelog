@@ -7,6 +7,13 @@ Version 0.7.3+svn:
 * Graphics:
   * New or updated unit graphics: Shaxthal Warlord Nar-Hamoth
 
+* Music:
+  * All current music tracks have been moved to a separate add-on,
+    imaginatively titled "AtS Music". This add-on is now an optional dependency
+    for those who can't afford downloading it or don't play with music enabled.
+    When absent, the AtS campaign menu entries for each episode will include a
+    notice stating so.
+
 * Scenarios:
   * E2S8 - And then there was Chaos:
     * Fixed elves not getting the Loyal trait.
