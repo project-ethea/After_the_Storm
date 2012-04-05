@@ -17,6 +17,8 @@ Version 0.7.3+svn:
 * Scenarios:
   * E2S5 - The Eastern Front:
     * Added a time-over dialog sequence.
+  * E2S7 - Proximus:
+    * Added a time-over dialog sequence.
   * E2S8 - And then there was Chaos:
     * Fixed elves not getting the Loyal trait.
   * E2S9 - New Hive:
