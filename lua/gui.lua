@@ -54,9 +54,12 @@ function wesnoth.wml_actions.transient_message(cfg)
 		dd.definition = "message"
 	end
 
+	local caption = cfg.caption or ""
+	local message = cfg.message or ""
+
 	local function preshow()
-		wesnoth.set_dialog_value(cfg.caption, "caption")
-		wesnoth.set_dialog_value(cfg.message, "message")
+		wesnoth.set_dialog_value(caption, "caption")
+		wesnoth.set_dialog_value(message, "message")
 	end
 
 	wesnoth.show_dialog(dd, preshow, nil)
