@@ -49,6 +49,24 @@ function wesnoth.wml_actions.s9_area_spawns(cfg)
 end
 
 -----------
+-- E2S5 --
+-----------
+
+function wesnoth.wml_actions.store_unit_hitpoints(cfg)
+	local u = wesnoth.get_units(cfg.filter)[1]
+	local v = cfg.variable or "unit_hitpoints"
+
+	if not u then
+		helper.wml_error("[store_unit_hitpoints]: Could not match anything!")
+	end
+
+	wesnoth.set_variable(v)
+
+	wesnoth.set_variable(v .. ".current", u.hitpoints)
+	wesnoth.set_variable(v .. ".max", u.max_hitpoints)
+end
+
+-----------
 -- E2S10 --
 -----------
 
