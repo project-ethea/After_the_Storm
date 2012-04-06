@@ -38,6 +38,8 @@ Version 0.7.3+svn:
   * Balancing:
     * Increased arcane damage resistance for most Shaxthal units from -50% to
       -20%.
+    * Decreased Demon Zephyr's movement cost on deep water terrains from 2 to 1.
+    * Decreased Demon Zephyr's movement cost on unwalkable terrains from 3 to 1.
   * Reimplemented NPC bird behavior code in Lua.
   * Renamed "Shaxthal Warlord" unit type to "Shaxthal Warlord Narhamoth";
     this breaks old saved games of E1S9.1 (The Triad, part 1) during turns.
