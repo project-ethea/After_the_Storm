@@ -31,6 +31,8 @@ Version 0.7.3+svn:
   * E2S10 - The Betrayal:
     * Fixed multiple "invalid WML array index" warnings at the start.
     * Reduced starting gold.
+  * E2S11 - A Final Confrontation:
+    * Made the glyph guardians a little more competent.
   * Healing glyphs no longer render affected units unable to attack on the
     same turn.
 
