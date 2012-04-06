@@ -34,7 +34,6 @@ sbin/
 etc/
 docs/
 docs_useless/
-episode3/
 #*#
 *.swp
 _info.cfg
