@@ -4,6 +4,11 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.7.4+svn:
 ------------------
+* Scenarios:
+  * E3S0 - Opening (Within):
+    * New scenario.
+  * E3S1 - Beyond her Smile (A Light in the Darkness):
+    * New scenario.
 * Units:
   * Balancing:
     * Increased Chaos Hound's recruit cost from 18 to 20.
