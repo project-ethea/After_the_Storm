@@ -146,6 +146,7 @@ end
 
 ---
 -- Places an item in the map. Just like [item], but without the implicit [redraw].
+-- NOTE: items placed this way are lost upon loading from a saved game.
 --
 -- [item_fast]
 --     ... SLF ...
