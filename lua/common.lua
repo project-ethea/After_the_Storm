@@ -392,3 +392,23 @@ function wesnoth.wml_actions.hidden_unit(cfg)
 	u.hidden = true
 	wesnoth.put_unit(u)
 end
+
+---
+-- Counts the amount of matching units.
+--
+-- [count_units]
+--     ... SLF ...
+--     variable=unit_count
+-- [/count_units]
+---
+
+function wesnoth.wml_actions.count_units(cfg)
+	local units = wesnoth.get_units(cfg)
+	local varname = cfg.variable or "unit_count"
+
+	if units == nil then
+		wesnoth.set_variable(varname, 0)
+	else
+		wesnoth.set_variable(varname, #units)
+	end
+end
