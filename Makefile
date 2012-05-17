@@ -19,7 +19,8 @@ targetdir := $(realpath .)
 difficulties := EASY NORMAL HARD
 packs := \
 	CAMPAIGN_AFTER_THE_STORM_EPISODE_I \
-	CAMPAIGN_AFTER_THE_STORM_EPISODE_II
+	CAMPAIGN_AFTER_THE_STORM_EPISODE_II \
+	CAMPAIGN_AFTER_THE_STORM_EPISODE_III
 
 preprocesscmd = $(WML_PREPROCESS) $(targetdir) $(scratchdir) --preprocess-defines CAMPAIGN_AFTER_THE_STORM,$(diffsym),$(packsym)
 
