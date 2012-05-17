@@ -34,6 +34,8 @@ sbin/
 etc/
 docs/
 docs_useless/
+storyboard/
+storyboard*
 #*#
 *.swp
 _info.cfg

@@ -1,5 +1,7 @@
 _server.pbl
 docs_useless/
+storyboard/
+storyboard*
 macros/_initial.cfg
 base-maint.cfg
 *.kate-swp
