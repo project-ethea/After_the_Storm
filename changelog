@@ -14,6 +14,7 @@ Version 0.7.4+svn:
     * New scenario.
   * E3S3 - Amidst the Ruins of Glamdrol (A Path to Follow):
     * New scenario.
+
 * Units:
   * Balancing:
     * Increased Chaos Hound's recruit cost from 18 to 20.
@@ -22,6 +23,8 @@ Version 0.7.4+svn:
   * Fixed invisible Chaos Longbowman and Heavy Longbowman units due to missing
     graphics.
   * Fixed Elvish Trapper and Elvish Prowler disappearing during animations.
+  * Fixed NPC bird code deleting the previous on-map unit when moving a
+    bird to an occupied hex (i.e. worms in E2S9).
   * Removed Kri'tan.
 
 
