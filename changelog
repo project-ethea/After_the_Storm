@@ -10,6 +10,8 @@ Version 0.8.0:
 --------------
 * Scenarios:
   * Mal Hekuba now wears purple TC as he did in IftU.
+  * E2S12 - Fate:
+    * Avoid crash on Mac OS X during the prestart event.
   * E3S0 - Opening (Within):
     * New scenario.
   * E3S1 - Beyond her Smile (A Light in the Darkness):
