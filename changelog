@@ -4,6 +4,10 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.8.0+svn:
 ------------------
+* Scenarios:
+  * E2S8 - And then there was Chaos:
+    * Fixed elves who are initially Loyal getting a duplicate
+      trait when switching allegiances.
 
 
 Version 0.8.0:
