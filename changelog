@@ -9,6 +9,9 @@ Version 0.8.0+svn:
     * Fixed elves who are initially Loyal getting a duplicate
       trait when switching allegiances.
 
+* Sound effects:
+  * Added hit and death sounds for Doors.
+
 * Units:
   * Gave Doors a unit icon for the sidebar and the attack dialog.
 
