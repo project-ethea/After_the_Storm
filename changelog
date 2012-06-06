@@ -9,6 +9,9 @@ Version 0.8.0+svn:
     * Fixed elves who are initially Loyal getting a duplicate
       trait when switching allegiances.
 
+* Units:
+  * Gave Doors a unit icon for the sidebar and the attack dialog.
+
 
 Version 0.8.0:
 --------------
