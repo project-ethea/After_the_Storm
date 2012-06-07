@@ -11,6 +11,8 @@ Version 0.8.0+svn:
 
 * Sound effects:
   * Added hit and death sounds for Doors.
+  * Added additional explosion/thunder sounds.
+  * Added magic glyph sounds.
 
 * Units:
   * Gave Doors a unit icon for the sidebar and the attack dialog.
