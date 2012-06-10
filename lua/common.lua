@@ -415,7 +415,8 @@ end
 
 ---
 -- Retrieves the given unit's portrait file path, or the
--- fallback image if it doesn't have a defined portrait.
+-- fallback image with TC applied on it if there's no portrait
+-- defined.
 --
 -- [store_unit_portrait]
 --     ... SUF ...
@@ -426,5 +427,11 @@ function wesnoth.wml_actions.store_unit_portrait(cfg)
 	local u = wesnoth.get_units(cfg)[1] or helper.wml_error("[store_unit_portrait]: Could not match any units")
 	local varname = cfg.variable or "unit_portrait"
 
-	wesnoth.set_variable(varname, u.__cfg.profile or u.__cfg.image)
+	local img = u.__cfg.profile
+
+	if (not img) or img ~= "unit_image" then
+		img = string.format("%s~TC(%d,%s)", u.__cfg.image, u.side, u.__cfg.flag_rgb)
+	end
+
+	wesnoth.set_variable(varname, img)
 end
