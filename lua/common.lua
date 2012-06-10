@@ -412,3 +412,19 @@ function wesnoth.wml_actions.count_units(cfg)
 		wesnoth.set_variable(varname, #units)
 	end
 end
+
+---
+-- Retrieves the given unit's portrait file path, or the
+-- fallback image if it doesn't have a defined portrait.
+--
+-- [store_unit_portrait]
+--     ... SUF ...
+--     variable=unit_portrait
+-- [/store_unit_portrait]
+---
+function wesnoth.wml_actions.store_unit_portrait(cfg)
+	local u = wesnoth.get_units(cfg)[1] or helper.wml_error("[store_unit_portrait]: Could not match any units")
+	local varname = cfg.variable or "unit_portrait"
+
+	wesnoth.set_variable(varname, u.__cfg.profile or u.__cfg.image)
+end
