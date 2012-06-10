@@ -9,6 +9,9 @@ Version 0.8.0+svn:
     * Fixed elves who are initially Loyal getting a duplicate
       trait when switching allegiances.
 
+* Graphics:
+  * New or updated unit graphics: most Aragwaith units (wayfarer).
+
 * Sound effects:
   * Added hit and death sounds for Doors.
   * Added additional explosion/thunder sounds.
@@ -16,6 +19,70 @@ Version 0.8.0+svn:
 
 * Units:
   * Gave Doors a unit icon for the sidebar and the attack dialog.
+  * Updated Aragwaith units to match the faction from bumbadadabum's
+    "The Aragwaithi" add-on. This has resulted in the following changes:
+    * Protection only affects allied L1 and L0 units instead of any allied
+      lower level unit
+    * Ancient Banner abilities: +leadership, -protection, -steadfast
+    * Ancient banner resistances: impact 10% -> 20%
+    * Ancient banner stats: HP 55 -> 61, MP 4 -> 5
+    * Ancient banner attacks: sword renamed to scythe
+    * Archer attacks: melee 6-3 -> 5-3
+    * Captain abilities: +leadership, -protection, -steadfast
+    * Captain resistances: blade 20% -> 10%, fire 10% -> 0%, cold 10% -> 0%
+    * Captain stats: HP 43 -> 55, MP 4 -> 5
+    * Captain attacks: spear renamed to glaive, 17-2 -> 18-2; sword renamed to
+      glaive, 9-4 -> 10-4
+    * Eagle Master stats: HP 48 -> 45, MP 7 -> 9
+    * Eagle Master attacks: blade 9-3 -> 10-3, impact 15-2 -> 16-2
+    * Eagle Rider stats: HP 36 -> 34, MP 7 -> 9, cost 21 -> 23
+    * Eagle Rider attacks: blade 6-3 -> 7-3, impact 10-2 -> 12-2
+    * Flagbearer abilities: +leadership, -protection, -steadfast
+    * Flagbearer resistances: blade 20% -> 10%, fire 10% -> 0%, cold 10% -> 0%
+    * Flagbearer stats: HP 34 -> 45, MP 4 -> 5
+    * Flagbearer attacks: spear renamed to glaive, 13-2 -> 14-2; sword renamed
+      to glaive
+    * Greatbow stats: HP 43 -> 46, MP 5 -> 6
+    * Greatbow attacks: melee 13-3 -> 10-3
+    * Guard abilities: +steadfast
+    * Guard resistances: pierce 20% -> 10%, impact 20% -> 10%, blade 30% -> 10%
+    * Guard stats: HP 40 -> 52, XP 78 -> 64, cost 27 -> 28
+    * Guardian resistances: fire 10% -> 0%, cold 10% -> 0%
+    * Guardian stats: HP 51 -> 62
+    * Lancer now has a female variation
+    * Lancer stats: HP 40 -> 48, cost 38 -> 34
+    * Longswordsman stats: HP 38 -> 46, MP 5 -> 6, XP 78 -> 88, cost 24 -> 27
+    * Pikeman resistances: blade 20% -> 10%, impact 10% -> 0%, fire 10% -> 0%,
+      cold 10% -> 0%
+    * Pikeman stats: HP 44 -> 50, XP 94 -> 70
+    * Pikeman attacks: melee 17-2 -> 16-2
+    * Scout now has a female variation
+    * Scout stats: HP 31 -> 37, XP 36 -> 40
+    * Scout attacks: melee 10-2 -> 11-2
+    * Shield Guard abilities: +protection, +steadfast
+    * Shield Guard resistances: pierce 30% -> 10%, impact 30% -> 10%, blade
+      40% -> 10%
+    * Shield Guard stats: HP 54 -> 63
+    * Shield Guard attacks: melee 16-3 -> 15-3
+    * Silver Shield now has a female variation
+    * Silver Shield stats: HP 54 -> 62, MP 8 -> 9, cost 38 -> 48
+    * Silver Shield attacks: melee 13-4 -> 12-4
+    * Slayer stats: HP 45 -> 53, MP 5 -> 6, cost 46 -> 62
+    * Slayer attacks: melee 12-4 -> 11-4
+    * Spearman resistances: blade 20% -> 0%, pierce 20% -> 10%, impact 10% ->
+      0%, fire 10% -> 0%, cold 10% -> 0%
+    * Spearman stats: HP 30 -> 34, XP 38 -> 43
+    * Spearman attacks: 11-2 -> 12-2
+    * Strongbow stats: HP 35 -> 38, MP 5 -> 6, XP 80 -> 85, cost 31 -> 38
+    * Strongbow attacks: melee 9-3 -> 7-3, ranged 8-4 -> 9-4
+    * Swordsmaster stats: MP 5 -> 6
+    * Swordsman resistances: blade 10% -> 0%
+    * Swordsman stats: HP 28 -> 32, XP 32 -> 39, cost 13 -> 14
+    * Warlock no longer has a male variation
+    * Warlock stats: cost 18 -> 21
+    * Warlock attacks: staff renamed to kick, 6-2 -> 7-1
+    * Wizard no longer has a male variation
+    * Wizard attacks: melee 10-2 -> 7-2, ranged 11-3 -> 10-3
 
 
 Version 0.8.0:
