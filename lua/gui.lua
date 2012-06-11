@@ -107,7 +107,7 @@ function wesnoth.wml_actions.show_image(cfg)
 end
 
 ---
--- Displays an error message in a popup dialog.
+-- Displays an error message on a popup dialog.
 --
 -- This is intended to be used as an exit mechanism when the WML detects an
 -- inconsistency (see the BUG and BUG_ON macros in base-debug.cfg
@@ -129,6 +129,14 @@ function wesnoth.wml_actions.bug(cfg)
 		return
 	end
 
+	local notice = cfg.message
+	local log_notice = notice or "inconsistency detected"
+
+	wesnoth.fire("wml_message", {
+		logger = "error",
+		message = "[AtS] BUG: " .. log_notice
+	})
+
 	local alert_dialog = {
 		maximum_width = 800,
 		maximum_height = 600,
@@ -141,7 +149,7 @@ function wesnoth.wml_actions.bug(cfg)
 					grow_factor = 1, -- this one makes the title bigger and golden
 					border = "all",
 					border_size = 5,
-					T.label { definition = "title", id = "title" }
+					T.label { definition = "title", id = "title", wrap = true }
 				}
 			},
 			T.row {
@@ -150,15 +158,26 @@ function wesnoth.wml_actions.bug(cfg)
 					horizontal_alignment = "center",
 					border = "all",
 					border_size = 5,
-					T.label { id = "message" }
+					T.label { id = "message", wrap = true }
 				}
 			},
 			T.row {
 				T.column {
-					horizontal_alignment = "center",
-					border = "all",
-					border_size = 5,
-					T.button { id = "ok", return_value = 1 }
+					horizontal_alignment = "right",
+					T.grid {
+						T.row {
+							T.column {
+								border = "all",
+								border_size = 5,
+								T.button { id = "ok", return_value = 1 }
+							},
+							T.column {
+								border = "all",
+								border_size = 5,
+								T.button { id = "quit", return_value = 2 }
+							}
+						}
+					}
 				}
 			}
 		}
@@ -171,18 +190,29 @@ function wesnoth.wml_actions.bug(cfg)
 		_ = wesnoth.textdomain "wesnoth-After_the_Storm"
 		local msg = _ "An inconsistency has been detected, and the scenario might not continue working as originally intended."
 		msg = msg .. "\n" .. _ "Please report this to the campaign maintainer!"
-		msg = msg .. "\n\n" .. _ "Message:"
-		msg = msg .. "\n\t" .. cfg.message
+
+		if notice then
+			msg = msg .. "\n\n" .. _ "Message:"
+			msg = msg .. "\n\t" .. cfg.message
+		end
+
 		local cap =  _ "Error"
 
 		-- #textdomain wesnoth
 		_ = wesnoth.textdomain "wesnoth"
-		local ok = _ "OK"
+		local ok = _ "Continue"
+		local quit = _ "Quit"
 
 		wesnoth.set_dialog_value(cap, "title")
 		wesnoth.set_dialog_value(msg, "message")
 		wesnoth.set_dialog_value(ok , "ok")
+		wesnoth.set_dialog_value(quit , "quit")
 	end
 
-	wesnoth.show_dialog(alert_dialog, preshow, nil)
+	if wesnoth.show_dialog(alert_dialog, preshow, nil) == 2 then
+		wesnoth.fire("endlevel", {
+			result = "defeat",
+			linger_mode = false
+		})
+	end
 end
