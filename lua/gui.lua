@@ -119,8 +119,6 @@ end
 --         ...
 --     [/condition]
 -- [/bug]
---
--- Most of the code has been shamelessly stolen from Wesnoth Lua Pack.
 ---
 function wesnoth.wml_actions.bug(cfg)
 	local cond = helper.get_child(cfg, "condition")
