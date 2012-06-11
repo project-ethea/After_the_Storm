@@ -114,11 +114,21 @@ end
 --
 -- [bug]
 --     message= <...>
+--     # Optional conditional statement
+--     [condition]
+--         ...
+--     [/condition]
 -- [/bug]
 --
 -- Most of the code has been shamelessly stolen from Wesnoth Lua Pack.
 ---
 function wesnoth.wml_actions.bug(cfg)
+	local cond = helper.get_child(cfg, "condition")
+
+	if cond and not wesnoth.eval_conditional(cond) then
+		return
+	end
+
 	local alert_dialog = {
 		maximum_width = 800,
 		maximum_height = 600,
