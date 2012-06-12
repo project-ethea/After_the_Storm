@@ -69,6 +69,7 @@ Version 0.8.0+svn:
     * Silver Shield attacks: melee 13-4 -> 12-4
     * Slayer stats: HP 45 -> 53, MP 5 -> 6, cost 46 -> 62
     * Slayer attacks: melee 12-4 -> 11-4
+    * Sorcerer renamed to Sorceress, no longer has a male variation
     * Spearman resistances: blade 20% -> 0%, pierce 20% -> 10%, impact 10% ->
       0%, fire 10% -> 0%, cold 10% -> 0%
     * Spearman stats: HP 30 -> 34, XP 38 -> 43
