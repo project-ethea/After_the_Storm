@@ -76,6 +76,7 @@ Version 0.8.0+svn:
     * Spearman attacks: 11-2 -> 12-2
     * Strongbow stats: HP 35 -> 38, MP 5 -> 6, XP 80 -> 85, cost 31 -> 38
     * Strongbow attacks: melee 9-3 -> 7-3, ranged 8-4 -> 9-4
+    * Swordsmaster id changed, breaking old saved games with the unit
     * Swordsmaster stats: MP 5 -> 6
     * Swordsman resistances: blade 10% -> 0%
     * Swordsman stats: HP 28 -> 32, XP 32 -> 39, cost 13 -> 14
