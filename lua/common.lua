@@ -430,7 +430,12 @@ function wesnoth.wml_actions.store_unit_portrait(cfg)
 	local img = u.__cfg.profile
 
 	if (not img) or img ~= "unit_image" then
-		img = string.format("%s~TC(%d,%s)", u.__cfg.image, u.side, u.__cfg.flag_rgb)
+		local mods = u.image_mods
+		if mods then
+			img = string.format("%s~%s~TC(%d,%s)", u.__cfg.image, mods, u.side, u.__cfg.flag_rgb)
+		else
+			img = string.format("%s~TC(%d,%s)", u.__cfg.image, u.side, u.__cfg.flag_rgb)
+		end
 	end
 
 	wesnoth.set_variable(varname, img)
