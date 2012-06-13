@@ -18,6 +18,8 @@ Version 0.8.0+svn:
   * Added magic glyph sounds.
 
 * Units:
+  * Balancing:
+    * Removed marksman special from the Demolisher Drone's ranged attack.
   * Gave Doors a unit icon for the sidebar and the attack dialog.
   * Updated Aragwaith units to match the faction from bumbadadabum's
     "The Aragwaithi" add-on. This has resulted in the following changes:
