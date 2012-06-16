@@ -20,9 +20,9 @@ Version 0.8.0+svn:
 * Units:
   * Balancing:
     * Removed marksman special from the Demolisher Drone's ranged attack.
-    * Increased Sprite's fire resistance from -20% to 0%.
-    * Increased Fire Faerie's fire resistance from -20% to 0%.
-    * Increased Dryad's fire resistance from -10% to 0%.
+    * Increased Sprite's impact resistance from -20% to 0%.
+    * Increased Fire Faerie's impact resistance from -20% to 0%.
+    * Increased Dryad's impact resistance from -10% to 0%.
   * Gave Doors a unit icon for the sidebar and the attack dialog.
   * Updated Aragwaith units to match the faction from bumbadadabum's
     "The Aragwaithi" add-on. This has resulted in the following changes:
