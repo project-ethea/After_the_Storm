@@ -8,6 +8,8 @@ Version 0.8.0+svn:
   * E2S8 - And then there was Chaos:
     * Fixed elves who are initially Loyal getting a duplicate
       trait when switching allegiances.
+  * E3S4 - Outpost of Hell (Gateway):
+    * New scenario.
 
 * Graphics:
   * New or updated unit graphics: most Aragwaith units (wayfarer).
