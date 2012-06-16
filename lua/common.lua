@@ -397,7 +397,7 @@ end
 -- Counts the amount of matching units.
 --
 -- [count_units]
---     ... SLF ...
+--     ... SUF ...
 --     variable=unit_count
 -- [/count_units]
 ---
