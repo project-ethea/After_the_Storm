@@ -8,6 +8,8 @@ Version 0.8.0+svn:
   * E2S8 - And then there was Chaos:
     * Fixed elves who are initially Loyal getting a duplicate
       trait when switching allegiances.
+  * E3S2.1 - Return to Raelthyn:
+    * Minor map balancing changes.
   * E3S4 - Outpost of Hell (Gateway):
     * New scenario.
 
