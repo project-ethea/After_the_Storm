@@ -337,6 +337,8 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 		end
 
 		wesnoth.set_dialog_callback(on_select, "listbox")
+
+		on_select()
 	end
 
 	--wesnoth.synchronize_choice(function()
