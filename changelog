@@ -57,7 +57,8 @@ Version 0.8.0+svn:
     * Greatbow attacks: melee 13-3 -> 10-3
     * Guard abilities: +steadfast
     * Guard resistances: pierce 20% -> 10%, impact 20% -> 10%, blade 30% -> 10%
-    * Guard stats: HP 40 -> 52, XP 78 -> 64, cost 27 -> 28
+    * Guard stats: HP 40 -> 54, XP 78 -> 64, cost 27 -> 28
+    * Guard attacks: melee 12-3 -> 11-3
     * Guardian resistances: fire 10% -> 0%, cold 10% -> 0%
     * Guardian stats: HP 51 -> 62
     * Lancer now has a female variation
