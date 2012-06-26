@@ -38,7 +38,7 @@ Version 0.8.0+svn:
     * Ancient banner resistances: impact 10% -> 20%
     * Ancient banner stats: HP 55 -> 61, MP 4 -> 5
     * Ancient banner attacks: sword renamed to scythe
-    * Archer attacks: melee 6-3 -> 5-3
+    * Archer attacks: melee 6-3 -> 4-3
     * Captain abilities: +leadership, -protection, -steadfast
     * Captain resistances: blade 20% -> 10%, fire 10% -> 0%, cold 10% -> 0%
     * Captain stats: HP 43 -> 55, MP 4 -> 5
