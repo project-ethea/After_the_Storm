@@ -49,10 +49,10 @@ Version 0.8.0+svn:
     * Eagle Rider stats: HP 36 -> 34, MP 7 -> 9, cost 21 -> 23
     * Eagle Rider attacks: blade 6-3 -> 7-3, impact 10-2 -> 12-2
     * Flagbearer abilities: +leadership, -protection, -steadfast
-    * Flagbearer resistances: blade 20% -> 10%, fire 10% -> 0%, cold 10% -> 0%
+    * Flagbearer resistances: blade 20% -> 10%, fire 10% -> 0%, cold 10% -> 0%,
+      pierce 20% -> 0%, impact 10% -> 0%
     * Flagbearer stats: HP 34 -> 45, MP 4 -> 5
-    * Flagbearer attacks: spear renamed to glaive, 13-2 -> 14-2; sword renamed
-      to glaive
+    * Flagbearer attacks: spear renamed to glaive, sword renamed to glaive
     * Greatbow stats: HP 43 -> 46, MP 5 -> 6
     * Greatbow attacks: melee 13-3 -> 10-3
     * Guard abilities: +steadfast
