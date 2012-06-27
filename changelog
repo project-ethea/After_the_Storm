@@ -93,9 +93,9 @@ Version 0.8.0+svn:
     * Swordsmaster stats: MP 5 -> 6
     * Swordsman resistances: blade 10% -> 0%
     * Swordsman stats: HP 28 -> 32, XP 32 -> 39, cost 13 -> 14
-    * Warlock no longer has a male variation
-    * Warlock stats: cost 18 -> 21
-    * Warlock attacks: staff renamed to kick, 6-2 -> 7-1
+    * Warlock renamed to Witch, no longer has a male variation
+    * Witch stats: cost 18 -> 21
+    * Witch attacks: staff renamed to kick, 6-2 -> 7-1
     * Wizard no longer has a male variation
     * Wizard attacks: melee 10-2 -> 7-2, ranged 11-3 -> 10-3
 
