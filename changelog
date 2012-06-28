@@ -47,8 +47,9 @@ Version 0.8.0+svn:
       glaive, 9-4 -> 10-4
     * Eagle Master stats: HP 48 -> 45, MP 7 -> 9
     * Eagle Master attacks: blade 9-3 -> 10-3, impact 15-2 -> 16-2
+    * Eagle Rider defense: mountain 60% -> 50%
     * Eagle Rider stats: HP 36 -> 34, MP 7 -> 9, cost 21 -> 23
-    * Eagle Rider attacks: blade 6-3 -> 7-3, impact 10-2 -> 12-2
+    * Eagle Rider attacks: impact 10-2 -> 12-2
     * Flagbearer abilities: +leadership, -protection, -steadfast
     * Flagbearer resistances: blade 20% -> 10%, fire 10% -> 0%, cold 10% -> 0%,
       pierce 20% -> 0%, impact 10% -> 0%
