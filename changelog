@@ -70,7 +70,7 @@ Version 0.8.0+svn:
     * Pikeman stats: HP 44 -> 50, XP 94 -> 70
     * Pikeman attacks: melee 17-2 -> 16-2
     * Scout now has a female variation
-    * Scout stats: HP 31 -> 37, XP 36 -> 40
+    * Scout stats: HP 31 -> 36, XP 36 -> 40
     * Scout attacks: melee 10-2 -> 11-2
     * Shield Guard abilities: +protection, +steadfast
     * Shield Guard resistances: pierce 30% -> 10%, impact 30% -> 10%, blade
