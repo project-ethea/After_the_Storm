@@ -31,6 +31,9 @@ Version 0.8.0+svn:
     * Increased Sprite's impact resistance from -20% to 0%.
     * Increased Fire Faerie's impact resistance from -20% to 0%.
     * Increased Dryad's impact resistance from -10% to 0%.
+    * Increased Aragwaith Seer's HP from 39 to 44.
+    * Increased Aragwaith Seer's melee attack from 7-2 to 8-2.
+    * Increased Aragwaith Seer's ranged attack from 8-3 to 10-3.
   * Gave Doors a unit icon for the sidebar and the attack dialog.
   * Updated Aragwaith units to match the faction from bumbadadabum's
     "The Aragwaithi" add-on. This has resulted in the following changes:
