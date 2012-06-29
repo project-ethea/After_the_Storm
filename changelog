@@ -5,6 +5,8 @@ AFTER THE STORM - CHANGELOG
 Version 0.8.0+svn:
 ------------------
 * Scenarios:
+  * E2S3.1 - Unrest in Raelthyn:
+    * Updated to use Aragwaith units.
   * E2S8 - And then there was Chaos:
     * Fixed elves who are initially Loyal getting a duplicate
       trait when switching allegiances.
