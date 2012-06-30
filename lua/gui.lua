@@ -50,7 +50,10 @@ function wesnoth.wml_actions.transient_message(cfg)
 		}
 	}
 
-	if cfg.transparent then
+	local transparent = cfg.transparent
+	if transparent == nil then transparent = true end
+
+	if transparent then
 		dd.definition = "message"
 	end
 
