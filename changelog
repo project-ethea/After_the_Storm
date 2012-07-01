@@ -8,6 +8,9 @@ Version 0.8.1+svn:
 
 Version 0.8.1:
 --------------
+* Graphics:
+  * New or updated unit graphics: most Aragwaith units (wayfarer).
+
 * Scenarios:
   * E2S3.1 - Unrest in Raelthyn:
     * Updated to use Aragwaith units.
@@ -20,9 +23,6 @@ Version 0.8.1:
     * New scenario.
   * E3S5 - Pass of Sorrows (Gathering Storm):
     * New scenario.
-
-* Graphics:
-  * New or updated unit graphics: most Aragwaith units (wayfarer).
 
 * Sound effects:
   * Added hit and death sounds for Doors.
