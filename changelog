@@ -34,6 +34,8 @@ Version 0.8.0+svn:
     * Increased Aragwaith Seer's HP from 39 to 44.
     * Increased Aragwaith Seer's melee attack from 7-2 to 8-2.
     * Increased Aragwaith Seer's ranged attack from 8-3 to 10-3.
+    * Decreased Shaxthal Razorbird's melee attack from 10-1 to 8-1.
+    * Decreased Shaxthal Thunderbird's melee attack from 13-1 to 10-1.
   * Gave Doors a unit icon for the sidebar and the attack dialog.
   * Updated Aragwaith units to match the faction from bumbadadabum's
     "The Aragwaithi" add-on. This has resulted in the following changes:
