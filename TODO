@@ -3,7 +3,7 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
 ======================================
 
   Legend: [!] Important - [L] Low - [D] Lowest/Wishlist - [M] 1.0.0 target -
-          [F] 2.0.0 target - [?] Undecided/Tentative - [x] Done
+          [?] Undecided/Tentative - [x] Done
 
 * General
   * [D] Distribute resources in a separate add-on used by IftU, AtS, TSL and FaS
@@ -39,14 +39,10 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
   * E2S4
     * [L] May need style changes and review
 
-* Scenarios (general)
-  * [M] Episode III (storyboard/early production)
-  * [F] Episode III (production/balancing)
-
 * Units (with currently finished art)
   * [M] Ivyel (E1S9.2 appearance) needs better/more interesting stats
   * [?] Elynia needs AMLAs for E2
-    * [F] Depending on this, she might need a better unit type for E3 that
+    * [M] Depending on this, she might need a better unit type for E3 that
       always incorporates previous AMLAs, and provides new ones; although
       plot-wise, the more logical action would be to level her down in E3.
 
@@ -62,15 +58,14 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
     * [L] Nar-hamoth (E1S9.1 appearance) needs his own baseframe
     * [M] Ivyel (E1S9.2 appearance) needs a new baseframe
     * [M] Uria (E2S12 appearance) needs her own passive baseframe
-      * [F] [?] She may also need a combat baseframe
     * [L] Mal Hekuba (E2S11 appearance) needs his own baseframe
-    * [F] Chaos Loremaster, a mage/engineer/medic unit with healing
+    * [M] Chaos Dreadcrafter, a mage/engineer/medic unit with healing
     * Degraded bosses and heroes
-      * [F] Shaxthal High Guard (rem. of Shaxthal Queen, adv. from Shaxthal
+      * [M] Shaxthal High Guard (rem. of Shaxthal Queen, adv. from Shaxthal
         Enforcer Drone)
-      * [F] Shaxthal Stormblade (rem. of Ivyel!E1S9.2, adv. from Shaxthal
+      * [M] Shaxthal Stormblade (rem. of Ivyel!E1S9.2, adv. from Shaxthal
         Rayblade)
-      * [F] Demon Warlord (rem. of Demon-Lord Elorran, adv. from Demon Warrior)
+      * [M] Demon Warlord (rem. of Demon-Lord Elorran, adv. from Demon Warrior)
   * Animations
     * [L] Basic animations for existing hero units
       * Elvish Wayfarer
@@ -87,7 +82,7 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
   * Elyssa
     * [!] [M] Scar-less portrait for her E1S9.1 through E1S12 appearances, and
       E2S12
-    * [?] [D] [F] New portrait for E2S12 onwards displaying less deteriorated
+    * [?] [D] [M] New portrait for E2S12 onwards displaying less deteriorated
       skin
   * [L] Horo
   * [L] Kyara
