@@ -4,6 +4,11 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.8.1+svn:
 ------------------
+* Scenario:
+  * E3S4.1 - Outpost of Hell:
+    * Reveal Demon Shapeshifters with their remaining moves and attacks set to
+      zero during their controlling side's turn.
+
 * Units:
   * Balancing:
     * Decreased Demon Shapeshifter's HP from 47 to 44.
