@@ -130,7 +130,7 @@ end
 function wesnoth.wml_actions.store_unit_ids(cfg)
 	local filter = helper.get_child(cfg, "filter") or
 		helper.wml_error "[store_unit_ids] missing required [filter] tag"
-	local varid = cfg.variable or "units"
+	local var = cfg.variable or "units"
 	local idx = 0
 	if cfg.mode == "append" then
 		idx = wesnoth.get_variable(var .. ".length")
@@ -139,7 +139,7 @@ function wesnoth.wml_actions.store_unit_ids(cfg)
 	end
 
 	for i, u in ipairs(wesnoth.get_units(filter)) do
-		wesnoth.set_variable(string.format("%s[%d].id", varid, idx), u.id)
+		wesnoth.set_variable(string.format("%s[%d].id", var, idx), u.id)
 		idx = idx + 1
 	end
 end
