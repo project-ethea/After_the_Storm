@@ -10,6 +10,9 @@ Version 0.8.1+svn:
     * Recall all loyal side 2 units for free at the start.
     * Reveal Demon Shapeshifters with their remaining moves and attacks set to
       zero during their controlling side's turn.
+  * E3S5 - Pass of Sorrows:
+    * Improved handling of non-Elynia units stepping on the monolith location
+      both before and after its "activation".
 
 * Units:
   * Balancing:
