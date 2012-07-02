@@ -4,6 +4,11 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.8.1+svn:
 ------------------
+* Units:
+  * Balancing:
+    * Decreased Demon Shapeshifter's HP from 47 to 44.
+    * Decreased Demon Shapeshifter's melee attack from 8-3 to 7-3.
+    * Decreased Demon Shapeshifter's ranged attack from 9-2 to 8-2.
 
 
 Version 0.8.1:
