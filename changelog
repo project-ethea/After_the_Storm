@@ -2,8 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.8.1+svn:
-------------------
+Version 0.8.2:
+--------------
 * Scenario:
   * E3S4.1 - Outpost of Hell:
     * Limit Demon Shapeshifter spawns according to the difficulty level.
