@@ -6,6 +6,7 @@ Version 0.8.1+svn:
 ------------------
 * Scenario:
   * E3S4.1 - Outpost of Hell:
+    * Limit Demon Shapeshifter spawns according to the difficulty level.
     * Recall all loyal side 2 units for free at the start.
     * Reveal Demon Shapeshifters with their remaining moves and attacks set to
       zero during their controlling side's turn.
