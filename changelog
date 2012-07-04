@@ -8,6 +8,8 @@ Version 0.8.2+svn:
   * E3S4.1 - Outpost of Hell:
     * Make sure to remove the demolition ability overlay from units when the
       siege charges are disabled by the boss event.
+    * Prevent log spam about retrieving non-existent WML variables immediately
+      before and after the boss event.
 
 
 Version 0.8.2:
