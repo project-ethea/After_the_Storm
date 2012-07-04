@@ -4,11 +4,15 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.8.2+svn:
 ------------------
+* Scenarios:
+  * E3S4.1 - Outpost of Hell:
+    * Make sure to remove the demolition ability overlay from units when the
+      siege charges are disabled by the boss event.
 
 
 Version 0.8.2:
 --------------
-* Scenario:
+* Scenarios:
   * E3S4.1 - Outpost of Hell:
     * Limit Demon Shapeshifter spawns according to the difficulty level.
     * Recall all loyal side 2 units for free at the start.
