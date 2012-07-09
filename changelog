@@ -10,6 +10,8 @@ Version 0.8.2+svn:
       siege charges are disabled by the boss event.
     * Prevent log spam about retrieving non-existent WML variables immediately
       before and after the boss event.
+  * E3S6 - Divergence:
+    * New scenario, disabled in production until the rest is completed.
 
 
 Version 0.8.2:
