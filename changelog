@@ -13,6 +13,9 @@ Version 0.8.2+svn:
   * E3S6 - Divergence:
     * New scenario, disabled in production until the rest is completed.
 
+* Units:
+  * Allow the Demon Shapeshifter to get the default AMLA.
+
 
 Version 0.8.2:
 --------------
