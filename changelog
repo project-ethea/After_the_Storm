@@ -5,6 +5,8 @@ AFTER THE STORM - CHANGELOG
 Version 0.8.2+svn:
 ------------------
 * Scenarios:
+  * Replaced a bunch of instances of "in the battlefield" with "on the
+    battlefield".
   * E1S9.1 - The Triad, part 1:
     * Minor cosmetic changes that totally have no plot significance whatsoever.
   * E3S4.1 - Outpost of Hell:
