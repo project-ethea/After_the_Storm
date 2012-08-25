@@ -2,8 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.8.2+svn:
-------------------
+Version 0.8.3:
+--------------
 * General:
   * Preliminary (untested) Wesnoth 1.11.0 support. There might be serious
     campaign-specific bugs, so players on this version should report their
