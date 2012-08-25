@@ -4,6 +4,13 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.8.2+svn:
 ------------------
+* General:
+  * Preliminary (untested) Wesnoth 1.11.0 support. There might be serious
+    campaign-specific bugs, so players on this version should report their
+    experience regardless of failure or success. This same version of the
+    campaign will continue to support Wesnoth 1.10 until Wesnoth 1.12 RC 1 is
+    released at an indeterminate point in the future.
+
 * Scenarios:
   * Replaced a bunch of instances of "in the battlefield" with "on the
     battlefield".
