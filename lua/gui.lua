@@ -539,15 +539,10 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 	end
 
 	local dialog_definition = {
-		automatic_placement = false, -- handle all geometry here
-
 		click_dismiss = false,
 
-		width = 640,	-- should be < 800 (minimum x res)
-		height = 400,	-- should be < 480 (minimum y res)
-
-		x = "(screen_width / 2 - 640 / 2)",
-		y = "(screen_height / 2 - 400 / 2)",
+		maximum_width = 640,
+		maximum_height = 400,
 
 		T.helptip { id = "tooltip_large" },
 		T.tooltip { id = "tooltip_large" },
