@@ -582,6 +582,8 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 			T.row {
 				grow_factor = 1,
 				T.column {
+					horizontal_alignment = "left",
+					vertical_alignment = "top",
 					T.grid {
 						T.row {
 							T.column {
