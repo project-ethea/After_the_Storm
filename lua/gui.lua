@@ -460,24 +460,6 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 		variable = cfg.variable or "choice"
 	end
 
-	-- HACK: we need to generate a multi_page widget's page_data node early on,
-	-- so we have to go over the [entry] children a first time as well, to get
-	-- the strings.
-
-	local page_data = {}
-	local page_count = 0
-
-	for option in helper.child_range(cfg, "option") do
-		local title = option.title or "-"
-		local text = option.text or ""
-
-		page_count = page_count + 1
-
-		page_data[page_count] = T.row {
-			T.column { label = title .. ":\n\n" .. text },
-		}
-	end
-
 	local list_definition = {
 		T.row {
 			T.column {
@@ -609,8 +591,7 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 												}
 											}
 										}
-									},
-									T.page_data(page_data),
+									}
 								}
 							}
 						}
@@ -628,6 +609,8 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 			}
 		}
 	} -- end dialog_definition
+
+	local page_count = 0
 
 	local function on_select()
 		local i = wesnoth.get_dialog_value("option_list")
@@ -663,8 +646,12 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 			wesnoth.set_dialog_value(image, "option_list", i, "option_icon")
 			wesnoth.set_dialog_value(title, "option_list", i, "option_title")
 
+			wesnoth.set_dialog_value(title .. ":\n\n" .. text, "current_option_pager", i, "current_option_text")
+
 			i = i + 1
 		end
+
+		page_count = i
 
 		wesnoth.set_dialog_callback(on_select, "option_list")
 
@@ -672,7 +659,6 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 		wesnoth.set_dialog_value(1, "option_list")
 		on_select()
 	end
-
 
 	local res = wesnoth.synchronize_choice(function()
 		local choice = -1
