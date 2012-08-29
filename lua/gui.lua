@@ -364,7 +364,7 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 					border_size = 5,
 					T.listbox {
 						id = "listbox",
-						defition = "default",
+						definition = "default",
 						T.list_definition(list_definition)
 					}
 				}
