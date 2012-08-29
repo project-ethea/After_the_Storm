@@ -438,7 +438,7 @@ end
 --     variable=(string) (optional, defaults to "choice" and only makes sense
 --                       when can_dismiss is false)
 --     [option]
---         image=(image path) (optional, will use misc/blank-hex.png if missing)
+--         image=(image path) (optional)
 --         title=(string)
 --         text=(string)
 --     [/option]
@@ -656,7 +656,7 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 		local i = 1
 
 		for entry in helper.child_range(cfg, "option") do
-			local image = entry.image or "misc/blank-hex.png"
+			local image = entry.image or ""
 			local title = entry.title or "-"
 			local text = entry.text or ""
 
