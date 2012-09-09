@@ -79,8 +79,10 @@ function wesnoth.wml_actions.transient_message(cfg)
 		dd.definition = "message"
 	end
 
-	local caption = cfg.caption or ""
-	local message = cfg.message or ""
+	local caption = cfg.caption
+	if caption == nil then caption = "" end
+	local message = cfg.message
+	if message == nil then message = "" end
 
 	local function preshow()
 		wesnoth.set_dialog_value(caption, "caption")
@@ -139,7 +141,8 @@ function wesnoth.wml_actions.top_message(cfg)
 		}
 	}
 
-	local message = cfg.message or ""
+	local message = cfg.message
+	if message == nil then message = "" end
 
 	local function preshow()
 		wesnoth.set_dialog_value(message, "message")
@@ -639,9 +642,12 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 		local i = 1
 
 		for entry in helper.child_range(cfg, "option") do
-			local image = entry.image or ""
-			local title = entry.title or "-"
-			local text = entry.text or ""
+			local image = entry.image
+			if image == nil then image = "" end
+			local title = entry.title
+			if title == nil then title = "-" end
+			local text = entry.text
+			if text == nil then text = "" end
 
 			wesnoth.set_dialog_value(image, "option_list", i, "option_icon")
 			wesnoth.set_dialog_value(title, "option_list", i, "option_title")
