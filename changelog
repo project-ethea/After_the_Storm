@@ -7,6 +7,11 @@ Version 0.8.3+svn:
 * Graphics:
   * New or updated items: crystal glyphs.
 
+* Units:
+  * Balancing:
+    * Farmland no longer applies for the effects of the Sylvan Spark and Sylvan
+      Essence abilities.
+
 
 Version 0.8.3:
 --------------
