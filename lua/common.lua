@@ -481,3 +481,29 @@ function wesnoth.wml_actions.store_unit_portrait(cfg)
 
 	wesnoth.set_variable(varname, img)
 end
+
+---
+-- Sets the given variable to a boolean value depending
+-- on whether the given conditional statements pass or not.
+--
+-- [set_conditional_variable]
+--     name= (required string: variable name)
+--     [condition]
+--         ...
+--     [/condition]
+-- [/set_conditional_variable]
+---
+function wesnoth.wml_actions.set_conditional_variable(cfg)
+	local varname = cfg.name
+	local condition = helper.get_child(cfg, "condition")
+
+	if varname == nil then
+		helper.wml_error("[set_conditional_variable]: Required 'name' attribute missing")
+	end
+
+	if condition == nil then
+		helper.wml_error("[set_conditional_variable]: Required '[condition]' tag missing")
+	end
+
+	wesnoth.set_variable(varname, wesnoth.eval_conditional(condition))
+end
