@@ -15,6 +15,7 @@ local T = helper.set_wml_tag_metatable {}
 --     message=(tstring)
 --     transparent=(boolean)
 --     image=(image path)
+--     sound=(string)
 -- [/transient_message]
 ---
 function wesnoth.wml_actions.transient_message(cfg)
@@ -92,6 +93,9 @@ function wesnoth.wml_actions.transient_message(cfg)
 			wesnoth.set_dialog_value(cfg.image, "image")
 		end
 	end
+
+	local sound = cfg.sound
+	if sound ~= nil then wesnoth.play_sound(sound)
 
 	wesnoth.show_dialog(dd, preshow, nil)
 end
