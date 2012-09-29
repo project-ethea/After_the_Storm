@@ -4,6 +4,21 @@
 
 local helper = wesnoth.require "lua/helper.lua"
 
+-- helper.round() is not implemented in version 1.10.x.
+if wesnoth.compare_versions(wesnoth.game_config.version, '<', '1.11.0') then
+	function helper.round(number)
+		-- code converted from util.hpp, round_portable function
+		-- round half away from zero method
+		if number >= 0 then
+			number = math.floor( number + 0.5 )
+		else
+			number = math.ceil ( number - 0.5 )
+		end
+
+		return number
+	end
+end
+
 function safe_random(arg)
 	wesnoth.fire("set_variable", {
 		name = "temp_ats_lua_random",
