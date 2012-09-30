@@ -118,3 +118,56 @@ function wesnoth.wml_actions.store_unit_can_move_on_current_terrain(cfg)
 		(wesnoth.unit_movement_cost(u, wesnoth.get_terrain(u.x, u.y)) < u.max_moves))
 end
 
+-------------
+-- E3S7A.2 --
+-------------
+
+function wesnoth.wml_actions.store_vacant_spawn_location(cfg)
+	local variable = cfg.variable or "location"
+	local direction = cfg.direction or helper.wml_error("[store_vacant_spawn_location]: Missing direction!")
+	local x = tonumber(cfg.x)
+	local y = tonumber(cfg.y)
+
+	if not (x and y) then
+		helper.wml_error("[store_vacant_spawn_location]: x,y must describe an on-map location!")
+	end
+
+	local radius = tonumber(cfg.radius)
+
+	if not radius or radius < 1 then
+		helper.wml_error("[store_vacant_spawn_location]: Radius must be greater than 1!")
+	end
+
+	local w, h = wesnoth.get_map_size()
+
+	for k = 1, radius do
+		local loc = wesnoth.get_locations({
+			-- On map.
+			x = string.format("1-%d", w),
+			y = string.format("1-%d", h),
+			-- Vacant and not impassable.
+			{ "not", {
+				terrain = "X*,X*^*,*^X*",
+				{ "filter", {} }
+			} },
+			-- Adjacent to our source hex.
+			{ "filter_adjacent_location", {
+				adjacent = '-' .. direction,
+				x = x,
+				y = y,
+			} }
+		})[1]
+
+		if loc then
+			x = loc[1]
+			y = loc[2]
+		else
+			x = 0
+			y = 0
+			break
+		end
+	end
+
+	wesnoth.set_variable(variable .. '.x', x)
+	wesnoth.set_variable(variable .. '.y', y)
+end
