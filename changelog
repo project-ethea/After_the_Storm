@@ -4,6 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.8.3+svn:
 ------------------
+* General:
+  * Dropped remaining compatibility code for Wesnoth 1.9.9 and earlier.
+
 * Graphics:
   * New or updated items: crystal glyphs.
   * New or updated unit graphics: Sprite, Fire Faerie, Forest Spirit, Dryad,
