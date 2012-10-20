@@ -218,7 +218,11 @@ function wesnoth.wml_actions.bug(cfg)
 	end
 
 	local notice = cfg.message
-	local log_notice = notice or "inconsistency detected"
+	local log_notice = notice
+
+	if log_notice == nil or log_notice == "" then
+		log_notice = "inconsistency detected"
+	end
 
 	wesnoth.fire("wml_message", {
 		logger = "error",
@@ -279,7 +283,7 @@ function wesnoth.wml_actions.bug(cfg)
 		local msg = _ "An inconsistency has been detected, and the scenario might not continue working as originally intended."
 		msg = msg .. "\n" .. _ "Please report this to the campaign maintainer!"
 
-		if notice then
+		if notice ~= nil and notice ~= "" then
 			msg = msg .. "\n\n" .. _ "Message:"
 			msg = msg .. "\n\t" .. cfg.message
 		end
