@@ -21,6 +21,8 @@ Version 0.8.3+svn:
   * Balancing:
     * Farmland no longer applies for the effects of the Sylvan Spark and Sylvan
       Essence abilities.
+    * Reduced Shaxthal elusivefoot defense on Deep Water from 20% to 10%
+      (Shaxthal Rayblade, Shaxthal Stormblade, Elyssa).
   * Fixed Chaos Longbowman and Heavy Longbowman melee attack animations.
 
 
