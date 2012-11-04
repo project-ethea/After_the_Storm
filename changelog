@@ -24,7 +24,9 @@ Version 0.8.3+svn:
     * Reduced Shaxthal elusivefoot defense on Deep Water from 20% to 10%
       (Shaxthal Rayblade, Shaxthal Stormblade, Elyssa).
   * Fixed Chaos Longbowman and Heavy Longbowman melee attack animations.
-  * Give Forest Spirits the 'spirit' trait instead of 'undead'.
+  * Give Forest Spirits the 'spirit' trait instead of 'undead'. Note that as a
+    side-effect, existing instances of this unit will get both traits when
+    loading from saved games.
 
 
 Version 0.8.3:
