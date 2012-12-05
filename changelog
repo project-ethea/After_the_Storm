@@ -5,8 +5,13 @@ AFTER THE STORM - CHANGELOG
 Version 0.8.4+svn:
 ------------------
 * Scenarios:
+  * E1S11.2 - Return to Wesmere, part 2:
+    * Add workaround for mainline bug #20350 on 1.10.5 and earlier, which
+      allowed the player to end their first turn prematurely by save-reloading.
   * E2S12 - Fate:
     * Shrank Elynia's HP bar as much as possible and eliminated her XP bar.
+  * (Unreleased scenarios):
+    * Add workaround for mainline bug #20351 on 1.10.5 and earlier.
 
 
 Version 0.8.4:
