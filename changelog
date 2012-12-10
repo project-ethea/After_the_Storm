@@ -4,6 +4,10 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.8.4+svn:
 ------------------
+* General:
+  * Added a note at the start of every episode regarding Display preferences
+    that may affect cutscenes.
+
 * Scenarios:
   * E1S11.2 - Return to Wesmere, part 2:
     * Add workaround for mainline bug #20350 on 1.10.5 and earlier, which
