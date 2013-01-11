@@ -8,6 +8,9 @@ Version 0.8.4+svn:
   * Added a note at the start of every episode regarding Display preferences
     that may affect cutscenes.
 
+* Graphics:
+  * New or updated unit graphics: Chaos Arbalestier.
+
 * Scenarios:
   * E1S11.2 - Return to Wesmere, part 2:
     * Add workaround for mainline bug #20350 on 1.10.5 and earlier, which
@@ -19,6 +22,9 @@ Version 0.8.4+svn:
       1920x1080).
   * (Unreleased scenarios):
     * Add workaround for mainline bug #20351 on 1.10.5 and earlier.
+
+* Units:
+  * Renamed Chaos Advanced Crossbowman to Chaos Arbalestier.
 
 
 Version 0.8.4:
