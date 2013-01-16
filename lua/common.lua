@@ -580,3 +580,42 @@ function wesnoth.wml_actions.fade_out_music(cfg)
 
 	set_music_volume(100)
 end
+
+---
+-- Checks whether the second unit ([filter_second]) is within the movement
+-- range of the first unit ([filter]), and stores the truth value as a
+-- boolean in the given variable (or in_range if not specified).
+--
+-- [check_unit_in_range]
+--     [filter]
+--         (primary unit SUF)
+--     [/filter]
+--     [filter_second]
+--         (secondary unit SUF)
+--     [/filter_second]
+--     variable=(optional string, default to "in_range")
+-- [/check_unit_in_range]
+---
+
+function wesnoth.wml_actions.check_unit_in_range(cfg)
+	local primary_suf = helper.get_child(cfg, "filter") or
+		helper.wml_error "[check_unit_in_range] missing required [filter] tag"
+	local second_suf = helper.get_child(cfg, "filter_second") or
+		helper.wml_error "[check_unit_in_range] missing required [filter_second] tag"
+	local variable = cfg.variable
+
+	if variable == nil then
+		variable = "in_range"
+	end
+
+	local u1 = wesnoth.get_units(primary_suf)[1] or
+		helper.wml_error "[check_unit_in_range] could not match primary unit"
+	local u2 = wesnoth.get_units(secondary_suf)[1] or
+		helper.wml_error "[check_unit_in_range] could not match secondary unit"
+
+	if helper.distance_between(u1.x, u1.y, u2.x, u2.y) <= u1.max_moves then
+		wesnoth.set_variable(variable, true)
+	else
+		wesnoth.set_variable(variable, false)
+	end
+end
