@@ -7,6 +7,10 @@ Version 0.8.4+svn:
 * General:
   * Added a note at the start of every episode regarding Display preferences
     that may affect cutscenes.
+  * Added title cards to every scenario in episode I and II that is supposed to
+    have one, and added the production code for each individual scenario to all
+    title cards.
+  * Changed the other in which title cards display during E3.
   * New campaign difficulty menu icons for episodes II and III.
 
 * Graphics:
@@ -21,6 +25,7 @@ Version 0.8.4+svn:
   * E3S0 - Opening:
     * Fixed minor story text persistence glitch on large resolutions (e.g.
       1920x1080).
+    * Removed title card.
   * (Unreleased scenarios):
     * Add workaround for mainline bug #20351 on 1.10.5 and earlier.
 
