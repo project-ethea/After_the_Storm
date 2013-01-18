@@ -11,6 +11,7 @@ Version 0.8.4+svn:
     have one, and added the production code for each individual scenario to all
     title cards.
   * Changed the other in which title cards display during E3.
+  * Fixed hive spawns not getting random traits as intended.
   * New campaign difficulty menu icons for episodes II and III.
 
 * Graphics:
