@@ -610,7 +610,7 @@ function wesnoth.wml_actions.check_unit_in_range(cfg)
 
 	local u1 = wesnoth.get_units(primary_suf)[1] or
 		helper.wml_error "[check_unit_in_range] could not match primary unit"
-	local u2 = wesnoth.get_units(secondary_suf)[1] or
+	local u2 = wesnoth.get_units(second_suf)[1] or
 		helper.wml_error "[check_unit_in_range] could not match secondary unit"
 
 	if helper.distance_between(u1.x, u1.y, u2.x, u2.y) <= u1.max_moves then
