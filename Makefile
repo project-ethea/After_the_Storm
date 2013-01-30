@@ -49,6 +49,19 @@ test:
 		rm -rf .preprocessor.out; \
 	done; done
 
+stats:
+	@echo "Gathering WML statistics"
+	@echo "  Version:      $(WESNOTH_VERSION)"
+	@echo "  Difficulties: $(difficulties)"
+	@echo "  Episodes:     $(packs)"
+
+	@for p in $(packs); do for d in $(difficulties); do \
+		echo "    WML     $$p -> $$d"; \
+		$(WML_PREPROCESS) $(targetdir) .preprocessor.out --preprocess-defines CAMPAIGN_AFTER_THE_STORM,$$d,$$p 2>&1 2> /dev/null; \
+		wc -l .preprocessor.out/_main.cfg | sed -E 's/^([0-9]+).*/            \1 lines/'; \
+		rm -rf .preprocessor.out; \
+	done; done
+
 optipng:
 	$(OPTIPNG)
 
