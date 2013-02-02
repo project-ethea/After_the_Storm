@@ -18,6 +18,16 @@ Version 0.8.4+svn:
   * New or updated unit graphics: Chaos Arbalestier.
 
 * Scenarios:
+  * E1S1 - The Skirmish:
+    * Revised/rewritten dialog lines.
+    * Revised/rewritten story text.
+  * E1S2 - High Pass:
+    * Revised/rewritten dialog lines.
+    * Revised/rewritten story text.
+  * E1S3 - Civil War in the North:
+    * Revised/rewritten story text.
+  * E1S4 - Terror at Dusk:
+    * Revised/rewritten story text.
   * E1S11.2 - Return to Wesmere, part 2:
     * Add workaround for mainline bug #20350 on 1.10.5 and earlier, which
       allowed the player to end their first turn prematurely by save-reloading.
