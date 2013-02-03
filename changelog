@@ -30,6 +30,8 @@ Version 0.8.4+svn:
   * E1S4 - Terror at Dusk:
     * Revised/rewritten dialog lines.
     * Revised/rewritten story text.
+  * E1S5 - Bay of Tirigaz:
+    * Revised/rewritten dialog lines.
   * E1S11.2 - Return to Wesmere, part 2:
     * Add workaround for mainline bug #20350 on 1.10.5 and earlier, which
       allowed the player to end their first turn prematurely by save-reloading.
