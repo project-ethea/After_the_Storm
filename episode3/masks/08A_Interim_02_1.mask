@@ -1,5 +1,5 @@
-border_size=0
-usage=mask
+border_size=1
+usage=map
 
 Qxua        , _f          , Qxua        , Qxua        , Qxua        , _f          , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , _f          , _f          , Qxua        , _f          , _f          , Qxua        , _f          , _f          , _f          , Qxua        , Qxua        , Qxua        , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          
 Qxua        , Qxua        , _f          , Qxua        , _f          , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , Qxua        , _f          , _f          , _f          , _f          , Qxua        , Qxua        , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          , _f          
