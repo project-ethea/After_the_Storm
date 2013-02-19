@@ -4,6 +4,10 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.8.5+svn:
 ------------------
+* Scenarios:
+  * E3S6 - Divergence:
+    * Enabled new scenario.
+
 * Units:
   * Balancing:
     * Increased Elynia's resistance to impact damage from -10% to 0%.
