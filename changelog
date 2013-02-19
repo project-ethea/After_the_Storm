@@ -7,6 +7,26 @@ Version 0.8.5+svn:
 * Scenarios:
   * E3S6 - Divergence:
     * Enabled new scenario.
+  * E3S7A - Dark Fire:
+    * New scenario.
+  * E3S7B - Dark Sea:
+    * New scenario.
+  * E3S8A - Interim:
+    * New scenario.
+  * E3S8B - Destiny, part 1:
+    * New scenario.
+  * E3S8C - Breakdown:
+    * New scenario.
+  * E3S8D - Destiny, part 2:
+    * New scenario.
+  * E3S9 - Dark Depths:
+    * New scenario.
+  * E3S10 - Blood:
+    * New scenario.
+  * E3S11 - After the Storm:
+    * New scenario.
+  * E3S12 - Destiny, part 3:
+    * New scenario.
 
 * Units:
   * Balancing:
