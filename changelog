@@ -5,6 +5,8 @@ AFTER THE STORM - CHANGELOG
 Version 0.8.90-svn:
 -------------------
 * Scenarios:
+  * E1S11.2 - Return to Wesmere, part 2:
+    * Removed compatibility code for Wesnoth 1.9.5 through 1.9.8.
   * E3S6 - Divergence:
     * Enabled new scenario.
   * E3S7A - Dark Fire:
