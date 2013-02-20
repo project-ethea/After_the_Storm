@@ -27,7 +27,7 @@ return {
 			local targets_in_reach = {}
 
 			for i, target_id in ipairs(target_ids) do
-				print(target_id .. " is a candidate")
+				--print(target_id .. " is a candidate")
 				targets_in_reach.target_id = false
 			end
 
@@ -39,7 +39,8 @@ return {
 			for i, u in ipairs(attackers) do
 				for j, target_id in ipairs(target_ids) do
 					if targets_in_reach.target_id == false then
-						print(string.format("Considering target %s for %s", target_id, u.id))
+						--print(string.format("Considering target %s for %s", target_id, u.id))
+
 						-- Need to find reachable hexes that are
 						-- 1. next to target
 						-- 2. not occupied by an allied unit (except for unit itself)
@@ -77,7 +78,7 @@ return {
 			end
 
 			-- Always delete the attacks aspect first, so that we do not end up with 100 copies of the facet
-			print("Deleting attacks aspect")
+			--print("Deleting attacks aspect")
 			W.modify_ai {
 				side = wesnoth.current.side,
 				action = "try_delete",
@@ -101,12 +102,12 @@ return {
 			-- Choose a target if we found any reachable targets.
 
 			if string.len(rand_op_str) > 0 then
-				print(string.format("Randomize target: %s", rand_op_str))
+				--print(string.format("Randomize target: %s", rand_op_str))
 				target_id = safe_random(rand_op_str)
 			end
 
 			if string.len(target_id) > 0 then
-				print("Setting attacks aspect (" .. target_id .. ")")
+				--print("Setting attacks aspect (" .. target_id .. ")")
 				W.modify_ai {
 					side = wesnoth.current.side,
 					action = "add",
