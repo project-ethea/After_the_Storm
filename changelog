@@ -4,7 +4,12 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.8.90+svn:
 -------------------
-
+* General:
+  * All episodes have 13 scenarios each. Reasoning:
+    * E1: the line-up goes from E1S1 through E1S13
+    * E2: the line-up goes from E2S0 through E2S12
+    * E3: the line-up goes from E3S0 through E3S12 and E3S13 will be a bonus
+      feature in future versions
 
 
 Version 0.8.90 a.k.a. "0.9.0 minus one":
