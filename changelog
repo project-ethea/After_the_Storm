@@ -12,8 +12,17 @@ Version 0.8.90+svn:
       feature in future versions
 
 * Scenarios:
+  * E3S4.1 - Outpost of Hell:
+    * Fix "[object]duration=level is deprecated" warning on 1.11.x.
+  * E3S6 - Divergence:
+    * Fix "[object]duration=level is deprecated" warning on 1.11.x.
   * E3S10 - Blood:
     * Replaced comments causing wmlxgettext errors.
+
+* Units:
+  * Fix "[object]duration=level is deprecated" warnings on 1.11.x affecting
+    scenarios where units with the stun weapon special (e.g. Valdemon Basher)
+    are present.
 
 
 Version 0.8.90 a.k.a. "0.9.0 minus one":
