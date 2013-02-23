@@ -9,6 +9,7 @@ WESNOTH_CORE_DIR ?= $(WESNOTH_DATA_DIR)/data/core
 DEFSCOPE ?= macro-scope-check
 WMLLINT ?= wmllint-1.10
 WMLINDENT ?= wmlindent-1.10
+WMLXGETTEXT ?= wmlxgettext
 OPTIPNG ?= wesnoth-optipng
 WML_PREPROCESS ?= $(WESNOTH) -p
 
@@ -25,6 +26,8 @@ packs := \
 	CAMPAIGN_AFTER_THE_STORM_EPISODE_III
 
 preprocesscmd = $(WML_PREPROCESS) $(targetdir) $(scratchdir) --preprocess-defines CAMPAIGN_AFTER_THE_STORM,$(diffsym),$(packsym)
+
+textdomain = wesnoth-After_the_Storm
 
 all: defscope lint
 
@@ -65,7 +68,14 @@ stats:
 optipng:
 	$(OPTIPNG)
 
+%.pot:
+	@echo "    POT     $*.pot"
+	@find -name '*.cfg' -type f -print | xargs wmlxgettext --directory=$(targetdir) --domain $(textdomain) > $*.pot
+	@msgfmt --statistics -o /dev/null $*.pot 2>&1 | sed -E 's/^.*\s([0-9]+)\s.*$$/            \1 strings/'
+
+pot: $(textdomain).pot
+
 clean:
 	$(WMLLINT) --clean $(targetdir)
-	find \( -name '*.new' -o -name '*.tmp' \) -type f -print | xargs rm -f
+	find \( -name '*.new' -o -name '*.tmp' -o -name '*.pot' \) -type f -print | xargs rm -f
 	rm -rf .preprocessor.out
