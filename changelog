@@ -17,6 +17,7 @@ Version 0.8.90+svn:
   * E3S6 - Divergence:
     * Fix "[object]duration=level is deprecated" warning on 1.11.x.
   * E3S10 - Blood:
+    * Avoid hitting BUG_ON path when the Blood Core handler runs after stage 2.
     * Replaced comments causing wmlxgettext errors.
 
 * Units:
