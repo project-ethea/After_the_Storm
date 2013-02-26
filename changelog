@@ -7,7 +7,8 @@ Version 0.8.90.1+svn:
 * Scenarios:
   * E3S10 - Blood:
     * Add a context menu item displaying a list of available attack
-      combinations and their effects.
+      combinations and their effects (currently disabled due to stability
+      issues).
 
 
 Version 0.8.90.1:
