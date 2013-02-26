@@ -292,7 +292,7 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 				local fmt = ''
 
 				if effect_data.value ~= nil then
-					fmt = tostring( _ "Sets attack damage value to %d")
+					fmt = tostring( _ "attack damage base value set to %d")
 					effect_desc = effect_desc .. bullet_list_item(string.format(fmt, effect_data.value))
 				end
 
