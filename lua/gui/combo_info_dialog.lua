@@ -64,10 +64,6 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 												id = "symmetry_icon",
 												linked_group = "symmetry_icon",
 											}
-											--T.label {
-											--	id = "symmetry_label",
-											--	linked_group = "symmetry_label",
-											--}
 										},
 										T.column {
 											grow_factor = 1,
@@ -95,9 +91,6 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 
 	-- #textdomain wesnoth-After_the_Storm
 	_ = wesnoth.textdomain "wesnoth-After_the_Storm"
-	-- TODO?
-	-- local unknown_sym_label = _ "combo_symmetry_icon^?"
-	-- local unknown_name_label = _ "combo_name^???"
 	local title_label = _ "Attack Combinations"
 
 	local dialog_definition = {
@@ -110,7 +103,6 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 		T.tooltip { id = "tooltip_large" },
 
 		T.linked_group { id = "side_a_icon", fixed_width = true },
-		--T.linked_group { id = "symmetry_label", fixed_width = true },
 		T.linked_group { id = "symmetry_icon", fixed_width = true },
 		T.linked_group { id = "side_b_icon", fixed_width = true },
 		T.linked_group { id = "combo_name", fixed_width = true },
@@ -331,17 +323,13 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 				do_error(string.format("%s[%d].effect.apply_to=\"%s\", which is not implemented yet", variable, i - 1, effect_data.apply_to))
 				return
 			end
-				
 
-			--local symmetry_label = "→" -- U+2192 RIGHTWARDS ARROW
 			local symmetry_icon = "misc/gui-combo-arrows.png~CROP(0, 0, 60, 60)"
 			if symmetric then
-				--symmetry_label = "⇄" -- U+21C4 RIGHTWARDS ARROW OVER LEFTWARDS ARROW
 				symmetry_icon = "misc/gui-combo-arrows.png~CROP(60, 0, 60, 60)"
 			end
 
 			wesnoth.set_dialog_value(ui_side_a_data.attack_icon, "combo_list", i, "side_a_icon")
-			--wesnoth.set_dialog_value(symmetry_label,             "combo_list", i, "symmetry_label")
 			wesnoth.set_dialog_value(symmetry_icon,              "combo_list", i, "symmetry_icon")
 			wesnoth.set_dialog_value(ui_side_b_data.attack_icon, "combo_list", i, "side_b_icon")
 			wesnoth.set_dialog_value(info_cfg.name,              "combo_list", i, "combo_name")
