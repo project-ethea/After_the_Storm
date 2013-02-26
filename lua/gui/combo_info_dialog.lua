@@ -327,6 +327,9 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 			local symmetry_icon = "misc/gui-combo-arrows.png~CROP(0, 0, 60, 60)"
 			if symmetric then
 				symmetry_icon = "misc/gui-combo-arrows.png~CROP(60, 0, 60, 60)"
+
+				effect_desc = effect_desc .. "\n"
+				effect_desc = effect_desc .. _ "This combination is symmetric, and the attacks involved may be used in any order."
 			end
 
 			wesnoth.set_dialog_value(ui_side_a_data.attack_icon, "combo_list", i, "side_a_icon")
