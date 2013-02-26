@@ -148,43 +148,52 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 								}
 							},
 							T.column {
-								grow_factor = 2,
-								horizontal_alignment = "left",
-								vertical_alignment = "top",
-								T.multi_page {
-									id = "current_combo_pager",
-									T.page_definition {
-										T.row {
-											T.column {
-												border = "all", border_size = 5,
-												horizontal_alignment = "left",
-												vertical_alignment = "top",
-												T.scroll_label {
-													id = "current_combo_text",
+								vertical_grow = true,
+								T.grid {
+									T.row {
+										grow_factor = 1,
+										T.column {
+											grow_factor = 2,
+											horizontal_alignment = "left",
+											vertical_alignment = "top",
+											T.multi_page {
+												id = "current_combo_pager",
+												T.page_definition {
+													T.row {
+														T.column {
+															border = "all", border_size = 5,
+															horizontal_alignment = "left",
+															vertical_alignment = "top",
+															T.scroll_label {
+																id = "current_combo_text",
+															}
+														}
+													}
+												}
+											}
+										}
+									},
+									T.row {
+										grow_factor = 1,
+										T.column {
+											border = "all", border_size = 5,
+											horizontal_grow = true,
+											vertical_alignment = "bottom",
+											T.grid {
+												T.row {
+													T.column {
+														horizontal_alignment = "left",
+														T.image { label = sigil_image_path(0, 1) }
+													},
+													T.column {
+														horizontal_alignment = "right",
+														T.image { label = sigil_image_path(3, 0) }
+													}
 												}
 											}
 										}
 									}
 								}
-							}
-						}
-					}
-				}
-			},
-			T.row {
-				grow_factor = 1,
-				T.column {
-					border = "all", border_size = 5,
-					horizontal_grow = true,
-					T.grid {
-						T.row {
-							T.column {
-								horizontal_alignment = "left",
-								T.image { label = sigil_image_path(0, 1) }
-							},
-							T.column {
-								horizontal_alignment = "right",
-								T.image { label = sigil_image_path(3, 0) }
 							}
 						}
 					}
