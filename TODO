@@ -9,6 +9,9 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
   * [D] Distribute resources in a separate add-on used by IftU, AtS, TSL and FaS
     * Depends on the implementation of different add-on dependency tiers in
       mainline code
+  * [M] Optimize usage of SUFs and SLFs throughout the entire campaign
+  * [M] Make better use of new 1.10 WML features (used mostly post-Divergence)
+        throughout the entire campaign
 
 * Balancing [M]
   * [L] E1S3 (make it harder to win by just sitting in a map corner)
@@ -24,6 +27,12 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
   * [L] E2S9 (increase/make difficulty level more deterministic)
   * [L] E2S10 (increase difficulty of the second half)
   * [!] E2S11 (increase difficulty of the second half)
+  * [!] E3S3 (decrease Nar-hamoth's tomato surprise effect)
+  * [!] E3S7A.1 (increase gameplay fluidity)
+  * [!] E3S7B (decrease amount of enemy leaders and units spawned after turn 10
+    for performance and difficulty concerns, increase difficulty in some other
+    way to compensate)
+  * [L] E3S10 (increase gameplay fluidity before Zhangor stage)
 
 * Cutscenes
   * E1S9.2
@@ -67,16 +76,18 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
       * Sylvan Warden
       * Dusk Faerie line
       * Shaxthal Warlord Elyssa
+      * Guardian of Darkness Elyssa
+      * Guardian of Earth Elynia
+      * Guardian of Darkness Anya
     * [L] Basic animations for prominent generic units
     * [D] Full animations for all units
 
 * Portraits
-  * [D] Elynia mood portraits set, plus special portrait for E2S12
+  * [D] Elynia mood portraits set, plus special portrait for E2S12 (injured
+    variation)
   * [D] Mal Keshar
     * [D] [?] One or two additional mood portraits
   * Elyssa
-    * [!] [M] Scar-less portrait for her E1S9.1 through E1S12 appearances, and
-      E2S12
     * [?] [D] [M] New portrait for E2S12 onwards displaying less deteriorated
       skin
   * [L] Horo
@@ -97,6 +108,15 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
   * [L] Maina
   * [!] Ivyel (E2S8, E2S10 before cutscene)
   * [?] [!] Ivyel (E2S10 onwards after cutscene)
+  * [!] Ergea (E3S5 onwards)
+  * [L] Cron (E3S5 onwards)
+  * [D] Elyssa action portrait for use as the Guardian of Darkness (E3S7A.2
+    onwards)
+  * [!] Uria silhouette portrait (E3S8A)
+  * [D] Elynia action portrait for use as the Guardian of Earth (E3S8C onwards)
+  * [D] Anya action portrait for use as the Guardian of Darkness (E3S8D onwards)
+  * [!] Aradellys portrait (E3S13)
+  * [!] Uria (in plain view) portrait (E3S13)
 
 * Terrains
   * [!] Dark hive spawn holes need to be made more visible on lair floor tiles
