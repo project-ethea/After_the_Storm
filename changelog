@@ -9,6 +9,8 @@ Version 0.8.90.1+svn:
     * Add a context menu item displaying a list of available attack
       combinations and their effects (currently disabled due to stability
       issues).
+  * E313 - Epilogue:
+    * New scenario.
 
 
 Version 0.8.90.1:
