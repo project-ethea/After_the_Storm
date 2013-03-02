@@ -17,7 +17,7 @@ local helper = wesnoth.require "lua/helper.lua"
 function wesnoth.wml_actions.store_shroud(cfg)
 	local team_number = cfg.side or helper.wml_error("Missing required side= attribute in [store_shroud]")
 	local variable = cfg.variable or helper.wml_error("Missing required variable= attribute in [store_shroud].")
-	local side = wesnoth.get_side(team_number)
+	local side = wesnoth.sides[team_number]
 	local current_shroud = side.__cfg.shroud_data
 	wesnoth.set_variable(variable, current_shroud)
 end
@@ -65,7 +65,7 @@ function wesnoth.wml_actions.set_shroud(cfg)
 		local locs_x = table.concat( columns, "," )
 		local locs_y = table.concat( rows, "," )
 
-		if not wesnoth.get_side( team_number ).__cfg.shroud then
+		if not wesnoth.sides[team_number].__cfg.shroud then
 			wesnoth.wml_actions.modify_side { side = team_number, shroud = true } -- in case that shroud was removed by modify_side
 		end
 
