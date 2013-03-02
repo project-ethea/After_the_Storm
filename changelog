@@ -11,6 +11,10 @@ Version 0.8.90.1+svn:
   * E313 - Epilogue:
     * New scenario.
 
+* Units:
+  * Hide private variations for regular unit types from the help system on
+    1.11.x.
+
 
 Version 0.8.90.1:
 -----------------
