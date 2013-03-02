@@ -297,7 +297,12 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 			-- Parse [effect].
 			--
 
-			local effect_desc = 'Effects:\n\n'
+			local effect_desc = string.format("%s:\n%s + %s\n\n",
+				tostring(info_cfg.name),
+				tostring(ui_side_a_data.attack_name),
+				tostring(ui_side_b_data.attack_name))
+
+			effect_desc = effect_desc .. _ "Effects:" .. "\n"
 
 			if effect_data.apply_to == "damage" then
 				--
