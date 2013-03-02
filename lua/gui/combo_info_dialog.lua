@@ -128,17 +128,25 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 					vertical_alignment = "top",
 					T.grid {
 						T.row {
-							T.column {
-								grow_factor = 1,
-								border = "all", border_size = 5,
-								horizontal_alignment = "left",
-								vertical_alignment = "top",
-								T.listbox {
-									id = "combo_list",
-									definition = "default",
-									T.list_definition(list_definition),
-								}
-							},
+							--
+							-- BIG FAT NOTE:
+							--
+							-- These columns are reversed on purpose. Normally, the listbox
+							-- should be on the left and the multi_page parent grid on the
+							-- right. However, this causes Wesnoth to crash due to running
+							-- out of space for the listbox because the multi_page
+							-- scroll_label children *somehow* take precedence when updating
+							-- the widgets' geometry as the multi_page data is filled in by
+							-- the preshow() callback.
+							--
+							-- This issue is averted by having the listbox on the rightmost
+							-- column, so it takes precedence over the multi_page children
+							-- whenever geometry changes. This is good, because the scroll_label
+							-- widgets can then spawn their own scrollbars as needed.
+							--
+							-- Perhaps someone else may be able to provide a proper solution
+							-- to this problem in the future.
+							--
 							T.column {
 								vertical_grow = true,
 								T.grid {
@@ -185,6 +193,17 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 											}
 										}
 									}
+								}
+							},
+							T.column {
+								grow_factor = 1,
+								border = "all", border_size = 5,
+								horizontal_alignment = "left",
+								vertical_alignment = "top",
+								T.listbox {
+									id = "combo_list",
+									definition = "default",
+									T.list_definition(list_definition),
 								}
 							}
 						}
