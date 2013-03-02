@@ -12,6 +12,8 @@ Version 0.8.90.1+svn:
     * New scenario.
 
 * Units:
+  * Fix multiple "Descriptions should no longer include the name as the first
+    line" warnings on 1.11.1 and later.
   * Hide private variations for regular unit types from the help system on
     1.11.x.
 
