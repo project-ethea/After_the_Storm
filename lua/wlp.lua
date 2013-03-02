@@ -15,9 +15,8 @@ local helper = wesnoth.require "lua/helper.lua"
 -- [/store_shroud]
 
 function wesnoth.wml_actions.store_shroud(cfg)
-	local team_number = cfg.side or helper.wml_error("Missing required side= attribute in [store_shroud]")
+	local side = wesnoth.get_sides( cfg )[1] or helper.wml_error("No matching side found in [store_shroud]")
 	local variable = cfg.variable or helper.wml_error("Missing required variable= attribute in [store_shroud].")
-	local side = wesnoth.sides[team_number]
 	local current_shroud = side.__cfg.shroud_data
 	wesnoth.set_variable(variable, current_shroud)
 end
@@ -33,7 +32,8 @@ end
 -- [/set_shroud]
 
 function wesnoth.wml_actions.set_shroud(cfg)
-	local team_number = cfg.side or helper.wml_error("Missing required side= attribute in [set_shroud]")
+	local side = wesnoth.get_sides( cfg )[1] or helper.wml_error("No matching side found in [set_shroud]")
+	local team_number = side.side
 	local shroud_data = cfg.shroud_data or helper.wml_error("Missing required shroud_data= attribute in [set_shroud]")
 
 	if shroud_data == nil then helper.wml_error("[set_shroud] was passed an empty shroud string")
