@@ -5,18 +5,11 @@ AFTER THE STORM - CHANGELOG
 Version 0.8.90.1+svn:
 ---------------------
 * Scenarios:
-  * E1S6.1 - Quenoth Isle:
-    * Fix "wesnoth.get_side is deprecated, use wesnoth.sides instead" warning
-      on 1.11.x.
-  * E1S11.2 - Return to Wesmere, part 2:
-    * Fix "wesnoth.get_side is deprecated, use wesnoth.sides instead" warning
-      on 1.11.x.
-  * E3S8A - Interim:
-    * Fix "wesnoth.get_side is deprecated, use wesnoth.sides instead" warning
-      on 1.11.x.
-  * E3S8C - Breakdown:
-    * Fix "wesnoth.get_side is deprecated, use wesnoth.sides instead" warning
-      on 1.11.x.
+  * Deployed code to work around a side-switching issue affecting Wesnoth
+    1.11.1 and trunk up to r56420 during post-Divergence (E3S6) scenarios.
+    The corresponding mainline bug is #20373 and it should be fixed on 1.11.2.
+  * Fixed various "wesnoth.get_side is deprecated, use wesnoth.sides instead"
+    warnings on 1.11.x.
   * E3S10 - Blood:
     * Add a context menu item displaying a list of available attack
       combinations and their effects.
