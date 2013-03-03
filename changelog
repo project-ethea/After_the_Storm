@@ -10,6 +10,8 @@ Version 0.8.90.1+svn:
     The corresponding mainline bug is #20373 and it should be fixed on 1.11.2.
   * Fixed various "wesnoth.get_side is deprecated, use wesnoth.sides instead"
     warnings on 1.11.x.
+  * E3S8C - Breakdown:
+    * Fix objectives display inconsistencies throughout the scenario.
   * E3S10 - Blood:
     * Add a context menu item displaying a list of available attack
       combinations and their effects.
