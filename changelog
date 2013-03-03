@@ -11,6 +11,8 @@ Version 0.8.90.1+svn:
   * Fixed various "wesnoth.get_side is deprecated, use wesnoth.sides instead"
     warnings on 1.11.x.
   * E3S8C - Breakdown:
+    * Don't allow summoning Fire Guardians until the player enters the
+      underground river passage.
     * Fix objectives display inconsistencies throughout the scenario.
   * E3S10 - Blood:
     * Add a context menu item displaying a list of available attack
