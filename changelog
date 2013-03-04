@@ -31,6 +31,7 @@ Version 0.8.90.1+svn:
     * New scenario.
 
 * Units:
+  * Fixed Chaos Arbalestier ranged attack animation failing to trigger.
   * Fix multiple "Descriptions should no longer include the name as the first
     line" warnings on 1.11.1 and later.
   * Fix unit types with missing faction prefixes in their names:
