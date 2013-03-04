@@ -10,6 +10,8 @@ Version 0.8.90.1+svn:
     The corresponding mainline bug is #20373 and it should be fixed on 1.11.2.
   * Fixed various "wesnoth.get_side is deprecated, use wesnoth.sides instead"
     warnings on 1.11.x.
+  * E1S13 - Death and Rebirth:
+    * Fixed minor prose issue ("take risky choices" -> "make risky choices").
   * E3S8C - Breakdown:
     * Don't allow summoning Fire Guardians until the player enters the
       underground river passage.
