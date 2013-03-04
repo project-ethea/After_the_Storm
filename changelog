@@ -6,8 +6,8 @@ Version 0.8.90.1+svn:
 ---------------------
 * Scenarios:
   * Deployed code to work around a side-switching issue affecting Wesnoth
-    1.11.1 and trunk up to r56420 during post-Divergence (E3S6) scenarios.
-    The corresponding mainline bug is #20373 and it should be fixed on 1.11.2.
+    1.11.1 during post-Divergence (E3S6) scenarios. The corresponding
+    mainline bug is #20373 and it is fixed on 1.11.2.
   * Fixed various "wesnoth.get_side is deprecated, use wesnoth.sides instead"
     warnings on 1.11.x.
   * E1S6 - Quenoth Isle (Elves of a Different Land):
