@@ -28,6 +28,7 @@ Version 0.8.90.1+svn:
     * Don't allow summoning Fire Guardians until the player enters the
       underground river passage.
     * Fix objectives display inconsistencies throughout the scenario.
+    * Minor cutscene improvements.
   * E3S10 - Blood:
     * Add a context menu item displaying a list of available attack
       combinations and their effects.
