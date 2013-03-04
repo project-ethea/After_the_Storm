@@ -20,6 +20,8 @@ Version 0.8.90.1+svn:
     * Fixed minor prose issue ("take risky choices" -> "make risky choices").
   * E2S2 - The Heart Forest:
     * Minor prose tweak.
+  * E2S11 - A Final Confrontation:
+    * Minor cutscene improvements near the end.
   * E3S8C - Breakdown:
     * Don't allow summoning Fire Guardians until the player enters the
       underground river passage.
