@@ -33,6 +33,11 @@ Version 0.8.90.1+svn:
 * Units:
   * Fix multiple "Descriptions should no longer include the name as the first
     line" warnings on 1.11.1 and later.
+  * Fix unit types with missing faction prefixes in their names:
+    * Arbalestier -> Chaos Arbalestier
+    * Cataphract -> Chaos Cataphract
+    * Crossbowman -> Chaos Crossbowman
+    * Heavy Longbowman -> Chaos Heavy Longbowman
   * Hide private variations for regular unit types from the help system on
     1.11.x.
   * Killed Kri'tan.
