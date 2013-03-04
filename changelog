@@ -29,6 +29,8 @@ Version 0.8.90.1+svn:
       underground river passage.
     * Fix objectives display inconsistencies throughout the scenario.
     * Minor cutscene improvements.
+  * E3S8D - Destiny, part 2:
+    * Fixed Anya's movements not being undoable.
   * E3S10 - Blood:
     * Add a context menu item displaying a list of available attack
       combinations and their effects.
