@@ -4,6 +4,11 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.0+svn:
 ------------------
+* Scenarios:
+  * E3S13 - Epilogue:
+    * This scenario is now only accessible after recovering an object hidden in
+      a previous scenario.
+
 * Units:
   * Fixed wrong description for Galas' bolas attack AMLA (stated magical as the
     weapon special, it is actually slows).
