@@ -2,8 +2,11 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.8.90.1+svn:
----------------------
+Version 0.9.0:
+--------------
+* General:
+  * Milestone: all scenarios completed.
+
 * Scenarios:
   * Deployed code to work around a side-switching issue affecting Wesnoth
     1.11.1 during post-Divergence (E3S6) scenarios. The corresponding
