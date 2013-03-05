@@ -4,7 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.0+svn:
 ------------------
-
+* Units:
+  * Fixed wrong description for Galas' bolas attack AMLA (stated magical as the
+    weapon special, it is actually slows).
 
 
 Version 0.9.0:
