@@ -27,7 +27,6 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 				horizontal_grow = true,
 				T.toggle_panel {
 					definition = "default",
-					return_value_id = "ok",
 					T.grid {
 						T.row {
 							T.column {
