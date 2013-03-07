@@ -7,6 +7,8 @@ Version 0.9.0+svn:
 * Scenarios:
   * Fixed several instances (E1S7, etc.) of sighted events taking place
     prematurely on Wesnoth 1.11.x.
+  * E1S7 - The Search for the Past:
+    * Minor cutscene improvements.
   * E3S13 - Epilogue:
     * This scenario is now only accessible after recovering an object hidden in
       a previous scenario.
