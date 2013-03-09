@@ -283,7 +283,7 @@ function wesnoth.wml_actions.animate_attack(cfg)
 	local weapon_filter = helper.get_child(cfg, "filter_attack") or helper.wml_error("[animate_attack] missing required [filter_attack] tag")
 
 	-- we need to use shallow_literal field, to avoid raising an error if $this_unit (not yet assigned) is used
-	if not cfg.__shallow_literal.amount then helper.wml_error("[harm_unit] has missing required amount= attribute") end
+	if not cfg.__shallow_literal.amount then helper.wml_error("[animate_attack] has missing required amount= attribute") end
 
 	local attacker = wesnoth.get_units(attacker_filter)[1]
 	if not attacker then
