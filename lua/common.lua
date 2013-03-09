@@ -372,7 +372,7 @@ function wesnoth.wml_actions.animate_attack(cfg)
 			text = string.format("%s%s%s", text, tostring(male_string), "\n")
 		end
 
-		defender[name] = true
+		defender.status[name] = true
 		add_tab = true
 
 		if animate and sound then -- for unhealable, that has no sound
