@@ -9,7 +9,12 @@ Version 0.9.0+svn:
     prematurely on Wesnoth 1.11.x.
   * Minor prose fixes, tweaks, and enhancements throughout the entire campaign.
   * E1S7 - The Search for the Past:
+    * Glyphs needed to end the scenario are now marked with a blinking tile
+      outline (requires halos to be enabled in Display preferences).
     * Minor cutscene improvements.
+    * Reworked message glyphs' code so their messages can be triggered as many
+      times as the player wants (NOTE: the last glyph triggered will still
+      unconditionally trigger the end of the scenario).
   * E1S9.1 - The Triad, part 1:
     * Minor gameplay improvements.
     * Removed duplicate character line during the initial sequence.
