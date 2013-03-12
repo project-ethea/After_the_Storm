@@ -30,6 +30,9 @@ Version 0.9.0+svn:
   * E1S11.1 - Return to Wesmere, part 1:
     * Fixed "retrieving member of non-existent WML container" warnings at the
       start of the scenario.
+  * E1S11.2 - Return to Wesmere, part 2:
+    * Fixed spurious "retrieving member of non-existent WML container" warning
+      at the end of the scenario.
   * E3S13 - Epilogue:
     * Fixed some cutscene-only female units not having their gender specified
       in WML or translatable strings.
