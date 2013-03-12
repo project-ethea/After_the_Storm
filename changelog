@@ -39,6 +39,10 @@ Version 0.9.0+svn:
     * This scenario is now only accessible after recovering an object hidden in
       a previous scenario.
 
+* Terrains:
+  * Experimental fix for the long-standing gate clipping issue when adjacent to
+    stone wall corners.
+
 * Units:
   * Fixed wrong description for Galas' bolas attack AMLA (stated magical as the
     weapon special, it is actually slows).
