@@ -44,6 +44,8 @@ Version 0.9.0+svn:
     stone wall corners.
 
 * Units:
+  * Added sidebar icon for units affected by the 'stun' weapon special.
+  * Added sidebar icon for units affected by the movement range bind spell.
   * Fixed wrong description for Galas' bolas attack AMLA (stated magical as the
     weapon special, it is actually slows).
 
