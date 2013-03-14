@@ -33,6 +33,8 @@ Version 0.9.0+svn:
   * E1S11.2 - Return to Wesmere, part 2:
     * Fixed spurious "retrieving member of non-existent WML container" warning
       at the end of the scenario.
+  * E2S1 - By the Moonlight:
+    * Minor balancing changes.
   * E3S13 - Epilogue:
     * Fixed some cutscene-only female units not having their gender specified
       in WML or translatable strings.
