@@ -72,6 +72,7 @@ Version 0.9.0+svn:
     * Increased Elynia's (E3) mystic fire attack strength from 5-4 to 5-5.
     * Increased Elynia's (post-Divergence) ensnare attack strength from 9-3 to
       9-4.
+  * Gave Anya and Elynia special AMLAs for E2 and E3.
   * Fixed wrong description for Galas' bolas attack AMLA (stated magical as the
     weapon special, it is actually slows).
 
