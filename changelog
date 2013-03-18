@@ -44,6 +44,7 @@ Version 0.9.0+svn:
   * E2S1 - By the Moonlight:
     * Minor balancing changes.
   * E2S4 - Shifting Allegiances:
+    * Minor map balancing tweaks.
     * Reduced turn limit from 34/33/32 to 28/27/26.
   * E3S13 - Epilogue:
     * Fixed some cutscene-only female units not having their gender specified
