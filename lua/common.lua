@@ -392,9 +392,9 @@ function wesnoth.wml_actions.animate_attack(cfg)
 	end
 
 	-- HACK: do not display floating label when
-	-- the inflicted damage is zero
+	-- the inflicted damage is zero or one
 
-	if damage == 0 then
+	if damage <= 1 then
 		text = ""
 	end
 
