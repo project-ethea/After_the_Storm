@@ -51,6 +51,8 @@ Version 0.9.0+svn:
     * Minor map balancing tweaks.
     * Reduced turn limit from 34/33/32 to 28/27/26.
     * Other minor balancing changes.
+  * E2S7 - Proximus:
+    * Fixed minor fog refresh issues during the initial cutscene.
   * E3S13 - Epilogue:
     * Fixed some cutscene-only female units not having their gender specified
       in WML or translatable strings.
