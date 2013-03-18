@@ -21,7 +21,7 @@ if wesnoth.compare_versions(wesnoth.game_config.version, ">=", "1.11.0") then
 
 		local need_relock = false
 
-		if wesnoth.view_locked then
+		if wesnoth.view_locked() == true then
 			wesnoth.lock_view(false)
 			need_relock = true
 		end
