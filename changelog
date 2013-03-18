@@ -46,6 +46,7 @@ Version 0.9.0+svn:
   * E2S4 - Shifting Allegiances:
     * Minor map balancing tweaks.
     * Reduced turn limit from 34/33/32 to 28/27/26.
+    * Other minor balancing changes.
   * E3S13 - Epilogue:
     * Fixed some cutscene-only female units not having their gender specified
       in WML or translatable strings.
