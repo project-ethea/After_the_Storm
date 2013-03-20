@@ -118,6 +118,18 @@ function wesnoth.wml_actions.store_unit_can_move_on_current_terrain(cfg)
 		(wesnoth.unit_movement_cost(u, wesnoth.get_terrain(u.x, u.y)) < u.max_moves))
 end
 
+----------
+-- E3S1 --
+----------
+
+function wesnoth.wml_actions.apply_amlas(cfg)
+	local u = wesnoth.get_units(cfg)[1] or helper.wml_error("[apply_amlas]: Could not match any units!")
+
+	for amla_cfg in helper.child_range(cfg, "advance") do
+		wesnoth.add_modification(u, "advance", amla_cfg)
+	end
+end
+
 -------------
 -- E3S7A.2 --
 -------------
