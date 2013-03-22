@@ -74,6 +74,17 @@ Version 0.9.0+svn:
 * Units:
   * Added sidebar icon for units affected by the 'stun' weapon special.
   * Added sidebar icon for units affected by the movement range bind spell.
+  * Applied changes from bumbadadabum's "The Aragwaithi" add-on, versions 1.0.6
+    through 1.0.9:
+    * Archer HP increased from 26 to 28.
+    * Increased Guard's XP from 64 to 74.
+    * Decreased Guard's cost from 28 to 27.
+    * Decreased Pikeman's cost from 38 to 28.
+    * Increased Shield Guard's cost from 37 to 45.
+    * Granted the new 'precision' weapon special to the Swordsmaster.
+    * Renamed the Aragwaith Witch's image files (may break saved games from
+      E3S2).
+    * Various animation fixes and updates.
   * Balancing:
     * Increased Elynia's (E3) mystic fire attack strength from 5-4 to 5-5.
     * Increased Elynia's (post-Divergence) ensnare attack strength from 9-3 to
