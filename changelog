@@ -58,6 +58,8 @@ Version 0.9.0+svn:
   * E2S9 - New Hive:
     * Minor balancing changes.
   * E3S3 - Amidst the Ruins of Glamdrol:
+    * Apply the default AMLA to Kyara and Horo a predefined amount of times on
+      prestart according to the difficulty level.
     * Made it so neither the player nor Nar-hamoth can land a hit on each other.
   * E3S13 - Epilogue:
     * Fixed some cutscene-only female units not having their gender specified
