@@ -619,3 +619,25 @@ function wesnoth.wml_actions.check_unit_in_range(cfg)
 		wesnoth.set_variable(variable, false)
 	end
 end
+
+---
+-- Applies a given list of AMLAs to a unit matching the given SUF.
+--
+-- [apply_amlas]
+--     ... SUF ...
+--     [advance]
+--         ... contents of the [advancement] tag ...
+--     [/advance]
+--     [advance]
+--         ... another AMLA ...
+--     [/advance]
+--     ...
+-- [/apply_amlas]
+---
+function wesnoth.wml_actions.apply_amlas(cfg)
+	local u = wesnoth.get_units(cfg)[1] or helper.wml_error("[apply_amlas]: Could not match any units!")
+
+	for amla_cfg in helper.child_range(cfg, "advance") do
+		wesnoth.add_modification(u, "advance", amla_cfg)
+	end
+end
