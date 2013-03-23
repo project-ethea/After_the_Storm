@@ -75,13 +75,17 @@ Version 0.9.0+svn:
   * Added sidebar icon for units affected by the 'stun' weapon special.
   * Added sidebar icon for units affected by the movement range bind spell.
   * Applied changes from bumbadadabum's "The Aragwaithi" add-on, versions 1.0.6
-    through 1.0.9:
+    through 1.0.9, and "Era of Chaos":
     * Archer HP increased from 26 to 28.
+    * Granted the new 'precision' weapon special to the Greatbow's ranged
+      attack.
+    * Increased Guard's blade resistance from 10% to 20%.
     * Increased Guard's XP from 64 to 74.
     * Decreased Guard's cost from 28 to 27.
     * Decreased Pikeman's cost from 38 to 28.
     * Increased Shield Guard's cost from 37 to 45.
-    * Granted the new 'precision' weapon special to the Swordsmaster.
+    * Increased Shield Guard's blade and pierce resistances from 10% to 20%.
+    * Granted the 'marksman' weapon special to the Swordsmaster.
     * Renamed the Aragwaith Witch's image files (may break saved games from
       E3S2).
     * Various animation fixes and updates.
