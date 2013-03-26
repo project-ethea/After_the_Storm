@@ -66,6 +66,8 @@ Version 0.9.0+svn:
   * E3S4 - Outpost of Hell:
     * Fix specific units being unintentionally visible during a white screen
       sequence.
+    * Fixed "trying to remove non-existent menu item" warning at the end of
+      the scenario on Wesnoth 1.11.x under certain conditions.
     * Make sure side 2 units also get their demolition ability and overlay
       removed at the end.
   * E3S13 - Epilogue:
