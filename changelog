@@ -64,6 +64,8 @@ Version 0.9.0+svn:
       prestart according to the difficulty level.
     * Made it so neither the player nor Nar-hamoth can land a hit on each other.
   * E3S4 - Outpost of Hell:
+    * Fix specific units being unintentionally visible during a white screen
+      sequence.
     * Make sure side 2 units also get their demolition ability and overlay
       removed at the end.
   * E3S13 - Epilogue:
