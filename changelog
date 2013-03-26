@@ -19,6 +19,8 @@ Version 0.9.0+svn:
 * Scenarios:
   * Fixed several instances (E1S7, etc.) of sighted events taking place
     prematurely on Wesnoth 1.11.x.
+  * Fixed several instances of loyal units auto-recall code causing warnings on
+    Wesnoth 1.11.x.
   * Minor prose fixes, tweaks, and enhancements throughout the entire campaign.
   * E1S7 - The Search for the Past:
     * Glyphs needed to end the scenario are now marked with a blinking tile
