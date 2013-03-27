@@ -145,12 +145,9 @@ function wesnoth.wml_actions.store_vacant_spawn_location(cfg)
 			-- On map.
 			x = string.format("1-%d", w),
 			y = string.format("1-%d", h),
-			-- Vacant and not impassable.
+			-- Not impassable.
 			{ "not", {
 				terrain = "X*,X*^*,*^X*",
-			} },
-			{ "not", {
-				{ "filter", {} }
 			} },
 			-- Adjacent to our source hex.
 			{ "filter_adjacent_location", {
