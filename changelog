@@ -76,6 +76,8 @@ Version 0.9.0+svn:
   * E3S7B - Dark Sea:
     * Make the northwestern Shaxthal and eastern undead sides less prone to
       stealing player villages.
+  * E3S9 - Dark Depths:
+    * Minor cutscene improvements.
   * E3S13 - Epilogue:
     * Fixed some cutscene-only female units not having their gender specified
       in WML or translatable strings.
