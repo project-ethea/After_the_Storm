@@ -4,7 +4,10 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.1+svn:
 ------------------
-
+* General:
+  * Dropped workaround code from 0.9.0 for a bug causing side data loss
+    throughout Episode III on Wesnoth 1.11.1. Use Wesnoth 1.11.2 or later
+    instead.
 
 
 Version 0.9.1:
