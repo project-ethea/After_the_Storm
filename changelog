@@ -2,8 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.9.0+svn:
-------------------
+Version 0.9.1:
+--------------
 * General:
   * Added workaround code for a problem with the [lock_view] implementation and
     its interaction with unit movement via [move_unit_fake]/[move_unit] on
