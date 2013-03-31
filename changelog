@@ -115,6 +115,8 @@ Version 0.9.0+svn:
     * Increased Elynia's (post-Divergence) ensnare attack strength from 9-3 to
       9-4.
     * Increased Forest Spirit's movement points from 5 to 6.
+    * Decreased Fallen Faerie's HP from 49 to 43.
+    * Decreased Fallen Faerie's wail attack strength from 12-3 to 11-3.
   * Gave Anya and Elynia special AMLAs for E2 and E3.
   * Fixed wrong description for Galas' bolas attack AMLA (stated magical as the
     weapon special, it is actually slows).
