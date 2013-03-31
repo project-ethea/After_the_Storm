@@ -93,7 +93,7 @@ Version 0.9.0+svn:
   * Added sidebar icon for units affected by the 'stun' weapon special.
   * Added sidebar icon for units affected by the movement range bind spell.
   * Applied changes from bumbadadabum's "The Aragwaithi" add-on, versions 1.0.6
-    through 1.0.9, and "Era of Chaos":
+    through 1.0.9, and "Era of Chaos" version 1.1.0:
     * Archer HP increased from 26 to 28.
     * Granted the new 'precision' weapon special to the Greatbow's ranged
       attack.
