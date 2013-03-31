@@ -79,6 +79,9 @@ Version 0.9.0+svn:
   * E3S9 - Dark Depths:
     * Minor boss fight improvements.
     * Minor cutscene improvements.
+  * E3S10 - Blood:
+    * Made the foreshadowing moon combination have a x4 multiplier effect
+      instead of x5 on all difficulty levels, not just Hard.
   * E3S13 - Epilogue:
     * Fixed some cutscene-only female units not having their gender specified
       in WML or translatable strings.
