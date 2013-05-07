@@ -27,16 +27,6 @@
 *.js
 *.a
 music.raw
-README.txt
-TODO.txt
-SPOILERS.txt
-bin/
-sbin/
-etc/
-docs/
-docs_useless/
-storyboard/
-storyboard*
 #*#
 *.swp
 _info.cfg
@@ -46,6 +36,7 @@ _info.cfg
 *.wesnoth
 Thumbs.db
 __MACOSX/
-base-maint.cfg
 Makefile
 *.kate-swp
+*.orig
+*.rej
