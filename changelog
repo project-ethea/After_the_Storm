@@ -16,6 +16,10 @@ Version 0.9.1+svn:
   * E3S2.1 - Return to Raelthyn:
     * Added a statue prop with backstory information about Adavyan.
 
+* Units:
+  * Fixed "Terrain '**' has evaluated to 100 (cost) [...]" warnings on Wesnoth
+    1.11.x caused by Aragwaith units.
+
 
 Version 0.9.1:
 --------------
