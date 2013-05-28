@@ -13,6 +13,9 @@ Version 0.9.1+svn:
   * New or updated unit graphics: Uria.
 
 * Scenarios:
+  * E1S3 - Civil War in the North:
+    * Fixed elvish sides being visible on the game Status Table before the
+      protagonists reach the fort.
   * E3S2.1 - Return to Raelthyn:
     * Added a statue prop with backstory information about Adavyan.
 
