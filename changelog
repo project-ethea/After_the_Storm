@@ -23,6 +23,10 @@ Version 0.9.1+svn:
   * Fixed "Terrain '**' has evaluated to 100 (cost) [...]" warnings on Wesnoth
     1.11.x caused by Aragwaith units.
 
+* User interface:
+  * Made sure cutscene theme with menu bar works on Wesnoth 1.11.5 and later
+    (affecting E1S6.2, E1S7x, E1S11x, E2S3.2, E2S5x).
+
 
 Version 0.9.1:
 --------------
