@@ -8,6 +8,8 @@ Version 0.9.1+svn:
   * Dropped workaround code from 0.9.0 for a bug causing side data loss
     throughout Episode III on Wesnoth 1.11.1. Use Wesnoth 1.11.2 or later
     instead.
+  * Various code optimizations taking advantage of features introduced during
+    Wesnoth 1.9.x that were not used before AtS E3S7.1 before.
 
 * Graphics:
   * New or updated unit graphics: Uria.
@@ -22,6 +24,14 @@ Version 0.9.1+svn:
 * Units:
   * Fixed "Terrain '**' has evaluated to 100 (cost) [...]" warnings on Wesnoth
     1.11.x caused by Aragwaith units.
+  * Description changes:
+    * New descriptions for Verlissh Matrix Core, Matrix Flow System, Psy
+      Crawler, Psy Mindraider units.
+    * New Imps race description.
+    * New Spirits race description.
+    * Fixed typo in Demons race description.
+  * Made it so Verlissh Matrix Core and Matrix Flow System’s sprites are scaled
+    down on the sidebar only when standing unit animations are disabled.
 
 * User interface:
   * Made sure cutscene theme with menu bar works on Wesnoth 1.11.5 and later
