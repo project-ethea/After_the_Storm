@@ -4,7 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.2+svn:
 ------------------
-
+* General:
+  * Solved wmlxgettext error on themes/ats-cutscene.cfg due to bug fix in
+    previous version.
 
 
 Version 0.9.2:
