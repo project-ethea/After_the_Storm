@@ -6,7 +6,7 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
           [?] Undecided/Tentative - [x] Done
 
 * General
-  * [D] Distribute resources in a separate add-on used by IftU, AtS, TSL and FaS
+  * [D] Distribute resources in a separate add-on used by IftU and AtS
     * Depends on the implementation of different add-on dependency tiers in
       mainline code
   * [M] Optimize usage of SUFs and SLFs throughout the entire campaign
@@ -42,9 +42,6 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
   * E2S12
     * [M] Include a short appearance of Uria (projected) during Elynia's death
       sequence
-  * E2S0
-    * [L] Add short cutscene showing the vaporization of Wesmere from the
-      surface level
   * E2S4
     * [L] May need style changes and review
 
