@@ -8,6 +8,9 @@ Version 0.9.2+svn:
   * Solved wmlxgettext error on themes/ats-cutscene.cfg due to bug fix in
     previous version.
 
+* Graphics:
+  * New or updated items: goal highlight overlay.
+
 * Scenarios:
   * E3S10 - Blood:
     * Fixed viewport being permanently locked after the third stage begins on
