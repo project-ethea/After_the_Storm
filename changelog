@@ -12,6 +12,9 @@ Version 0.9.2+svn:
   * New or updated items: goal highlight overlay.
 
 * Scenarios:
+  * E3S2.1 - Return to Raelthyn:
+    * Fix Adavyan’s backstory event being triggered by every player move on
+      the map.
   * E3S10 - Blood:
     * Fixed viewport being permanently locked after the third stage begins on
       Wesnoth 1.11.x.
