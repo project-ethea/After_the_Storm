@@ -29,6 +29,9 @@ Version 0.9.3+svn:
     * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
   * E2S2 - The Heart Forest:
     * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+  * E2S7 - Proximus:
+    * Updated map to use the ^Ftd palm forest terrain on Wesnoth 1.11.x instead
+      of the denser ^Ft tropical forest.
   * E2S8 - And then there was Chaos:
     * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
   * E2S9 - New Hive:
