@@ -12,6 +12,25 @@ Version 0.9.3+svn:
 * Graphics:
   * New or updated unit graphics: Anya, Elynia.
 
+* Scenarios:
+  * E1S2 - High Pass:
+    * Solve [target] derprecation warnings on Wesnoth 1.11.5 and later.
+  * E1S10 - Tears:
+    * Solve [target] and protect_leader derprecation warnings on Wesnoth 1.11.5
+      and later.
+  * E1S11.1 - Return to Wesmere, part 1:
+    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+  * E2S1 - By the Moonlight:
+    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+  * E2S2 - The Heart Forest:
+    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+  * E2S8 - And then there was Chaos:
+    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+  * E2S9 - New Hive:
+    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+  * E2S10 - The Betrayal:
+    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+
 * Units:
   * Changed the faerie race's internal id from 'fairy' to 'faerie', and
     updated image paths accordingly. For compatibility, units on the map and
