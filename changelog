@@ -38,6 +38,7 @@ Version 0.9.3+svn:
     fixed when loading a saved game, but the code in charge of this is not
     all-inclusive. When in doubt, players are advised to resume from the last
     start-of-scenario save available.
+  * Added smoke effects to the Iron Golem's ranged attack animation.
 
 
 Version 0.9.3:
