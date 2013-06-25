@@ -15,6 +15,9 @@ Version 0.9.3+svn:
 * Scenarios:
   * E1S2 - High Pass:
     * Solve [target] derprecation warnings on Wesnoth 1.11.5 and later.
+  * E1S4 - Terror at Dusk:
+    * Updated map to use the ^Ftd palm forest terrain on Wesnoth 1.11.x instead
+      of the denser ^Ft tropical forest.
   * E1S10 - Tears:
     * Solve [target] and protect_leader derprecation warnings on Wesnoth 1.11.5
       and later.
