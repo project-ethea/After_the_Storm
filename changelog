@@ -13,7 +13,7 @@ Version 0.9.3+svn:
   * New or updated unit graphics: Anya, Elynia.
 
 * Units:
-  * Changed the faerie race's internal id from 'fairies' to 'faeries', and
+  * Changed the faerie race's internal id from 'fairy' to 'faerie', and
     updated image paths accordingly. For compatibility, units on the map and
     recall lists with the old race id and image paths will be automatically
     fixed when loading a saved game, but the code in charge of this is not
