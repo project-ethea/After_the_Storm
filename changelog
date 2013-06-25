@@ -4,6 +4,11 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.3+svn:
 ------------------
+* General:
+  * Solved "could not open image 'misc/ellipse-none-leader-*" errors on
+    Wesnoth 1.11.5 and later, affecting certain cutscenes including but not
+    limited to E2S12.
+
 * Graphics:
   * New or updated unit graphics: Anya, Elynia.
 
