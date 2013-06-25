@@ -2,8 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.9.3+svn:
-------------------
+Version 0.9.4:
+--------------
 * General:
   * Solved "could not open image 'misc/ellipse-none-leader-*" errors on
     Wesnoth 1.11.5 and later, affecting certain cutscenes including but not
