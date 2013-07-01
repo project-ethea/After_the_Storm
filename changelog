@@ -5,6 +5,8 @@ AFTER THE STORM - CHANGELOG
 Version 0.9.4+svn:
 ------------------
 * Scenarios:
+  * E1S2 - High Pass:
+    * Added time over event.
   * E1S3 - Civil War in the North:
     * Fixed Unidë disappearing at the very beginning of her initial dialog with
       Galas at the end of the first turn of standard gameplay.
