@@ -10,6 +10,8 @@ Version 0.9.4+svn:
   * E1S3 - Civil War in the North:
     * Fixed Unidë disappearing at the very beginning of her initial dialog with
       Galas at the end of the first turn of standard gameplay.
+  * E1S4 - Terror at Dusk
+    * Added time over event.
   * E2S6 - The Voyage Home:
     * Added floating labels to indicate banished Errant Souls.
 
