@@ -2,7 +2,7 @@
 -- Handle saved games generated before the 'fairy' race was
 -- renamed to 'faerie' in AtS 0.9.4, including file paths.
 --
--- TODO: remove after 0.9.4 or 0.9.5.
+-- TODO: remove after 0.9.6.
 ---
 
 local helper = wesnoth.require "lua/helper.lua"
