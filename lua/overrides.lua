@@ -2,11 +2,15 @@
 -- Overrides for mainline Lua WML actions.
 ---
 
-local engine_muf = wesnoth.wml_actions.move_unit_fake
+-- The lock_view option first appeared on 1.11.0, and the [move_unit_fake]
+-- force_scroll=yes default first appeared in 1.11.6. Other versions do not
+-- need this workaround.
 
--- The lock_view option first appeared on 1.11.0.
--- Previous versions do not need this workaround.
-if wesnoth.compare_versions(wesnoth.game_config.version, ">=", "1.11.0") then
+if wesnoth.compare_versions(wesnoth.game_config.version, ">=", "1.11.0")
+	and wesnoth.compare_versions(wesnoth.game_config.version, "<=", "1.11.5")
+then
+	local engine_muf = wesnoth.wml_actions.move_unit_fake
+
 	function wesnoth.wml_actions.move_unit_fake(cfg)
 		--
 		-- Due to an oversight of mine when implementing the lock_view/unlock_view
