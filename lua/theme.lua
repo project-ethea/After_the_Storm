@@ -3,7 +3,7 @@
 ---
 
 -- #textdomain wesnoth-After_the_Storm
-local _ = wesnoth.textdomain "wesnoth-utbs"
+local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
 local old_unit_status = wesnoth.theme_items.unit_status
 
 function wesnoth.theme_items.unit_status()
