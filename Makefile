@@ -63,7 +63,7 @@ stats:
 	@for p in $(packs); do for d in $(difficulties); do \
 		echo "    WML     $$p -> $$d"; \
 		$(WML_PREPROCESS) $(targetdir) .preprocessor.out --preprocess-defines $(extrasyms),$(campaignsym),$$d,$$p 2>&1 2> /dev/null; \
-		wc -l .preprocessor.out/_main.cfg | sed -E 's/^([0-9]+).*/            \1 lines/'; \
+		wc -lcm .preprocessor.out/_main.cfg | awk '{printf "            %u lines, %u characters (%1.0f KiB)\n", $$1, $$2, $$3 / 1024}'; \
 		rm -rf .preprocessor.out; \
 	done; done
 
