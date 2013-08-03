@@ -12,10 +12,12 @@ Version 0.9.5+svn:
 * Graphics:
   * New or updated unit graphics: Argan, Elyssa (E1/E2), Demon, Demon Zephyr, 
     Demon Grunt, Demon Warrior, Demon Messenger, Demoness Spelldancer, Demon
-    Stormtide, Demoness Hellbent Tide, Demoness Slashing Gale, Angel of Blood.
+    Stormtide, Demoness Hellbent Tide, Demoness Slashing Gale, Angel of Blood,
+    Errant Executor.
 
 * Units:
   * Renamed Demon Spelldancer to Demoness Spelldancer (UI name only).
+  * Replaced Demon Lord unit type with the Errant Executor.
 
 
 Version 0.9.5:
