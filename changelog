@@ -18,6 +18,11 @@ Version 0.9.5+svn:
     of custom unit ellipses for ZoC-less (e.g. L0) units in Wesnoth 1.11.6 and
     later.
 
+* Scenarios:
+  * E3S4.1 - Outpost of Hell:
+    * Mark "Defeat all enemy leaders" as an optional bonus objective as opposed
+      to alternative.
+
 * Units:
   * New unit type descriptions:
     * Demon
