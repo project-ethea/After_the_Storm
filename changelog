@@ -16,7 +16,7 @@ Version 0.9.5+svn:
     Errant Executor, Gatekeeper.
 
 * Units:
-  * Description changes:
+  * New unit type descriptions:
     * Demon
     * Demon Zephyr
     * Demon Grunt
