@@ -14,6 +14,9 @@ Version 0.9.5+svn:
     Demon Grunt, Demon Warrior, Demon Messenger, Demoness Spelldancer, Demon
     Stormtide, Demoness Hellbent Tide, Demoness Slashing Gale, Angel of Blood,
     Errant Executor, Gatekeeper.
+  * Eliminate various missing image warnings caused by changes to the handling
+    of custom unit ellipses for ZoC-less (e.g. L0) units in Wesnoth 1.11.6 and
+    later.
 
 * Units:
   * New unit type descriptions:
