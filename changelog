@@ -16,6 +16,11 @@ Version 0.9.5+svn:
     Errant Executor, Gatekeeper.
 
 * Units:
+  * Description changes:
+    * Demon
+    * Demon Zephyr
+    * Demon Grunt
+    * Demon Warrior
   * Renamed Demon Spelldancer to Demoness Spelldancer (UI name only).
   * Replaced Demon Lord unit type with the Errant Executor.
 
