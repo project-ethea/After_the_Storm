@@ -27,19 +27,12 @@ Version 0.9.5+svn:
 
 * Units:
   * New unit type descriptions:
-    * Demon
-    * Demon Zephyr
-    * Demon Grunt
-    * Demon Warrior
+    * Demon, Demon Zephyr, Demon Grunt, Demon Warrior
     * Demoness Messenger
     * Elvish Civilian
-    * Elvish Hunter
-    * Elvish Trapper
-    * Elvish Prowler
+    * Elvish Hunter, Elvish Trapper, Elvish Prowler
     * Elvish Wayfarer
-    * Dusk Faerie
-    * Night Nymph
-    * Nightshade Fire
+    * Dusk Faerie, Night Nymph, Nightshade Fire
     * Sylvan Warden
   * Renamed Demon Spelldancer to Demoness Spelldancer (UI name only).
   * Renamed Demon Messenger to Demoness Messenger (UI name only).
