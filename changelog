@@ -2,8 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.9.5+svn:
-------------------
+Version 0.9.6:
+--------------
 * General:
   * The workaround for the [move_unit_fake]/[move_unit] interaction with
     [lock_view] is now used only for Wesnoth 1.11.0 through 1.11.5 since a
