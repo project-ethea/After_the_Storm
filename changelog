@@ -21,6 +21,8 @@ Version 0.9.5+svn:
     later.
 
 * Scenarios:
+  * E2S4 - Shifting Allegiances:
+    * Fixed Tara's loyal icon overlay ending up assigned to a Rock Golem.
   * E3S4.1 - Outpost of Hell:
     * Mark "Defeat all enemy leaders" as an optional bonus objective as opposed
       to alternative.
