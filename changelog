@@ -26,6 +26,8 @@ Version 0.9.5+svn:
   * E3S4.1 - Outpost of Hell:
     * Mark "Defeat all enemy leaders" as an optional bonus objective as opposed
       to alternative.
+  * E3S6 - Divergence:
+    * Fix a severe gold management issue.
 
 * Units:
   * New unit type descriptions:
