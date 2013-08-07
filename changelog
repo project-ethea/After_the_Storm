@@ -88,30 +88,30 @@ Version 0.9.4:
 
 * Scenarios:
   * E1S2 - High Pass:
-    * Solve [target] derprecation warnings on Wesnoth 1.11.5 and later.
+    * Solve [target] deprecation warnings on Wesnoth 1.11.5 and later.
   * E1S4 - Terror at Dusk:
     * Updated map to use the ^Ftd palm forest terrain on Wesnoth 1.11.x instead
       of the denser ^Ft tropical forest.
   * E1S10 - Tears:
-    * Solve [target] and protect_leader derprecation warnings on Wesnoth 1.11.5
+    * Solve [target] and protect_leader deprecation warnings on Wesnoth 1.11.5
       and later.
     * Updated map to use the ^Ftd palm forest terrain on Wesnoth 1.11.x instead
       of the denser ^Ft tropical forest.
   * E1S11.1 - Return to Wesmere, part 1:
-    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+    * Solve protect_leader deprecation warning on Wesnoth 1.11.5 and later.
   * E2S1 - By the Moonlight:
-    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+    * Solve protect_leader deprecation warning on Wesnoth 1.11.5 and later.
   * E2S2 - The Heart Forest:
-    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+    * Solve protect_leader deprecation warning on Wesnoth 1.11.5 and later.
   * E2S7 - Proximus:
     * Updated map to use the ^Ftd palm forest terrain on Wesnoth 1.11.x instead
       of the denser ^Ft tropical forest.
   * E2S8 - And then there was Chaos:
-    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+    * Solve protect_leader deprecation warning on Wesnoth 1.11.5 and later.
   * E2S9 - New Hive:
-    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+    * Solve protect_leader deprecation warning on Wesnoth 1.11.5 and later.
   * E2S10 - The Betrayal:
-    * Solve protect_leader derprecation warning on Wesnoth 1.11.5 and later.
+    * Solve protect_leader deprecation warning on Wesnoth 1.11.5 and later.
 
 * Units:
   * Changed the faerie race's internal id from 'fairy' to 'faerie', and
