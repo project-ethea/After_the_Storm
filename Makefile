@@ -7,7 +7,7 @@ WESNOTH_DATA_DIR ?= $(shell $(WESNOTH) --path 2>&1 | tail -n 1)
 WESNOTH_CORE_DIR ?= $(WESNOTH_DATA_DIR)/data/core
 
 DEFSCOPE ?= macro-scope-check
-WMLLINT ?= wmllint
+WMLLINT ?= wmllint -d
 WMLINDENT ?= wmlindent
 WMLXGETTEXT ?= wmlxgettext
 OPTIPNG ?= wesnoth-optipng
