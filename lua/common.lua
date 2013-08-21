@@ -445,6 +445,8 @@ end
 
 function wesnoth.wml_actions.hidden_unit(cfg)
 	local u = wesnoth.create_unit(cfg)
+	-- Don't clobber existing units.
+	u.x, u.y = wesnoth.find_vacant_tile(u.x, u.y, u)
 	u.hidden = true
 	wesnoth.put_unit(u)
 end

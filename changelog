@@ -4,6 +4,11 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.6+dev:
 ------------------
+* Scenarios:
+  * E3S10 - Blood:
+    * Fixed an oversight in the implementation of the [hidden_unit] WML action
+      that could cause an event to destroy the player units forever by
+      clobbering them with enemy units at the start of the second stage.
 
 
 
