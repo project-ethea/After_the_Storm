@@ -445,8 +445,11 @@ end
 
 function wesnoth.wml_actions.hidden_unit(cfg)
 	local u = wesnoth.create_unit(cfg)
-	-- Don't clobber existing units.
-	u.x, u.y = wesnoth.find_vacant_tile(u.x, u.y, u)
+	-- Don't clobber existing units. We don't check for passability
+	-- because we occasionally use this with units that have infinite
+	-- movement costs on all terrains, and there's no need to make
+	-- this smarter than [unit].
+	u.x, u.y = wesnoth.find_vacant_tile(u.x, u.y)
 	u.hidden = true
 	wesnoth.put_unit(u)
 end
