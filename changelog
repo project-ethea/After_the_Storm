@@ -10,6 +10,10 @@ Version 0.9.6+dev:
       that could cause an event to destroy the player units forever by
       clobbering them with enemy units at the start of the second stage.
 
+* Units:
+  * Removed compatibility code introduced in version 0.9.4 to handle the
+    'fairy'->'faerie' race id transition done in that same release. Saved games
+    from 0.9.3 and older versions may not be used from now on.
 
 
 Version 0.9.6:
