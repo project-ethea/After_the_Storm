@@ -2,8 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.9.6+dev:
-------------------
+Version 0.9.7:
+--------------
 * Scenarios:
   * E3S10 - Blood:
     * Fixed an oversight in the implementation of the [hidden_unit] WML action
