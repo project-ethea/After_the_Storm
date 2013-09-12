@@ -185,7 +185,11 @@ function wesnoth.wml_actions.bug(cfg)
 		wesnoth.set_dialog_value(ok , "ok")
 		wesnoth.set_dialog_value(quit , "quit")
 
-		wesnoth.set_dialog_callback(show_details, "details")
+		if cond then
+			wesnoth.set_dialog_callback(show_details, "details")
+		else
+			wesnoth.set_dialog_active(false, "details")
+		end
 	end
 
 	if wesnoth.show_dialog(alert_dialog, preshow, nil) == 2 then
