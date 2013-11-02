@@ -9,6 +9,11 @@ Version 0.9.7+dev:
     unsupported Wesnoth version (< 1.9.10, < 1.10, = 1.11.0, = 1.11.1 at this
     time).
 
+* Scenarios:
+  * E3S4.1 - Outpost of Hell:
+    * Fixed a side-effect of the [hidden_unit] clobbering fix from 0.9.7 that
+      renders the scenario unwinnable after killing the final enemy boss.
+
 * Units:
   * Updated Chaos Gunner line animations for compatibility with Wesnoth 1.11.7.
 
