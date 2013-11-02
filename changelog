@@ -2,8 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.9.7+dev:
-------------------
+Version 0.9.8:
+--------------
 * General:
   * Added a preload-time event to warn the player when attempting to use an
     unsupported Wesnoth version (< 1.9.10, < 1.10, = 1.11.0, = 1.11.1 at this
