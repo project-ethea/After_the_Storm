@@ -10,12 +10,22 @@ Version 0.9.7+dev:
     time).
 
 * Scenarios:
+  * E1S1 - The Skirmish:
+    * Minor prose tweaks.
+  * E1S3 - Civil War in the North:
+    * Minor map tweaks.
+    * Minor prose tweaks.
   * E3S4.1 - Outpost of Hell:
     * Fixed a side-effect of the [hidden_unit] clobbering fix from 0.9.7 that
       renders the scenario unwinnable after killing the final enemy boss.
 
 * Units:
   * Updated Chaos Gunner line animations for compatibility with Wesnoth 1.11.7.
+
+* Terrains:
+  * Added litter terrain overlay from doofus-01, not currently used yet.
+    * Code: <http://r.wesnoth.org/p555984>
+    * Graphics: <http://r.wesnoth.org/p556000>
 
 
 Version 0.9.7:
