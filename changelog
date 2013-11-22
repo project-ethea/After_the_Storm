@@ -4,7 +4,10 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.8+dev:
 ------------------
-
+* Scenarios:
+  * E1S4 - Terror at Dusk:
+    * Balancing changes to make the scenario easier (possibly connected to AI
+      recruiment changes in Wesnoth 1.11.7).
 
 
 Version 0.9.8:
