@@ -5,9 +5,14 @@ AFTER THE STORM - CHANGELOG
 Version 0.9.8+dev:
 ------------------
 * Scenarios:
+  * E1S3 - Civil War in the North:
+    * Minor prose tweaks.
   * E1S4 - Terror at Dusk:
     * Balancing changes to make the scenario easier (possibly connected to AI
       recruiment changes in Wesnoth 1.11.7).
+    * Minor prose tweaks.
+  * E1S6.2 - Elves of a Different Land:
+    * Minor prose tweaks.
 
 
 Version 0.9.8:
