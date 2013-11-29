@@ -12,6 +12,7 @@ Version 0.9.8+dev:
       recruiment changes in Wesnoth 1.11.7).
     * Minor prose tweaks.
   * E1S5 - Bay of Tirigaz:
+    * Made it so Mal Keshar speaks for bat units when investigating shipwrecks.
     * Minor map tweaks.
     * Minor prose tweaks.
   * E1S6.2 - Elves of a Different Land:
