@@ -5,6 +5,8 @@ AFTER THE STORM - CHANGELOG
 Version 0.9.8+dev:
 ------------------
 * Scenarios:
+  * Skip inclusion of death events for characters that are not present during
+    the first few scenarios of E1.
   * E1S3 - Civil War in the North:
     * Minor prose tweaks.
   * E1S4 - Terror at Dusk:
