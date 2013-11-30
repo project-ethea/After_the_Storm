@@ -5,3 +5,4 @@ storyboard*
 macros/_initial.cfg
 base-maint.cfg
 *.kate-swp
+.preprocessor.out/
