@@ -17,6 +17,9 @@ Version 0.9.8+dev:
     * Made it so Mal Keshar speaks for bat units when investigating shipwrecks.
     * Minor map tweaks.
     * Minor prose tweaks.
+  * E1S6.1 - Quenoth Isle:
+    * Fixed Elynia's ellipse reverting to a generic unit ellipse on 1.11.x
+      during the faerie fire cutscene.
   * E1S6.2 - Elves of a Different Land:
     * Minor prose tweaks.
     * Extended map for large screens.
