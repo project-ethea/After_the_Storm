@@ -25,6 +25,7 @@ Version 0.9.8+dev:
     * Not-so-minor prose tweaks.
     * Extended map for large screens.
   * E1S7 - The Search for the Past:
+    * Improved ending cutscene transition.
     * Minor AI adjustments to make the undead minions recruit correctly on
       Wesnoth 1.11.7 and later.
     * Not-so-minor prose tweaks.
