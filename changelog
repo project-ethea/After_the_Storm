@@ -10,8 +10,9 @@ Version 0.9.8+dev:
   * E1S3 - Civil War in the North:
     * Minor prose tweaks.
   * E1S4 - Terror at Dusk:
-    * Balancing changes to make the scenario easier (possibly connected to AI
-      recruiment changes in Wesnoth 1.11.7).
+    * Balancing changes to make the scenario easier on Wesnoth 1.11.7 and
+      later, possibly connected to the new AI recruitment gold saving aspect
+      introduced in Wesnoth 1.11.7 and enabled by default.
     * Minor prose tweaks.
   * E1S5 - Bay of Tirigaz:
     * Made it so Mal Keshar speaks for bat units when investigating shipwrecks.
