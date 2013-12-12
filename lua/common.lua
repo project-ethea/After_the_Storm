@@ -532,16 +532,9 @@ end
 -- Fades out the currently playing music and replaces
 -- it with silence afterwards.
 --
--- NOTE: A possible timing issue in the sound code causes
--- Wesnoth to emit some short (< 100 ms) noise at the end
--- of the sequence when replacing the music playlist. This
--- also normally occurs when quitting a scenario that uses
--- silence.ogg to return to the titlescreen. It's advised
--- to have some ambient noise playing at the same time
--- [fade_out_music] is used. Furthermore, it's not possible
--- to determine at this time whether music is enabled in
--- the first place, so the fade out delay will always occur
--- regardless of the user's preferences.
+-- It is not possible at this time to know whether music is enabled in
+-- the first place, so the fade out delay will always occur regardless
+-- of the user's preferences.
 --
 -- [fade_out_music]
 --     duration= (optional int, defaults to 1000 ms)
@@ -553,6 +546,9 @@ function wesnoth.wml_actions.fade_out_music(cfg)
 	if duration == nil then
 		duration = 1000
 	end
+
+	-- HACK: reserve last 10 milliseconds for the music switch workaround.
+	duration = duration - 10
 
 	local function set_music_volume(percentage)
 		wesnoth.fire("volume", { music = percentage })
@@ -582,6 +578,10 @@ function wesnoth.wml_actions.fade_out_music(cfg)
 		immediate = true,
 		append = false
 	})
+
+	-- HACK: give the new track a chance to start playing silently before
+	--       resetting to full volume.
+	wesnoth.delay(10)
 
 	set_music_volume(100)
 end
