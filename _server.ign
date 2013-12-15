@@ -40,3 +40,4 @@ Makefile
 *.kate-swp
 *.orig
 *.rej
+*.map.cfg
