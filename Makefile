@@ -79,5 +79,5 @@ pot: $(textdomain).pot
 
 clean:
 	$(WMLLINT) --clean $(targetdir)
-	find \( -name '*.new' -o -name '*.tmp' -o -name '*.pot' -o -name '*.orig' -o -name '*.rej' \) -type f -print | xargs rm -f
+	find \( -name '*.new' -o -name '*.tmp' -o -name '*.pot' -o -name '*.orig' -o -name '*.rej' -o -name '*.map.cfg' \) -type f -print | xargs rm -f
 	rm -rf .preprocessor.out
