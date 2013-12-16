@@ -48,6 +48,11 @@ Version 0.9.8+dev:
     * Minor prose tweaks.
   * E1S11.1 - Return to Wesmere, part 1:
     * Not-so-minor prose tweaks.
+  * E1S11.2 - Return to Wesmere, part 2:
+    * Fixed story text not appearing because of a missing macro inclusion
+      (long-standing bug that's existed ever since the scenario was first
+      released).
+    * Minor prose tweaks.
   * E3S1 - Beyond her Smile (A Light in the Darkness):
     * Minor map tweaks.
     * Various cutscene improvements and changes.
