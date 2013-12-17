@@ -587,6 +587,44 @@ function wesnoth.wml_actions.fade_out_music(cfg)
 end
 
 ---
+-- Simulates fading out all playing sound effects for the given interval of
+-- time by gradually decreasing the main sound volume until it reaches zero.
+--
+-- [fade_out_sound]
+--     duration= (optional int, defaults to 1000 ms)
+-- [/fade_out_sound]
+---
+function wesnoth.wml_actions.fade_out_sound_effects(cfg)
+	local duration = cfg.duration
+
+	if duration == nil then
+		duration = 1000
+	end
+
+	local delay_granularity = 10
+
+	duration = math.max(delay_granularity, duration)
+	duration = duration - (duration % delay_granularity)
+
+	local steps = duration / delay_granularity
+	--wesnoth.message(string.format("%d steps", steps))
+
+	for k = 1, steps do
+		local v = helper.round(100 - (100*k / steps))
+		--wesnoth.message(string.format("step %d, volume %d", k, v))
+		wesnoth.fire("volume", { sound = v })
+		wesnoth.delay(delay_granularity)
+	end
+end
+
+---
+-- Resets the main sound volume back to normal.
+---
+function wesnoth.wml_actions.reset_sound_effects(cfg)
+	wesnoth.fire("volume", { sound = 100 })
+end
+
+---
 -- Checks whether the second unit ([filter_second]) is within the movement
 -- range of the first unit ([filter]), and stores the truth value as a
 -- boolean in the given variable (or in_range if not specified).
