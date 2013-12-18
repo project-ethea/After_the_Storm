@@ -586,17 +586,7 @@ function wesnoth.wml_actions.fade_out_music(cfg)
 	set_music_volume(100)
 end
 
----
--- Simulates fading out all playing sound effects for the given interval of
--- time by gradually decreasing the main sound volume until it reaches zero.
---
--- [fade_out_sound]
---     duration= (optional int, defaults to 1000 ms)
--- [/fade_out_sound]
----
-function wesnoth.wml_actions.fade_out_sound_effects(cfg)
-	local duration = cfg.duration
-
+local function wml_sfx_volume_fade_internal(duration, is_fade_out)
 	if duration == nil then
 		duration = 1000
 	end
@@ -610,11 +600,42 @@ function wesnoth.wml_actions.fade_out_sound_effects(cfg)
 	--wesnoth.message(string.format("%d steps", steps))
 
 	for k = 1, steps do
-		local v = helper.round(100 - (100*k / steps))
+		local v = 0
+
+		if is_fade_out then
+			v = helper.round(100 - (100*k / steps))
+		else
+			v = helper.round(100*k / steps)
+		end
+
 		--wesnoth.message(string.format("step %d, volume %d", k, v))
 		wesnoth.fire("volume", { sound = v })
 		wesnoth.delay(delay_granularity)
 	end
+end
+
+---
+-- Simulates fading out all playing sound effects for the given interval of
+-- time by gradually decreasing the main sound volume until it reaches zero.
+--
+-- [fade_out_sound]
+--     duration= (optional int, defaults to 1000 ms)
+-- [/fade_out_sound]
+---
+function wesnoth.wml_actions.fade_out_sound_effects(cfg)
+	wml_sfx_volume_fade_internal(cfg.duration, true)
+end
+
+---
+-- Simulates fading in all playing sound effects for the given interval of
+-- time by gradually increasing the main sound volume until it reaches 100%.
+--
+-- [fade_in_sound]
+--     duration= (optional int, defaults to 1000 ms)
+-- [/fade_in_sound]
+---
+function wesnoth.wml_actions.fade_in_sound_effects(cfg)
+	wml_sfx_volume_fade_internal(cfg.duration, false)
 end
 
 ---
