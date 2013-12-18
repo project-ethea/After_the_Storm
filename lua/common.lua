@@ -609,7 +609,22 @@ local function wml_sfx_volume_fade_internal(duration, is_fade_out)
 		end
 
 		--wesnoth.message(string.format("step %d, volume %d", k, v))
-		wesnoth.fire("volume", { sound = v })
+
+		-- HACK: We may only set the volume down to 1% in case a
+		--       [remove_sound_source] operation will take place while the
+		--       sound is down. Removing a sound source actually only works
+		--       while the sound volume (strictly speaking, the sound source
+		--       channel's volume) is non-zero; if the volume is zero, the
+		--       sound source's associated data structures are freed, but the
+		--       SDL_mixer code (as of 1.2.12) will not halt that channel as
+		--       intended, and a looping sound source will resume playing as
+		--       soon as volume is set to a non-zero value again.
+		--
+		--       Volume values have to be integers because that's what
+		--       SDL_mixer uses, so we can't e.g. use an infinitesimal value
+		--       here.
+		wesnoth.fire("volume", { sound = math.max(1, v) })
+
 		wesnoth.delay(delay_granularity)
 	end
 end
