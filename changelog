@@ -32,6 +32,7 @@ Version 0.9.8+dev:
     * Not-so-minor prose tweaks.
     * Extended map for large screens.
   * E1S7 - The Search for the Past:
+    * Added cave ambience sound sources.
     * Improved ending cutscene transition.
     * Minor AI adjustments to make the undead minions recruit correctly on
       Wesnoth 1.11.7 and later.
@@ -42,6 +43,7 @@ Version 0.9.8+dev:
   * E1S8 - Fear:
     * Not-so-minor prose tweaks.
   * E1S9.1, E1S9.2, E1S9.3 - The Triad:
+    * Added cave ambience sound sources.
     * Not-so-minor prose tweaks.
     * Various cutscene improvements and changes.
   * E1S10 - Tears:
@@ -49,11 +51,13 @@ Version 0.9.8+dev:
   * E1S11.1 - Return to Wesmere, part 1:
     * Not-so-minor prose tweaks.
   * E1S11.2 - Return to Wesmere, part 2:
+    * Added cave ambience sound sources.
     * Fixed story text not appearing because of a missing macro inclusion
       (long-standing bug that's existed ever since the scenario was first
       released).
     * Minor prose tweaks.
   * E1S12 - The Queen:
+    * Added cave ambience sound sources.
     * Balancing changes.
     * Not-so-minor prose tweaks.
     * Various cutscene improvements and changes.
