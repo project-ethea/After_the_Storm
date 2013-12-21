@@ -59,6 +59,8 @@ Version 0.9.8+dev:
   * E1S12 - The Queen:
     * Added cave ambience sound sources.
     * Balancing changes.
+    * Fixed long-standing offset-by-one bug with a terrain mask applied near
+      the end.
     * Not-so-minor prose tweaks.
     * Various cutscene improvements and changes.
   * E3S1 - Beyond her Smile (A Light in the Darkness):
