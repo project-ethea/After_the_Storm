@@ -60,6 +60,10 @@ Version 0.9.8+dev:
   * E1S12 - The Queen:
     * Added cave ambience sound sources.
     * Balancing changes.
+    * Excluded time area for the E1S11.2 starting area on Wesnoth 1.11.7 and
+      earlier (including 1.10.x) due to a bug with time area ids not being
+      saved, resulting in a time area with local lighting that interfers with a
+      cutscene sequence after reloading from a non-start-of-scenario save.
     * Fixed long-standing offset-by-one bug with a terrain mask applied near
       the end.
     * Not-so-minor prose tweaks.
