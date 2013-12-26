@@ -6,6 +6,7 @@ Version 0.9.8+dev:
 ------------------
 * Graphics:
   * New or updated unit graphics: Blood Core.
+  * Assigned a more dignified generic portrait to Cron (1.11.x only).
 
 * Music and sound effects:
   * Mitigated [fade_out_music] causing a  portion of the previous track to be
