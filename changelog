@@ -78,6 +78,12 @@ Version 0.9.8+dev:
     * Minor AI adjustments for Wesnoth 1.11.7 and later.
     * Not-so-minor prose tweaks.
     * Now the scenario lives up to its name.
+  * E2S2 - The Heart Forest:
+    * Fixed fog not being cleared correctly when Allyna first appears.
+    * Made it so Allyna introduces herself once three of the five bandits have
+      been killed rather than all of them.
+    * Minor AI adjustments for Wesnoth 1.11.7 and later.
+    * Minor prose tweaks.
   * E3S1 - Beyond her Smile (A Light in the Darkness):
     * Minor map tweaks.
     * Various cutscene improvements and changes.
