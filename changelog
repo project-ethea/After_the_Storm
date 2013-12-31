@@ -106,6 +106,8 @@ Version 0.9.8+dev:
     of core/units/khalifate/Falcon.cfg.
   * Fixed a minor inaccuracy at the beginning of the Terror ability
     description.
+  * The spawn controller code (used e.g. in Shaxthal hives) has been completely
+    rewritten in Lua. No behavior changes expected.
 
 
 Version 0.9.8:
