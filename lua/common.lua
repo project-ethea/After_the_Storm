@@ -728,3 +728,21 @@ function wesnoth.wml_actions.apply_amlas(cfg)
 		wesnoth.add_modification(u, "advance", amla_cfg)
 	end
 end
+
+function wesnoth.wml_actions.quake(cfg)
+	local function scroll(x, y)
+		wesnoth.fire("scroll", { x = x, y = y })
+	end
+
+	local sound = cfg.sound
+
+	if sound then
+		wesnoth.play_sound(sound)
+	end
+
+	scroll(  5,   0)
+	scroll(-10,   0)
+	scroll(  5,   5)
+	scroll(  0, -10)
+	scroll(  0,   5)
+end
