@@ -205,6 +205,7 @@ function wesnoth.wml_actions.set_facing(cfg)
 		if new_facing ~= u.facing then
 			u.facing = new_facing
 
+			-- HACK:
 			-- Force Wesnoth to re-read the unit's current facing and update the game
 			-- display accordingly. Against what one would normally expect, calling
 			-- [redraw] does *not* work as an alternative.
