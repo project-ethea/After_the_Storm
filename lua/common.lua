@@ -84,11 +84,6 @@ end
 -- Useful to determine in which direction a unit should be facing
 -- (from the source) to look at another unit (at the target).
 --
--- NOTE: This initial implementation only handles southwest and
--- southeast. The C++ code handling these calculations isn't exposed
--- to Lua yet, but direction.lua provides an attempt at translating
--- it.
---
 -- [store_direction]
 --     from_x,from_y= ...
 --     to_x,to_y= ...
@@ -129,14 +124,7 @@ function wesnoth.wml_actions.store_direction(cfg)
 
 	local variable = cfg.variable or "direction"
 
-	-- local facing = loc_relative_direction(b, a) or "sw"
-	-- wesnoth.set_variable(variable, facing)
-
-	if a.x < b.x then
-		wesnoth.set_variable(variable, "se")
-	else
-		wesnoth.set_variable(variable, "sw")
-	end
+	wesnoth.set_variable(variable, hex_facing(a, b))
 end
 
 ---

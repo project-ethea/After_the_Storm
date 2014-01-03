@@ -4,6 +4,11 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.8+dev:
 ------------------
+* General:
+  * New complete algorithm for calculating the relative direction between two
+    hex grid locations, handling all six intrinsic facing directions instead
+    of only SW and SE.
+
 * Graphics:
   * New or updated unit graphics: Blood Core.
   * Assigned a more dignified generic portrait to Cron (1.11.x only).
