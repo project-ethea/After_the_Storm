@@ -128,6 +128,88 @@ function wesnoth.wml_actions.store_direction(cfg)
 end
 
 ---
+-- Changes one or more units' facing to follow the specified location, unit,
+-- or direction.
+--
+-- [set_facing]
+--     [filter]
+--         ... SUF ...
+--     [/filter]
+--     [filter_location]
+--         ... SLF ...
+--     [/filter_location]
+-- [/set_facing]
+--
+-- Or:
+--
+-- [set_facing]
+--     [filter]
+--         ... SUF ...
+--     [/filter]
+--     [filter_second]
+--         ... SUF ...
+--     [/filter_second]
+-- [/set_facing]
+--
+-- Or:
+--
+-- [set_facing]
+--     [filter]
+--         ... SUF ...
+--     [/filter]
+--     facing= ... direction ...
+-- [/set_facing]
+---
+function wesnoth.wml_actions.set_facing(cfg)
+	local suf = helper.get_child(cfg, "filter") or
+		helper.wml_error("[set_facing] Missing unit filter")
+
+	local facing = cfg.facing
+	local target_suf = helper.get_child(cfg, "filter_second")
+	local target_slf = helper.get_child(cfg, "filter_location")
+
+	local target_loc, target_u
+
+	if not facing then
+		if target_suf then
+			target_u = wesnoth.get_units(target_suf)[1] or
+				helper.wml_error("[set_facing] Could not match the specified [filter_second] unit")
+		elseif target_slf then
+			target_loc = wesnoth.get_locations(target_slf)[1] or
+				helper.wml_error("[set_facing] Could not match the specified [filter_location] location")
+		end
+	end
+
+	local units = wesnoth.get_units(suf) or
+		helper.wml_error("[set_facing] Could not match any on-map units with [filter]")
+
+	for i, u in ipairs(units) do
+		if facing then
+			u.facing = facing
+		elseif target_u then
+			u.facing = hex_facing(
+				{ x = u.x, y = u.y },
+				{ x = target_u.x, y = target_u.y }
+			)
+		elseif target_loc then
+			u.facing = hex_facing(
+				{ x = u.x, y = u.y },
+				{ x = target_loc[1], y = target_loc[2] }
+			)
+		else
+			helper.wml_error("[set_facing] Missing facing or [filter_second] or [filter_location]")
+		end
+
+		-- Force Wesnoth to re-read the unit's current facing and update the game
+		-- display accordingly. Against what one would normally expect, calling
+		-- [redraw] does *not* work as an alternative.
+
+		wesnoth.extract_unit(u)
+		wesnoth.put_unit(u)
+	end
+end
+
+---
 -- Installs mechanical "Door" units on *^Z\ and *^Z/ hexes
 -- using the given owner side.
 --
