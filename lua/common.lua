@@ -184,15 +184,17 @@ function wesnoth.wml_actions.set_facing(cfg)
 		helper.wml_error("[set_facing] Could not match any on-map units with [filter]")
 
 	for i, u in ipairs(units) do
+		local new_facing
+
 		if facing then
-			u.facing = facing
+			new_facing = facing
 		elseif target_u then
-			u.facing = hex_facing(
+			new_facing = hex_facing(
 				{ x = u.x, y = u.y },
 				{ x = target_u.x, y = target_u.y }
 			)
 		elseif target_loc then
-			u.facing = hex_facing(
+			new_facing = hex_facing(
 				{ x = u.x, y = u.y },
 				{ x = target_loc[1], y = target_loc[2] }
 			)
@@ -200,12 +202,16 @@ function wesnoth.wml_actions.set_facing(cfg)
 			helper.wml_error("[set_facing] Missing facing or [filter_second] or [filter_location]")
 		end
 
-		-- Force Wesnoth to re-read the unit's current facing and update the game
-		-- display accordingly. Against what one would normally expect, calling
-		-- [redraw] does *not* work as an alternative.
+		if new_facing ~= u.facing then
+			u.facing = new_facing
 
-		wesnoth.extract_unit(u)
-		wesnoth.put_unit(u)
+			-- Force Wesnoth to re-read the unit's current facing and update the game
+			-- display accordingly. Against what one would normally expect, calling
+			-- [redraw] does *not* work as an alternative.
+
+			wesnoth.extract_unit(u)
+			wesnoth.put_unit(u)
+		end
 	end
 end
 
