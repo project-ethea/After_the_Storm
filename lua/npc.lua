@@ -2,8 +2,6 @@
 -- Fake NPC AI logic.
 ---
 
-local helper = wesnoth.require "lua/helper.lua"
-
 ---
 -- [npc_bird_behavior]
 --     types=... # list of unit types that will be considered for movement

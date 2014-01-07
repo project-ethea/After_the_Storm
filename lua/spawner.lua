@@ -2,7 +2,6 @@
 -- Unit spawner implementation details. No user-serviceable parts here.
 ---
 
-local helper = wesnoth.require "lua/helper.lua"
 local T = helper.set_wml_tag_metatable {}
 
 local function dbg(msg)

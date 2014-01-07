@@ -6,8 +6,6 @@
 -- hex_direction_index, and the basic idea behind hex_facing.
 ---
 
-local helper = wesnoth.require "lua/helper.lua"
-
 ---
 -- Converts coordinates from hex geometry to cartesian coordinates,
 -- meaning that y coordinates are offset by 0.5 every other hex.

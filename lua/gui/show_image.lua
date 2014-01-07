@@ -1,4 +1,3 @@
-local helper = wesnoth.require "lua/helper.lua"
 local T = helper.set_wml_tag_metatable {}
 
 ---

@@ -2,8 +2,6 @@
 -- Lua WML actions taken from the Wesnoth Lua Pack add-on.
 ---
 
-local helper = wesnoth.require "lua/helper.lua"
-
 --! [store_shroud]
 --! melinath
 

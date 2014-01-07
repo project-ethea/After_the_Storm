@@ -3,8 +3,6 @@
 -- campaign.
 ---
 
-local helper = wesnoth.require "lua/helper.lua"
-
 ----------
 -- E1S9 --
 ----------

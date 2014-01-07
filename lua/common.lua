@@ -2,8 +2,6 @@
 -- General-purpose Lua WML actions.
 ---
 
-local helper = wesnoth.require "lua/helper.lua"
-
 -- helper.round() is not implemented in version 1.10.x.
 if wesnoth.compare_versions(wesnoth.game_config.version, '<', '1.11.0') then
 	function helper.round(number)
