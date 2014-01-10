@@ -8,9 +8,11 @@ Version 0.9.8+dev:
   * New complete algorithm for calculating the relative direction between two
     hex grid locations, handling all six intrinsic facing directions instead
     of only SW and SE.
+  * Updated Aragwaith faction from Era of Chaos 1.3.1+dev up to commit
+    9dedeba7cddc2a027745c9994a917fdcb78ed341.
 
 * Graphics:
-  * New or updated unit graphics: Blood Core.
+  * New or updated unit graphics: Blood Core, multiple Aragwaith units.
   * Assigned a more dignified generic portrait to Cron (1.11.x only).
 
 * Music and sound effects:
@@ -134,7 +136,8 @@ Version 0.9.8+dev:
       * Affected units: Demoness Hellbent Tide, Aragwaith Shield Guard,
         Aragwaith Ancient Banner.
   * New or improved unit animations: Verlissh Matrix Core, Shaxthal Custodian
-    Drone, Shaxthal Queen, Verlissh Matrix Flow System, Verlissh Control Spire.
+    Drone, Shaxthal Queen, Verlissh Matrix Flow System, Verlissh Control Spire,
+    multiple Aragwaith units.
   * Made it so the Falcon unit type and the lightfly movetype are only defined
     if the mainline Khalifate faction is not present, by testing the existence
     of core/units/khalifate/Falcon.cfg.
