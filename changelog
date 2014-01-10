@@ -127,9 +127,14 @@ Version 0.9.8+dev:
     * Increased initial gold supply for the second human player side.
 
 * Units:
+  * Balancing changes:
+    * Imps are now immune to the plague weapon special.
+    * The Protection ability affects own units of any lower level again instead
+      of only level 0 and 1.
+      * Affected units: Demoness Hellbent Tide, Aragwaith Shield Guard,
+        Aragwaith Ancient Banner.
   * New or improved unit animations: Verlissh Matrix Core, Shaxthal Custodian
     Drone, Shaxthal Queen, Verlissh Matrix Flow System, Verlissh Control Spire.
-  * Imps are now immune to the plague weapon special.
   * Made it so the Falcon unit type and the lightfly movetype are only defined
     if the mainline Khalifate faction is not present, by testing the existence
     of core/units/khalifate/Falcon.cfg.
