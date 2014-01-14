@@ -790,3 +790,28 @@ function wesnoth.wml_actions.apply_amlas(cfg)
 		wesnoth.add_modification(u, "advance", amla_cfg)
 	end
 end
+
+---
+-- Highlights a given set of target locations at once as a hint for the
+-- player.
+--
+-- [highlight_goal]
+--     ... SLF ...
+--     image=(optional path to the goal overlay)
+-- [/highlight_goal]
+---
+function wesnoth.wml_actions.highlight_goal(cfg)
+	cfg = helper.literal(cfg)
+
+	if cfg.image == nil then
+		cfg.image = "misc/goal-highlight.png"
+	end
+
+	for i = 1, 3 do
+		wesnoth.wml_actions.item(cfg)
+		wesnoth.delay(300)
+		wesnoth.wml_actions.remove_item(cfg)
+		wesnoth.wml_actions.redraw {}
+		wesnoth.delay(300)
+	end
+end
