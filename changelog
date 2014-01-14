@@ -142,6 +142,11 @@ Version 0.9.8+dev:
     * Minor ending cutscene improvements.
   * E3S6 - Divergence:
     * Minor prose tweaks.
+  * E3S7A - Dark Fire:
+    * Prevent crashing Wesnoth 1.11.8 due to a missing initial time of day
+      (part 1 only).
+  * E3S8A - Interim:
+    * Prevent crashing Wesnoth 1.11.8 due to a missing initial time of day.
 
 * Units:
   * Balancing changes:
