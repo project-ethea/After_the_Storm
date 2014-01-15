@@ -22,7 +22,7 @@ Version 0.9.8+dev:
     help in all cases.
 
 * Scenarios:
-  * Fixed additional bugs with hero ellipses on Wesnoth 1.11.5 and later
+  * Fixed additional bugs with hero ellipses on Wesnoth 1.11.6 and later
     affecting scenario E3S7B and later.
   * Use STARTING_VILLAGES_ALL instead of STARTING_VILLAGES with large numbers
     to assign all villages to sides.
