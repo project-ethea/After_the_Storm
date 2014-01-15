@@ -155,6 +155,7 @@ Version 0.9.8+dev:
       of only level 0 and 1.
       * Affected units: Demoness Hellbent Tide, Aragwaith Shield Guard,
         Aragwaith Ancient Banner.
+    * Physical endurance no longer resets statuses (poisoned, slowed, etc.).
   * New or improved unit animations: Verlissh Matrix Core, Shaxthal Custodian
     Drone, Shaxthal Queen, Verlissh Matrix Flow System, Verlissh Control Spire,
     multiple Aragwaith units.
