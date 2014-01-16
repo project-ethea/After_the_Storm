@@ -156,6 +156,8 @@ Version 0.9.8+dev:
     * Minor aesthetic changes nobody could possibly notice.
     * Fixed parts of the map being unintentionally uncovered upon entering
       Hemérilyel's chamber.
+    * Made Hemérilyel more aggressive towards the player on Wesnoth 1.11.2 and
+      later.
 
 * Units:
   * Balancing changes:
