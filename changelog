@@ -147,8 +147,15 @@ Version 0.9.8+dev:
   * E3S7A - Dark Fire:
     * Prevent crashing Wesnoth 1.11.8 due to a missing initial time of day
       (part 1 only).
+    * Added cave ambience sound sources.
   * E3S8A - Interim:
     * Prevent crashing Wesnoth 1.11.8 due to a missing initial time of day.
+    * Added cave ambience sound sources.
+    * Minor cutscene improvements nobody could possibly notice.
+  * E3S8B - Destiny, part 1:
+    * Minor aesthetic changes nobody could possibly notice.
+    * Fixed parts of the map being unintentionally uncovered upon entering
+      Hemérilyel's chamber.
 
 * Units:
   * Balancing changes:
