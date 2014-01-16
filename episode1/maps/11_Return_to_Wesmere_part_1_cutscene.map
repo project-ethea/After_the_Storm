@@ -1,20 +1,20 @@
 border_size=1
 usage=map
 
-Dd          , Rr          , Rr          , Dd          , Dd^Vda      , Dd^Vda      , Dd^Vda      , Dd^Eff      , Dd^Eff      , Rr          , Re^Es       , Dd          , Dd^Eff      , Dd^Eff      , Dd          , Dd          , Ds          , Dd          , Dd^Edpp     , Cdr         , Cdr         , Kdr         , Dd          
-Dd          , Co          , Ko          , Rr          , Rr          , Dd^Vda      , Dd^Eff      , Dd^Eff      , Rr          , Rr          , Re^Br|      , Dd^Eff      , Dd^Eff      , Dd^Es       , Ko          , Dd          , Dd          , Ds          , Dd^Edpp     , Dd^Edpp     , Dd^Edpp     , Dd          , Rr          
-Dd          , Co          , Ds          , Ds          , Ds^Eff      , Rr          , Rr          , Rr          , Re^Es       , Re^Br/      , Dd^Eff      , Dd^Eff      , Gd          , Gd          , Hd          , Dd          , Co          , Ko          , Ds          , Dd^Edpp     , Rr          , Rr          , Dd          
-Dd          , Dd          , Dd^Eff      , Ds^Eff      , Ds^Dr       , Rr          , Re^Es       , Re^Es       , Rd^Eff      , Dd^Eff      , Rd          , Rd          , Gd          , Gd          , Gd          , Gd          , Gd          , Co          , Ds          , Rr          , Dd^Edpp     , Dd^Edpp     , Cdr         
-Dd          , Dd^Eff      , Dd^Eff      , Rr          , Re^Br|      , Re^Br/      , Rd^Eff      , Rd^Eff      , Wwg^Es      , Rd          , Wwg         , Rd          , Wwf^Es      , Re          , Rd          , Dd^Es       , Gd^Es       , Ds          , Gd          , Rr          , Dd^Vda      , Dd          , Cdr         
-Dd^Eff      , Dd^Eff      , Rr          , Rr          , Re^Br/      , Rd^Eff      , Rd^Eff      , Wwg         , Wwf         , Wwg         , Wwg         , Wwf         , Wwf^Es      , 1 Wwf       , Rd          , Dd          , Rd          , Gd          , Gd          , Rr          , Hd          , Dd          , Dd          
-Rr          , Rr          , Re^Es       , Re^Es       , Rd^Eff      , Rd^Eff      , Gd          , Wwf^Es      , Wwf         , Wwf^Es      , Wwg         , Wwg         , Wwf         , Wwf         , Wwf         , Rd          , Rd          , Rd          , Gd          , Gd          , Hd          , Dd          , Dd          
-Re^Br/      , Re^Br/      , Dd^Eff      , Dd^Eff      , Dd          , Rd          , Gd          , Gd          , Wwg         , Wwf^Es      , Wwg         , Wwf         , Wwg         , Wwg         , Wwg^Es      , Wwf         , Gd          , Rd          , Rd          , Gd          , Hd          , Dd          , Dd          
-Dd^Eff      , Dd^Eff      , Dd^Dr       , Ko          , Dd          , Gd          , Gd          , Gd          , Gd          , Gd          , Wwf         , Wwf^Es      , Wwf         , Wwf         , Wwf         , Wwf         , Gd          , Rd          , Rr          , Rr          , Rr          , Dd^Vda      , Dd^Vda      
-Dd          , Dd^Dr       , Dd^Dr       , Dd          , Dd          , Dd          , Ds          , Ds          , Ds          , Ds          , Ds          , Gd          , Gd          , Rd          , Rd          , Gd          , Gd          , Rd          , Dd          , Rr          , Rr          , Rr          , Rr          
-Dd          , Dd          , Dd          , Dd^Edpp     , Ds          , Dd          , Ko          , Co          , Dd          , Ds          , Rd          , Gd          , Gd          , Gd          , Gd          , Gd          , Co          , Ko          , Dd          , Dd          , Dd^Vda      , Rr          , Rr          
-Hd          , Cdr         , Kdr         , Ds          , Ds          , Dd          , Co          , Co          , Dd          , Rd          , Dd          , Gd          , Gd          , Ds          , Ds          , Dd          , Ds          , Co          , Dd          , Dd^Vda      , Dd^Vda      , Dd^Vda      , Dd^Vda      
-Dd^Dr       , Hd          , Cdr         , Ds          , Ds          , Dd          , Dd          , Dd          , Rd          , Rd          , Dd          , Gd          , Ko          , Ds          , Hd          , Ds          , Ds          , Dd          , Dd^Dr       , Dd^Dr       , Hd          , Dd^Vda      , Dd          
-Dd          , Dd^Dr       , Dd          , Ds          , Ds          , Ds          , Rd          , Rd          , Hd          , Ds          , Ds          , Dd          , Ds          , Ds          , Ds          , Ds          , Dd          , Dd^Dr       , Dd^Dr       , Hd          , Kdr         , Hd          , Dd          
-Hd          , Hd          , Dd          , Hd          , Dd          , Dd^Vda      , Dd          , Dd          , Dd          , Hd          , Dd          , Ds          , Dd          , Ds          , Ds          , Ds          , Dd          , Dd^Dr       , Dd          , Dd^Edp      , Dd          , Hd          , Dd          
-Dd          , Hd          , Hd          , Dd          , Dd          , Dd          , Hd          , Dd^Edpp     , Dd^Dr       , Dd          , Dd          , Dd          , Dd          , Dd          , Ds          , Hd          , Ds          , Dd          , Dd          , Dd          , Dd          , Dd          , Dd          
-Dd          , Hd          , Hd          , Hd          , Hd          , Hd          , Dd          , Dd          , Dd          , Dd^Dr       , Hd          , Hd          , Hd          , Ds          , Ds          , Ds          , Dd          , Hd          , Hd          , Hd          , Dd          , Dd          , Dd          
+Dd, Rr, Rr, Dd, Dd^Vda, Dd^Vda, Dd^Vda, Dd^Eff, Dd^Eff, Rr, Re^Es, Dd, Dd^Eff, Dd^Eff, Dd, Dd, Ds, Dd, Dd^Edpp, Cdr, Cdr, Kdr, Dd
+Dd, Co, Ko, Rr, Rr, Dd^Vda, Dd^Eff, Dd^Eff, Rr, Rr, Re^Br|, Dd^Eff, Dd^Eff, Dd^Es, Ko, Dd, Dd, Ds, Dd^Edpp, Dd^Edpp, Dd^Edpp, Dd, Rr
+Dd, Co, Ds, Ds, Ds^Eff, Rr, Rr, Rr, Re^Es, Re^Br/, Dd^Eff, Dd^Eff, Gd, Gd, Hd, Dd, Co, Ko, Ds, Dd^Edpp, Rr, Rr, Dd
+Dd, Dd, Dd^Eff, Ds^Eff, Ds^Dr, Rr, Re^Es, Re^Es, Rd^Eff, Dd^Eff, Rd, Rd, Gd, Gd, Gd, Gd, Gd, Co, Ds, Rr, Dd^Edpp, Dd^Edpp, Cdr
+Dd, Dd^Eff, Dd^Eff, Rr, Re^Br|, Re^Br/, Rd^Eff, Rd^Eff, Wwg^Es, Rd, Wwg, Rd, Wwf^Es, Re, Rd, Dd^Es, Gd^Es, Ds, Gd, Rr, Dd^Vda, Dd, Cdr
+Dd^Eff, Dd^Eff, Rr, Rr, Re^Br/, Rd^Eff, Rd^Eff, Wwg, Wwf, Wwg, Wwg, Wwf, Wwf^Es, 1 Wwf, Rd, Dd, Rd, Gd, Gd, Rr, Hd, Dd, Dd
+Rr, Rr, Re^Es, Re^Es, Rd^Eff, Rd^Eff, Gd, Wwf^Es, Wwf, Wwf^Es, Wwg, Wwg, Wwf, Wwf, Wwf, Rd, Rd, Rd, Gd, Gd, Hd, Dd, Dd
+Re^Br/, Re^Br/, Dd^Eff, Dd^Eff, Dd, Rd, Gd, Gd, Wwg, Wwf^Es, Wwg, Wwf, Wwg, Wwg, Wwg^Es, Wwf, Gd, Rd, Rd, Gd, Hd, Dd, Dd
+Dd^Eff, Dd^Eff, Dd^Dr, Ko, Dd, Gd, Gd, Gd, Gd, Gd, Wwf, Wwf^Es, Wwf, Wwf, Wwf, Wwf, Gd, Rd, Rr, Rr, Rr, Dd^Vda, Dd^Vda
+Dd, Dd^Dr, Dd^Dr, Dd, Dd, Dd, Ds, Ds, Ds, Ds, Ds, Gd, Gd, Rd, Rd, Gd, Gd, Rd, Dd, Rr, Rr, Rr, Rr
+Dd, Dd, Dd, Dd^Edpp, Ds, Dd, Ko, Co, Dd, Ds, Rd, Gd, Gd, Gd, Gd, Gd, Co, Ko, Dd, Dd, Dd^Vda, Rr, Rr
+Hd, Cdr, Kdr, Ds, Ds, Dd, Co, Co, Dd, Rd, Dd, Gd, Gd, Ds, Ds, Dd, Ds, Co, Dd, Dd^Vda, Dd^Vda, Dd^Vda, Dd^Vda
+Dd^Dr, Hd, Cdr, Ds, Ds, Dd, Dd, Dd, Rd, Rd, Dd, Gd, Ko, Ds, Hd, Ds, Ds, Dd, Dd^Dr, Dd^Dr, Hd, Dd^Vda, Dd
+Dd, Dd^Dr, Dd, Ds, Ds, Ds, Rd, Rd, Hd, Ds, Ds, Dd, Ds, Ds, Ds, Ds, Dd, Dd^Dr, Dd^Dr, Hd, Kdr, Hd, Dd
+Hd, Hd, Dd, Hd, Dd, Dd^Vda, Dd, Dd, Dd, Hd, Dd, Ds, Dd, Ds, Ds, Ds, Dd, Dd^Dr, Dd, Dd^Edp, Dd, Hd, Dd
+Dd, Hd, Hd, Dd, Dd, Dd, Hd, Dd^Edpp, Dd^Dr, Dd, Dd, Dd, Dd, Dd, Ds, Hd, Ds, Dd, Dd, Dd, Dd, Dd, Dd
+Dd, Hd, Hd, Hd, Hd, Hd, Dd, Dd, Dd, Dd^Dr, Hd, Hd, Hd, Ds, Ds, Ds, Dd, Hd, Hd, Hd, Dd, Dd, Dd
