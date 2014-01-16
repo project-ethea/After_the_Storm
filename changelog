@@ -10,6 +10,8 @@ Version 0.9.8+dev:
     of only SW and SE.
   * Updated Aragwaith faction from Era of Chaos 1.3.1+dev up to commit
     9dedeba7cddc2a027745c9994a917fdcb78ed341.
+  * Stripped optional whitespace from terrain map and mask files, decreasing
+    uncompressed directory size by about 62%.
 
 * Graphics:
   * New or updated unit graphics: Blood Core, multiple Aragwaith units, Demon
