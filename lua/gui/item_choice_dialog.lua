@@ -219,6 +219,12 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 			wesnoth.set_dialog_value(image, "option_list", i, "option_icon")
 			wesnoth.set_dialog_value(title, "option_list", i, "option_title")
 
+			if wesnoth.compare_versions(wesnoth.game_config.version, ">", "1.11.8") then
+				wesnoth.set_dialog_value("", "current_option_pager", i, "current_option_text")
+				wesnoth.set_dialog_markup(true, "current_option_pager", i, "current_option_text")
+				title = "<b>" .. title .. "</b>"
+			end
+
 			wesnoth.set_dialog_value(title .. ":\n\n" .. text, "current_option_pager", i, "current_option_text")
 
 			i = i + 1
