@@ -175,7 +175,7 @@ Version 0.9.8+dev:
       -20%.
   * New or improved unit animations: Verlissh Matrix Core, Shaxthal Custodian
     Drone, Shaxthal Queen, Verlissh Matrix Flow System, Verlissh Control Spire,
-    multiple Aragwaith units.
+    multiple Aragwaith units, Dusk Faerie line.
   * Made it so the Falcon unit type and the lightfly movetype are only defined
     if the mainline Khalifate faction is not present, by testing the existence
     of core/units/khalifate/Falcon.cfg.
