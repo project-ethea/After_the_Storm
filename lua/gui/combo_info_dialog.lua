@@ -248,6 +248,9 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 	end
 
 	local function preshow()
+		-- Can we use Pango markup?
+		local have_markup = wesnoth.compare_versions(wesnoth.game_config.version, ">", "1.11.8")
+
 		local info_ary = helper.get_variable_array(variable)
 		if info_ary == nil then
 			do_error(string.format("could not read data from container '%s'", variable))
@@ -295,12 +298,25 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 			-- Parse [effect].
 			--
 
-			local effect_desc = string.format("%s:\n%s + %s\n\n",
+			local effect_desc
+
+			if have_markup then
+				-- font::weapon_details is #A69275
+				effect_desc = "<b>%s:</b>\n%s <span color='#A69275'>+</span> %s\n\n"
+			else
+				effect_desc = "%s:\n%s + %s\n\n"
+			end
+
+			effect_desc = effect_desc:format(
 				tostring(info_cfg.name),
 				tostring(ui_side_a_data.attack_name),
 				tostring(ui_side_b_data.attack_name))
 
-			effect_desc = effect_desc .. _ "Effects:" .. "\n"
+			if have_markup then
+				effect_desc = effect_desc .. "<b>" .. _ "Effects:" .. "</b>\n"
+			else
+				effect_desc = effect_desc .. _ "Effects:" .. "\n"
+			end
 
 			if effect_data.apply_to == "damage" then
 				--
@@ -357,9 +373,18 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 			wesnoth.set_dialog_value(ui_side_a_data.attack_icon, "combo_list", i, "side_a_icon")
 			wesnoth.set_dialog_value(symmetry_icon,              "combo_list", i, "symmetry_icon")
 			wesnoth.set_dialog_value(ui_side_b_data.attack_icon, "combo_list", i, "side_b_icon")
-			wesnoth.set_dialog_value(info_cfg.name,              "combo_list", i, "combo_name")
+			if have_markup then
+				wesnoth.set_dialog_value("<b>" .. info_cfg.name .. "</b>", "combo_list", i, "combo_name")
+				wesnoth.set_dialog_markup(true,                            "combo_list", i, "combo_name")
+			else
+				wesnoth.set_dialog_value(info_cfg.name,                    "combo_list", i, "combo_name")
+			end
 
 			wesnoth.set_dialog_value(effect_desc, "current_combo_pager", i, "current_combo_text")
+
+			if have_markup then
+				wesnoth.set_dialog_markup(true, "current_combo_pager", i, "current_combo_text")
+			end
 
 			page_count = i
 		end
