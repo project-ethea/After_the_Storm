@@ -157,6 +157,7 @@ Version 0.9.8+dev:
     * Prevent crashing Wesnoth 1.11.8 due to a missing initial time of day.
     * Added cave ambience sound sources.
     * Minor cutscene improvements nobody could possibly notice.
+    * Minor prose tweaks.
   * E3S8B - Destiny, part 1:
     * Minor aesthetic changes nobody could possibly notice.
     * Fixed parts of the map being unintentionally uncovered upon entering
