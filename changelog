@@ -150,6 +150,7 @@ Version 0.9.8+dev:
     * Prevent crashing Wesnoth 1.11.8 due to a missing initial time of day
       (part 1 only).
     * Added cave ambience sound sources.
+    * Minor AI adjustments for Wesnoth 1.11.7 and later.
     * Minor prose tweaks.
   * E3S7B - Dark Sea:
     * Minor prose tweaks.
