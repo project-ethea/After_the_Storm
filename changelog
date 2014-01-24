@@ -5,6 +5,8 @@ AFTER THE STORM - CHANGELOG
 Version 0.9.8+dev:
 ------------------
 * General:
+  * Removed Wesnoth development versions warning from the campaign menu entries
+    as support for 1.11.8 and later is now mature.
   * New complete algorithm for calculating the relative direction between two
     hex grid locations, handling all six intrinsic facing directions instead
     of only SW and SE.
