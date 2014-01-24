@@ -171,6 +171,7 @@ Version 0.9.8+dev:
       later.
   * E3S8C - Breakdown:
     * Added cave ambience sound sources.
+    * Minor AI adjustments for Wesnoth 1.11.7 and later.
     * Minor prose tweaks.
   * E3S8D - Destiny, part 2:
     * Minor prose tweaks.
