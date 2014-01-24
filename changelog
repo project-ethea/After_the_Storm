@@ -72,6 +72,7 @@ Version 0.9.8+dev:
     * Fixed story text not appearing because of a missing macro inclusion
       (long-standing bug that's existed ever since the scenario was first
       released).
+    * Minor map tweaks.
     * Minor prose tweaks.
   * E1S12 - The Queen:
     * Added cave ambience sound sources.
@@ -82,6 +83,7 @@ Version 0.9.8+dev:
       cutscene sequence after reloading from a non-start-of-scenario save.
     * Fixed long-standing offset-by-one bug with a terrain mask applied near
       the end.
+    * Minor map tweaks.
     * Not-so-minor prose tweaks.
     * Various cutscene improvements and changes.
   * E1S13 - Death and Rebirth:
