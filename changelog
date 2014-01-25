@@ -37,6 +37,8 @@ Version 0.9.9:
   * Skip inclusion of death events for characters that are not present during
     the first few scenarios of E1.
   * E1S3 - Civil War in the North:
+    * Fixed the first defined on-map unit (usually Galas) becoming permanently
+      invisible.
     * Minor prose tweaks.
   * E1S4 - Terror at Dusk:
     * Balancing changes to make the scenario easier on Wesnoth 1.11.7 and
