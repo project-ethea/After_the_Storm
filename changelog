@@ -2,8 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.9.8+dev:
-------------------
+Version 0.9.9:
+--------------
 * General:
   * Removed Wesnoth development versions warning from the campaign menu entries
     as support for 1.11.8 and later is now mature.
