@@ -2,7 +2,7 @@
 -- Checks for Wesnoth version compatibility
 ---
 
-function do_bug(msg)
+local function do_bug(msg)
 	wesnoth.fire("bug", { message = msg, should_report = false })
 end
 
