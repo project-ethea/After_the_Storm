@@ -3,7 +3,7 @@
 ---
 
 local function do_bug(msg)
-	wesnoth.fire("bug", { message = msg, should_report = false })
+	wesnoth.wml_actions.bug { message = msg, should_report = false }
 end
 
 
