@@ -4,6 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.9+dev:
 ------------------
+* General:
+  * Blacklisted Wesnoth 1.11.10 due to mainline bug #21722. See
+    <https://gna.org/bugs/?21722>.
 * User interface:
   * Cutscene themes now use the 1.11.10 [theme] id attribute on 1.11.10 and
     later.

@@ -24,3 +24,7 @@ end
 if v(ver, '>=', '1.11.0') and v(ver, '<', '1.11.2') then
 	do_bug( _ "After the Storm III is incompatible with Wesnoth versions 1.11.0 and 1.11.1 due to a team management bug. Please upgrade to the latest development version.")
 end
+
+if v(ver, '==', '1.11.10') then
+    do_bug( _ "After the Storm III is incompatible with Wesnoth version 1.11.10 due to an event dispatching bug (#21722). Please use Wesnoth 1.11.11 and later, or 1.11.9 and earlier instead.")
+end
