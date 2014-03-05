@@ -8,6 +8,7 @@ local T = helper.set_wml_tag_metatable {}
 --
 -- [bug]
 --     message= <...>
+--     may_ignore= boolean, defaults to yes
 --     # Optional conditional statement
 --     [condition]
 --         ...
@@ -24,6 +25,7 @@ function wesnoth.wml_actions.bug(cfg)
 	local report = cfg.should_report
 	local notice = cfg.message
 	local log_notice = notice
+	local may_ignore = cfg.may_ignore
 
 	if log_notice == nil or log_notice == "" then
 		log_notice = "inconsistency detected"
@@ -31,6 +33,10 @@ function wesnoth.wml_actions.bug(cfg)
 
 	if report == nil then
 		report = true
+	end
+
+	if may_ignore == nil then
+		may_ignore = true
 	end
 
 	wesnoth.fire("wml_message", {
@@ -196,6 +202,10 @@ function wesnoth.wml_actions.bug(cfg)
 			wesnoth.set_dialog_callback(show_details, "details")
 		else
 			wesnoth.set_dialog_active(false, "details")
+		end
+
+		if not may_ignore then
+			wesnoth.set_dialog_active(false, "ok")
 		end
 	end
 
