@@ -16,6 +16,7 @@ Version 0.9.9+dev:
   * Converted to the simplified 1.12 animation syntax:
     * Dusk Faerie, Night Nymph, Nightshade Fire
     * Sylvan Warden
+    * Sprite, Fire Faerie, Dryad, Forest Spirit
 
 * User interface:
   * Cutscene themes now use the 1.11.10 [theme] id attribute on 1.11.10 and
