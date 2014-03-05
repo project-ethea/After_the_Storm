@@ -17,6 +17,7 @@ Version 0.9.9+dev:
     * Dusk Faerie, Night Nymph, Nightshade Fire
     * Sylvan Warden
     * Sprite, Fire Faerie, Dryad, Forest Spirit
+    * Elvish Wayfarer
 
 * User interface:
   * Cutscene themes now use the 1.11.10 [theme] id attribute on 1.11.10 and
