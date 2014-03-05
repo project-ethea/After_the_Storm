@@ -12,6 +12,10 @@ Version 0.9.9+dev:
   * New or updated unit graphics: Sprite, Fire Faerie, Forest Spirit, Dryad,
     Demon Shapeshifter.
 
+* Units:
+  * Converted to the simplified 1.12 animation syntax:
+    * Dusk Faerie, Night Nymph, Nightshade Fire
+
 * User interface:
   * Cutscene themes now use the 1.11.10 [theme] id attribute on 1.11.10 and
     later.
