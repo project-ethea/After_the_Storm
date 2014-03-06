@@ -77,6 +77,10 @@ optipng:
 
 pot: $(textdomain).pot
 
+normalize-textdomains:
+	find \( -name '*.cfg' -o -name '*.lua' \) -type f -print0 | xargs -0 \
+		sed -ri 's/wesnoth-(wesnoth-Invasion_from_the_Unknown|Era_of_Chaos)/wesnoth-After_the_Storm/'
+
 clean:
 	$(WMLLINT) --clean $(targetdir)
 	find \( -name '*.new' -o -name '*.tmp' -o -name '*.pot' -o -name '*.orig' -o -name '*.rej' -o -name '*.map.cfg' \) -type f -print | xargs rm -f
