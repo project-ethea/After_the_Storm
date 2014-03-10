@@ -13,6 +13,11 @@ Version 0.9.9+dev:
     Demon Shapeshifter.
 
 * Units:
+  * Balancing changes:
+    * Changed Leech's alignment from 'lawful' to 'neutral'.
+    * Decreased Leech's HP from 62 to 42.
+    * Decreased Leech's melee damage from 11-2 to 9-2.
+    * Decreased Leech's unit level from 3 to 1.
   * Converted to the simplified 1.12 animation syntax:
     * Dusk Faerie, Night Nymph, Nightshade Fire
     * Sylvan Warden
