@@ -209,7 +209,13 @@ function wesnoth.wml_actions.bug(cfg)
 		end
 	end
 
-	if wesnoth.show_dialog(alert_dialog, preshow, nil) == 2 then
+	local dialog_result = wesnoth.show_dialog(alert_dialog, preshow, nil)
+
+	if wesnoth.game_config.debug then
+		wesnoth.wml_actions.inspect {}
+	end
+
+	if dialog_result == 2 then
 		wesnoth.fire("endlevel", {
 			result = "defeat",
 			linger_mode = false
