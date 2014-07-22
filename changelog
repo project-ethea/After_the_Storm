@@ -2,8 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.9.9+dev:
-------------------
+Version 0.9.10:
+---------------
 * General:
   * Raised minimum game version requirement to 1.11.11. All existing
     compatibility code for previous versions has been removed.
