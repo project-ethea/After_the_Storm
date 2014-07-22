@@ -12,6 +12,19 @@ Version 0.9.9+dev:
   * New or updated unit graphics: Sprite, Fire Faerie, Forest Spirit, Dryad,
     Demon Shapeshifter.
 
+* Scenarios:
+  * Added an option to certain scenarios to ensure Wesnoth does not discard
+    the player's gold and recall list under certain circumstances due to a
+    behavior change in version 1.11.13 and later. Affected scenarios:
+    * E1S9.3 - The Triad, part 3
+    * E1S11 - Return to Wesmere, part 2
+    * E2S0 - Transience
+    * E2S11 - A Final Confrontation
+    * E3S0 - Opening (Within)
+    * E3S6 - Divergence
+    * E3S8B - Destiny, part 1
+    * E3S11 - After the Storm
+
 * Units:
   * Balancing changes:
     * Changed Leech's alignment from 'lawful' to 'neutral'.
