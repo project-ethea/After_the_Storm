@@ -4,7 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.10+dev:
 -------------------
-
+* General:
+  * Work around bug in Wesnoth 1.11.17 that could cause units to be deleted
+    from the game by units moving during cutscenes.
 
 
 Version 0.9.10:
