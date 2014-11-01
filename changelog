@@ -11,6 +11,8 @@ Version 0.9.11+dev:
 * Scenarios:
   * E1S3 - Civil War in the North:
     * Give the player standard gold carryover, no bonus.
+  * E2S0 - Transience:
+    * Fixed sound effects remaining muted when advancing to the next scenario.
 
 
 Version 0.9.11:
