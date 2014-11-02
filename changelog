@@ -13,6 +13,9 @@ Version 0.9.11+dev:
     * Give the player standard gold carryover, no bonus.
   * E2S0 - Transience:
     * Fixed sound effects remaining muted when advancing to the next scenario.
+  * E2S1 - By the Moonlight:
+    * Uncover Elynia at the start of the first town dialogue sequence, in case
+      she is standing in forest tiles.
 
 
 Version 0.9.11:
