@@ -1,14 +1,14 @@
 # Run validation tests
 
-WESNOTH = wesnoth
+WESNOTH = wesnoth-1.12
 
 WESNOTH_VERSION ?= $(shell $(WESNOTH) --version 2>&1 | tail -n 1)
 WESNOTH_DATA_DIR ?= $(shell $(WESNOTH) --path 2>&1 | tail -n 1)
 WESNOTH_CORE_DIR ?= $(WESNOTH_DATA_DIR)/data/core
 
 DEFSCOPE ?= macro-scope-check
-WMLLINT ?= wmllint -d
-WMLINDENT ?= wmlindent
+WMLLINT ?= wmllint-1.12 -d
+WMLINDENT ?= wmlindent-1.12
 WMLXGETTEXT ?= wmlxgettext
 OPTIPNG ?= wesnoth-optipng
 WML_PREPROCESS ?= $(WESNOTH) -p
