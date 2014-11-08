@@ -19,6 +19,9 @@ Version 0.9.11+dev:
   * E2S1 - By the Moonlight:
     * Uncover Elynia at the start of the first town dialogue sequence, in case
       she is standing in forest tiles.
+  * E2S10 - The Betrayal:
+    * Major map tweaks past the central gates.
+    * Reduced turn limit from 88/86/84 to 62/60/58.
 
 * Terrains:
   * Replaced custom campfire terrain with its mainline equivalent (^Zi → ^Ecf),
