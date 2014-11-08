@@ -20,6 +20,8 @@ Version 0.9.11+dev:
 * Terrains:
   * Replaced custom campfire terrain with its mainline equivalent (^Zi → ^Ecf),
     losing its +25% lawful bonus in the process.
+  * Replaced custom trash/remains terrains with their mainline equivalents
+    (^Ettz → ^Edt, ^Etbz → ^Edb).
 
 
 Version 0.9.11:
