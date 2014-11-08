@@ -17,6 +17,10 @@ Version 0.9.11+dev:
     * Uncover Elynia at the start of the first town dialogue sequence, in case
       she is standing in forest tiles.
 
+* Terrains:
+  * Replaced custom campfire terrain with its mainline equivalent (^Zi → ^Ecf),
+    losing its +25% lawful bonus in the process.
+
 
 Version 0.9.11:
 ---------------
