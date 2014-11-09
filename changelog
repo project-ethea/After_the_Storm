@@ -23,6 +23,9 @@ Version 0.9.11+dev:
   * E2S10 - The Betrayal:
     * Major map tweaks past the central gates.
     * Reduced turn limit from 88/86/84 to 62/60/58.
+  * E2S11 - A Final Confrontation:
+    * Fixed a regression from 0.9.9 causing the boss keep to gradually crumble
+      down.
 
 * Terrains:
   * Replaced custom campfire terrain with its mainline equivalent (^Zi → ^Ecf),
