@@ -8,6 +8,8 @@ Version 0.9.11+dev:
   * Work around crashes related to music transitions during cutscenes under
     yet-to-be-determined operating conditions.
   * Removed more Wesnoth 1.10.x support code.
+  * Replaced empty ellipse images with the new ellipse=none syntax from
+    version 1.11.11.
 
 * Graphics:
   * Placeholder portraits added: Valen.
