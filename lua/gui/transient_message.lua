@@ -81,6 +81,7 @@ function wesnoth.wml_actions.transient_message(cfg)
 	local function preshow()
 		wesnoth.set_dialog_value(caption, "caption")
 		wesnoth.set_dialog_value(message, "message")
+		wesnoth.set_dialog_markup(true, "message")
 
 		if cfg.image then
 			wesnoth.set_dialog_value(cfg.image, "image")
