@@ -27,7 +27,7 @@ Version 0.9.11+dev:
     * Reduced turn limit from 88/86/84 to 62/60/58.
   * E2S11 - A Final Confrontation:
     * Fixed a regression from 0.9.9 causing the boss keep to gradually crumble
-      down.
+      down, potentially killing it prematurely.
   * E3S7B - Dark Sea:
     * Fixed (again) a bug with Anya's ellipse assignment.
 
