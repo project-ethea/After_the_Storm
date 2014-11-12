@@ -50,6 +50,7 @@ function wesnoth.wml_actions.top_message(cfg)
 
 	local function preshow()
 		wesnoth.set_dialog_value(message, "message")
+		wesnoth.set_dialog_markup(true, "message")
 	end
 
 	wesnoth.show_dialog(dd, preshow, nil)
