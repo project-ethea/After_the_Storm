@@ -33,6 +33,7 @@ Version 0.9.11+dev:
       thus matching the number of charges available on other difficulty levels.
   * E3S7B - Dark Sea:
     * Fixed (again) a bug with Anya's ellipse assignment.
+    * Minor difficulty tweaks.
 
 * Terrains:
   * Replaced custom campfire terrain with its mainline equivalent (^Zi → ^Ecf),
