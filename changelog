@@ -34,6 +34,8 @@ Version 0.9.11+dev:
   * E3S7B - Dark Sea:
     * Fixed (again) a bug with Anya's ellipse assignment.
     * Minor difficulty tweaks.
+  * E3S8C - Breakdown:
+    * Assigned a default hotkey for the elemental summoning menu option.
 
 * Terrains:
   * Replaced custom campfire terrain with its mainline equivalent (^Zi → ^Ecf),
