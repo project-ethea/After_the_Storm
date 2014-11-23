@@ -31,6 +31,7 @@ Version 0.9.11+dev:
   * E3S4.1 - Outpost of Hell:
     * Allow two more charges to spawn on the initial player bases on Hard,
       thus matching the number of charges available on other difficulty levels.
+    * Reduced bonus enemy gold on turn 10 and added a heads-up for the player.
   * E3S7B - Dark Sea:
     * Fixed (again) a bug with Anya's ellipse assignment.
     * Minor difficulty tweaks.
