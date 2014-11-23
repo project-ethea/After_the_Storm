@@ -2,8 +2,8 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.9.11+dev:
--------------------
+Version 0.9.12:
+---------------
 * General:
   * Work around crashes related to music transitions during cutscenes under
     yet-to-be-determined operating conditions.
