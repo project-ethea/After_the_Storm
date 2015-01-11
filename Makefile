@@ -53,7 +53,7 @@ test:
 	@for p in $(packs); do for d in $(difficulties); do \
 		echo "    TEST    $$p -> $$d"; \
 		$(WML_PREPROCESS) $(targetdir) .preprocessor.out --preprocess-defines $(extrasyms),$(campaignsym),$$d,$$p 2>&1 | tail -n +5 ; \
-		test "$(AUTO_DELTEMP)" -ne 0 && rm -rf .preprocessor.out; \
+		test "$(AUTO_DELTEMP)" -ne 0 && rm -rf .preprocessor.out; true; \
 	done; done
 
 stats:
@@ -66,7 +66,7 @@ stats:
 		echo "    WML     $$p -> $$d"; \
 		$(WML_PREPROCESS) $(targetdir) .preprocessor.out --preprocess-defines $(extrasyms),$(campaignsym),$$d,$$p 2>&1 2> /dev/null; \
 		wc -lcm .preprocessor.out/_main.cfg | awk '{printf "            %u lines, %u characters (%1.0f KiB)\n", $$1, $$2, $$3 / 1024}'; \
-		test "$(AUTO_DELTEMP)" -ne 0 && rm -rf .preprocessor.out; \
+		test "$(AUTO_DELTEMP)" -ne 0 && rm -rf .preprocessor.out; true; \
 	done; done
 
 optipng:
