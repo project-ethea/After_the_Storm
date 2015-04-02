@@ -74,16 +74,16 @@ optipng:
 
 %.pot:
 	@echo "    POT     $*.pot"
-	@find \( -name '*.cfg' -o -name '*.lua' \) -type f -print | xargs wmlxgettext --directory=$(targetdir) --domain $(textdomain) > $*.pot
+	@find . \( -name '*.cfg' -o -name '*.lua' \) -type f -print0 | xargs -0 wmlxgettext --directory=$(targetdir) --domain $(textdomain) > $*.pot
 	@msgfmt --statistics -o /dev/null $*.pot 2>&1 | sed -E 's/^.*\s([0-9]+)\s.*$$/            \1 strings/'
 
 pot: $(textdomain).pot
 
 normalize-textdomains:
-	find \( -name '*.cfg' -o -name '*.lua' \) -type f -print0 | xargs -0 \
+	find . \( -name '*.cfg' -o -name '*.lua' \) -type f -print0 | xargs -0 \
 		sed -ri 's/wesnoth-(wesnoth-Invasion_from_the_Unknown|Era_of_Chaos)/wesnoth-After_the_Storm/'
 
 clean:
 	$(WMLLINT) --clean $(targetdir)
-	find \( -name '*.new' -o -name '*.tmp' -o -name '*.pot' -o -name '*.orig' -o -name '*.rej' -o -name '*.map.cfg' \) -type f -print | xargs rm -f
+	find \( -name '*.new' -o -name '*.tmp' -o -name '*.pot' -o -name '*.orig' -o -name '*.rej' -o -name '*.map.cfg' \) -type f -print0 | xargs -0 rm -f
 	rm -rf .preprocessor.out
