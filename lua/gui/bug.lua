@@ -39,10 +39,7 @@ function wesnoth.wml_actions.bug(cfg)
 		may_ignore = true
 	end
 
-	wesnoth.fire("wml_message", {
-		logger = "error",
-		message = "[AtS] BUG: " .. log_notice
-	})
+	wput(W_ERR, "BUG: " .. log_notice)
 
 	local alert_dialog = {
 		maximum_width = 640,

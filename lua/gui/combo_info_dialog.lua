@@ -228,7 +228,7 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 	local page_count = 0
 
 	local function do_error(text)
-		wesnoth.fire("wml_message", { logger = "error", message = "[AtS] BUG: [combo_info_dialog] " .. text })
+		wput(W_ERR, "BUG: [combo_info_dialog] " .. text)
 	end
 
 	local function on_select()

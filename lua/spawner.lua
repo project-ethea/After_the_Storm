@@ -5,7 +5,7 @@
 local T = helper.set_wml_tag_metatable {}
 
 local function dbg(msg)
-	wesnoth.fire("wml_message", { logger = "log", message = "[AtS] spawner.lua: " .. msg })
+	wput(W_INFO, "spawner.lua: " .. msg)
 end
 
 ---

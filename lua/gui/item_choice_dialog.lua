@@ -186,11 +186,7 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 		local i = wesnoth.get_dialog_value("option_list")
 
 		if(i > page_count) then
-			wesnoth.fire("wml_message", {
-				logger = "error",
-				message = "[AtS] BUG: invalid option_list row number"
-			})
-
+			wput(W_ERR, "invalid option_list row number")
 			return
 		end
 

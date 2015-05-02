@@ -6,10 +6,7 @@
 ---
 
 local function override_alert(msg)
-	wesnoth.fire("wml_message", {
-		logger = "info",
-		message= "[AtS] overrides.lua: " .. msg
-	})
+	wput(W_INFO, "overrides.lua: " .. msg)
 end
 
 ---
