@@ -67,13 +67,10 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 		}
 	} -- end list_definition
 
-	-- #textdomain wesnoth
-	_ = wesnoth.textdomain "wesnoth"
-
-	local ok_label = _ "Close"
+	local ok_label = wgettext("Close")
 
 	if not can_dismiss then
-		ok_label = _ "OK"
+		ok_label = wgettext("OK")
 	end
 
 	local control_buttons_row = {

@@ -79,7 +79,7 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 							T.column {
 								border = "all",
 								border_size = 5,
-								T.button { id = "ok", return_value = 1 }
+								T.button { id = "ok", label = wgettext("OK"), return_value = 1 }
 							}
 						}
 					}
@@ -94,14 +94,6 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 	end
 
 	local function preshow()
-		local tstring = ""
-
-		-- #textdomain wesnoth
-		_ = wesnoth.textdomain "wesnoth"
-		tstring = _ "OK"
-
-		wesnoth.set_dialog_value(tstring, "ok")
-
 		local list_pos = 1
 
 		for opt in helper.child_range(cfg, "option") do
@@ -111,8 +103,8 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 
 		if can_dismiss then
 			-- #textdomain wesnoth-After_the_Storm
-			_ = wesnoth.textdomain "wesnoth-After_the_Storm"
-			tstring = _ "Continue."
+			local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
+			local tstring = _ "Continue."
 
 			-- The mandatory "carry on" option.
 			wesnoth.set_dialog_value(tstring, "listbox", list_pos, "item")

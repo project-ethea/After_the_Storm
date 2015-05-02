@@ -83,12 +83,8 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 		}
 	} -- end list_definition
 
-	-- #textdomain wesnoth
-	_ = wesnoth.textdomain "wesnoth"
-	local close_label = _ "Close"
-
 	-- #textdomain wesnoth-After_the_Storm
-	_ = wesnoth.textdomain "wesnoth-After_the_Storm"
+	local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
 	local title_label = _ "Attack Combinations"
 
 	local dialog_definition = {
@@ -216,7 +212,7 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 						T.row {
 							T.column {
 								border = "all", border_size = 5,
-								T.button { id = "ok", label = close_label }
+								T.button { id = "ok", label = wgettext("Close") }
 							}
 						}
 					}

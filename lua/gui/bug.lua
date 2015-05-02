@@ -81,13 +81,13 @@ function wesnoth.wml_actions.bug(cfg)
 								horizontal_alignment = "right",
 								border = "all",
 								border_size = 5,
-								T.button { id = "ok", return_value = 1 }
+								T.button { id = "ok", label = wgettext("Continue"), return_value = 1 }
 							},
 							T.column {
 								horizontal_alignment = "right",
 								border = "all",
 								border_size = 5,
-								T.button { id = "quit", return_value = 2 }
+								T.button { id = "quit", label = wgettext("Quit"), return_value = 2 }
 							}
 						}
 					}
@@ -134,7 +134,7 @@ function wesnoth.wml_actions.bug(cfg)
 						horizontal_alignment = "right",
 						border = "all",
 						border_size = 5,
-						T.button { id = "ok" }
+						T.button { id = "ok", label = wgettext("Continue") }
 					}
 				}
 			}
@@ -145,15 +145,10 @@ function wesnoth.wml_actions.bug(cfg)
 		local cap = _ "Details"
 		local msg = _ "The following WML condition was unexpectedly reached:"
 
-		-- #textdomain wesnoth
-		_ = wesnoth.textdomain "wesnoth"
-		local ok = _ "Close"
-
 		wesnoth.show_dialog(dialog, function()
 			wesnoth.set_dialog_value(cap, "title")
 			wesnoth.set_dialog_value(msg, "message")
 			wesnoth.set_dialog_value(wesnoth.debug(cond), "wml")
-			wesnoth.set_dialog_value(ok, "ok")
 		end)
 	end
 
@@ -176,16 +171,9 @@ function wesnoth.wml_actions.bug(cfg)
 		local cap = _ "Error"
 		local det = _ "Details"
 
-		-- #textdomain wesnoth
-		_ = wesnoth.textdomain "wesnoth"
-		local ok = _ "Continue"
-		local quit = _ "Quit"
-
 		wesnoth.set_dialog_value(cap, "title")
 		wesnoth.set_dialog_value(msg, "message")
 		wesnoth.set_dialog_value(det, "details")
-		wesnoth.set_dialog_value(ok , "ok")
-		wesnoth.set_dialog_value(quit , "quit")
 
 		if cond then
 			wesnoth.set_dialog_callback(show_details, "details")

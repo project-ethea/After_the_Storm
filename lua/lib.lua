@@ -32,4 +32,12 @@ function wprintf(lvl, fmt, ...)
 	wput(lvl, string.format(fmt, ...))
 end
 
+function wgettext(str, domain)
+	if domain == nil then
+		domain = "wesnoth"
+	end
+
+	return wesnoth.textdomain(domain)(str)
+end
+
 wprintf(W_INFO, "Version %s initializing", PROJECT_Y_AFTER_THE_STORM_VERSION)
