@@ -25,7 +25,7 @@ if v(ver, '>=', '1.13.0') then
 end
 
 ---
--- Disable following add-ons are known to case balancing issues with this campaign
+-- The following add-ons are known to case balancing issues with this campaign
 -- or break boss fights and scripted cutscenes.
 
 local bl_addons = {
