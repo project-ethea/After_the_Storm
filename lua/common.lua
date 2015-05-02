@@ -2,18 +2,6 @@
 -- General-purpose Lua WML actions.
 ---
 
-function safe_random(arg)
-	wesnoth.fire("set_variable", {
-		name = "temp_ats_lua_random",
-		rand = arg,
-	})
-
-	local r = wesnoth.get_variable("temp_ats_lua_random")
-	wesnoth.set_variable("temp_ats_lua_random")
-
-	return r
-end
-
 -- NOTE: taken from data/lua/wml-tags.lua:
 -- "when using these, make sure that nothing can throw over the call to end_var_scope"
 local function start_var_scope(name)
