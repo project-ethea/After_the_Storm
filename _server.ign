@@ -6,6 +6,7 @@
 *.bak
 *.log
 *.pbl
+*.pbl.in
 *.ign
 *.pot
 *.tmp

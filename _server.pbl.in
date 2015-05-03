@@ -1,0 +1,30 @@
+title="After the Storm"
+type="campaign"
+version="@VERSION@"
+dependencies="AtS_Music"
+
+translate="true"
+
+author="shadowm (Ignacio R. Morelle)"
+email="shadowm@wesnoth.org"
+
+icon="scenery/trash.png~O(0)~BG(66,66,60)~BLIT(misc/blank-hex.png~CROP(0,0,70,70)~BG(),1,1)~BLIT(portraits/humans/transparent/mage-silver+female.png~CROP(32,42,100,100)~SCALE(68,68),2,2)"
+
+description="This campaign is the immediate sequel to Invasion from the Unknown (IftU).
+
+After the Emperor of Chaos was defeated, the free civilizations of the Great Continent hoped that his followers would abandon the ongoing war. Meanwhile, Galas and his unlikely band of heroes head back to the northern lands to request aid for their next journey.
+
+(Intermediate level, three separate episodes with 13 scenarios each.)
+
+Wesnoth 1.12.0 or later is recommended. Wesnoth 1.11.11–1.11.18 are also supported, but version 1.11.19 WILL cause problems on Windows.
+
+Discussion threads in the Wesnoth.org forums:
+
+ • Main discussion thread: ‹http://r.wesnoth.org/t32091›
+ • Feedback thread: ‹http://r.wesnoth.org/t39495›"
+
+passphrase="@PASSPHRASE@"
+
+[feedback]
+	topic_id=32091
+[/feedback]

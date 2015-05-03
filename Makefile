@@ -6,6 +6,11 @@ WESNOTH_VERSION ?= $(shell $(WESNOTH) --version 2>&1 | tail -n 1)
 WESNOTH_DATA_DIR ?= $(shell $(WESNOTH) --path 2>&1 | tail -n 1)
 WESNOTH_CORE_DIR ?= $(WESNOTH_DATA_DIR)/data/core
 
+ADDON_NAME=After_the_Storm
+
+DIST_VERSION_FILE=dist/VERSION
+DIST_PASSPHRASE_FILE=~/.wesnoth-pbl-pass
+
 DEFSCOPE ?= macro-scope-check
 WMLLINT ?= wmllint-1.12 -d
 WMLINDENT ?= wmlindent-1.12
@@ -31,7 +36,10 @@ packs := \
 
 extrasyms := __TEST_SUITE__
 
-textdomain = wesnoth-After_the_Storm
+textdomain = wesnoth-$(ADDON_NAME)
+
+dist_version ?= $(shell cat $(DIST_VERSION_FILE))
+dist_passphrase ?= $(shell sed -nE '/^$(ADDON_NAME)=(.*)$$/ { s//\1/; p; q }' $(DIST_PASSPHRASE_FILE))
 
 all: defscope lint
 
@@ -43,6 +51,15 @@ defscope:
 
 lint:
 	$(WMLLINT) $(WESNOTH_CORE_DIR) $(targetdir)
+
+*.pbl: $(DIST_VERSION_FILE) $(DIST_PASSPHRASE_FILE)
+
+%.pbl: %.pbl.in
+	@echo "    PBL     $@"
+	@echo $(dist_version) | fgrep -q 'dev' && echo "WARNING: Not a production release: $(dist_version)"
+	@sed 's/@VERSION@/$(dist_version)/; s/@PASSPHRASE@/$(dist_passphrase)/' $< > $@
+
+pbl: _server.pbl
 
 test:
 	@echo "Running preprocessor/parser test pass..."
@@ -85,5 +102,5 @@ normalize-textdomains:
 
 clean:
 	$(WMLLINT) --clean $(targetdir)
-	find \( -name '*.new' -o -name '*.tmp' -o -name '*.pot' -o -name '*.orig' -o -name '*.rej' -o -name '*.map.cfg' \) -type f -print0 | xargs -0 rm -f
+	find \( -name '*.new' -o -name '*.tmp' -o -name '*.pot' -o -name '*.orig' -o -name '*.rej' -o -name '*.map.cfg' -o -name '*.pbl' \) -type f -print0 | xargs -0 rm -f
 	rm -rf .preprocessor.out
