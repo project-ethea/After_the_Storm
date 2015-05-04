@@ -69,7 +69,7 @@ function wesnoth.wml_actions.npc_bird_behavior(cfg)
 			local move_steps = npc.moves
 			local oob = false
 			local endpoint = { x = npc.x, y = npc.y }
-			local path = { x = npc.x, y = npc.y, direction = safe_random("n,s,ne,nw,se,sw") }
+			local path = { x = npc.x, y = npc.y, direction = helper.rand("n,s,ne,nw,se,sw") }
 
 			-- TODO: quit the course when encountering a unit?
 			--

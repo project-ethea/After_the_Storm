@@ -88,7 +88,7 @@ function wesnoth.wml_actions.spawner_spawn(cfg)
 	}
 
 	if can_respawn then
-		local spawn_once_value = safe_random("0..100") % safe_random("23,33,41,73")
+		local spawn_once_value = helper.rand("0..100") % helper.rand("23,33,41,73")
 
 		if spawn_once_value == 0 then
 			uvars.spawner_respawn = false
@@ -100,8 +100,8 @@ function wesnoth.wml_actions.spawner_spawn(cfg)
 	if cfg.facing == nil then cfg.facing = "n,ne,nw,s,se,sw" end
 
 	-- Randomize unit type and facing if provided as comma-separated lists.
-	cfg.type = safe_random(cfg.type)
-	cfg.facing = safe_random(cfg.facing)
+	cfg.type = helper.rand(cfg.type)
+	cfg.facing = helper.rand(cfg.facing)
 
 	dbg(string.format("respawn S: %d, X: %d, Y: %d, T: %s, F: %s, R: %d %d",
 		side, x, y, cfg.type, cfg.facing, ((uvars.spawner_respawn and 1) or 0), respawn_turns))

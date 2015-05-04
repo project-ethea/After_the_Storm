@@ -29,7 +29,7 @@ function wesnoth.wml_actions.s9_area_spawns(cfg)
 		if #locs == 0 then
 			return
 		end
-		local r = safe_random(string.format("1..%d", #locs))
+		local r = helper.rand(string.format("1..%d", #locs))
 		local x, y = locs[r][1], locs[r][2]
 		spawn_loyal_player_unit("Skeleton", x, y)
 		table.remove(locs, r)
@@ -39,7 +39,7 @@ function wesnoth.wml_actions.s9_area_spawns(cfg)
 		if #locs == 0 then
 			return
 		end
-		local r = safe_random(string.format("1..%d", #locs))
+		local r = helper.rand(string.format("1..%d", #locs))
 		local x, y = locs[r][1], locs[r][2]
 		spawn_loyal_player_unit("Ghost", x, y)
 		table.remove(locs, r)

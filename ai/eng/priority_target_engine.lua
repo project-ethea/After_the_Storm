@@ -103,7 +103,7 @@ return {
 
 			if string.len(rand_op_str) > 0 then
 				--print(string.format("Randomize target: %s", rand_op_str))
-				target_id = safe_random(rand_op_str)
+				target_id = helper.rand(rand_op_str)
 			end
 
 			if string.len(target_id) > 0 then
