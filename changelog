@@ -9,6 +9,9 @@ Version 0.9.12+dev:
     Depths.
   * New attack icon for Elynia's staff.
 
+* Language and i18n:
+  * New translations: Japanese.
+
 * Scenarios:
   * E3S7A - Dark Fire:
     * Fixed the Potion of Life being able to be picked up multiple times.
