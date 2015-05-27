@@ -17,6 +17,7 @@ Version 0.9.12+dev:
     * Fixed the Potion of Life being able to be picked up multiple times.
 
 * Terrains:
+  * Added Wall Moss terrain overlay.
   * Removed custom campfire terrain (phased out in 0.9.12).
   * Removed custom trash/remains terrains (phased out in 0.9.12).
 
