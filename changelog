@@ -2,8 +2,13 @@
 AFTER THE STORM - CHANGELOG
 ===========================
 
-Version 0.9.12+dev:
--------------------
+Version 0.9.14:
+---------------
+* General:
+  * A work-in-progress version was uploaded to the add-ons server as 0.9.13 by
+    mistake. In order to avoid confusion and ensure automated upgrades work
+    correctly, the final release number is 0.9.14.
+
 * Graphics:
   * New or updated terrain graphics: Dark Hive, Dark Hive Surface, Dark Hive
     Depths.
