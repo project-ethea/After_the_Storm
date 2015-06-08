@@ -56,7 +56,7 @@ lint:
 
 %.pbl: %.pbl.in
 	@echo "    PBL     $@"
-	@echo $(dist_version) | fgrep -q 'dev' && echo "WARNING: Not a production release: $(dist_version)"
+	@echo $(dist_version) | fgrep -vq 'dev' || ( echo "WARNING: Not a production release: $(dist_version)" && false )
 	@sed 's/@VERSION@/$(dist_version)/; s/@PASSPHRASE@/$(dist_passphrase)/' $< > $@
 
 pbl: _server.pbl
