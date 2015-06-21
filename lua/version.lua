@@ -2,8 +2,15 @@
 -- Checks for Wesnoth version compatibility
 ---
 
+local maintainer_mode = wesnoth.have_file("~add-ons/After_the_Storm/base-maint.cfg")
+
+if maintainer_mode then
+	wput(W_INFO, "Maintainer mode enabled")
+end
+
 local function do_bug(msg, may_ignore)
-	wesnoth.wml_actions.bug { message = msg, should_report = false, may_ignore = may_ignore }
+	if maintainer_mode then wput(W_WARN, "Unrecoverable bug found in maintainer mode") end
+	wesnoth.wml_actions.bug { message = msg, should_report = false, may_ignore = (maintainer_mode or may_ignore) }
 end
 
 local function have_addon(id)
