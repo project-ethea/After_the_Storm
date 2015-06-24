@@ -7,6 +7,7 @@ Version 0.9.14+dev:
 * Graphics:
   * New or improved unit animations: Elynia (E1/E2 melee attack).
   * New or updated unit graphics: Fallen Faerie.
+  * Fixed Elynia's fire attack having no sound effects in E1 and E2.
 
 
 Version 0.9.14:
