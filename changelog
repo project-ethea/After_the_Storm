@@ -4,7 +4,10 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.15+dev:
 -------------------
-
+* Scenarios:
+  * E2S8 - And then there was Chaos:
+    * Fixed Elynia disappearing from the map and causing issues if her HP goes
+      below 1 during the same attack sequence that results in Ivyel fleeing.
 
 
 Version 0.9.15:
