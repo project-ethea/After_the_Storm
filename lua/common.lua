@@ -759,8 +759,13 @@ end
 function wesnoth.wml_actions.apply_amlas(cfg)
 	local u = wesnoth.get_units(cfg)[1] or helper.wml_error("[apply_amlas]: Could not match any units!")
 
-	for amla_cfg in helper.child_range(cfg, "advance") do
-		wesnoth.add_modification(u, "advance", amla_cfg)
+	local amla_tag = "advance"
+	if wesnoth.compare_versions(wesnoth.game_config.version, '>', '1.13.1') then
+		amla_tag = "advancement"
+	end
+
+	for amla_cfg in helper.child_range(cfg, amla_tag) do
+		wesnoth.add_modification(u, amla_tag, amla_cfg)
 	end
 end
 
