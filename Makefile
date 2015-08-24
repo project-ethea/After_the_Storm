@@ -2,7 +2,7 @@
 
 WESNOTH = wesnoth-1.12
 
-WESNOTH_VERSION ?= $(shell $(WESNOTH) --version 2>&1 | tail -n 1)
+WESNOTH_VERSION ?= $(shell $(WESNOTH) --version 2>&1 | head -n 1)
 WESNOTH_DATA_DIR ?= $(shell $(WESNOTH) --path 2>&1 | tail -n 1)
 WESNOTH_CORE_DIR ?= $(WESNOTH_DATA_DIR)/data/core
 
