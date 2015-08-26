@@ -52,4 +52,24 @@ function wgettext(str, domain)
 	return wesnoth.textdomain(domain)(str)
 end
 
+---
+-- Shuffles a table.
+--
+-- This is helper.shuffle from 1.13.1+dev, backported to 1.12.x sans the RNG
+-- function parameter.
+---
+function safe_shuffle(t)
+	local function random_func(a, b)
+		return helper.rand(("%d..%d"):format(a, b))
+	end
+	-- since tables are passed by reference, this is an in-place shuffle
+	-- it uses the Fisher-Yates algorithm, also known as Knuth shuffle
+	assert( type( t ) == "table", string.format( "helper.shuffle expects a table as parameter, got %s instead", type( t ) ) )
+	local length = #t
+	for index = length, 2, -1 do
+		local random = random_func( 1, index )
+		t[index], t[random] = t[random], t[index]
+	end
+end
+
 wprintf(W_INFO, "Version %s initializing", PROJECT_Y_AFTER_THE_STORM_VERSION)
