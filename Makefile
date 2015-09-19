@@ -91,7 +91,7 @@ optipng:
 
 %.pot:
 	@echo "    POT     $*.pot"
-	@find . \( -name '*.cfg' -o -name '*.lua' \) -type f -print0 | xargs -0 wmlxgettext --directory=$(targetdir) --domain $(textdomain) > $*.pot
+	@find . \( -name '*.cfg' -o -name '*.lua' \) -type f -print0 | xargs -0 $(WMLXGETTEXT) --directory=$(targetdir) --domain $(textdomain) > $*.pot
 	@msgfmt --statistics -o /dev/null $*.pot 2>&1 | sed -E 's/^.*\s([0-9]+)\s.*$$/            \1 strings/'
 
 pot: $(textdomain).pot
