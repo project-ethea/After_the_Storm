@@ -109,7 +109,8 @@ function wesnoth.wml_actions.store_unit_can_move_on_current_terrain(cfg)
 	local u = wesnoth.get_units(cfg)[1]
 
 	if not u then
-		helper.wml_error("[store_unit_can_move_on_current_terrain]: Could not match anything!")
+		-- Could not match anything
+		return
 	end
 
 	wesnoth.set_variable(var,
