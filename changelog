@@ -4,6 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.15+dev:
 -------------------
+* General:
+  * Dropped compatibility with versions 1.11.11 through 1.11.19.
+
 * Scenarios:
   * E2S8 - And then there was Chaos:
     * Fixed Elynia disappearing from the map and causing issues if her HP goes
