@@ -9,6 +9,11 @@ Version 0.9.15+dev:
     * Fixed Elynia disappearing from the map and causing issues if her HP goes
       below 1 during the same attack sequence that results in Ivyel fleeing.
 
+* Units:
+  * AMLAs:
+    * Galas can now get the berserker special on melee attacks (requires
+      Strength I).
+
 
 Version 0.9.15:
 ---------------
