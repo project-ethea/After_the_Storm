@@ -4,6 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.15+dev:
 -------------------
+* Graphics:
+  * New or updated terrain graphics: Chaos Emperor.
+
 * Scenarios:
   * E2S8 - And then there was Chaos:
     * Fixed Elynia disappearing from the map and causing issues if her HP goes
