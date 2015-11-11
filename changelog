@@ -19,6 +19,7 @@ Version 0.9.15+dev:
   * Balancing:
     * Increased arcane resistance for mechanical units (Automaton, Iron Golem,
       Goliath) from 30% to 50%.
+    * Increased Magnum Suit's arcane resistance from 40% to 50%.
 
 
 Version 0.9.15:
