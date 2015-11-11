@@ -16,6 +16,9 @@ Version 0.9.15+dev:
   * AMLAs:
     * Galas can now get the berserker special on melee attacks (requires
       Strength I).
+  * Balancing:
+    * Increased arcane resistance for mechanical units (Automaton, Iron Golem,
+      Goliath) from 30% to 50%.
 
 
 Version 0.9.15:
