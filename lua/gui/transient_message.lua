@@ -36,6 +36,8 @@ function wesnoth.wml_actions.transient_message(cfg)
 					T.image { id = "image" }
 				},
 				T.column {
+					vertical_alignment = "top",
+					horizontal_alignment = "left",
 					T.grid {
 						T.row {
 							T.column {
