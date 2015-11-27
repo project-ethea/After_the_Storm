@@ -793,3 +793,17 @@ function wesnoth.wml_actions.highlight_goal(cfg)
 		wesnoth.delay(300)
 	end
 end
+
+---
+-- Added to mainline in 1.13.0. The implementation is somewhat different but it
+-- has the same semantics.
+---
+if wesnoth.wml_actions.remove_event == nil then
+	function wesnoth.wml_actions.remove_event(cfg)
+		local id = cfg.id or helper.wml_error("[remove_event] missing required id= key")
+
+		for w in split(id) do
+			wesnoth.wml_actions.event { id = w, remove = true }
+		end
+	end
+end

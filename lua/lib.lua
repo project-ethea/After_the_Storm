@@ -3,6 +3,13 @@
 ---
 
 ---
+-- TODO: use utils.split() on 1.13.x instead
+---
+function split(s)
+	return tostring(s):gmatch("[^%s,][^,]*")
+end
+
+---
 -- Log levels for wput and wprintf.
 ---
 
