@@ -8,6 +8,8 @@ Version 0.9.16+dev:
   * Door units now clear terrain beneath them on 'last breath' rather than
     'die' events, in order to ensure shroud is correctly cleared before
     scenario-specific event handlers are run.
+  * Replaced Chaos Crossbowman and Arbalestier's sword attack with an axe to
+    match the sprites.
 
 
 Version 0.9.16:
