@@ -689,11 +689,10 @@ function wesnoth.wml_actions.fade_in_sound_effects(cfg)
 end
 
 ---
--- Sets the sound volume to "zero" (actually 1%, see the implementation of
--- wml_sfx_volume_fade_internal() for an explanation).
+-- Sets the sound volume to zero.
 ---
 function wesnoth.wml_actions.mute_sound_effects(cfg)
-	wesnoth.fire("volume", { sound = 1 })
+	wesnoth.fire("volume", { sound = 0 })
 end
 
 ---
