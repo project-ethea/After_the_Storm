@@ -5,6 +5,8 @@ AFTER THE STORM - CHANGELOG
 Version 0.9.16+dev:
 -------------------
 * Units:
+  * New unit type descriptions:
+    * Chaos Arbalestier, Chaos Crossbowman.
   * Door units now clear terrain beneath them on 'last breath' rather than
     'die' events, in order to ensure shroud is correctly cleared before
     scenario-specific event handlers are run.
