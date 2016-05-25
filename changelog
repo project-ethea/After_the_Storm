@@ -8,7 +8,7 @@ Version 0.9.16+dev:
   * New unit type descriptions:
     * Chaos Arbalestier, Chaos Crossbowman, Chaos Invader, Chaos Bowman, Chaos
       Raider, Chaos Headhunter, Chaos Doom Guard, Chaos Hell Guardian, Chaos
-      Dark Knight, Chaos Razerman, Shaxthal Drone, Chaos Invoker.
+      Dark Knight, Chaos Razerman, Shaxthal Drone, Chaos Invoker, Chaos Magus.
   * Door units now clear terrain beneath them on 'last breath' rather than
     'die' events, in order to ensure shroud is correctly cleared before
     scenario-specific event handlers are run.
