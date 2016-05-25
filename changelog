@@ -7,7 +7,7 @@ Version 0.9.16+dev:
 * Units:
   * New unit type descriptions:
     * Chaos Arbalestier, Chaos Crossbowman, Chaos Invader, Chaos Bowman, Chaos
-      Raider, Chaos Headhunter.
+      Raider, Chaos Headhunter, Chaos Doom Guard.
   * Door units now clear terrain beneath them on 'last breath' rather than
     'die' events, in order to ensure shroud is correctly cleared before
     scenario-specific event handlers are run.
