@@ -4,6 +4,10 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.16+dev:
 -------------------
+* Graphics:
+  * New or updated unit graphics: Chaos Headhunter, Chaos Marauder, Chaos
+    Soulhunter.
+
 * Units:
   * New unit type descriptions:
     * Chaos Arbalestier, Chaos Crossbowman, Chaos Invader, Chaos Bowman, Chaos
