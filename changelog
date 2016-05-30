@@ -15,7 +15,8 @@ Version 0.9.16+dev:
     * Chaos Arbalestier, Chaos Crossbowman, Chaos Invader, Chaos Bowman, Chaos
       Raider, Chaos Headhunter, Chaos Doom Guard, Chaos Hell Guardian, Chaos
       Dark Knight, Chaos Razerman, Shaxthal Drone, Chaos Invoker, Chaos Magus,
-      Sylvan Warden, Chaos Lorekeeper, Chaos Marauder, Chaos Soulhunter.
+      Sylvan Warden, Chaos Lorekeeper, Chaos Marauder, Chaos Soulhunter, Chaos
+      Warlord.
   * Door units now clear terrain beneath them on 'last breath' rather than
     'die' events, in order to ensure shroud is correctly cleared before
     scenario-specific event handlers are run.
