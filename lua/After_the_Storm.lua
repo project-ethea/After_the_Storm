@@ -169,3 +169,70 @@ function wesnoth.wml_actions.store_vacant_spawn_location(cfg)
 	wesnoth.set_variable(variable .. '.x', x)
 	wesnoth.set_variable(variable .. '.y', y)
 end
+
+----------
+-- E3S9 --
+----------
+
+local location_set = wesnoth.require("lua/location_set.lua")
+
+function wesnoth.wml_actions.dreamwalk(cfg)
+	local dst_x = cfg.to_x
+	local dst_y = cfg.to_y
+
+	local map_w, map_h, map_b = wesnoth.get_map_size()
+
+	if dst_x <= 0 or dst_x > map_w or dst_y <= 0 or dst_y > map_h then
+		helper.wml_error("[marsap]: Destination invalid or out of map bounds!")
+	end
+
+	local u = wesnoth.get_units(cfg)[1] or helper.wml_error("[marsap]: No matching units!")
+
+	-- We use a fixed reach value for visibility calculation. It doesn't take
+	-- into account vision, jamming, or movement costs, but that's okay for our
+	-- use case, right?
+	local reach = u.max_moves
+
+	local src_x, src_y = u.x, u.y
+	if not src_x or not src_y then
+		helper.wml_error("[marsap]: Bad source location!")
+	end
+
+	-- Compute a set of locations to remove shroud from so that we don't pass
+	-- the same coordinates more than once.
+	-- FIXME: Probably could optimize the radius search somehow.
+
+	local path = wesnoth.find_path(src_x, src_y, dst_x, dst_y)
+	local region = location_set.of_pairs(path)
+	local rawsize = 0
+
+	for n, loc in ipairs(path) do
+		local subregion = wesnoth.get_locations { x = loc[1], y = loc[2], radius = reach }
+		region:union(location_set.of_pairs(subregion))
+		rawsize = rawsize + #subregion
+
+		--[[ DEBUG
+		wesnoth.wml_actions.item {
+			x = loc[1], y = loc[2],
+			image = "terrain/alphamask.png~PAL(000000>FF00FF)"
+	    }
+		--]]
+	end
+
+	wprintf(W_INFO, "[dreamwalk]: TILE COUNT RAW %d OPT %d", rawsize, region:size())
+
+	local label = "TEMP_unshroud_region"
+
+	region:to_wml_var(label)
+	-- wesnoth.wml_actions.inspect {}
+	wesnoth.wml_actions.remove_shroud { side = 1, find_in = label }
+	wesnoth.set_variable(label)
+	wesnoth.wml_actions.redraw { clear_shroud = true }
+
+	wesnoth.wml_actions.move_unit {
+		{ "filter", { id = u.id } },
+		to_x = dst_x, to_y = dst_y,
+		-- Might be needed for this sequence.
+		check_passability = false
+	}
+end
