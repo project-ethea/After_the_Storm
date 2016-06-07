@@ -98,7 +98,7 @@ pot: $(textdomain).pot
 
 normalize-textdomains:
 	find . \( -name '*.cfg' -o -name '*.lua' \) -type f -print0 | xargs -0 \
-		sed -ri 's/wesnoth-(wesnoth-Invasion_from_the_Unknown|Era_of_Chaos)/wesnoth-After_the_Storm/'
+		sed -ri 's/wesnoth-(Invasion_from_the_Unknown|Era_of_Chaos)/wesnoth-After_the_Storm/'
 
 clean:
 	$(WMLLINT) --clean $(targetdir)
