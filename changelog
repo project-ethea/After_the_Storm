@@ -18,7 +18,8 @@ Version 0.9.16+dev:
       Sylvan Warden, Chaos Lorekeeper, Chaos Marauder, Chaos Soulhunter, Chaos
       Warlord, Chaos Hound, Demonic Hound, Hellhound, Chaos Longbowman, Chaos
       Heavy Longbowman, Chaos Cavalier, Chaos Cataphract, Fungoid, Faerie
-      Sprite, Fire Faerie, Faerie Dryad, Faerie Forest Spirit.
+      Sprite, Fire Faerie, Faerie Dryad, Faerie Forest Spirit, Shaxthal
+      Rayblade.
   * Door units now clear terrain beneath them on 'last breath' rather than
     'die' events, in order to ensure shroud is correctly cleared before
     scenario-specific event handlers are run.
