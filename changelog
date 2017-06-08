@@ -10,6 +10,10 @@ Version 0.9.16+dev:
   * New or improved unit animations: Elynia (E1/E2 ranged attack, E1/E2
     defense, E3 melee, E3 ranged attack, E3 defense).
 
+* Scenarios:
+  * E3S9 - Dark Depths:
+    * Added full ending cutscene.
+
 * Units:
   * New unit type descriptions:
     * Chaos Arbalestier, Chaos Crossbowman, Chaos Invader, Chaos Bowman, Chaos
