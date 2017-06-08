@@ -23,7 +23,7 @@ Version 0.9.16+dev:
       Warlord, Chaos Hound, Demonic Hound, Hellhound, Chaos Longbowman, Chaos
       Heavy Longbowman, Chaos Cavalier, Chaos Cataphract, Fungoid, Faerie
       Sprite, Fire Faerie, Faerie Dryad, Faerie Forest Spirit, Shaxthal
-      Rayblade, Shaxthal Sentry Drone, Shaxthal Assault Drone.
+      Rayblade, Shaxthal Sentry Drone, Shaxthal Assault Drone, Minor Imp.
   * Door units now clear terrain beneath them on 'last breath' rather than
     'die' events, in order to ensure shroud is correctly cleared before
     scenario-specific event handlers are run.
