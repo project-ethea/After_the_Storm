@@ -1,7 +1,7 @@
 title="After the Storm"
 type="campaign"
 version="@VERSION@"
-dependencies="AtS_Music"
+dependencies="AtS_Music,IftU_Music"
 
 translate="true"
 
