@@ -16,6 +16,9 @@ Version 0.9.16+dev:
     tracks already provided by it have been removed from AtS Music.
 
 * Scenarios:
+  * E2S12 - Fate:
+    * Replaced the beginning of a pivotal line by Elynia with a rephrased
+      version provided by vultraz (from IftU 2.0.1).
   * E3S9 - Dark Depths:
     * Added full ending cutscene.
     * Minor prose fixes for the ending cutscene.
