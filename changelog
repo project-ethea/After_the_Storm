@@ -11,6 +11,10 @@ Version 0.9.16+dev:
     defense, E3 melee, E3 ranged attack, E3 defense, E3 finale ranged attack,
     E3 finale melee attack, E3 finale defense).
 
+* Music:
+  * The IftU Music add-on is now required in addition to AtS Music, and the
+    tracks already provided by it have been removed from AtS Music.
+
 * Scenarios:
   * E3S9 - Dark Depths:
     * Added full ending cutscene.
