@@ -12,6 +12,9 @@ Version 0.9.16+dev:
     defense, E3 melee, E3 ranged attack, E3 defense, E3 finale ranged attack,
     E3 finale melee attack, E3 finale defense).
 
+* Language and i18n:
+  * Updated translations: Japanese.
+
 * Music:
   * The IftU Music add-on is now required in addition to AtS Music, and the
     tracks already provided by it have been removed from AtS Music.
