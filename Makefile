@@ -14,7 +14,7 @@ DIST_PASSPHRASE_FILE=~/.wesnoth-pbl-pass
 DEFSCOPE ?= macro-scope-check
 WMLLINT ?= wmllint-1.12 -d
 WMLINDENT ?= wmlindent-1.12
-WMLXGETTEXT ?= wmlxgettext
+WMLXGETTEXT ?= wmlxgettext-1.12
 OPTIPNG ?= wesnoth-optipng
 WML_PREPROCESS ?= $(WESNOTH) -p
 
