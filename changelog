@@ -4,7 +4,8 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.17+dev:
 -------------------
-
+* Units:
+  * Removed unused unit types: Elvish Civilian.
 
 
 Version 0.9.17:
