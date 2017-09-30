@@ -6,7 +6,8 @@ Version 0.9.17+dev:
 -------------------
 * Units:
   * Removed unused unit types: Elvish Civilian.
-  * New unit type descriptions: Chaos Cataphract, Hound of Chaos.
+  * New unit type descriptions: Chaos Cataphract, Hound of Chaos, Demonic
+    Hound.
 
 
 Version 0.9.17:
