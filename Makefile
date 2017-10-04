@@ -13,7 +13,7 @@ PACKS                := \
 	CAMPAIGN_AFTER_THE_STORM_EPISODE_II \
 	CAMPAIGN_AFTER_THE_STORM_EPISODE_III
 
-include ../naia/tools/Makefile.wmltools
+include ../Naia/tools/Makefile.wmltools
 
 pot: local-pot
 
