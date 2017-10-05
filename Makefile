@@ -15,8 +15,6 @@ PACKS                := \
 
 include ../Naia/tools/Makefile.wmltools
 
-pot: local-pot
-
 normalize-textdomains:
 	find . \( -name '*.cfg' -o -name '*.lua' \) -type f -print0 | xargs -0 \
 		sed -ri 's/wesnoth-(Invasion_from_the_Unknown|Era_of_Chaos)/wesnoth-After_the_Storm/'
