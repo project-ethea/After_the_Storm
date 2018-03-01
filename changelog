@@ -9,6 +9,10 @@ Version 0.9.17+dev:
     * Fix dialogue typo in part 2 reported by Inky.
   * E3S8A - Interim:
     * Fix dialogue typo reported by Inky.
+  * E3S8D - Destiny, Part 2:
+    * Fix an issue where Ergea might announce more than once that either the
+      Iron Council or the Storm Sisters have yet to be defeated (reported by
+      Inky).
 
 * Units:
   * Removed unused unit types: Elvish Civilian.
