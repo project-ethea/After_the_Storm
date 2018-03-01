@@ -7,6 +7,8 @@ Version 0.9.17+dev:
 * Scenarios:
   * E3S7A - Dark Fire:
     * Fix dialogue typo in part 2 reported by Inky.
+  * E3S8A - Interim:
+    * Fix dialogue typo reported by Inky.
 
 * Units:
   * Removed unused unit types: Elvish Civilian.
