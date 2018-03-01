@@ -5,7 +5,7 @@ dependencies="AtS_Music,IftU_Music"
 
 translate="true"
 
-author="shadowm (Ignacio R. Morelle)"
+author="shadowm (Iris Morelle)"
 email="shadowm@wesnoth.org"
 
 icon="scenery/trash.png~O(0)~BG(66,66,60)~BLIT(misc/blank-hex.png~CROP(0,0,70,70)~BG(),1,1)~BLIT(portraits/humans/transparent/mage-silver+female.png~CROP(32,42,100,100)~SCALE(68,68),2,2)"
