@@ -4,6 +4,9 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.9.17+dev:
 -------------------
+* General:
+  * Dropped compatibility with versions 1.11.11 through 1.11.19.
+
 * Scenarios:
   * E3S7A - Dark Fire:
     * Fix dialogue typo in part 2 reported by Inky.
