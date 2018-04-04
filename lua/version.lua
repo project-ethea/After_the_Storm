@@ -27,8 +27,8 @@ if v(ver, '<', '1.11.11') then
 	do_bug( _ "After the Storm requires Wesnoth 1.11.11 or later.", false)
 end
 
-if v(ver, '>=', '1.13.0') then
-	do_bug( _ "After the Storm has not been tested with Wesnoth 1.13.x and there may be broken functionality. Please use version 1.12.0 or later.", false)
+if v(ver, '>=', '1.15.0') then
+	do_bug( _ "After the Storm has not been tested with Wesnoth 1.15.x and there may be broken functionality. Please use version 1.12.0 or later.", false)
 end
 
 ---
