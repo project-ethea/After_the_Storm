@@ -1,21 +1,18 @@
-border_size=1
-usage=map
-
-Rr, Urb, Urb, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Yhr, Xol, Xol, Xol, Xol, Xol, Xos, Xol, Xos, Xol, Xol, Xos, Cud, Cud, Cud, Xol
-Urb, Rr, Rr, Urb, Urb^Z/, Xos, Xol, Xol, Xol, Xos, Urb, Xos, Xol, Xol, Xol, Xos, Cud, Xos, Cud, Xol, Cud, Cud, Cud, Cud, Xol, Xol
-Xol, Urb, Urb^Z/, Rr^Z/, Rr, Urb, Urb, Xol, Cud, Urb, Xos, Urb, Cud, Xol, Urb, Cud, Cud, Cud, 3 Kud, Cud, 2 Kud, Cud, Xol, Xol, Xol, Xol
-Xol, Xol, Xol, Urb, Urb, Rr, Rr, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Cud, Cud, Cud, Cud, Cud, Cud, Cud, Cud, Xol, Xol, Xol, Xol
-Xol, Xol, Xol, Xol, Urb, Urb, Urb, Rr, Urb, Urb, Wwg, Wwg, Wwg, Urb, Urb, Cud, Cud, 4 Kud, Cud, Cud, Cud, Cud, Xol, Xol, Xol, Xol
-Xol, Xol, Xol, Xol, Urb, Urb, Urb, Urb, Wwg, Wwg, Wwg, Wwg, Urb, Urb, Rr, Urb, Urb, Cud, Cud, 5 Kud, Cud, Cud, Cud, Xol, Xol, Xos
-Xos, Xos, Xol, Xol, Cud, Urb, Urb, Urb, Urb, Wwg, Urb, Urb, Rr, Rr, Rr, Rr, Rr, Urb, Urb, Cud, Urb, Urb, Urb, Xol, Yhr, Yhr
-Yhl, Yhr^Xo, Yhr^Xp, Xol, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Rr, Rr, 1 Rr, Rr, Rr, Urb, Urb, Wwg, Urb, Urb, Xos, Urb, Urb, Xol, Xol
-Xol, Xol, Xol, Urb, Urb, Xos, Urb, Urb, Wwg, Wwg, Wwg, Urb, Urb, Rr, Urb, Urb, Wwg, Wwg, Wwg, Wwg, Urb, Urb, Cud, Xol, Xol, Xol
-Xol, Xol, Xol, Xol, Cud, Urb, Urb, Urb, Urb, Wwg, Wwg, Wwg, Wwg, Urb, Urb, Wwg, Wwg, Wwg, Urb, Urb, Urb, Urb, Xol, Xol, Xol, Xol
-Xol, Xol, Xol, Xol, Urb, Urb, Urb, Urb, Rr, Urb, Urb, Wwg, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Xol, Xol, Xol, Xol, Xol, Xol
-Xol, Xol, Xol, Xol, Urb, Urb, Rr, Rr, Urb, Urb, Xos, Urb, Urb, Urb, Urb, Urb, Urb, Rr, Rr, Urb, Urb, Xol, Xos, Xol, Xol, Xol
-Xol, Xos, Cud, Urb, Rr, Rr, Urb, Urb, Cud, Urb, Urb, Urb, Cud, Urb, Urb, Urb, Xol, Urb, Urb, Rr, Cud, Cud, Urb, Xol, Xol, Xol
-Urb, Urb, Rr, Cud, Cud, Urb, Xol, Xol, Xol, Xos, Yhr^Xp, Xos, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Cud, Urb, Rr, Rr, Urb, Urb, Xos
-Rr, Rr, Urb, Urb, Xol, Xol, Xol, Xol, Xol, Xos, Yhr^Xo, Xos, Xos, Xol, Xos, Xol, Xol, Xol, Xol, Xol, Xol, Urb, Urb, Rr, Rr, Urb
-Urb, Urb, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xos, Xos, Yhl^Xp, Yhl, Xos, Xos, Xos, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Urb, Cud, Cud
-Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xos, Xos, Yhl, Xos, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Urb
-Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xos, Yhl^Xp, Xos, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol
+Rr, Urb, Urb, Xoc, Xoc^Efs, Xoc, Xoc, Xoc, Xoc, Xoc, Yhr, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc^Efs, Cud, Cud, Cud, Xoc
+Urb, Rr, Rr, Urb, Urb^Pr/, Xoc^Efs, Xoc, Xoc^Efs, Xoc, Xoc, Urb, Xoc^Efs, Xoc^Efs, Xoc, Xoc^Efs, Xoc^Efs, Cud, Xoc, Cud, Xoc, Cud, Cud, Cud, Cud, Xoc, Xoc
+Xoc, Urb, Urb^Pr/, Rr^Pr/, Rr, Urb, Urb, Xoc^Efs, Cud, Urb, Xoc^Efs, Urb, Cud, Xoc, Urb, Cud, Cud, Cud, 3 Kud, Cud, 2 Kud, Cud, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Urb, Urb, Rr, Rr, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Cud, Cud, Cud, Cud, Cud, Cud, Cud, Cud, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Urb, Urb, Urb, Rr, Urb, Urb, Wwg, Wwg, Wwg, Urb, Urb, Cud, Cud, 4 Kud, Cud, Cud, Cud, Cud, Xoc^Efs, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Urb, Urb, Urb, Urb, Wwg, Wwg, Wwg, Wwg, Urb, Urb, Rr, Urb, Urb, Cud, Cud, 5 Kud, Cud, Cud, Cud, Xoc^Efs, Xoc, Xoc
+Xoc^Efs, Xoc, Xoc, Xoc^Efs, Cud, Urb, Urb, Urb, Urb, Wwg, Urb, Urb, Rr, Rr, Rr, Rr, Rr, Urb, Urb, Cud, Urb, Urb, Urb, Xoc, Yhr, Yhr
+Yhl, Yhr^Xo, Yhr^Xp, Xoc^Efs, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Rr, Rr, 1 Rr, Rr, Rr, Urb, Urb, Wwg, Urb, Urb, Xoc^Efs, Urb, Urb, Xoc, Xoc
+Xoc, Xoc, Xoc, Urb, Urb, Xoc^Efs, Urb, Urb, Wwg, Wwg, Wwg, Urb, Urb, Rr, Urb, Urb, Wwg, Wwg, Wwg, Wwg, Urb, Urb, Cud, Xoc, Xoc, Xol
+Xoc, Xoc, Xoc, Xoc, Cud, Urb, Urb, Urb, Urb, Wwg, Wwg, Wwg, Wwg, Urb, Urb, Wwg, Wwg, Wwg, Urb, Urb, Urb, Urb, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xol, Xoc, Urb, Urb, Urb, Urb, Rr, Urb, Urb, Wwg, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Urb, Xoc^Efs, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc^Efs, Xoc^Efs, Urb, Urb, Rr, Rr, Urb, Urb, Xoc^Efs, Urb, Urb, Urb, Urb, Urb, Urb, Rr, Rr, Urb, Urb, Xoc^Efs, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Cud, Urb, Rr, Rr, Urb, Urb, Cud, Urb, Urb, Urb, Cud, Urb, Urb, Urb, Xoc, Urb, Urb, Rr, Cud, Cud, Urb, Xoc^Efs, Xoc^Efs, Xoc
+Urb, Urb, Rr, Cud, Cud, Urb, Xol, Xol, Xol, Xos, Yhr^Xp, Xoc, Xoc, Xoc, Xoc, Xoc, Xol, Xoc, Xoc, Cud, Urb, Rr, Rr, Urb, Urb, Xoc
+Rr, Rr, Urb, Urb, Xol, Xol, Xol, Xol, Xol, Xos, Yhr^Xo, Xoc^Efs, Xoc^Efs, Xol, Xos, Xol, Xol, Xol, Xoc, Xoc, Xoc, Urb, Urb, Rr, Rr, Urb
+Urb, Urb, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xos, Xos, Yhl^Xp, Yhl, Xoc, Xos, Xos, Xol, Xol, Xol, Xol, Xol, Xoc, Xoc, Urb, Cud, Cud
+Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xos, Xos, Yhl, Xos, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xoc, Xoc, Urb
+Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xos, Yhl^Xp, Xos, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xol, Xoc, Xol, Xoc
