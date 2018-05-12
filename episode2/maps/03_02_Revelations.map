@@ -1,9 +1,6 @@
-border_size=1
-usage=map
-
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Cv, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Cv, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Cv, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Cv, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xol, Xol, Cv, Rrc, Rrc, Rrc, Gg^Fet, Rrc, Rrc, Rrc, Cv, Xol, Xol, Xos, Xos, Xos, Xos, Xos, Xos
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Cv, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Cv, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Cv, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Cv, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc^Efs, Xoc, Xoc, Xoc, Xoc^Efs, Xoc, Cv, Rrc, Rrc, Rrc, Gg^Fet, Rrc, Rrc, Rrc, Cv, Xoc, Xoc^Efs, Xoc, Xoc, Xoc, Xoc^Efs, Xoc, Xoc
 Cv, Cv, Cv, Cv, Cv, Cv, Cv, Cv, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Cv, Cv, Cv, Cv, Cv, Cv, Cv, Cv
 Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Gg^Fet, Gg^Fet, Rrc, Ch, 3 Kh, Ch, Rrc, Gg^Fet, Gg^Fet, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc
 Wwf, Rrc, Wwf, Rrc, Wwf, Gg^Fet, Wwf, Rrc, Rrc, Rrc, Ch, Ch, Wwf, Ch, Ch, Rrc, Rrc, Rrc, Wwf, Gg^Fet, Wwf, Rrc, Rrc, Rrc, Rrc
@@ -13,5 +10,5 @@ Wwf, Wwf, Wwf, Wwf, Wwf, Wwf, Wwf, Rrc, Rrc, Ch, Ch, Wwf, Wwf, Wwf, Ch, Ch, Rrc,
 Rrc, Rrc, Rrc, Rrc, Rrc, Gg^Fet, Rrc, Rrc, Gg^Fet, Rrc, Rrc, Ch, 4 Kh, Ch, Rrc, Rrc, Gg^Fet, Rrc, Rrc, Gg^Fet, Rrc, Rrc, Rrc, Rrc, Rrc
 Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Gg^Fet, Rrc, Ch, Rrc, Ch, Rrc, Gg^Fet, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc, Rrc
 Cv, Cv, Cv, Cv, Cv, Cv, Cv, Cv, Cv, Rrc, Rrc, Rrc, Gg^Fet, Rrc, Rrc, Rrc, Cv, Cv, Cv, Cv, Cv, Cv, Cv, Cv, Cv
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Cv, Rrc, Rrc, Rrc, Rrc, Rrc, Cv, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Cv, Rrc, Rrc, Rrc, Rrc, Rrc, Cv, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Cv, Rrc, Rrc, Rrc, Rrc, Rrc, Cv, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
+Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Cv, Rrc, Rrc, Rrc, Rrc, Rrc, Cv, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc, Xoc
