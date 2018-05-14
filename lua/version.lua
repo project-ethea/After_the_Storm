@@ -23,13 +23,15 @@ local v = wesnoth.compare_versions
 -- #textdomain wesnoth-After_the_Storm
 local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
 
-if v(ver, '<', '1.11.11') or (v(ver, '>=', '1.13.0') and v(ver, '<', '1.13.12')) then
-	do_bug( _ "After the Storm requires Wesnoth 1.11.11 - 1.12.x or 1.13.12 - 1.14.x.", false)
+if v(ver, '<', '1.13.12') then
+	do_bug( _ "After the Storm requires Wesnoth 1.13.12 - 1.14.x.", false)
 end
 
 if v(ver, '>=', '1.15.0') then
 	do_bug( _ "After the Storm has not been tested with Wesnoth 1.15.x and there may be broken functionality.", false)
 end
+
+do_bug( _ "This is an experimental port of After the Storm to Wesnoth 1.14.x. If you choose to continue, you must report any issues to the author on the project’s bug tracker:\n    <https://github.com/project-ethea/After_the_Storm/issues>", true)
 
 ---
 -- The following add-ons are known to case balancing issues with this campaign
