@@ -1,6 +1,3 @@
-border_size=1
-usage=map
-
 Dd, Dd, Dd, Dd, Ds, Dd, Gd, Gd, Gd, Gd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Ds, Dd, Dd, Dd, Rd, Rd, Rd, Dd, Dd, Dd, Dd, Dd, Ds, Ds, Rd, Rd, Ds, Dd, Dd, Dd, Dd^Edp, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Hd, Dd
 Dd, Dd, Dd, Ds, Gd, Gs, Gs^Efm, Gs, Ww, Gs, Gs^Ftd, Dd, Gs, Dd, Dd, Dd, Ds, Ds, Dd, Dd, Dd, Rd, Rd, Rd, Dd, Dd, Ds, Ds, Dd, Dd, Ds, Rd, Rd, Ds, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Dd^Es, Dd, Hd, Hd, Hd
 Dd, Dd, Gd, Dd, Gs, Gs^Efm, Ww, Ww, Wo, Ww, Ww, Gs^Ftd, Gs^Ftd, Gd, Gd, Dd, Ds, Ds, Ds, Rd, Rd, Dd, Dd, Dd, Dd, Dd, Ds, Ds, Ds, Chr, Ds, Ds, Rd, Ds, Ds, Ds, Dd, Dd, Dd, Dd, Dd, Hd, Dd, Dd, Hd, Hd, Hd, Dd
@@ -24,12 +21,12 @@ Dd, Dd, Dd, Hd, Hd, Hd, Hd, Dd^Vdt, Dd, Hd, Hd, Dd, Hd, Hd, Hd, Hhd, Hhd, Hhd, H
 Dd, Dd, Ds, Hd, Dd, Hd, Hd, Dd, Dd, Hd, Hd, Dd, Dd, Dd, Hhd, Hhd, Md, Hhd, Hhd, Hhd, Hhd, Hd, Hhd, Dd, Dd, Ds, Dd^Es, Dd, Hd, Hd, Dd, Rd, Dd, Rd, Dd, Dd, Dd, Dd^Edp, Dd, Hd, Dd, Hd, Hd, Ds, Ds, Ds, Dd, Dd
 Dd, Ds, Ds, Dd, Ds, Dd, Dd, Dd, Dd, Hd, Hd, Hd, Hd, Dd, Hhd, Hhd, Md, Md, Md^Xm, Md, Md, Hhd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Rd, Rd, Dd, Hd, Dd, Dd, Dd^Es, Dd^Edp, Dd, Dd^Edp, Hd, Hd, Dd, Ds, Dd, Dd, Hhd, Hhd
 Hd, Ds, Ds^Es, Dd^Es, Ds, Hd, Hd, Hd, Hhd, Hhd, Hhd, Hd, Hd, Hd, Hd, Hd, Md, Md^Xm, Md^Xm, Md^Xm, Md, Hhd, Hhd, Dd, Dd, Gd, Gd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Dd, Hd, Dd, Hd, Hd, Hd, Dd, Dd, Hhd, Hhd
-Hd, Hd, Ds, Dd, Dd, Hd, Hd, Hhd, Hhd, Hhd, Md, Hhd, Hhd, Hd, Hd, Hd, Hhd, Md, Md, Md^Xm, Md^Xm, Hhd, Hhd, Dd, Gd, Gd, Gd, Dd, Dd, Dd, Dd, Dd, Ce, Dd, 4 Ket, Ce, Gd, Dd, Hhd, Dd, Hhd, Dd, Dd, Hd, Dd, Hhd, Md, Md
-Hd, Hd, Dd, Dd, Dd, Hd, Hhd, Hhd, Md, Md, Md^Xm, Md, Hd, Hd, Hhd, Hhd, Hhd, Hhd, Md, Md^Xm, Md^Xm, Md, Hhd, Hhd, Gd, Gd, Ce, Dd, 5 Ket, Ce, Dd, Rd, Gd, Ce, Gd, Gd^Es, Gd, Hhd, Hhd, Md, Hhd, Dd, Dd, Dd, Hhd, Hhd, Md, Md
-Hd, Hd, Dd, Hd, Hd, Hd, Hd, Hhd, Md, Md^Xm, Md, Md, Hhd, Hd, Hhd, Hd, Hd, Hhd, Hhd, Md, Md^Xm, Md, Hhd, Hhd, Gd, Gd, Gd, Ce, Dd, Dd, Dd^Es, Rd, Gd^Vct, Gd, Gd^Vct, Gd, Chr, Hhd, Md, Md^Xm, Md, Hhd, Md, Hhd, Hhd, Hhd, Md^Xm, Md^Xm
+Hd, Hd, Ds, Dd, Dd, Hd, Hd, Hhd, Hhd, Hhd, Md, Hhd, Hhd, Hd, Hd, Hd, Hhd, Md, Md, Md^Xm, Md^Xm, Hhd, Hhd, Dd, Gd, Gd, Gd, Dd, Dd, Dd, Dd, Dd, Cer, Dd, 4 Ket, Cer, Gd, Dd, Hhd, Dd, Hhd, Dd, Dd, Hd, Dd, Hhd, Md, Md
+Hd, Hd, Dd, Dd, Dd, Hd, Hhd, Hhd, Md, Md, Md^Xm, Md, Hd, Hd, Hhd, Hhd, Hhd, Hhd, Md, Md^Xm, Md^Xm, Md, Hhd, Hhd, Gd, Gd, Cte, Dd, 5 Ket, Cte, Dd, Rd, Gd, Cte, Gd, Gd^Es, Gd, Hhd, Hhd, Md, Hhd, Dd, Dd, Dd, Hhd, Hhd, Md, Md
+Hd, Hd, Dd, Hd, Hd, Hd, Hd, Hhd, Md, Md^Xm, Md, Md, Hhd, Hd, Hhd, Hd, Hd, Hhd, Hhd, Md, Md^Xm, Md, Hhd, Hhd, Gd, Gd, Gd, Cer, Dd, Dd, Dd^Es, Rd, Gd^Vct, Gd, Gd^Vct, Gd, Chr, Hhd, Md, Md^Xm, Md, Hhd, Md, Hhd, Hhd, Hhd, Md^Xm, Md^Xm
 Hd, Dd, Dd, Dd, Dd, Hd, Hd, Hhd, Hhd, Md, Md, Hhd, Hhd, Hhd, Hhd, Hd, Hd, Hhd, Hhd, Hhd, Md, Md, Hhd, Hhd, Hhd, Gd, Gd^Vct, Gd, Gs, Gd^Vct, Gd, Rd, Re, Re, Gd^Fdw, Gd^Fdw, Chr, Hhd, Md, Md, Md, Md^Xm, Md, Hhd, Hhd, Md, Md^Xm, Md
 Dd^Edp, Dd, Dd, Dd^Vdt, Dd, Hd, Hhd, Md, Md, Hhd, Md^Xm, Md, Md, Hhd, Hhd, Hd, Hd, Hd, Hhd, Hhd, Hd, Md, Hhd, Hhd, Chr, Gd^Es, Gs, Gs, Gs^Fdw, Gd, Rp, Rr, Re, Gd, Gs^Fdw, Chr, Md, Md, Md, Md, Md, Md, Md^Xm, Md, Md, Md^Xm, Md^Xm, Md
-Dd, Dd, Dd, Hd, Hd, Hhd, Hhd, Md, Md, Md^Xm, Md^Xm, Md, Md, Hhd, Hhd, Hhd, Hhd, Hhd, Hhd, Hhd, Hd, Hd, Hd, Hhd, Gd^Fdw, Chr, Gs^Fdw, Gs, Gs^Fdw, Gd, Re, Rp, Gs, Gd^Ve, Gs^Fdw, Hhd, Hh, Md, Hhd, Hhd, Md, Md, Md, Md^Xm, Md^Xm, Md^Xm, Md^Xm, Md
+Dd, Dd, Dd, Hd, Hd, Hhd, Hhd, Md, Md, Md^Xm, Md^Xm, Md, Md, Hhd, Hhd, Hhd, Hhd, Hhd, Hhd, Hhd, Hd, Hd, Hd, Hhd, Gd^Fdw, Cte, Gs^Fdw, Gs, Gs^Fdw, Gd, Re, Rp, Gs, Gd^Ve, Gs^Fdw, Hhd, Hh, Md, Hhd, Hhd, Md, Md, Md, Md^Xm, Md^Xm, Md^Xm, Md^Xm, Md
 Hd, Dd, Dd, Dd^Edp, Hd, Hd, Hd, Hhd, Md, Md^Xm, Md^Xm, Md^Xm, Md, Md^Xm, Md^Xm, Hhd, Hhd, Hhd, Hhd, Hd, Hhd, Md, Md, Md, Gd^Fdw, Chr, Gd^Fdw, Gs, Gd, Gd^Fdw, Re, Rp, Gd, Gs^Fdw, Gd, Hh, Hh, Hhd, Gd, Hhd, Hhd, Hhd, Md, Md^Xm, Md^Xm, Md^Xm, Md^Xm, Md^Xm
 Dd, Hd, Hd, Dd, Dd, Hd, Hhd, Hhd, Md, Md^Xm, Md^Xm, Md^Xm, Md, Md^Xm, Md^Xm, Hhd, Hhd, Md, Md, Hhd, Hhd, Md, Md^Xm, Md, Md, Gs^Fdw, Gd^Fdw, Hhd, Hhd, Gd^Ve, Gd, Re, Re, Cv, Cv, Hh, Gd^Fdw, Gd^Fdw, Gd, Hhd, Hhd, Hhd, Md^Xm, Md^Xm, Md, Md, Md^Xm, Md^Xm
 Hhd, Hd, Hd, Hd, Hd, Hhd, Hhd, Hhd, Md, Md, Md, Md^Xm, Md, Md, Md, Md^Xm, Md, Md, Md, Hhd, Md, Md, Md^Xm, Md, Md, Gd^Fdw, Hhd, Hhd, Hhd, Gd, Gd, Cv, Rp, Re, Cv, 2 Kv, Gd^Fdw, Gs^Fdw, Hhd, Hhd, Md, Md^Xm, Md, Md, Md, Md^Xm, Md^Xm, Md^Xm
