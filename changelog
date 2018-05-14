@@ -18,6 +18,7 @@ Version 0.9.17+dev:
   * Removed unused unit types: Elvish Civilian.
   * New unit type descriptions: Chaos Cataphract, Hound of Chaos, Demonic
     Hound, Hellhound.
+  * Enabled Orcish Nightblade advancement from Orcish Slayer.
 
 
 Version 0.9.17:
