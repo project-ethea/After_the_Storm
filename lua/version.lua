@@ -8,9 +8,15 @@ if maintainer_mode then
 	wput(W_INFO, "Maintainer mode enabled")
 end
 
-local function do_bug(msg, may_ignore)
+local function do_bug(msg, may_ignore, feedback_mode)
 	if maintainer_mode then wput(W_WARN, "Unrecoverable bug found in maintainer mode") end
-	wesnoth.wml_actions.bug { message = msg, should_report = false, may_ignore = (maintainer_mode or may_ignore) }
+
+	wesnoth.wml_actions.bug {
+		message = msg,
+		should_report = (feedback_mode == "omgbugseverywhere"),
+		may_ignore = (maintainer_mode or may_ignore),
+		feedback = feedback_mode,
+	}
 end
 
 local function have_addon(id)
@@ -31,7 +37,7 @@ if v(ver, '>=', '1.15.0') then
 	do_bug( _ "After the Storm has not been tested with Wesnoth 1.15.x and there may be broken functionality.", false)
 end
 
-do_bug( _ "This is an experimental port of After the Storm to Wesnoth 1.14.x. If you choose to continue, you must report any issues to the author on the project’s bug tracker:\n    <https://github.com/project-ethea/After_the_Storm/issues>", true)
+do_bug( _ "This is an experimental port of After the Storm to Wesnoth 1.14.x.\nIf you choose to continue, you must report any issues to the author on the project’s bug tracker:", true, "omgbugseverywhere")
 
 ---
 -- The following add-ons are known to case balancing issues with this campaign
