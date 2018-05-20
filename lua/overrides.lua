@@ -10,20 +10,6 @@ local function override_alert(msg)
 end
 
 ---
--- Extend [remove_sound_source] to take a comma-separated list of sound
--- sources to remove.
----
-
-local engine_rss = wesnoth.wml_actions.remove_sound_source
-
-function wesnoth.wml_actions.remove_sound_source(cfg)
-	local ids = cfg.id or helper.wml_error("[remove_sound_source]: No id list provided")
-	for id in ids:gmatch("[^,]+") do
-		engine_rss { id = id:match "^%s*(.-)%s*$" }
-	end
-end
-
----
 -- Work around move_unit bug in version 1.11.17 by using implementation from
 -- version 1.11.16. (See also: http://r.wesnoth.org/t41084 and PR #299.)
 ---
