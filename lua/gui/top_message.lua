@@ -1,4 +1,4 @@
-local T = wml.tag {}
+local T = wml.tag
 
 ---
 -- Displays a simple transient message at the top, without any

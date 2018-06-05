@@ -1,4 +1,4 @@
-local T = wml.tag {}
+local T = wml.tag
 
 ---
 -- [item_choice_dialog]

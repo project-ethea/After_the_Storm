@@ -1,4 +1,4 @@
-local T = wml.tag {}
+local T = wml.tag
 
 ---
 -- [combo_info_dialog]

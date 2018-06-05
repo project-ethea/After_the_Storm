@@ -1,4 +1,4 @@
-local T = wml.tag {}
+local T = wml.tag
 
 ---
 -- Displays an image on a popup dialog.
