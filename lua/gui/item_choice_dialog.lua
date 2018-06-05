@@ -1,4 +1,4 @@
-local T = helper.set_wml_tag_metatable {}
+local T = wml.tag {}
 
 ---
 -- [item_choice_dialog]

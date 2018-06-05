@@ -1,4 +1,4 @@
-local T = helper.set_wml_tag_metatable {}
+local T = wml.tag {}
 
 ---
 -- Displays a simple transient message at the top, without any

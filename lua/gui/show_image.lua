@@ -1,4 +1,4 @@
-local T = helper.set_wml_tag_metatable {}
+local T = wml.tag {}
 
 ---
 -- Displays an image on a popup dialog.
