@@ -5,6 +5,9 @@ AFTER THE STORM - CHANGELOG
 Version 0.9.17+dev:
 -------------------
 * Scenarios:
+  * E1S9.3 - The Triad, part 3:
+    * Fix a unit animation not playing any sounds in a cutscene at the end of
+      the scenario.
   * E3S7A - Dark Fire:
     * Fix dialogue typo in part 2 reported by Inky.
   * E3S8A - Interim:
