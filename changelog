@@ -24,6 +24,7 @@ Version 0.9.17+dev:
   * Enabled Orcish Nightblade advancement from Orcish Slayer.
   * Chaos Cardinal migrated to Naia and expanded with a new baseframe by VYNLT
     and slightly different stats over the mainline Ancient Lich:
+  * Fixed Chaos Sharpshooter not having an AMLA.
 
 
 Version 0.9.17:
