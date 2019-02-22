@@ -12,6 +12,8 @@ Version 0.9.17+dev:
     * Fix dialogue typo in part 2 reported by Inky.
   * E3S8A - Interim:
     * Fix dialogue typo reported by Inky.
+  * E3S8C - Breakdown:
+    * Fix an error rendering this scenario uncompletable.
   * E3S8D - Destiny, Part 2:
     * Fix an issue where Ergea might announce more than once that either the
       Iron Council or the Storm Sisters have yet to be defeated (reported by
@@ -489,7 +491,7 @@ Version 0.9.6:
     superior solution is now built into version 1.11.6.
 
 * Graphics:
-  * New or updated unit graphics: Argan, Elyssa (E1/E2), Demon, Demon Zephyr, 
+  * New or updated unit graphics: Argan, Elyssa (E1/E2), Demon, Demon Zephyr,
     Demon Grunt, Demon Warrior, Demon Messenger, Demoness Spelldancer, Demon
     Stormtide, Demoness Hellbent Tide, Demoness Slashing Gale, Angel of Blood,
     Errant Executor, Gatekeeper.
