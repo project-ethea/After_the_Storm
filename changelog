@@ -8,6 +8,9 @@ Version 0.9.17+dev:
   * E1S9.3 - The Triad, part 3:
     * Fix a unit animation not playing any sounds in a cutscene at the end of
       the scenario.
+  * E3S4.2 - Gateway:
+    * Fix Kyara and Horo being killed prematurely and having their stats reset
+      at the start of the cutscene as a result (issue #58).
   * E3S7A - Dark Fire:
     * Fix dialogue typo in part 2 reported by Inky.
   * E3S8A - Interim:
