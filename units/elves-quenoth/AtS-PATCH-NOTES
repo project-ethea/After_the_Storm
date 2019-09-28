@@ -1,0 +1,13 @@
+AtS-specific patches to the Quenoth units:
+
+* Removed plot-specific units (Corrupted Elf, Divine Incarnation,
+  Divine Avatar, Quenoth Youth)
+* Removed scenario-based cost variations for the Rider, Mystic, Fighter, and
+  Scout
+* Added Archer_Kyara.cfg and Marksman_Kyara.cfg patches to provide female
+  variations of these units used by Kyara
+* Replaced substitutions of UTBS_ABILITY_CURES with ABILITY_CURES
+* Replaced substitutions of SPECIAL_NOTES_UTBS_CURES with SPECIAL_NOTES_CURES
+* Replaced substitutions of UTBS_ABILITY_HEALS with ABILITY_HEALS
+* Replaced substitutions of SPECIAL_NOTES_UTBS_HEALS with SPECIAL_NOTES_HEALS
+* Substituted `units/quenoth/` with `units/elves-quenoth` in image paths
