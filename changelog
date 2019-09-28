@@ -26,6 +26,8 @@ Version 0.9.17+dev:
       one that produces inconsistent results on 1.14.
 
 * Units:
+  * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
+    of this, Kyara is now a mounted level 2 Quenoth Archer.
   * Removed unused unit types: Elvish Civilian.
   * New unit type descriptions: Chaos Cataphract, Hound of Chaos, Demonic
     Hound, Hellhound.
