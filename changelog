@@ -8,6 +8,8 @@ Version 0.9.17+dev:
   * E1S9.3 - The Triad, part 3:
     * Fix a unit animation not playing any sounds in a cutscene at the end of
       the scenario.
+  * E3S3 - Amidst the Ruins of Glamdrol:
+    * Fixed Nar-hamoth costing upkeep to his side.
   * E3S4.2 - Gateway:
     * Fix Kyara and Horo being killed prematurely and having their stats reset
       at the start of the cutscene as a result (issue #58).
