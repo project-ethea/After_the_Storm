@@ -39,6 +39,8 @@ Version 0.9.17+dev:
   * Fixed Chaos Sharpshooter not having an AMLA.
   * Fixed Magnum Suit's ranged attack dealing impact instead of fire damage,
     increased from 15-3 to 19-3.
+  * The Stun effect is now cleared off affected units at the end of the
+    controlling side's turn rather than at the start.
 
 
 Version 0.9.17:
