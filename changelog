@@ -28,6 +28,37 @@ Version 0.9.17+dev:
       one that produces inconsistent results on 1.14.
 
 * Units:
+  * Decreased Elynia's initial maximum XP from 150 to 64.
+  * Revised Elynia's AMLA tree and made upgrades persist throughout the entire
+    set of campaigns:
+    * Strength:
+      * Strength I: HP +4, melee dmg +1
+      * Strength II: HP +4, melee str +1
+      * Strength III: HP +5
+      * Strength IV (E2): HP +5, melee dmg +1
+      * Strength V (E2): HP +7
+    * Focus:
+      * Focus I: ensnare str +1
+      * Focus II: ensnare dmg +1 str +1
+      * Focus III (E2): ensnare dmg +1
+      * Focus IV (E2): ensnare dmg +1, stun weapon special
+    * Shielding (requires Focus I):
+      * Shielding I: arcane res +10%
+      * Shielding II: impact res +10%
+      * Shielding III (E2): cold res +10%, sylvan essence regen +1
+      * Shielding IV (E3): fire res +10%
+      * Shielding V (E3): protection ability
+    * Thorns:
+      * Thorns I: thorns dmg +2
+      * Thorns II: thorns dmg +2, drains weapon special
+    * Faerie Fire (requires Focus II, Strength II):
+      * Faerie Fire I: replaces mystic fire, ranged/arcane 9-3 magical
+      * Faerie Fire II (E2): faerie fire dmg +1
+      * Faerie Fire III (E2): faerie fire str +1
+      * Faerie Fire IV (E3) (req. Focus III, Shielding III, Strength III):
+        faerie fire dmg +1
+      * Faerie Fire V (E3) (req. Focus IV, Shielding IV, Strength IV):
+        faerie fire dmg +1
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
   * Removed unused unit types: Elvish Civilian.
