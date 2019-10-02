@@ -59,6 +59,23 @@ Version 0.9.17+dev:
         faerie fire dmg +1
       * Faerie Fire V (E3) (req. Focus IV, Shielding IV, Strength IV):
         faerie fire dmg +1
+  * Decreased Galas' initial maximum XP from 150 to 80.
+  * Revised Galas' AMLA tree:
+    * Stealth: adds ambush ability
+    * Hunter:
+      * Hunter I: add bolas, ranged/impact 9-2 slows
+      * Hunter II: bolas str +1
+    * Strength:
+      * Strength I: melee dmg +1
+      * Strength II: HP +4, melee str +1
+      * Strength III: HP +5
+    * Strength III-dependent upgrades:
+      * Fury (exclusive with Initiative): melee berserker weapon special
+      * Initiative (exclusive with Fury): melee first strike weapon special
+    * Armor:
+      * Armor I: blade res +10%, pierce res +10%
+      * Armor II: impact res +10%
+      * Armor III: blade res +10%
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
   * Removed unused unit types: Elvish Civilian.
