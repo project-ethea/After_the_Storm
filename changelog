@@ -76,6 +76,24 @@ Version 0.9.17+dev:
       * Armor I: blade res +10%, pierce res +10%
       * Armor II: impact res +10%
       * Armor III: blade res +10%
+  * Decreased Anya's initial maximum XP at level 3 from 150 to 73.
+  * Revised Anya's AMLA tree:
+    * Strength:
+      * Strength I: melee dmg +1
+      * Strength II: HP +4, melee dmg +1
+      * Strength III (E3): HP +4, melee str +1
+      * Strength IV (E3): melee drains weapon special
+    * Focus:
+      * Focus I: noctum dmg +1
+      * Focus II: forest chill dmg +1, daze weapon special
+      * Focus III (E3): forest chill str +1
+      * Focus IV (E3): noctum dmg +1
+      * Focus V (E3) (req. Strength IV): noctum dmg +1, str +1
+    * Shielding:
+      * Shielding I: fire res +10%
+      * Shielding II: fire res +10%, cold res +10%
+      * Shielding III (E3): arcane res +10%
+    * Evasion (E3) (requires Strength II, Focus II): adds abscond ability
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
   * Removed unused unit types: Elvish Civilian.
