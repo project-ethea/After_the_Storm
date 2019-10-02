@@ -20,10 +20,18 @@ function wesnoth.theme_items.unit_status()
 			tooltip = _ "bound: This unit is bound to the movement range of another unit by a spell."
 		}})
 	end
+
 	if u.status.stunned then
 		table.insert(s, { "element", {
 			image = "misc/stunned-status-icon.png",
 			tooltip = _ "stunned: This unit is stunned. It cannot enforce its Zone of Control."
+		}})
+	end
+
+	if u.status.absconding then
+		table.insert(s, { "element", {
+			image = "misc/absconding-status-icon.png",
+			tooltip = _ "absconding: This unit made use of its absconding ability during its previous turn."
 		}})
 	end
 
