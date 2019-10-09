@@ -94,6 +94,7 @@ Version 0.9.17+dev:
       * Shielding II: fire res +10%, cold res +10%
       * Shielding III (E3): arcane res +10%
     * Evasion (E3) (requires Strength II, Focus II): adds abscond ability
+  * Increased Elyssa's arcane resistance from -10% to 0%.
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
   * Removed unused unit types: Elvish Civilian.
