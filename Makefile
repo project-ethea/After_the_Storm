@@ -5,7 +5,6 @@ ADDON_NAME           := After_the_Storm
 CAMPAIGNSYM          := CAMPAIGN_AFTER_THE_STORM
 
 DIST_VERSION_FILE    := dist/VERSION
-DIST_PASSPHRASE_FILE := ~/.wesnoth-pbl-pass
 
 DIFFICULTIES         := EASY NORMAL HARD
 PACKS                := \
