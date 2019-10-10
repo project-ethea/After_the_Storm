@@ -5,6 +5,8 @@ AFTER THE STORM - CHANGELOG
 Version 0.9.17+dev:
 -------------------
 * Scenarios:
+  * E1S4 - Terror at Dusk:
+    * Added Obsidian Battle Axe item.
   * E1S9.3 - The Triad, part 3:
     * Fix a unit animation not playing any sounds in a cutscene at the end of
       the scenario.
