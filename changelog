@@ -4,9 +4,11 @@ AFTER THE STORM - CHANGELOG
 
 Version 0.10.0-dev:
 -------------------
-* Music:
+* General:
   * Dropped workaround for Debian bug #782831/#780853 in libvorbis (also known
     as Wesnoth Gna.org bugs #23633 and #23599).
+  * Shared units, assets, code, and translations are now part of the Naia
+    library, also used by IftU version 2.1.0 and later.
 
 * Scenarios:
   * E1S4 - Terror at Dusk:
