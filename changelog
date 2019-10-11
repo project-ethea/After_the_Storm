@@ -13,6 +13,9 @@ Version 0.10.0-dev:
 * Scenarios:
   * E1S4 - Terror at Dusk:
     * Added Obsidian Battle Axe item.
+  * E1S7 - The Search for the Past:
+    * Added Vial of Fire Essence item.
+    * Disabled early-finish bonus and removed a few villages.
   * E1S9.3 - The Triad, part 3:
     * Fix a unit animation not playing any sounds in a cutscene at the end of
       the scenario.
