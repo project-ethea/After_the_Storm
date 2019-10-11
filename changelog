@@ -18,6 +18,8 @@ Version 0.10.0-dev:
     * Added Vial of Fire Essence item.
     * Disabled early-finish bonus and removed a few villages.
     * Various prose revisions.
+  * E1S8 - Fear:
+    * Minor cutscene tweaks.
   * E1S9.3 - The Triad, part 3:
     * Fix a unit animation not playing any sounds in a cutscene at the end of
       the scenario.
