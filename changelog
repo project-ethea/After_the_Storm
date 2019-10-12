@@ -23,6 +23,9 @@ Version 0.10.0-dev:
   * E1S9.3 - The Triad, part 3:
     * Fix a unit animation not playing any sounds in a cutscene at the end of
       the scenario.
+  * E1S12 - The Queen:
+    * Various tweaks to the boss fight and Shaxthal Hive Queen unit type for
+      balancing purposes.
   * E3S3 - Amidst the Ruins of Glamdrol:
     * Fixed Nar-hamoth costing upkeep to his side.
   * E3S4.2 - Gateway:
