@@ -11,6 +11,9 @@ Version 0.10.0-dev:
   * Shared units, assets, code, and translations are now part of the Naia
     library, also used by IftU version 2.1.0 and later.
 
+* Graphics:
+  * New or updated unit graphics: Shaxthal Hive Queen.
+
 * Scenarios:
   * E1S4 - Terror at Dusk:
     * Added Obsidian Battle Axe item.
