@@ -237,9 +237,9 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 
 	if variable ~= nil then
 		if res.status == -2 then
-			wesnoth.set_variable(variable, -1)
+			wml.variables[variable] = -1
 		else
-			wesnoth.set_variable(variable, res.value)
+			wml.variables[variable] = res.value
 		end
 	end
 end

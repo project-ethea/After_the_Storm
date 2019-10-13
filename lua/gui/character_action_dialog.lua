@@ -90,7 +90,7 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 
 	local function on_select()
 		local list_pos = wesnoth.get_dialog_value("listbox")
-		wesnoth.set_variable(var, list_pos - 1)
+		wml.variables[var] = list_pos - 1
 	end
 
 	local function preshow()
