@@ -244,7 +244,7 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 	end
 
 	local function preshow()
-		local info_ary = helper.get_variable_array(variable)
+		local info_ary = wml.array_access.get(variable)
 		if info_ary == nil then
 			do_error(string.format("could not read data from container '%s'", variable))
 			return
@@ -259,13 +259,13 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 			-- Obtain the WML nodes we need and their contents.
 			--
 
-			local effect_data = helper.get_child(info_cfg, "effect")
+			local effect_data = wml.get_child(info_cfg, "effect")
 			if effect_data == nil then
 				do_error(string.format("container '%s[%d]' has no 'effect' child node", variable, i - 1))
 				return
 			end
 
-			local ui_data = helper.get_child(info_cfg, "ui")
+			local ui_data = wml.get_child(info_cfg, "ui")
 			if ui_data == nil then
 				do_error(string.format("container '%s[%d]' has no 'ui' child node", variable, i - 1))
 				return
@@ -275,13 +275,13 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 			--	TODO?
 			-- end
 
-			local ui_side_a_data = helper.get_child(ui_data, "side_a")
+			local ui_side_a_data = wml.get_child(ui_data, "side_a")
 			if ui_side_a_data == nil then
 				do_error(string.format("container '%s[%d].ui' has no 'side_a' child node", variable, i - 1))
 				return
 			end
 
-			local ui_side_b_data = helper.get_child(ui_data, "side_b")
+			local ui_side_b_data = wml.get_child(ui_data, "side_b")
 			if ui_side_b_data == nil then
 				do_error(string.format("container '%s[%d].ui' has no 'side_b' child node", variable, i - 1))
 				return
@@ -381,4 +381,3 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 
 	wesnoth.show_dialog(dialog_definition, preshow)
 end
-

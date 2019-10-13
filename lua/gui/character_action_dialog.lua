@@ -96,7 +96,7 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 	local function preshow()
 		local list_pos = 1
 
-		for opt in helper.child_range(cfg, "option") do
+		for opt in wml.child_range(cfg, "option") do
 			wesnoth.set_dialog_value(opt.message, "listbox", list_pos, "item")
 			list_pos = list_pos + 1
 		end
