@@ -33,6 +33,8 @@ Version 0.10.0-dev:
     * Added Amber Ward item.
   * E2S5 - The Eastern Front:
     * Added Bow of Krysvelen item.
+  * E2S6 - The Voyage Home:
+    * Fix scrolling to speaking units not working at the start of sandstorms.
   * E3S3 - Amidst the Ruins of Glamdrol:
     * Fixed Nar-hamoth costing upkeep to his side.
   * E3S4.2 - Gateway:
