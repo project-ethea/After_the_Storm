@@ -42,6 +42,11 @@ Version 0.10.0-dev:
       a defeat condition after all payloads have been destroyed (issue #51).
   * E3S3 - Amidst the Ruins of Glamdrol:
     * Fixed Nar-hamoth costing upkeep to his side.
+  * E3S4.1 - Outpost of Hell:
+    * Fixed a rare case where a unit that is expected to generate death events
+      such as the main characters could sit on top of primed charges before
+      ending their turn and then get killed without consequences (unless they
+      were Elynia or General Bardyl).
   * E3S4.2 - Gateway:
     * Fix Kyara and Horo being killed prematurely and having their stats reset
       at the start of the cutscene as a result (issue #58).
