@@ -35,6 +35,11 @@ Version 0.10.0-dev:
     * Added Bow of Krysvelen item.
   * E2S6 - The Voyage Home:
     * Fix scrolling to speaking units not working at the start of sandstorms.
+  * E3S2.1 - Return to Raelthyn:
+    * Fixed Torancyn speaking right before the last payload is destroyed rather
+      than right afterwards (issue #51).
+    * Fixed objectives continuing to list the destruction of Adavyan’s keep as
+      a defeat condition after all payloads have been destroyed (issue #51).
   * E3S3 - Amidst the Ruins of Glamdrol:
     * Fixed Nar-hamoth costing upkeep to his side.
   * E3S4.2 - Gateway:
