@@ -16,7 +16,7 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 	end
 
 	local function sigil_image_path(column, row)
-		return string.format("icons/original-ten-sigils.png~CROP(%d, %d, 60, 60)", 60*column, 60*row)
+		return ("icons/original-ten-sigils.png~CROP(%d, %d, 60, 60)"):format(60 * column, 60 * row)
 	end
 
 	local list_definition = {
@@ -246,7 +246,7 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 	local function preshow()
 		local info_ary = wml.array_access.get(variable)
 		if info_ary == nil then
-			do_error(string.format("could not read data from container '%s'", variable))
+			do_error(("could not read data from container '%s'"):format(variable))
 			return
 		end
 
@@ -261,13 +261,13 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 
 			local effect_data = wml.get_child(info_cfg, "effect")
 			if effect_data == nil then
-				do_error(string.format("container '%s[%d]' has no 'effect' child node", variable, i - 1))
+				do_error(("container '%s[%d]' has no 'effect' child node"):format(variable, i - 1))
 				return
 			end
 
 			local ui_data = wml.get_child(info_cfg, "ui")
 			if ui_data == nil then
-				do_error(string.format("container '%s[%d]' has no 'ui' child node", variable, i - 1))
+				do_error(("container '%s[%d]' has no 'ui' child node"):format(variable, i - 1))
 				return
 			end
 
@@ -277,13 +277,13 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 
 			local ui_side_a_data = wml.get_child(ui_data, "side_a")
 			if ui_side_a_data == nil then
-				do_error(string.format("container '%s[%d].ui' has no 'side_a' child node", variable, i - 1))
+				do_error(("container '%s[%d].ui' has no 'side_a' child node"):format(variable, i - 1))
 				return
 			end
 
 			local ui_side_b_data = wml.get_child(ui_data, "side_b")
 			if ui_side_b_data == nil then
-				do_error(string.format("container '%s[%d].ui' has no 'side_b' child node", variable, i - 1))
+				do_error(("container '%s[%d].ui' has no 'side_b' child node"):format(variable, i - 1))
 				return
 			end
 
@@ -340,10 +340,10 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 					effect_desc = effect_desc .. bullet_list_item(string.format(fmt, effect_data.divide))
 				end
 			elseif effect_data.apply_to == nil then
-				do_error(string.format("%s[%d].effect.apply_to attribute missing", variable, i - 1))
+				do_error(("%s[%d].effect.apply_to attribute missing"):format(variable, i - 1))
 				return
 			else
-				do_error(string.format("%s[%d].effect.apply_to=\"%s\", which is not implemented yet", variable, i - 1, effect_data.apply_to))
+				do_error(("%s[%d].effect.apply_to=\"%s\", which is not implemented yet")::format(variable, i - 1, effect_data.apply_to))
 				return
 			end
 

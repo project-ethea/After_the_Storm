@@ -29,7 +29,7 @@ function wesnoth.wml_actions.s9_area_spawns(cfg)
 		if #locs == 0 then
 			return
 		end
-		local r = helper.rand(string.format("1..%d", #locs))
+		local r = helper.rand(("1..%d"):format(#locs))
 		local x, y = locs[r][1], locs[r][2]
 		spawn_loyal_player_unit("Skeleton", x, y)
 		table.remove(locs, r)
@@ -39,7 +39,7 @@ function wesnoth.wml_actions.s9_area_spawns(cfg)
 		if #locs == 0 then
 			return
 		end
-		local r = helper.rand(string.format("1..%d", #locs))
+		local r = helper.rand(("1..%d"):format(#locs))
 		local x, y = locs[r][1], locs[r][2]
 		spawn_loyal_player_unit("Ghost", x, y)
 		table.remove(locs, r)
@@ -87,8 +87,8 @@ function wesnoth.wml_actions.store_vacant_spawn_location(cfg)
 	for k = 1, radius do
 		local loc = wesnoth.get_locations({
 			-- On map.
-			x = string.format("1-%d", w),
-			y = string.format("1-%d", h),
+			x = ("1-%d"):format(w),
+			y = ("1-%d"):format(h),
 			-- Not impassable.
 			{ "not", {
 				terrain = "X*,X*^*,*^X*",
