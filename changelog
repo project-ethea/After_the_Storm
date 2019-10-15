@@ -150,6 +150,8 @@ Version 0.10.0-dev:
     increased from 15-3 to 19-3.
   * The Stun effect is now cleared off affected units at the end of the
     controlling side's turn rather than at the start.
+  * Chaos Hound line is now considered part of the wolves race and receives
+    names and traits accordingly.
 
 
 Version 0.9.17:
