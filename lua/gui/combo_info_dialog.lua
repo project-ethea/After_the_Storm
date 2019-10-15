@@ -343,7 +343,7 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 				do_error(("%s[%d].effect.apply_to attribute missing"):format(variable, i - 1))
 				return
 			else
-				do_error(("%s[%d].effect.apply_to=\"%s\", which is not implemented yet")::format(variable, i - 1, effect_data.apply_to))
+				do_error(("%s[%d].effect.apply_to=\"%s\", which is not implemented yet"):format(variable, i - 1, effect_data.apply_to))
 				return
 			end
 
