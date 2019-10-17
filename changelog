@@ -49,6 +49,7 @@ Version 0.10.0-dev:
     * Minor balancing tweaks.
   * E3S3 - Amidst the Ruins of Glamdrol:
     * Fixed Nar-hamoth costing upkeep to his side.
+    * Reworked Nar-hamoth mini-boss sequence (issue #53).
   * E3S4.1 - Outpost of Hell:
     * Fixed a rare case where a unit that is expected to generate death events
       such as the main characters could sit on top of primed charges before
