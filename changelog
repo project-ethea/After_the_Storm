@@ -48,6 +48,8 @@ Version 0.10.0-dev:
       a defeat condition after all payloads have been destroyed (issue #51).
     * Minor balancing tweaks.
   * E3S3 - Amidst the Ruins of Glamdrol:
+    * Added Obsidian Battle Axe item.
+    * Added Potion of Bloodlust item.
     * Fixed Nar-hamoth costing upkeep to his side.
     * Reworked Nar-hamoth mini-boss sequence (issue #53).
   * E3S4.1 - Outpost of Hell:
