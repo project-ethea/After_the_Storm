@@ -53,6 +53,7 @@ Version 0.10.0-dev:
     * Fixed Nar-hamoth costing upkeep to his side.
     * Reworked Nar-hamoth mini-boss sequence (issue #53).
   * E3S4.1 - Outpost of Hell:
+    * Added Ring of Agility item.
     * Fixed a rare case where a unit that is expected to generate death events
       such as the main characters could sit on top of primed charges before
       ending their turn and then get killed without consequences (unless they
