@@ -63,7 +63,7 @@ Version 0.10.0-dev:
     * Fix Kyara and Horo being killed prematurely and having their stats reset
       at the start of the cutscene as a result (issue #58).
   * E3S5 - Pass of Sorrows:
-    * Added Vial of Shardia's Essence item.
+    * Added Vial of Shardia's Tears item.
   * E3S7A - Dark Fire:
     * Fix dialogue typo in part 2 reported by Inky.
   * E3S8A - Interim:
