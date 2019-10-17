@@ -145,6 +145,13 @@ Version 0.10.0-dev:
   * Increased Shaxthal Custodian Drone's HP from 79 to 88.
   * Increased Shaxthal Custodian Drone's fire ranged attack from 5-14 to 7-14.
   * Increased Shaxthal Custodian Drone's impact ranged attack from 12-4 to 13-4.
+  * Increased Shaxthal Warlord Nar-hamoth's HP from 91 to 99 and gave him the
+    steadfast ability.
+  * Increased Shaxthal Warlord Nar-hamoth's arcane resistance from -10% to 0%.
+  * Increased Shaxthal Warlord Nar-hamoth's melee attack from 14-3 to 15-3 and
+    gave it the shock special.
+  * Increased Shaxthal Warlord Nar-hamoth's ranged attack from 9-3 to 10-3 and
+    gave it the drains special.
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
   * Removed unused unit types: Elvish Civilian.
