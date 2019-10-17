@@ -152,6 +152,7 @@ Version 0.10.0-dev:
     gave it the shock special.
   * Increased Shaxthal Warlord Nar-hamoth's ranged attack from 9-3 to 10-3 and
     gave it the drains special.
+  * Increased Shaxthal Warlord Elyssa's HP from 94 to 145.
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
   * Removed unused unit types: Elvish Civilian.
