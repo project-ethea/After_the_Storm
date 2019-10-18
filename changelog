@@ -66,6 +66,8 @@ Version 0.10.0-dev:
     * Added Vial of Shardia's Tears item.
     * Added Staff of Akhlys item.
     * Minor balancing changes.
+  * E3S6 - Divergence:
+    * Use the polluted environment version of the ToD schedule.
   * E3S7A - Dark Fire:
     * Fix dialogue typo in part 2 reported by Inky.
   * E3S8A - Interim:
