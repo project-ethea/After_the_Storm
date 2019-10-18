@@ -70,15 +70,15 @@ Version 0.10.0-dev:
     * Use the polluted environment version of the ToD schedule.
   * E3S7A - Dark Fire:
     * Fix dialogue typo in part 2 reported by Inky.
-  * E3S8A - Interim:
-    * Fix dialogue typo reported by Inky.
-  * E3S8C - Breakdown:
-    * Fix an error rendering this scenario uncompletable.
-    * Minor cutscene tweaks (issue #64, #65).
   * E3S7B - Dark Sea:
     * Use the polluted environment version of the ToD schedule.
   * E3S8A - Interim:
     * Made an item easier to find.
+    * Fix dialogue typo reported by Inky.
+    * Cosmetic changes.
+  * E3S8C - Breakdown:
+    * Fix an error rendering this scenario uncompletable.
+    * Minor cutscene tweaks (issue #64, #65).
   * E3S8D - Destiny, Part 2:
     * Fix an issue where Ergea might announce more than once that either the
       Iron Council or the Storm Sisters have yet to be defeated (reported by
