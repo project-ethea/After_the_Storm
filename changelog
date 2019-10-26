@@ -171,6 +171,7 @@ Version 0.10.0-dev:
   * Increased Lumeril Guard and Lumeril Glyph Mistress' arcane resistance from
     -10% to 0%.
   * Increased Lumeril Glyph Mistress' HP from 106 to 114.
+  * Increased Lumeril Glyph's arcane resistance from -50% to -30%.
   * Increased Lumeril Glyph's HP from 77 to 99 and gave it the regenerates
     ability.
   * Increased Magnum Suit's melee attack from 21-2 to 22-2 and gave it the
