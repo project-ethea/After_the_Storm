@@ -175,7 +175,8 @@ Version 0.10.0-dev:
     seismic special.
   * Increased Magnum Suit's ranged attack from 19-3 to 11-14 and gave it the
     swarm and marksman weapon specials.
-  * Gave the leadership ability to the Demon Spelldancer.
+  * Increased Demoness Spelldancer's HP from 42 to 53 and gave her the
+    leadership ability.
   * Physical endurance no longer protects against cold and fire damage.
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
