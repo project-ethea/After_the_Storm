@@ -35,11 +35,11 @@ Version 0.10.0-dev:
     * Added Bow of Krysvelen item.
   * E2S6 - The Voyage Home:
     * Fix scrolling to speaking units not working at the start of sandstorms.
-  * E3S8 - And then there was Chaos:
+  * E2S8 - And then there was Chaos:
     * Minor balancing tweaks.
-  * E3S9 - New Hive:
+  * E2S9 - New Hive:
     * Minor balancing tweaks.
-  * E3S11 - A Final Confrontation:
+  * E2S11 - A Final Confrontation:
     * Minor balancing tweaks.
   * E3S2.1 - Return to Raelthyn:
     * Fixed Torancyn speaking right before the last payload is destroyed rather
