@@ -78,6 +78,7 @@ Version 0.10.0-dev:
     * Cosmetic changes.
   * E3S8B - Destiny, Part 1:
     * Ensure the player has enough gold to recall units in the boss arena.
+    * Minor balancing changes.
   * E3S8C - Breakdown:
     * Fix an error rendering this scenario uncompletable.
     * Minor cutscene tweaks (issue #64, #65).
