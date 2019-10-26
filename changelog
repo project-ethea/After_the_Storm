@@ -166,7 +166,8 @@ Version 0.10.0-dev:
     gave it the drains special.
   * Increased Shaxthal Warlord Elyssa's HP from 94 to 145.
   * Increased Lumeril Glyph Mistress' HP from 106 to 114.
-  * Increased Lumeril Glyph's HP from 77 to 99.
+  * Increased Lumeril Glyph's HP from 77 to 99 and gave it the regenerates
+    ability.
   * Physical endurance no longer protects against cold and fire damage.
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
