@@ -3,6 +3,9 @@
 -- campaign.
 ---
 
+-- #textdomain wesnoth-After_the_Storm
+local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
+
 ----------
 -- E1S9 --
 ----------
@@ -180,4 +183,128 @@ function wesnoth.wml_actions.dreamwalk(cfg)
 		-- Might be needed for this sequence.
 		check_passability = false
 	}
+end
+
+-------------
+-- Globals --
+-------------
+
+function wesnoth.wml_actions.seismic_impact(cfg)
+	local T = wml.tag
+	local ctx = wesnoth.current.event_context
+
+	--
+	-- BIG FAT NOTE: This action is not entirely self-contained. An ancillary
+	-- event to handle the stunned status effect is needed and is not injected
+	-- by the action.
+	--
+	-- Additionally, the source and target are hardcoded to be the primary and
+	-- secondary unit, respectively, along with their used attacks. You will
+	-- need to normalize the primary/secondary selections using event
+	-- dispatching since they swap places during an attack sequence.
+	--
+	-- ALSO, this is strictly-speaking a crowd-control weapon special. However,
+	-- since it cannot be used by the player, the CC immunity check isn't made
+	-- here since it's assumed to only affect player units, which are never
+	-- counted as immune to CC.
+	--
+
+	local src = wesnoth.get_unit(ctx.x1, ctx.y1)
+	local src_atk = wml.get_child(ctx, "weapon")
+
+	local dst = wesnoth.get_unit(ctx.x2, ctx.y2)
+	local dst_atk = wml.get_child(ctx, "second_weapon")
+
+	--wesnoth.wml_actions.inspect {}
+
+	-- 25% chance to return true
+	local function confirm_status_inflict()
+		return helper.rand("A,A,A,A,B,B,B,B,C,C,C,C,D,D,D,D") == "A"
+	end
+
+	local ui_sound_played = false
+
+	-- Applies the weapon special's effects on a singular target
+	local function apply_seismic_status(u)
+		local status_changed = false
+
+		if not u.status.stunned then
+			u.status.stunned = true
+			status_changed = true
+		end
+
+		if not u.status.slowed then
+			u.status.slowed = true
+			status_changed = true
+		end
+
+		wesnoth.add_modification(u, "object", {
+			id = "seismic_effect_obj",
+			silent = true,
+			duration = "turn end",
+
+			T.effect {
+				apply_to = "image_mod",
+				add = "CS(50,50,0)"
+			},
+			T.effect {
+				apply_to = "zoc",
+				value = false
+			}
+		})
+
+		-- Only play sounds once during this event, otherwise weird things may
+		-- happen (such as running into the concurrent sound samples limit)
+
+		if status_changed and not ui_sound_played then
+			wesnoth.play_sound("slowed.wav")
+			ui_sound_played = true
+		end
+
+		wesnoth.float_label(u.x, u.y, ("<span foreground='#c4c480'>%s</span>"):format(_("seism")))
+	end
+
+
+	local function impact_additional_target(u, amount)
+		-- Splash damage
+		wesnoth.wml_actions.harm_unit {
+			T.filter {
+				x = u.x, y = u.y
+			},
+			T.filter_attack(src_atk),
+			alignment = src.__cfg.alignment,
+			damage_type = src_atk.type,
+			amount = src_atk.damage * 0.75,
+			kill = false,
+			experience = true,
+			fire_event = true,
+			animate = false,
+			delay = 0
+		}
+
+		if confirm_status_inflict() then
+			apply_seismic_status(u)
+		end
+	end
+
+	-- Apply status effects to the original target first
+
+	if confirm_status_inflict() then
+		apply_seismic_status(dst)
+	end
+
+	-- Find additional targets
+
+	local splash_units = wesnoth.get_units {
+		T.filter_adjacent { x = dst.x, y = dst.y },
+		T.filter_side { T.enemy_of { side = src.side } }
+	}
+
+	if not splash_units then
+		return
+	end
+
+	for i, splash_u in ipairs(splash_units) do
+		impact_additional_target(splash_u)
+	end
 end
