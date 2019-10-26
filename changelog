@@ -177,6 +177,7 @@ Version 0.10.0-dev:
     swarm and marksman weapon specials.
   * Increased Demoness Spelldancer's HP from 42 to 53 and gave her the
     leadership ability.
+  * Increased Valdemon Basher's HP from 52 to 57.
   * Physical endurance no longer protects against cold and fire damage.
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
