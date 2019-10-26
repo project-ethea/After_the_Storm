@@ -168,6 +168,10 @@ Version 0.10.0-dev:
   * Increased Lumeril Glyph Mistress' HP from 106 to 114.
   * Increased Lumeril Glyph's HP from 77 to 99 and gave it the regenerates
     ability.
+  * Increased Magnum Suit's melee attack from 21-2 to 22-2 and gave it the
+    seismic special.
+  * Increased Magnum Suit's ranged attack from 19-3 to 11-14 and gave it the
+    swarm and marksman weapon specials.
   * Physical endurance no longer protects against cold and fire damage.
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
