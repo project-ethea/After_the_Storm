@@ -182,6 +182,11 @@ Version 0.10.0-dev:
     leadership ability.
   * Increased Valdemon Basher's HP from 52 to 57.
   * Increased Serpent Messenger's HP from 63 to 66.
+  * Increased Shaxthal Deathbringer Alpha's arcane resistance from -10% to 10%.
+  * Increased Angel of Blood's arcane resistance from -10% to 20%.
+  * Increased Angel of Blood's fire resistance from 10% to 20%.
+  * Increased Angel of Blood's cold resistance from 10% to 20%.
+  * Increased Blood Core's arcane resistance from -10% to 20%.
   * Physical endurance no longer protects against cold and fire damage.
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
