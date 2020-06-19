@@ -184,6 +184,10 @@ Version 0.10.0-dev:
   * Increased Valdemon Basher's HP from 52 to 57.
   * Increased Serpent Messenger's HP from 63 to 66.
   * Increased Shaxthal Deathbringer Alpha's arcane resistance from -10% to 10%.
+  * Gave terror and leadership to Shaxthal Deathbringer Alpha.
+  * Increased Shaxthal Deathbringer Alpha's melee attack from 22-2 to 24-2.
+  * Increased Shaxthal Deathbringer Alpha's arcane ranged attack from 11-6 to
+    13-6.
   * Increased Angel of Blood's arcane resistance from -10% to 20%.
   * Increased Angel of Blood's fire resistance from 10% to 20%.
   * Increased Angel of Blood's cold resistance from 10% to 20%.
