@@ -176,11 +176,11 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 											T.grid {
 												T.row {
 													T.column {
-														horizontal_alignment = "left",
+														horizontal_alignment = "right",
 														T.image { label = sigil_image_path(0, 1) }
 													},
 													T.column {
-														horizontal_alignment = "right",
+														horizontal_alignment = "left",
 														T.image { label = sigil_image_path(3, 0) }
 													}
 												}
@@ -265,23 +265,13 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 				return
 			end
 
-			local ui_data = wml.get_child(info_cfg, "ui")
-			if ui_data == nil then
-				do_error(("container '%s[%d]' has no 'ui' child node"):format(variable, i - 1))
-				return
-			end
-
-			-- if ui_data.encountered ~= true then
-			--	TODO?
-			-- end
-
-			local ui_side_a_data = wml.get_child(ui_data, "side_a")
+			local ui_side_a_data = wml.get_child(info_cfg, "side_a")
 			if ui_side_a_data == nil then
 				do_error(("container '%s[%d].ui' has no 'side_a' child node"):format(variable, i - 1))
 				return
 			end
 
-			local ui_side_b_data = wml.get_child(ui_data, "side_b")
+			local ui_side_b_data = wml.get_child(info_cfg, "side_b")
 			if ui_side_b_data == nil then
 				do_error(("container '%s[%d].ui' has no 'side_b' child node"):format(variable, i - 1))
 				return
@@ -351,8 +341,9 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 			if symmetric then
 				symmetry_icon = "misc/gui-combo-arrows.png~CROP(60, 0, 60, 60)"
 
-				effect_desc = effect_desc .. "\n"
+				effect_desc = effect_desc .. "\n<span color='#baac7d'>"
 				effect_desc = effect_desc .. _ "This combination is symmetric, and the attacks involved may be used in any order."
+				effect_desc = effect_desc .. "</span>"
 			end
 
 			wesnoth.set_dialog_value(ui_side_a_data.attack_icon, "combo_list", i, "side_a_icon")
