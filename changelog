@@ -178,6 +178,7 @@ Version 0.10.0-dev:
     seismic special.
   * Increased Magnum Suit's ranged attack from 19-3 to 11-14 and gave it the
     swarm and marksman weapon specials.
+  * Gave leadership to Magnum Suit.
   * Increased Demoness Spelldancer's HP from 42 to 53 and gave her the
     leadership ability.
   * Increased Valdemon Basher's HP from 52 to 57.
@@ -203,6 +204,7 @@ Version 0.10.0-dev:
     controlling side's turn rather than at the start.
   * Chaos Hound line is now considered part of the wolves race and receives
     names and traits accordingly.
+  * Terror ability no longer affects same-level units.
 
 
 Version 0.9.17:
