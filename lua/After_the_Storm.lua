@@ -267,6 +267,30 @@ function wesnoth.wml_actions.push_units_away_from(cfg)
 	end
 end
 
+-- DEBUG ONLY
+
+function wesnoth.wml_actions.dbg_test_variation(cfg)
+	local new_variation = cfg.variation_name
+
+	local units = wesnoth.get_units({ side=2, canrecruit=true })
+	if not units then
+		return
+	end
+
+	local u = units[1]
+
+	wesnoth.wml_actions.object {
+		silent = true,
+		{ "filter", {
+			x = u.x, y = u.y
+		} },
+		{ "effect", {
+			apply_to = "variation",
+			name = new_variation
+		} }
+	}
+end
+
 -------------
 -- Globals --
 -------------
