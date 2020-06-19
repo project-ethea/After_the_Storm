@@ -57,7 +57,7 @@ return {
 							moves = "current",
 							variable = "tmp_locs"
 						}
-						local tir = H.get_variable_array("tmp_locs")
+						local tir = wml.array_access.get("tmp_locs")
 						W.clear_variable { name = "tmp_locs" }
 						--print("reachable locs:",u.id,#tir)
 
