@@ -122,6 +122,35 @@ end
 -- E3S9 --
 ----------
 
+function wesnoth.wml_actions.final_boss_hp_tint(cfg)
+	-- NOTE: This is not a SUF. In the future the id= attribute may have more
+	-- advanced semantics, different from an actual SUF.
+	local unit_id = cfg.id or
+		helper.wml_error("[screen_hp_tint]: No unit id specified")
+	local u = wesnoth.get_units({ id = unit_id })[1]
+
+	if not u then
+		wprintf(W_WARN, "[screen_hp_tint]: Unit disappeared early?")
+		return
+	end
+
+	--
+	-- Darken the screen on the green and blue channels (the
+	-- DARKEN_RED_SCREEN macro) as follows:
+	--
+	-- HP/MAX_HP = 1.0 -> (R, G, B) = (0, -10, -10)
+	-- ...
+	-- HP/MAX_HP = 0.0 -> (R, G, B) = (0, -60, -60)
+	--
+
+	local hp_ratio = u.hitpoints / u.max_hitpoints
+	local s = helper.round(-10 - 50 * (1.0 - hp_ratio))
+
+	wprintf(W_DBG, "[screen_hp_tint] HP: %d/%d (%.1f) -> %d", u.hitpoints, u.max_hitpoints, hp_ratio, s)
+
+	wesnoth.wml_actions.color_adjust { red = 0, green = s, blue = s }
+end
+
 local location_set = wesnoth.require("lua/location_set.lua")
 
 function wesnoth.wml_actions.dreamwalk(cfg)
