@@ -214,6 +214,59 @@ function wesnoth.wml_actions.dreamwalk(cfg)
 	}
 end
 
+-----------
+-- E3S10 --
+-----------
+
+function wesnoth.wml_actions.push_units_away_from(cfg)
+	local center = { x = cfg.from_x, y = cfg.from_y }
+	if not center.x or not center.y then
+		helper.wml_error("[puaf]: Missing center coordinates")
+	end
+
+	local suf = wml.get_child(cfg, "filter") or
+		helper.wml_error("[puaf]: Missing SUF")
+
+	local units = wesnoth.get_units(suf)
+
+	if not units then
+		wprintf(W_WARN, "[puaf]: No units matched SUF (???)")
+		return
+	end
+
+	local map_w, map_h = wesnoth.get_map_size()
+
+	local function location_is_on_map(pos)
+		return pos and pos[1] >= 1 and pos[2] >= 1 and pos[1] <= map_w and pos[2] <= map_h
+	end
+
+	local function unit_can_stand_on_location(pos, unit)
+		local new_pos = {0, 0}
+		new_pos[1], new_pos[2] = wesnoth.find_vacant_tile(pos[1], pos[2], unit)
+		return new_pos[1] == pos[1] and new_pos[2] == pos[2]
+	end
+
+	for i, u in ipairs(units) do
+		local pos = { u.x, u.y }
+		local dir = wesnoth.map.get_relative_dir(pos, center) or "sw"
+		local new_pos = wesnoth.map.get_direction(pos, dir, -1)
+
+		if location_is_on_map(new_pos) and unit_can_stand_on_location(new_pos, u) then
+			-- NOTE: This is redundant but you can never be too safe, right?
+			if wesnoth.get_unit(new_pos[1], new_pos[2]) then
+				helper.wml_error("[puaf]: Wesnoth is on drugs, call an ambulance")
+			end
+
+			wprintf(W_DBG, "[puaf]: Move unit %s -%s (%d,%d) -> (%d,%d)", u.id, dir, pos[1], pos[2], new_pos[1], new_pos[2])
+
+			u:extract()
+			u:to_map(new_pos[1], new_pos[2])
+		else
+			wprintf(W_DBG, "[puaf]: Can't push unit %s -%s (%d,%d) -> (%d,%d), destination is occupied", u.id, dir, pos[1], pos[2], new_pos[1], new_pos[2])
+		end
+	end
+end
+
 -------------
 -- Globals --
 -------------
