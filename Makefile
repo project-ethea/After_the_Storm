@@ -12,6 +12,11 @@ PACKS                := \
 	CAMPAIGN_AFTER_THE_STORM_EPISODE_II \
 	CAMPAIGN_AFTER_THE_STORM_EPISODE_III
 
+SCENARIO_DIRS        := \
+	episode1/scenarios \
+	episode2/scenarios \
+	episode3/scenarios
+
 include ../Naia/tools/Makefile.wmltools
 
 normalize-textdomains:
