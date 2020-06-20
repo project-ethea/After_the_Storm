@@ -8,8 +8,8 @@ A copy of the GNU General Public License is provided in COPYING.
 See Naia/ART_LICENSE for licensing information on content provided under the Naia/ subdirectory.
 
 
-Original Unit Art
------------------
+Original Unique Unit Art (CC BY-NC-ND 4.0)
+------------------------------------------
 
 Copyright (C) 2006 - 2020 by Iris Morelle <shadowm@wesnoth.org>
 
@@ -50,6 +50,7 @@ Elynia unit sprites:
 
 Anya unit sprites:
 
+ * images/units/human-peasants/civilian+female.png
  * images/units/faeries/dusk.png
  * images/units/faeries/night-nymph.png
  * images/units/faeries/nightshade-fire-awakening-1.png
@@ -99,10 +100,20 @@ Shaxthal unit sprites:
 
 Demon unit sprites:
 
+ * images/units/demons/errant-executor.png
  * images/units/demons/gatekeeper-blood.png
  * images/units/demons/gatekeeper-ethea.png
  * images/units/demons/guardian-of-life-uria.png
  * images/units/demons/hellbent-tide.png
+ * images/units/demons/lumeril-glyph-mistress.png
+ * images/units/demons/slashing-gale+female.png
+ * images/units/spirits/lumeril-glyph-break-1.png
+ * images/units/spirits/lumeril-glyph-break-2.png
+ * images/units/spirits/lumeril-glyph-break-3.png
+ * images/units/spirits/lumeril-glyph-break-4.png
+ * images/units/spirits/lumeril-glyph-break-5.png
+ * images/units/spirits/lumeril-glyph.png
+
 
 Mal Hekuba unit sprites:
 
@@ -127,3 +138,26 @@ Faerie unit sprites:
 Mechanical unit sprites:
 
  * images/units/mechanical/magnum-suit.png
+
+
+Original Generic Unit Art (CC BY-SA 4.0)
+----------------------------------------
+
+Copyright (C) 2006 - 2020 by Iris Morelle <shadowm@wesnoth.org>
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <https://creativecommons.org/licenses/by-sa/4.0/> or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+ * images/units/faeries/domain-guard.png
+ * images/units/faeries/eventide-dancer.png
+ * images/units/faeries/fallen.png
+ * images/units/faeries/naiad.png
+ * images/units/demons/lumeril-guard.png
+ * images/units/demons/messenger.png
+ * images/units/demons/shapeshifter.png
+ * images/units/demons/shapeshifter+female.png
+ * images/units/demons/shapeshifter+male.png
+ * images/units/demons/spelldancer.png
+ * images/units/demons/storm.png
+ * images/units/demons/storm+female.png
+ * images/units/imps/serpent-messenger.png
+ * images/units/imps/valdemon-basher.png
