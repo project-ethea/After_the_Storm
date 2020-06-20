@@ -1,17 +1,15 @@
-======================================
-AFTER THE STORM DEVELOPMENT TO-DO LIST
-======================================
+# After the Storm Development To-Do List
 
   Legend: [!] Important - [L] Low - [D] Lowest/Wishlist - [M] 1.0.0 target -
           [?] Undecided/Tentative - [x] Done
 
-* General
+## General
   * [D] Distribute resources in a separate add-on used by IftU and AtS
     * Depends on the implementation of different add-on dependency tiers in
       mainline code
   * [M] Optimize usage of SUFs and SLFs throughout the entire campaign
 
-* Balancing [M]
+## Balancing [M]
   * [L] E1S3 (make it harder to win by just sitting in a map corner)
   * [L] E1S7 (increase difficulty)
   * [!] E1S11.1 (increase difficulty by making a specific side use offensive
@@ -24,15 +22,15 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
     way to compensate)
   * [L] E3S10 (increase gameplay fluidity before Zhangor stage)
 
-* Cutscenes
+## Cutscenes
   * E1S9.2
     * [M] The sequence with Ivyel needs to be rewritten to make it more
       interesting and difficult
 
-* Units (with currently finished art)
+## Units (with currently finished art)
   * [M] Ivyel (E1S9.2 appearance) needs better/more interesting stats
 
-* Pixel art/new units
+## Pixel art/new units
   * Baseframes
     * [D] Verlissh Control Spire needs to be further differentiated from its
       obvious base
@@ -55,7 +53,7 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
     * [L] Basic animations for prominent generic units
     * [D] Full animations for all units
 
-* Portraits
+## Portraits
   * [D] Elynia mood portraits set, plus special portrait for E2S12 (injured
     variation)
   * [D] Mal Keshar
@@ -91,7 +89,7 @@ AFTER THE STORM DEVELOPMENT TO-DO LIST
   * [!] Aradellys portrait (E3S13)
   * [!] Uria (in plain view) portrait (E3S13)
 
-* Terrains
+## Terrains
   * [!] Dark hive spawn holes need to be made more visible on lair floor tiles
   * [L] More variety in dark hive tilesets
   * [L] Dark hive artifacts/engines/etc.
