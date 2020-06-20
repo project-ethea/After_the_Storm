@@ -215,8 +215,9 @@ Version 0.10.0-dev:
   * Chaos Hound line is now considered part of the wolves race and receives
     names and traits accordingly.
   * Terror ability no longer affects same-level units.
-  * Demolition ability's AoE no longer crosses through cave walls and other
-    impassable terrains.
+  * Demolition ability's AoE no longer crosses through cave walls, chasms, and
+    other impassable or unwalkable terrains.
+  * Fixed issue where Demolition could turn water into dirt.
 
 
 Version 0.9.17:
