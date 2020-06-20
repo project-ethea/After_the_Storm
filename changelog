@@ -195,6 +195,7 @@ Version 0.10.0-dev:
   * Increased Shaxthal Deathbringer Alpha's arcane ranged attack from 11-6 to
     13-6.
   * Complete rework of the Angel of Blood and Blood Core units.
+  * Added combat stats to the standard Shaxthal Deathbringer.
   * Physical endurance no longer protects against cold and fire damage.
   * Replaced classic Quenoth elves with their 1.14 versions. As a side-effect
     of this, Kyara is now a mounted level 2 Quenoth Archer.
