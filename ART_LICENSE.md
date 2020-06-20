@@ -114,7 +114,6 @@ Demon unit sprites:
  * images/units/spirits/lumeril-glyph-break-5.png
  * images/units/spirits/lumeril-glyph.png
 
-
 Mal Hekuba unit sprites:
 
  * images/units/undead-necromancers/chaos-cardinal-fused-fl.png
@@ -152,6 +151,10 @@ Copyright (C) 2006 - 2020 by Iris Morelle <shadowm@wesnoth.org>
 
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <https://creativecommons.org/licenses/by-sa/4.0/> or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
+ * images/units/elves-wood/acolyte.png
+ * images/units/elves-wood/ascetic.png
+ * images/units/elves-wood/avatar.png
+ * images/units/elves-wood/mystic.png
  * images/units/faeries/domain-guard.png
  * images/units/faeries/eventide-dancer.png
  * images/units/faeries/fallen.png
