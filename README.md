@@ -1,5 +1,5 @@
 After the Storm
-================================================================================
+===============
 
 **After the Storm** (**AtS**) is an add-on campaign for the
 **[Battle for Wesnoth][1]**.
@@ -33,7 +33,7 @@ playing this campaign.
 
 
 Installing After the Storm
---------------------------------------------------------------------------------
+--------------------------
 
 Requirements:
  * Battle for Wesnoth 1.14.x.
@@ -64,7 +64,7 @@ you might want to make sure these options are enabled under
 
 
 Reporting issues
---------------------------------------------------------------------------------
+----------------
 
 If you encounter any issues, you may report them at the campaign’s
 [development topic][5] on the Wesnoth.org forums or its [issue tracker][6] on
@@ -78,7 +78,7 @@ provide a saved game file to reproduce it.
 
 
 Contacting the author
---------------------------------------------------------------------------------
+---------------------
 
 You may contact the author of this campaign via forum PM to shadowm on the
 [Wesnoth.org forums][7], or through her personal [Discord server][8].
