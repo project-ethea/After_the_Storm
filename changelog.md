@@ -1,5 +1,4 @@
-===========================
-AFTER THE STORM - CHANGELOG
+After the Storm - Changelog
 ===========================
 
 Version 0.10.0-dev:
