@@ -8,8 +8,8 @@ A copy of the GNU General Public License is provided in COPYING.
 See Naia/ART_LICENSE for licensing information on content provided under the Naia/ subdirectory.
 
 
-Original Unique Unit Art (CC BY-NC-ND 4.0)
-------------------------------------------
+Original Unique Art (CC BY-NC-ND 4.0)
+-------------------------------------
 
 Copyright (C) 2006 - 2020 by Iris Morelle <shadowm@wesnoth.org>
 
@@ -139,9 +139,14 @@ Mechanical unit sprites:
 
  * images/units/mechanical/magnum-suit.png
 
+ Aspect sigils:
 
-Original Generic Unit Art (CC BY-SA 4.0)
-----------------------------------------
+ * images/icons/original-ten-sigils.png
+ * images/story/original-ten.png
+
+
+Original Generic Art (CC BY-SA 4.0)
+-----------------------------------
 
 Copyright (C) 2006 - 2020 by Iris Morelle <shadowm@wesnoth.org>
 
