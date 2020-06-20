@@ -89,6 +89,8 @@ Version 0.10.0-dev:
       Inky).
     * Gave the swarm team a unique team color instead of a default-constructed
       one that produces inconsistent results on 1.14.
+  * E3S9 - Dark Depths:
+    * Various balancing changes to boss fights.
   * E3S10 - Blood:
     * Added a couple of optional walls of text for people who somehow believe
       my campaign didn't already have enough walls of text before.
