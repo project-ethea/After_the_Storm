@@ -138,7 +138,7 @@ Mechanical unit sprites:
 
  * images/units/mechanical/magnum-suit.png
 
- Aspect sigils:
+Aspect sigils:
 
  * images/icons/original-ten-sigils.png
  * images/story/original-ten.png
