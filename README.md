@@ -80,8 +80,8 @@ provide a saved game file to reproduce it.
 Contacting the author
 ---------------------
 
-You may contact the author of this campaign via forum PM to shadowm on the
-[Wesnoth.org forums][7], or through her personal [Discord server][8].
+You may contact the author of this campaign via forum PM to Iris on the
+[Wesnoth.org forums][7], or through the official Wesnoth [Discord server][8].
 
 [7]: <https://forums.wesnoth.org/>
-[8]: <https://discord.gg/smJY9aK>
+[8]: <https://discord.gg/battleforwesnoth>
