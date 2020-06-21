@@ -77,6 +77,7 @@ Version 0.10.0-dev:
     * Fix dialogue typo in part 2 reported by Inky.
   * E3S7B - Dark Sea:
     * Use the polluted environment version of the ToD schedule.
+    * Avoid spawning allies in impassable locations (issue #59).
   * E3S8A - Interim:
     * Made an item easier to find.
     * Fix dialogue typo reported by Inky.
