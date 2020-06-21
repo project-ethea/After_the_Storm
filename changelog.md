@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.0+dev:
 -------------------
+* Graphics:
+  * Remove unused copies of the mainline trash/detritus/liter terrain overlay
+    graphics that were supposed to be deleted in AtS 0.9.13.
 
 
 Version 0.10.0:
