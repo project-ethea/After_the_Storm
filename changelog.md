@@ -9,6 +9,8 @@ Version 0.10.0-dev:
   * Replaced map_data with map_file to load scenario maps.
   * Shared units, assets, code, and translations are now part of the Naia
     library, also used by IftU version 2.1.0 and later.
+  * Update to Naia 20200621.
+  * Updated art licenses for CC BY-NC-ND 4.0, CC BY-SA 4.0 and CC0 content.
 
 * Graphics:
   * New or updated unit graphics: Shaxthal Hive Queen, Gatekeeper, Angel of
