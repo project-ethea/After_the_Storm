@@ -1,8 +1,8 @@
 After the Storm - Changelog
 ===========================
 
-Version 0.10.0-dev:
--------------------
+Version 0.10.0:
+---------------
 * General:
   * First Wesnoth 1.14.x release, raising the minimum version requirement to
     Wesnoth 1.14.3 (Wesnoth 1.15.x is *not* supported yet). Some large chunks
