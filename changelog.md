@@ -4,6 +4,9 @@ After the Storm - Changelog
 Version 0.10.0-dev:
 -------------------
 * General:
+  * First Wesnoth 1.14.x release, raising the minimum version requirement to
+    Wesnoth 1.14.3 (Wesnoth 1.15.x is *not* supported yet). Some large chunks
+    of code (in particular FOREACH loops) were rewritten in the process.
   * Dropped workaround for Debian bug #782831/#780853 in libvorbis (also known
     as Wesnoth Gna.org bugs #23633 and #23599).
   * Replaced map_data with map_file to load scenario maps.
