@@ -7,6 +7,11 @@ Version 0.10.0+dev:
   * Remove unused copies of the mainline trash/detritus/liter terrain overlay
     graphics that were supposed to be deleted in AtS 0.9.13.
 
+* Scenarios:
+  * E2S5 - The Eastern Front:
+    * Bow of Krysvelen item now adds to existing weapon specials instead of
+      replacing them.
+
 * Terrains:
   * Updated Blood terrain to use the Wesnoth 1.14 water composition rules
     instead of a tinted version of the 1.10 animated water.
