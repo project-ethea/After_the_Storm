@@ -19,6 +19,9 @@ Version 0.10.0+dev:
   * Updated Blood terrain to use the Wesnoth 1.14 water composition rules
     instead of a tinted version of the 1.10 animated water.
 
+* Units:
+  * Double-killed Kri'tan.
+
 
 Version 0.10.0:
 ---------------
