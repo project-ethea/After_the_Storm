@@ -28,6 +28,13 @@ function wesnoth.theme_items.unit_status()
 		}})
 	end
 
+	if u.status.dazed then
+		table.insert(s, { "element", {
+			image = "misc/dazed-status-icon.png",
+			tooltip = _ "dazed: This unit is dazed. It suffers a -10% penalty to both its defense and chance to hit (except for magical attacks)."
+		}})
+	end
+
 	if u.status.absconding then
 		table.insert(s, { "element", {
 			image = "misc/absconding-status-icon.png",

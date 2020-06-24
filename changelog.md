@@ -22,6 +22,7 @@ Version 0.10.0+dev:
     instead of a tinted version of the 1.10 animated water.
 
 * Units:
+  * Added missing sidebar status icon for the dazed weapon special effect.
   * Double-killed Kri'tan.
 
 
