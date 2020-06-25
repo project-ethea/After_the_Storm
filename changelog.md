@@ -1,8 +1,8 @@
 After the Storm - Changelog
 ===========================
 
-Version 0.10.0+dev:
--------------------
+Version 0.10.1:
+---------------
 * General:
   * Update to Naia 20200625.
   * Fixed OOS errors caused by Naia's cutscene skip functionality, first
