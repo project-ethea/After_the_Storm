@@ -16,6 +16,8 @@ Version 0.10.0+dev:
   * E3S7A - Dark Fire:
     * Poison Jar can now be used by the Saurian Skirmisher line and adds to
       existing weapon specials instead of replacing them.
+  * E3S10 - Blood:
+    * Minor UI tweaks.
 
 * Terrains:
   * Updated Blood terrain to use the Wesnoth 1.14 water composition rules
