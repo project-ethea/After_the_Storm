@@ -3,6 +3,11 @@ After the Storm - Changelog
 
 Version 0.10.0+dev:
 -------------------
+* General:
+  * Update to Naia 20200625.
+  * Fixed OOS errors caused by Naia's cutscene skip functionality, first
+    introduced in version 0.10.0.
+
 * Graphics:
   * Remove unused copies of the mainline trash/detritus/liter terrain overlay
     graphics that were supposed to be deleted in AtS 0.9.13.
