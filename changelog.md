@@ -10,6 +10,8 @@ Version 0.10.0+dev:
 * Scenarios:
   * Added a hint to the first playable scenario of each episode about
     browsing through unit AMLAs.
+  * E1S7x - Resolutions:
+    * Minor prose tweaks.
   * E2S5 - The Eastern Front:
     * Bow of Krysvelen item now adds to existing weapon specials instead of
       replacing them.
