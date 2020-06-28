@@ -3,7 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.1+dev:
 -------------------
-
+* Scenarios:
+  * E3S1 - Beyond her Smile (A Light in the Darkness):
+    * Minor UI fix.
 
 
 Version 0.10.1:
