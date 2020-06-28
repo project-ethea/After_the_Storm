@@ -6,6 +6,8 @@ Version 0.10.1+dev:
 * Scenarios:
   * E3S1 - Beyond her Smile (A Light in the Darkness):
     * Minor UI fix.
+  * E3S3 - Amidst the Ruins of Glamdrol:
+    * Fixed the Potion of Bloodlust being obtainable by the wrong units.
 
 
 Version 0.10.1:
