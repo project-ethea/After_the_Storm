@@ -3,7 +3,12 @@ After the Storm - Changelog
 
 Version 0.10.1+dev:
 -------------------
+* General:
+  * Update to Naia 20200628.
+
 * Scenarios:
+  * E1S12 - The Queen:
+    * Minor visual fix.
   * E3S1 - Beyond her Smile (A Light in the Darkness):
     * Minor UI fix.
   * E3S3 - Amidst the Ruins of Glamdrol:
