@@ -3,7 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.2+dev:
 -------------------
-
+* Scenarios:
+  * E1S5 - Bay of Tirigaz:
+    * Added special event.
 
 
 Version 0.10.2:
