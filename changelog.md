@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.2+dev:
 -------------------
+* General:
+  * Replaced deprecated Lua API calls.
+
 * Scenarios:
   * E1S5 - Bay of Tirigaz:
     * Added special event.
