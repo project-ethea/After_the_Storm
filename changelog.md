@@ -9,6 +9,9 @@ Version 0.10.2+dev:
 * Scenarios:
   * E1S5 - Bay of Tirigaz:
     * Added special event.
+  * E2S7 - Proximus:
+    * The player is no longer allowed to recruit Ghosts for the remainder of
+      the campaign.
 
 
 Version 0.10.2:
