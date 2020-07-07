@@ -13,6 +13,9 @@ Version 0.10.2+dev:
     * The player is no longer allowed to recruit Ghosts for the remainder of
       the campaign.
 
+* Terrains:
+  * Fixed some technical terrains being available in the Help browser.
+
 
 Version 0.10.2:
 ---------------
