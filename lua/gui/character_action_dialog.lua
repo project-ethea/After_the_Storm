@@ -88,37 +88,42 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 		}
 	} -- end dialog_definition
 
-	local function on_select()
-		local list_pos = wesnoth.get_dialog_value("listbox")
-		wml.variables[var] = list_pos - 1
-	end
+	local res = wesnoth.synchronize_choice(function()
+		local choice = 0
 
-	local function preshow()
-		local list_pos = 1
-
-		for opt in wml.child_range(cfg, "option") do
-			wesnoth.set_dialog_value(opt.message, "listbox", list_pos, "item")
-			list_pos = list_pos + 1
+		local function on_select()
+			choice = wesnoth.get_dialog_value("listbox") - 1
 		end
 
-		if can_dismiss then
-			-- #textdomain wesnoth-After_the_Storm
-			local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
-			local tstring = _ "Continue."
+		local function preshow()
+			local list_pos = 1
 
-			-- The mandatory "carry on" option.
-			wesnoth.set_dialog_value(tstring, "listbox", list_pos, "item")
-			wesnoth.set_dialog_value(list_pos, "listbox")
-		else
-			wesnoth.set_dialog_value(1, "listbox")
+			for opt in wml.child_range(cfg, "option") do
+				wesnoth.set_dialog_value(opt.message, "listbox", list_pos, "item")
+				list_pos = list_pos + 1
+			end
+
+			if can_dismiss then
+				-- #textdomain wesnoth-After_the_Storm
+				local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
+				local tstring = _ "Continue."
+
+				-- The mandatory "carry on" option.
+				wesnoth.set_dialog_value(tstring, "listbox", list_pos, "item")
+				wesnoth.set_dialog_value(list_pos, "listbox")
+			else
+				wesnoth.set_dialog_value(1, "listbox")
+			end
+
+			wesnoth.set_dialog_callback(on_select, "listbox")
+
+			on_select()
 		end
 
-		wesnoth.set_dialog_callback(on_select, "listbox")
+		wesnoth.show_dialog(dialog_definition, preshow, nil)
 
-		on_select()
-	end
+		return { value = choice }
+	end)
 
-	--wesnoth.synchronize_choice(function()
-		wesnoth.show_dialog(dialog_definition, preshow, nil) --end)
-
+	wml.variables[var] = res.value
 end

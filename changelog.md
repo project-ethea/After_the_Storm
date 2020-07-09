@@ -12,6 +12,8 @@ Version 0.10.2+dev:
   * E2S7 - Proximus:
     * The player is no longer allowed to recruit Ghosts for the remainder of
       the campaign.
+  * E3S6 - Divergence:
+    * Made dialog choices replay-safe.
 
 * Terrains:
   * Fixed some technical terrains being available in the Help browser.
