@@ -9,6 +9,10 @@ Version 0.10.2+dev:
 * Scenarios:
   * E1S5 - Bay of Tirigaz:
     * Added special event.
+  * E2S4 - Shifting Allegiances:
+    * Zynara can only control a limited number of Ghost line units at a time,
+      depending on campaign difficulty.
+    * Zynara can no longer recruit Vampire Bats.
   * E2S7 - Proximus:
     * The player is no longer allowed to recruit Ghosts for the remainder of
       the campaign.

@@ -295,6 +295,77 @@ end
 -- Globals --
 -------------
 
+local SUF_GHOST_UNITS = {
+	type = "Ghost,Wraith,Spectre,Shadow,Nightgaunt",
+	side = 1,
+}
+
+function wesnoth.wml_conditionals.player_ghost_limit_reached(cfg)
+	--if not wesnoth.get_unit("Zynara") then
+	--	return false
+	--end
+
+	local variable = cfg.variable or helper.wml_error("[cpgl] Missing required variable= attribute")
+	local limit = cfg.limit or helper.wml_error("[cpgl] Missing required limit= attribute")
+
+	local count = #wesnoth.get_units(SUF_GHOST_UNITS) + #wesnoth.get_recall_units(SUF_GHOST_UNITS)
+
+	wml.variables[variable] = count
+
+	return count > limit
+end
+
+local function random_map_location()
+	local locs = wesnoth.get_locations { include_borders = false }
+	local r = wesnoth.random(#locs)
+	return locs[r][1], locs[r][2]
+end
+
+function wesnoth.wml_actions.player_ghost_trap()
+	local wild_ghosts_side = wml.variables.wild_ghosts_side or 2
+
+	local recall_or_map = wesnoth.random(2)
+
+	local on_map = wesnoth.get_units(SUF_GHOST_UNITS)
+	local off_map = wesnoth.get_recall_units(SUF_GHOST_UNITS)
+
+	local r, u = 0, nil
+
+	if recall_or_map == 2 and #off_map > 0 then
+		r = wesnoth.random(#off_map) or helper.wml_error("[pgt] bad off-map selection")
+		u = off_map[r]
+	else
+		r = wesnoth.random(#on_map) or helper.wml_error("[pgt] bad on-map selection")
+		u = on_map[r]
+	end
+
+	-- Enable the wild ghosts side if it's not enabled already.
+	wesnoth.sides[wild_ghosts_side].controller = "ai"
+
+	if recall_or_map == 2 then
+		-- Recall the unit immediately so the player doesn't have the chance to
+		-- preemptively dismiss it.
+		local recall_x, recall_y = random_map_location()
+		local recall_id = u.id
+
+		wesnoth.wml_actions.recall { id = recall_id, x = recall_x, y = recall_y, show = false }
+		wesnoth.get_unit(recall_id).side = wild_ghosts_side
+	else
+		-- Transfer the unit to its new side at the end of the player's turn.
+		local T = wml.tag
+		wesnoth.wml_actions.event {
+			name = ("side %d turn end"):format(u.side),
+
+			T.modify_unit {
+				T.filter {
+					id = u.id
+				},
+				side = wild_ghosts_side
+			}
+		}
+	end
+end
+
 function wesnoth.wml_actions.seismic_impact(cfg)
 	local T = wml.tag
 	local ctx = wesnoth.current.event_context
