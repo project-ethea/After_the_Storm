@@ -15,7 +15,7 @@ Version 0.10.2+dev:
     * Zynara can no longer recruit Vampire Bats.
   * E2S7 - Proximus:
     * The player is no longer allowed to recruit Ghosts for the remainder of
-      the campaign.
+      the campaign. Vampire Bats become available again to compensate.
   * E3S2.1 - Return to Raelthyn:
     * Irylean can only recruit animal-type Walking Corpse variations
       (randomized per recruit).
