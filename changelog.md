@@ -22,6 +22,10 @@ Version 0.10.2+dev:
   * Fixed shockwave and abattoir weapon specials triggering when the unit
     possessing them is hit by attacks by AI units rather than when hitting
     them in retaliation.
+  * Fixed shockwave and abattoir not attributing splash damage deaths to the
+    attacker (for future code or external mods that may make this a relevant
+    concern). They still do not attribute splash damage dealt otherwise due to
+    a technical limitation in `[harm_unit]`, however.
 
 
 Version 0.10.2:
