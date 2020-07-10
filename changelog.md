@@ -18,6 +18,11 @@ Version 0.10.2+dev:
 * Terrains:
   * Fixed some technical terrains being available in the Help browser.
 
+* Units:
+  * Fixed shockwave and abattoir weapon specials triggering when the unit
+    possessing them is hit by attacks by AI units rather than when hitting
+    them in retaliation.
+
 
 Version 0.10.2:
 ---------------
