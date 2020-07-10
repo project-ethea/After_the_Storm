@@ -19,8 +19,12 @@ Version 0.10.2+dev:
   * E3S2.1 - Return to Raelthyn:
     * Irylean can only recruit animal-type Walking Corpse variations
       (randomized per recruit).
+  * E3S3 - Amidst the Ruins of Glamdrol:
+    * Minor balancing tweaks.
   * E3S6 - Divergence:
     * Made dialog choices replay-safe.
+  * E3S7B - Dark Sea:
+    * Minor balancing tweaks.
   * E3S10 - Blood:
     * Made menu item not execute in a synced context since it does not alter
       the game state in any way whatsoever.
