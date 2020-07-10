@@ -12,6 +12,9 @@ Version 0.10.2+dev:
   * E2S7 - Proximus:
     * The player is no longer allowed to recruit Ghosts for the remainder of
       the campaign.
+  * E3S2.1 - Return to Raelthyn:
+    * Irylean can only recruit animal-type Walking Corpse variations
+      (randomized per recruit).
   * E3S6 - Divergence:
     * Made dialog choices replay-safe.
 
