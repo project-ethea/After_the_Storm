@@ -21,6 +21,9 @@ Version 0.10.2+dev:
       (randomized per recruit).
   * E3S6 - Divergence:
     * Made dialog choices replay-safe.
+  * E3S10 - Blood:
+    * Made menu item not execute in a synced context since it does not alter
+      the game state in any way whatsoever.
 
 * Terrains:
   * Fixed some technical terrains being available in the Help browser.
