@@ -8,7 +8,7 @@ Version 0.10.2+dev:
 
 * Scenarios:
   * Cosmetic changes to the maps for the following scenarios: E1S1, E1S2,
-    E1S3, E1S4, E1S5, E1S8, E3S7B, E3S6.
+    E1S3, E1S4, E1S5, E1S8, E3S7B, E3S6, E1S6.1, E1S6.2, E1S7x.
   * E1S5 - Bay of Tirigaz:
     * Added special event.
   * E2S4 - Shifting Allegiances:
