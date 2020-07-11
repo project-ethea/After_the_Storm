@@ -12,6 +12,8 @@ Version 0.10.2+dev:
     E1S11.1, E1S11x.
   * E1S5 - Bay of Tirigaz:
     * Added special event.
+  * E1S12 - The Queen:
+    * Fixed minor map inconsistencies in the last segment.
   * E2S4 - Shifting Allegiances:
     * Zynara can only control a limited number of Ghost line units at a time,
       depending on campaign difficulty.
