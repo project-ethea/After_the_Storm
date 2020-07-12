@@ -10,7 +10,7 @@ Version 0.10.2+dev:
   * Cosmetic changes to the maps for the following scenarios: E1S1, E1S2,
     E1S3, E1S4, E1S5, E1S8, E3S7B, E3S6, E1S6.1, E1S6.2, E1S7x, E1S10,
     E1S11.1, E1S11x, E2S3.1, E3S2.1, E3S2.2, E1S9.2, E2S0, E3S7A.1F1,
-    E3S7A.1F2, E3S8B, E3S8D, E3S11F2.
+    E3S7A.1F2, E3S8B, E3S8D, E3S11F2, E2S1, E2S2, E2S4, E2S5, E2S5x.
   * E1S5 - Bay of Tirigaz:
     * Added special event.
   * E1S12 - The Queen:
