@@ -37,6 +37,7 @@ Version 0.10.2+dev:
 
 * Terrains:
   * Fixed some technical terrains being available in the Help browser.
+  * Added Dry Elven Castle Ruins.
 
 * Units:
   * Fixed shockwave and abattoir weapon specials triggering when the unit
