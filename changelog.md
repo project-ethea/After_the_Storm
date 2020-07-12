@@ -18,6 +18,8 @@ Version 0.10.2+dev:
     E3S9F2, E3S9F3, E3S12, E3S13.
   * E1S5 - Bay of Tirigaz:
     * Added special event.
+  * E1S7 - The Search for the Past:
+    * Fix a minor prose inconsistency resulting from IftU 2.0.
   * E1S12 - The Queen:
     * Fixed minor map inconsistencies in the last segment.
   * E2S4 - Shifting Allegiances:
