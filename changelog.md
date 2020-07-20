@@ -38,6 +38,8 @@ Version 0.10.2+dev:
     * Made dialog choices replay-safe.
   * E3S7B - Dark Sea:
     * Minor balancing tweaks.
+  * E3S8B - Destiny, part 1:
+    * Added a lesser wall of text.
   * E3S10 - Blood:
     * Made menu item not execute in a synced context since it does not alter
       the game state in any way whatsoever.
