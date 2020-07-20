@@ -7,7 +7,7 @@ Version 0.10.2+dev:
   * Replaced deprecated Lua API calls.
 
 * Graphics:
-  * New or updated unit graphics: Naiad.
+  * New or updated unit graphics: Naiad, Ixthala Fire Dancer.
 
 * Scenarios:
   * Cosmetic changes to the maps for the following scenarios: E1S1, E1S2,
