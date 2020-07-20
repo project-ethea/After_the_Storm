@@ -59,6 +59,15 @@ Version 0.10.2+dev:
   * Increased Ixthala Fire Dancer's level from 2 to 3.
   * Increased Ixthala Fire Dancer's HP from 40 to 60.
   * Increased Ixthala Fire Dancer's melee damage from 8-4 to 12-4.
+  * Increased Demoness Slashing Gale's HP from 78 to 85.
+  * Increased Demoness Slashing Gale's arcane resistance from -20% to -10%.
+  * Increased Demoness Slashing Gale's impact resistance from 0% to 10%.
+  * Increased Demoness Slashing Gale's ranged attack from 9-4 to 11-5.
+  * Replaced Demoness Slashing Gale's ranged attack drains special with
+    magical+slow.
+  * Increased Demoness Slashing Gale's blade melee attack from 10-3 to 11-3.
+  * Added drains weapon special to Demoness Slashing Gale's blade melee attack.
+  * Added 11-2 melee impact attack with charge to Demoness Slashing Gale.
 
 
 Version 0.10.2:
