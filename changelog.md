@@ -56,6 +56,9 @@ Version 0.10.2+dev:
     attacker (for future code or external mods that may make this a relevant
     concern). They still do not attribute splash damage dealt otherwise due to
     a technical limitation in `[harm_unit]`, however.
+  * Increased Ixthala Fire Dancer's level from 2 to 3.
+  * Increased Ixthala Fire Dancer's HP from 40 to 60.
+  * Increased Ixthala Fire Dancer's melee damage from 8-4 to 12-4.
 
 
 Version 0.10.2:
