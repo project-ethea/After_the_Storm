@@ -68,6 +68,9 @@ Version 0.10.2+dev:
   * Increased Demoness Slashing Gale's blade melee attack from 10-3 to 11-3.
   * Added drains weapon special to Demoness Slashing Gale's blade melee attack.
   * Added 11-2 melee impact attack with charge to Demoness Slashing Gale.
+  * Reduced Magnum Suit's HP from 220 to 190.
+  * Reduced Magnum Suit's melee attack from 22-2 to 20-2.
+  * Reduced Magnum Suit's ranged attack from 11-14 to 10-10.
 
 
 Version 0.10.2:
