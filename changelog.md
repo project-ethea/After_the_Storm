@@ -17,7 +17,7 @@ Version 0.10.2+dev:
     E2S7, E2S8, E2S12, E2S9, E2S10, E2S11, E3S3, E3S4.1, E3S5, E3S8C, E3S9F1,
     E3S9F2, E3S9F3, E3S12, E3S13.
   * E1S5 - Bay of Tirigaz:
-    * Added special event.
+    * ???
   * E1S7 - The Search for the Past:
     * Fix a minor prose inconsistency resulting from IftU 2.0.
   * E1S12 - The Queen:
@@ -29,6 +29,8 @@ Version 0.10.2+dev:
   * E2S7 - Proximus:
     * The player is no longer allowed to recruit Ghosts for the remainder of
       the campaign. Vampire Bats become available again to compensate.
+  * E2S10 - The Betrayal:
+    * ???
   * E3S2.1 - Return to Raelthyn:
     * Irylean can only recruit animal-type Walking Corpse variations
       (randomized per recruit).
@@ -37,6 +39,7 @@ Version 0.10.2+dev:
   * E3S6 - Divergence:
     * Made dialog choices replay-safe.
   * E3S7B - Dark Sea:
+    * ???
     * Minor balancing tweaks.
   * E3S8B - Destiny, part 1:
     * Added a lesser wall of text.
