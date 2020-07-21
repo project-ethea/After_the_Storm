@@ -74,6 +74,8 @@ Version 0.10.2+dev:
   * Reduced Magnum Suit's HP from 220 to 190.
   * Reduced Magnum Suit's melee attack from 22-2 to 20-2.
   * Reduced Magnum Suit's ranged attack from 11-14 to 10-10.
+  * Disabled Shadow Angel AMLA due to issues with pathfinding glitches and
+    console spam.
 
 
 Version 0.10.2:
