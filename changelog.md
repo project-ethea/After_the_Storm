@@ -42,6 +42,7 @@ Version 0.10.2+dev:
     * Added a lesser wall of text.
   * E3S8D - Destiny, part 2:
     * Added more enemy guardians.
+    * Added more water.
   * E3S9 - Dark Depths:
     * Reduced Engineer's unit buff from +110% HP to +60% HP and +5 ranged
       damage to +4 ranged damage.
