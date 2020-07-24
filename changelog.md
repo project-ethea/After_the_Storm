@@ -1,8 +1,8 @@
 After the Storm - Changelog
 ===========================
 
-Version 0.10.3+dev:
--------------------
+Version 0.10.4:
+---------------
 * General:
   * Update to Naia 20200724.1.
 
