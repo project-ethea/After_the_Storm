@@ -1,8 +1,8 @@
 After the Storm - Changelog
 ===========================
 
-Version 0.10.2+dev:
--------------------
+Version 0.10.3:
+---------------
 * General:
   * Update to Naia 20200724.
   * Replaced deprecated Lua API calls.
