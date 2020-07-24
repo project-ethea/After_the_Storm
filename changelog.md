@@ -3,6 +3,12 @@ After the Storm - Changelog
 
 Version 0.10.3+dev:
 -------------------
+* General:
+  * Update to Naia 20200724.1.
+
+* Language and i18n:
+  * Updated translations: Russian.
+
 * Scenarios:
   * Fixed an issue where Irylean's Walking Corpses would start under 100% HP if
     a variation with a greater base HP than the base Walking Corpse was
