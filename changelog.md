@@ -3,7 +3,10 @@ After the Storm - Changelog
 
 Version 0.10.3+dev:
 -------------------
-
+* Scenarios:
+  * Fixed an issue where Irylean's Walking Corpses would start under 100% HP if
+    a variation with a greater base HP than the base Walking Corpse was
+    selected.
 
 
 Version 0.10.3:
