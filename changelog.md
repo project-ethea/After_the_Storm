@@ -6,6 +6,9 @@ Version 0.10.5+dev:
 * Scenarios:
   * E1S5 - Bay of Tirigaz:
     * Fixed animation issues with enemy flags.
+  * E3S7B - Dark Sea:
+    * The player is no longer allowed to recruit Dark Adepts for the remainder
+      of the campaign.
 
 
 Version 0.10.5:
