@@ -3,7 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.5+dev:
 -------------------
-
+* Scenarios:
+  * E1S5 - Bay of Tirigaz:
+    * Fixed animation issues with enemy flags.
 
 
 Version 0.10.5:
