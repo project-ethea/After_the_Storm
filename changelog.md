@@ -10,6 +10,9 @@ Version 0.10.5+dev:
     * The player is no longer allowed to recruit Dark Adepts for the remainder
       of the campaign.
 
+* Units:
+  * Enable Troll Whelp → Troll Shaman unit progression for new runs.
+
 
 Version 0.10.5:
 ---------------
