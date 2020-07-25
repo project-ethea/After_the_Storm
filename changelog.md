@@ -1,8 +1,8 @@
 After the Storm - Changelog
 ===========================
 
-Version 0.10.4+dev:
--------------------
+Version 0.10.5:
+---------------
 * Units:
   * Fixed stun weapon special working exactly once per scenario.
 
