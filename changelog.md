@@ -9,6 +9,9 @@ Version 0.10.5+dev:
   * E3S7B - Dark Sea:
     * The player is no longer allowed to recruit Dark Adepts for the remainder
       of the campaign.
+  * E3S8A - Interim:
+    * Implemented a workaround for mainline issue #3443 (see also IftU #28)
+      affecting a lore glyph.
   * E3S8C - Breakdown:
     * Increase turn limit.
 
