@@ -152,7 +152,7 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 											T.column {
 												border = "all", border_size = 5,
 												horizontal_alignment = "left",
-												vertical_alignment = "top",
+												vertical_grow = true,
 												T.scroll_label {
 													id = "current_option_text",
 												}
