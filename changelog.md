@@ -6,6 +6,11 @@ Version 0.10.5+dev:
 * Scenarios:
   * E1S5 - Bay of Tirigaz:
     * Fixed animation issues with enemy flags.
+  * E3S4.1 - Outpost of Hell:
+    * Fixed minor inconsistencies in the handling of terrain destruction when
+      deploying charges around the main keep, making it so the stone wall tiles
+      cannot be destroyed. It is intentionally still possible to leave passable
+      castle tiles around for use during the boss fight.
   * E3S7B - Dark Sea:
     * The player is no longer allowed to recruit Dark Adepts for the remainder
       of the campaign.
