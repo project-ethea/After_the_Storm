@@ -3,8 +3,6 @@ type="campaign"
 version="@ PBLPOST:VERSION @"
 dependencies="AtS_Music,IftU_Music"
 
-translate="true"
-
 author="shadowm (Iris Morelle)"
 email="shadowm@wesnoth.org"
 
