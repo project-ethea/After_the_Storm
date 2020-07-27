@@ -22,6 +22,9 @@ Version 0.10.5+dev:
 
 * Units:
   * Enable Troll Whelp → Troll Shaman unit progression for new runs.
+  * Fixed units with the demolition ability becoming visible again after
+    playing their death animation if other units get caught within the
+    explosion radius.
 
 
 Version 0.10.5:
