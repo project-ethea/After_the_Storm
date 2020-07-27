@@ -19,6 +19,9 @@ Version 0.10.5+dev:
       affecting a lore glyph.
   * E3S8C - Breakdown:
     * Increase turn limit.
+    * Don't bind a hotkey for the Summon Fire Guardian menu item since it gives
+      the game engine an existential crisis when switching scenarios in the
+      same session.
 
 * Units:
   * Enable Troll Whelp → Troll Shaman unit progression for new runs.
