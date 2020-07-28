@@ -29,6 +29,7 @@ Version 0.10.5+dev:
     playing their death animation if other units get caught within the
     explosion radius.
   * Reduced Shaxthal Deathbringer's HP from 181 to 172.
+  * Increased Faerie Avatar's HP from 77 to 93.
 
 
 Version 0.10.5:
