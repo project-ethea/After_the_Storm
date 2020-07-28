@@ -26,6 +26,9 @@ Version 0.10.5+dev:
   * E3S10 - Blood:
     * Minor cutscene fixes revolving around unit statuses.
 
+* Terrains:
+  * Added Blood Ford.
+
 * Units:
   * Enable Troll Whelp → Troll Shaman unit progression for new runs.
   * Fixed units with the demolition ability becoming visible again after
