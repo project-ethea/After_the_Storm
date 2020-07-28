@@ -28,6 +28,7 @@ Version 0.10.5+dev:
   * Fixed units with the demolition ability becoming visible again after
     playing their death animation if other units get caught within the
     explosion radius.
+  * Reduced Shaxthal Deathbringer's HP from 181 to 172.
 
 
 Version 0.10.5:
