@@ -17,6 +17,7 @@ Version 0.10.5+dev:
   * E3S8A - Interim:
     * Implemented a workaround for mainline issue #3443 (see also IftU #28)
       affecting a lore glyph.
+    * Minor map changes.
   * E3S8C - Breakdown:
     * Increase turn limit.
     * Don't bind a hotkey for the Summon Fire Guardian menu item since it gives
