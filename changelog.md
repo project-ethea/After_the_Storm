@@ -10,7 +10,11 @@ Version 0.10.5+dev:
     * Aesthetic and balancing tweaks to the map.
     * Added water drip sound sources.
   * E2S10 - The Betrayal:
+    * Aesthetic and balancing tweaks to the map.
     * Added water drip sound sources.
+    * Made more punishing on the player's economy by reducing the number of
+      villages available and not adding initial gold on top of E2S9's 100%
+      carryover (issue #80).
   * E2S11 - A Final Confrontation:
     * Added water drip sound sources.
   * E3S4.1 - Outpost of Hell:
