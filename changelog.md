@@ -36,6 +36,7 @@ Version 0.10.5+dev:
     explosion radius.
   * Reduced Shaxthal Deathbringer's HP from 181 to 172.
   * Increased Faerie Avatar's HP from 77 to 93.
+  * Increased Shaxthal Stormblade Ivyel's HP from 67 to 73.
 
 
 Version 0.10.5:
