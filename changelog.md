@@ -8,6 +8,11 @@ Version 0.10.5+dev:
     * Fixed animation issues with enemy flags.
   * E2S9 - New Hive:
     * Aesthetic and balancing tweaks to the map.
+    * Added water drip sound sources.
+  * E2S10 - The Betrayal:
+    * Added water drip sound sources.
+  * E2S11 - A Final Confrontation:
+    * Added water drip sound sources.
   * E3S4.1 - Outpost of Hell:
     * Fixed minor inconsistencies in the handling of terrain destruction when
       deploying charges around the main keep, making it so the stone wall tiles
