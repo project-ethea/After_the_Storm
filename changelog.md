@@ -6,6 +6,8 @@ Version 0.10.5+dev:
 * Scenarios:
   * E1S5 - Bay of Tirigaz:
     * Fixed animation issues with enemy flags.
+  * E2S9 - New Hive:
+    * Aesthetic and balancing tweaks to the map.
   * E3S4.1 - Outpost of Hell:
     * Fixed minor inconsistencies in the handling of terrain destruction when
       deploying charges around the main keep, making it so the stone wall tiles
