@@ -35,6 +35,8 @@ Version 0.10.5+dev:
       the game engine an existential crisis when switching scenarios in the
       same session.
   * E3S10 - Blood:
+    * Fixed implementation details of the final boss demanding upkeep when they
+      are not supposed to.
     * Minor cutscene fixes revolving around unit statuses.
 
 * Terrains:
