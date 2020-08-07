@@ -17,6 +17,7 @@ Version 0.10.5+dev:
       carryover (issue #80).
   * E2S11 - A Final Confrontation:
     * Added water drip sound sources.
+    * Fixed Elynia being able to attack while incapacitated.
     * Minor animation tweaks.
   * E3S4.1 - Outpost of Hell:
     * Fixed minor inconsistencies in the handling of terrain destruction when
