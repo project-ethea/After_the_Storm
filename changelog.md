@@ -52,6 +52,8 @@ Version 0.10.5+dev:
   * Increased Shaxthal Stormblade Ivyel's HP from 67 to 73.
   * Fixed seismic weapon special not triggering when the unit possessing it
     hits another unit in retaliation.
+  * Made Shaxthal Demolisher Drone and Shaxthal Deathbringer immune to splash
+    damage from the abattoir and shockwave weapon specials.
 
 
 Version 0.10.5:
