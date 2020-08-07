@@ -65,6 +65,35 @@ function wesnoth.wml_actions.store_unit_can_move_on_current_terrain(cfg)
 	wml.variables[var] = (wesnoth.unit_movement_cost(u, wesnoth.get_terrain(u.x, u.y)) < u.max_moves)
 end
 
+function wesnoth.wml_actions.animate_control_spires(cfg)
+	local units = wesnoth.get_units(cfg)
+
+	if not units then
+		return
+	end
+
+	local animator = wesnoth.create_animator()
+
+	for i, u in ipairs(units) do
+		local loc = wesnoth.get_locations({
+			{ "filter_adjacent_location", {
+				x = u.x, y = u.y, adjacent = "-n"
+			}}
+		})[1]
+
+		local dir = wesnoth.map.get_relative_dir(u.x, u.y, loc[1], loc[2])
+		u.facing = dir
+
+		animator:add(u, "portal beam", "hits", {
+			facing = wesnoth.map.get_direction(u.x, u.y, dir),
+			with_bars = true,
+		})
+	end
+
+	animator:run()
+	animator:clear()
+end
+
 -------------
 -- E3S7A.2 --
 -------------
