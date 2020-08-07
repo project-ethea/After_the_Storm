@@ -4,6 +4,10 @@ After the Storm - Changelog
 Version 0.10.5+dev:
 -------------------
 * Scenarios:
+  * Updated maps for the following scenario to use (or not use) the sconce
+    terrain overlay instead of the Lit Stone Wall terrain deprecated in 1.16:
+    E1S9.1, E1S9.2, E1S9.3, E1S11.2, E1S13, E2S0, E2S9, E2S10, E2S11, E3S4.1,
+    E3S7A.1F1, E1S7A.1F2, E3S8C (issue #82).
   * E1S5 - Bay of Tirigaz:
     * Fixed animation issues with enemy flags.
   * E2S9 - New Hive:
@@ -39,6 +43,8 @@ Version 0.10.5+dev:
     * Don't bind a hotkey for the Summon Fire Guardian menu item since it gives
       the game engine an existential crisis when switching scenarios in the
       same session.
+    * Fixed an incorrect terrain reference in a terraforming code path (related
+      to issue #82).
   * E3S10 - Blood:
     * Fixed implementation details of the final boss demanding upkeep when they
       are not supposed to.
