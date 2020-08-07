@@ -53,18 +53,6 @@ end
 -- E2S11 --
 -----------
 
-function wesnoth.wml_actions.store_unit_can_move_on_current_terrain(cfg)
-	local var = cfg.variable or helper.wml_error("[store_unit_can_move_on_current_terrain]: Missing variable!")
-	local u = wesnoth.get_units(cfg)[1]
-
-	if not u then
-		-- Could not match anything
-		return
-	end
-
-	wml.variables[var] = (wesnoth.unit_movement_cost(u, wesnoth.get_terrain(u.x, u.y)) < u.max_moves)
-end
-
 function wesnoth.wml_actions.animate_control_spires(cfg)
 	local units = wesnoth.get_units(cfg)
 
