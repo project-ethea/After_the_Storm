@@ -19,6 +19,9 @@ Version 0.10.5+dev:
     * Added water drip sound sources.
     * Fixed Elynia being able to attack while incapacitated.
     * Minor animation tweaks.
+    * Several balancing changes to make the boss fight somewhat more difficult
+      on top of the overall E2 (and especially E2S9 and E2S10) balancing
+      changes in this release (issue #80).
   * E3S4.1 - Outpost of Hell:
     * Fixed minor inconsistencies in the handling of terrain destruction when
       deploying charges around the main keep, making it so the stone wall tiles
