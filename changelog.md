@@ -50,6 +50,8 @@ Version 0.10.5+dev:
   * Reduced Shaxthal Deathbringer's HP from 181 to 172.
   * Increased Faerie Avatar's HP from 77 to 93.
   * Increased Shaxthal Stormblade Ivyel's HP from 67 to 73.
+  * Fixed seismic weapon special not triggering when the unit possessing it
+    hits another unit in retaliation.
 
 
 Version 0.10.5:
