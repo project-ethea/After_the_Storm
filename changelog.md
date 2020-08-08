@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.5+dev:
 -------------------
+* General:
+  * Update to Naia 20200808.
+
 * Language and i18n:
   * Updated translations: Russian.
 
