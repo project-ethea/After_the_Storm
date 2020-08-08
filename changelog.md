@@ -1,6 +1,11 @@
 After the Storm - Changelog
 ===========================
 
+Version 0.10.6+dev:
+-------------------
+
+
+
 Version 0.10.6:
 ---------------
 * General:
