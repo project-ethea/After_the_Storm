@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.5+dev:
 -------------------
+* Language and i18n:
+  * Updated translations: Russian.
+
 * Scenarios:
   * Updated maps for the following scenarios to use (or not use) the sconce
     terrain overlay instead of the Lit Stone Wall terrain deprecated in 1.16:
