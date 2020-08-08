@@ -482,7 +482,6 @@ function wesnoth.wml_actions.seismic_impact(cfg)
 			damage_type = src_atk.type,
 			amount = src_atk.damage * 0.75,
 			kill = false,
-			experience = true,
 			fire_event = true,
 			animate = false,
 			delay = 0
