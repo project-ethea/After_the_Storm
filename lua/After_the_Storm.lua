@@ -402,12 +402,23 @@ function wesnoth.wml_actions.seismic_impact(cfg)
 	-- here since it's assumed to only affect player units, which are never
 	-- counted as immune to CC.
 	--
+	-- Finally, since this weapon special in AtS can only be used by disposable
+	-- enemy units, we don't clean after ourselves -- the
+	-- variables.seismic_last_turn value remains set for the remainder of the
+	-- unit's lifespan.
+	--
 
 	local src = wesnoth.get_unit(ctx.x1, ctx.y1)
 	local src_atk = wml.get_child(ctx, "weapon")
 
 	local dst = wesnoth.get_unit(ctx.x2, ctx.y2)
 	local dst_atk = wml.get_child(ctx, "second_weapon")
+
+	if src.variables.seismic_last_turn == wesnoth.current.turn then
+		return
+	else
+		src.variables.seismic_last_turn = wesnoth.current.turn
+	end
 
 	--wesnoth.wml_actions.inspect {}
 

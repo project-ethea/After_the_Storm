@@ -70,6 +70,8 @@ Version 0.10.5+dev:
     hits another unit in retaliation.
   * Fixed seismic weapon special applying the stunned effect exactly once per
     scenario.
+  * Fixed seismic weapon special not actually being limited to proccing once a
+    turn only.
   * Made Shaxthal Demolisher Drone and Shaxthal Deathbringer immune to splash
     damage from the abattoir and shockwave weapon specials.
 
