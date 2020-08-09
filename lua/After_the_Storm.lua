@@ -284,6 +284,34 @@ function wesnoth.wml_actions.push_units_away_from(cfg)
 	end
 end
 
+function wesnoth.wml_actions.store_area_edge(cfg)
+	local center_x = cfg.x
+	local center_y = cfg.y
+	local radius = cfg.radius
+	local variable= cfg.variable
+
+	if not cfg.x or not cfg.y or not cfg.radius or not cfg.variable then
+		helper.wml_error("[store_radius_edge] Missing required x=, y=, radius=, or variable= attribute")
+	end
+
+	local location_set = wesnoth.require "lua/location_set.lua"
+
+	local locs1 = location_set.of_pairs(wesnoth.get_locations({
+		x      = center_x,
+		y      = center_y,
+		radius = radius,
+	}))
+
+	local locs2 = location_set.of_pairs(wesnoth.get_locations({
+		x      = center_x,
+		y      = center_y,
+		radius = radius - 1,
+	}))
+
+	locs2:stable_iter(function(x, y) locs1:remove(x,y) end)
+	locs1:to_wml_var(variable)
+end
+
 -- DEBUG ONLY
 
 function wesnoth.wml_actions.dbg_test_variation(cfg)
