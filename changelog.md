@@ -3,7 +3,8 @@ After the Storm - Changelog
 
 Version 0.10.6+dev:
 -------------------
-
+* Scenarios:
+  * Removed no-op `attack_depth` AI aspect.
 
 
 Version 0.10.6:
