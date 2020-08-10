@@ -6,6 +6,9 @@ Version 0.10.6+dev:
 * Scenarios:
   * Removed no-op `attack_depth` AI aspect.
 
+* Units:
+  * Fixed spoiler unit being unexpectedly available in units.w.o listings.
+
 
 Version 0.10.6:
 ---------------
