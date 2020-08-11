@@ -5,6 +5,8 @@ Version 0.10.6+dev:
 -------------------
 * Scenarios:
   * Removed no-op `attack_depth` AI aspect.
+  * E1S3 - Civil War in the North:
+    * Made scenario objectives dummy-proof.
 
 * Units:
   * Fixed spoiler unit being unexpectedly available in units.w.o listings.
