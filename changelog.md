@@ -9,6 +9,7 @@ Version 0.10.6+dev:
     * Made scenario objectives dummy-proof.
   * E3S10 - Blood:
     * Fixed wrong unit speaking in a rare event.
+    * Implemented proper flooding logic for late sequences.
     * Minor balancing changes.
 
 * Units:
