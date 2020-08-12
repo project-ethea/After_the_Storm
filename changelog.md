@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.6+dev:
 -------------------
+* Language and i18n:
+  * Updated translations: Russian.
+
 * Scenarios:
   * Removed no-op `attack_depth` AI aspect.
   * E1S3 - Civil War in the North:
