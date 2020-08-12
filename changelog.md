@@ -14,6 +14,8 @@ Version 0.10.6+dev:
 
 * Units:
   * Fixed spoiler unit being unexpectedly available in units.w.o listings.
+  * The abattoir and shockwave weapon specials now play defense animations for
+    units affected by splash damage.
 
 
 Version 0.10.6:
