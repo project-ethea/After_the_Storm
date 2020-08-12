@@ -7,6 +7,8 @@ Version 0.10.6+dev:
   * Removed no-op `attack_depth` AI aspect.
   * E1S3 - Civil War in the North:
     * Made scenario objectives dummy-proof.
+  * E3S10 - Blood:
+    * Fixed wrong unit speaking in a rare event.
 
 * Units:
   * Fixed spoiler unit being unexpectedly available in units.w.o listings.
