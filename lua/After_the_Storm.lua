@@ -312,6 +312,204 @@ function wesnoth.wml_actions.store_area_edge(cfg)
 	locs1:to_wml_var(variable)
 end
 
+-----------
+-- E3S11 --
+-----------
+
+local CREDITS_DISPLAY_MS                 = 5000
+local CREDITS_CONSECUTIVE_SCREENS_GAP_MS = 750
+local CREDITS_BASE_FONT_SIZE             = 30
+
+local function credits_alpha_print(text, size, alpha, duration)
+	-- [print] does not support alpha blending. However, we know we are
+	-- rendering onto a black screen, so we can just emulate it by adjusting
+	-- the color between #00 and #FFF procedurally
+
+	local c = helper.round(255 * alpha)
+
+	if duration == nil then
+		-- This is used by non-fully-opaque steps so the text doesn't stay on
+		-- screen forever in case we miss frames or something.
+		duration = 1000
+	end
+
+	--wesnoth.message(string.format("alpha %0.1f, step %d", alpha, c))
+
+	wesnoth.wml_actions.print {
+		text     = text,
+		size     = size,
+		duration = duration,
+		red      = c,
+		green    = c,
+		blue     = c,
+	}
+
+	-- Don't let the game busy loop during fade-in/fade-out
+	wesnoth.delay(20)
+
+	wesnoth.wml_actions.redraw {}
+end
+
+local function credits_single_block(title, body, duration, size)
+	if size == nil then
+		size = CREDITS_BASE_FONT_SIZE
+	end
+
+	if duration == nil then
+		duration = CREDITS_DISPLAY_MS
+	end
+
+	local text = ""
+
+	if title ~= nil then
+		if body ~= nil then
+			text = ("<span size='larger' weight='bold'>%s</span>\n\n%s"):format(title, body)
+		else
+			text = ("<span size='larger' weight='bold'>%s</span>"):format(title)
+		end
+	else
+		text = body
+	end
+
+	-- Fade in
+	for alpha = 0.0, 1.0, 0.1 do
+		credits_alpha_print(text, size, alpha)
+	end
+
+	credits_alpha_print(text, size, 1.0, duration)
+	wesnoth.delay(duration)
+
+	-- Fade out
+	for alpha = 1.0, 0.0, -0.1 do
+		credits_alpha_print(text, size, alpha)
+	end
+
+	wesnoth.delay(CREDITS_CONSECUTIVE_SCREENS_GAP_MS)
+end
+
+local function generate_empty_map(width, height)
+	local line = ""
+	for i = 1, width do
+		if line == "" then
+			line = "Xv"
+		else
+			line = line .. ",Xv"
+		end
+	end
+	line = line .. "\n"
+
+	return string.rep(line, height)
+end
+
+local function do_credits_error(message)
+	-- Do NOT use helper.wml_error here -- it causes the game to skip to E3S12
+	-- directly due to the E3S11 event handling structure never giving the
+	-- game a chance to return control to the player. This results in a silent
+	-- failure that can come across as intentional behaviour.
+	wesnoth.wml_actions.bug {
+		message = message
+	}
+end
+
+
+function wesnoth.wml_actions.credits_sequence(cfg)
+	local music = cfg.music or do_credits_error("[credits_sequence] Missing required music= attribute")
+
+	local pre_wait       = cfg.pre_wait or 0
+	local post_wait      = cfg.post_wait or 0
+	local music_fade_out = cfg.music_fade_out or 0
+
+	-- NOTE: We're assuming the UI theme is already set to something suitable
+	--       for the credits display.
+
+	wesnoth.wml_actions.hide_unit {} -- failsafe
+
+	-- Replace the game map with an empty void
+
+	wesnoth.wml_actions.replace_map {
+		map_data = generate_empty_map(3, 3),
+		shrink   = true,
+		expand   = true,
+	}
+
+	wesnoth.wml_actions.redraw {}
+
+	wesnoth.sides[1].shroud = true
+	wesnoth.wml_actions.place_shroud { side = 1}
+
+	wesnoth.wml_actions.redraw {}
+
+	-- FIXME: replace with an equivalent colour reset and delay, the background
+	--        is all black anyway so it makes no difference to fade in/out.
+	wesnoth.wml_actions.fade_in {}
+
+	local ms = wesnoth.get_time_stamp()
+
+	wesnoth.music_list.clear()
+	wesnoth.music_list.add("silence.ogg", true)
+	wesnoth.music_list.play(music)
+
+	wesnoth.delay(pre_wait)
+
+	for section in wml.child_range(cfg, "section") do
+		-- we do allow nil for these two
+		local title, body = section.title, section.body
+		local duration = section.duration
+
+		if wml.child_count(section, "item") ~= 0 then
+			local tags = wml.shallow_literal(section)
+			for i = 1, #tags do
+				local tag_name = tags[i][1]
+				local tag_data = tags[i][2]
+
+				if tag_name == "item" then
+					local item = tags[i][2]
+
+					local author, names = item.author, item.names
+					local text = item.text
+
+					if author ~= nil and names ~= nil then
+						text = ""
+						for name in names:gmatch("[^,]+") do
+							text = ("%s<i>%s</i>\n"):format(text, name:match("^%s*(.-)%s*$"))
+						end
+						text = ("%s\t\t%s"):format(text, author)
+					end
+
+					if text and text ~= "" then
+						if body == nil then
+							body = text
+						else
+							body = ("%s\n%s"):format(body, text)
+						end
+					end
+				elseif tag_name == "break" then
+					-- Breaks cause the screen contents to be rendered early.
+					-- We discard them afterwards so we don't append endlessly
+					-- to them. Note that a trailing [break] will result in a
+					-- new screen containing nothing but the section's title.
+					credits_single_block(title, body, duration)
+					body = nil
+				else
+					-- Someone did an oopsie, gotta report this.
+					do_credits_error(("Unrecognized command [%s] in [credits_sequence]"):format(tag_name))
+				end
+			end
+		end
+
+		-- Render the final screen contents for this section
+		credits_single_block(title, body, duration)
+	end
+
+	local ms = wesnoth.get_time_stamp() - ms
+	wprintf(W_DBG, "CREDITS: took %0.1f seconds", ms / 1000.0)
+
+	wesnoth.delay(post_wait)
+	wesnoth.wml_actions.fade_out_music { duration = music_fade_out }
+
+	wesnoth.wml_actions.unhide_unit {}
+end
+
 -- DEBUG ONLY
 
 function wesnoth.wml_actions.dbg_test_variation(cfg)

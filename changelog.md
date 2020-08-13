@@ -3,7 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.7+dev:
 -------------------
-
+* Scenarios:
+  * E3S11 - After the Storm:
+    * Substantial code refactoring.
 
 
 Version 0.10.7:
