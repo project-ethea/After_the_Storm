@@ -3,7 +3,8 @@ After the Storm - Changelog
 
 Version 0.10.8+dev:
 -------------------
-
+* E3S7B - Dark Sea:
+  * Fix incorrect item check.
 
 
 Version 0.10.8:
