@@ -346,8 +346,6 @@ local function credits_alpha_print(text, size, alpha, duration)
 
 	-- Don't let the game busy loop during fade-in/fade-out
 	wesnoth.delay(20)
-
-	wesnoth.wml_actions.redraw {}
 end
 
 local function credits_single_block(title, body, duration, size)
@@ -411,7 +409,6 @@ local function do_credits_error(message)
 	}
 end
 
-
 function wesnoth.wml_actions.credits_sequence(cfg)
 	local music = cfg.music or do_credits_error("[credits_sequence] Missing required music= attribute")
 
@@ -422,7 +419,10 @@ function wesnoth.wml_actions.credits_sequence(cfg)
 	-- NOTE: We're assuming the UI theme is already set to something suitable
 	--       for the credits display.
 
-	wesnoth.wml_actions.hide_unit {} -- failsafe
+	-- Debugging failsafe
+
+	wesnoth.wml_actions.hide_unit {}
+	wesnoth.color_adjust { red = 0, green = 0, blue = 0 }
 
 	-- Replace the game map with an empty void
 
@@ -436,12 +436,9 @@ function wesnoth.wml_actions.credits_sequence(cfg)
 
 	wesnoth.sides[1].shroud = true
 	wesnoth.wml_actions.place_shroud { side = 1}
-
 	wesnoth.wml_actions.redraw {}
 
-	-- FIXME: replace with an equivalent colour reset and delay, the background
-	--        is all black anyway so it makes no difference to fade in/out.
-	wesnoth.wml_actions.fade_in {}
+	-- Start the actual credits display
 
 	local ms = wesnoth.get_time_stamp()
 
@@ -501,12 +498,13 @@ function wesnoth.wml_actions.credits_sequence(cfg)
 		credits_single_block(title, body, duration)
 	end
 
-	local ms = wesnoth.get_time_stamp() - ms
-	wprintf(W_DBG, "CREDITS: took %0.1f seconds", ms / 1000.0)
+	ms = wesnoth.get_time_stamp() - ms
+	wprintf(W_DBG, "CREDITS: took %0.3f seconds", ms / 1000.0)
 
 	wesnoth.delay(post_wait)
 	wesnoth.wml_actions.fade_out_music { duration = music_fade_out }
 
+	-- In case there actually were units on the map at the start
 	wesnoth.wml_actions.unhide_unit {}
 end
 
