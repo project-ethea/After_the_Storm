@@ -7,8 +7,14 @@ Version 0.10.7+dev:
   * Moved part of the segmented scenario implementation to Lua.
 
 * Scenarios:
+  * E3S8A - Interim:
+    * Minor UI/cutscene tweaks.
   * E3S11 - After the Storm:
     * Substantial code refactoring.
+  * E3S12 - Destiny, part 3:
+    * Minor UI/cutscene tweaks.
+  * E3S13 - Epilogue:
+    * Minor UI/cutscene tweaks.
 
 
 Version 0.10.7:
