@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.7+dev:
 -------------------
+* General:
+  * Moved part of the segmented scenario implementation to Lua.
+
 * Scenarios:
   * E3S11 - After the Storm:
     * Substantial code refactoring.
