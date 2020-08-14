@@ -4,6 +4,7 @@ After the Storm - Changelog
 Version 0.10.7+dev:
 -------------------
 * General:
+  * Update to Naia 20200814.
   * Moved part of the segmented scenario implementation to Lua.
 
 * Scenarios:
