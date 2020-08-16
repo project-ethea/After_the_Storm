@@ -3,7 +3,10 @@ After the Storm - Changelog
 
 Version 0.10.10+dev:
 --------------------
-
+* Scenarios:
+  * E2S11 - A Final Confrontation:
+    * Fixed a bug where Elynia's temporary item given to her for story
+      progression would carry over into the next scenario (and E3 by proxy).
 
 
 Version 0.10.10:
