@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.10+dev:
 --------------------
+* Language and i18n:
+  * Updated translations: Russian.
+
 * Scenarios:
   * E2S11 - A Final Confrontation:
     * Fixed a bug where Elynia's temporary item given to her for story
