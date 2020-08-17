@@ -7,6 +7,8 @@ Version 0.10.10+dev:
   * Updated translations: Russian.
 
 * Scenarios:
+  * E1S9.1 - The Triad, part 1:
+    * Give the player a greater sense of urgency.
   * E2S11 - A Final Confrontation:
     * Fixed a bug where Elynia's temporary item given to her for story
       progression would carry over into the next scenario (and E3 by proxy).
