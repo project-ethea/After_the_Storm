@@ -79,7 +79,11 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 							T.column {
 								border = "all",
 								border_size = 5,
-								T.button { id = "ok", label = wgettext("OK"), return_value = 1 }
+								T.button {
+									id = "ok",
+									definition = "right_arrow_ornate",
+									return_value = 1,
+								}
 							}
 						}
 					}
