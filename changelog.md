@@ -7,6 +7,10 @@ Version 0.10.10+dev:
   * Updated translations: Russian.
 
 * Scenarios:
+  * Updated maps for the following scenarios not to use the deprecated Earthy
+    Reinforced Cave Wall `Xuce` terrain, which does not have graphics of its
+    own in 1.14 (it's effectively a duplicate of Mine Wall `Xuc`) and is slated
+    to be removed in a future version: E1S7, E1S9.2, E1S9.3, E1S13, E3S1.
   * E1S9.1 - The Triad, part 1:
     * Give the player a greater sense of urgency.
   * E2S11 - A Final Confrontation:

@@ -1,6 +1,3 @@
-border_size=0
-usage=mask
-
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
@@ -9,12 +6,12 @@ _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, 2 _f, _f, _f, _f
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uue, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uue, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uue^Zow, _f, Uue^Zow, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
-_f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uue^Ii, Rd, Xuce, Uhe^Zow, Rd^Zow, Uu^Uf, Uhe, Xuce, Uue^Dr, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
+_f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uue^Ii, Rd, Xuc, Uhe^Zow, Rd^Zow, Uu^Uf, Uhe, Xuc, Uue^Dr, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uue^Es, _f, Uhe^Zow, Uue^Zow, Uue^Zow, Rd^Zow, Uhe^Zow, _f^Zow, _f, _f, _f, Uue, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
-_f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Rd, _f, Xuce, Rd, Uue^Zow, Uue^Zow, Uue^Zow, Rd^Zow, Rd^Zow, Uue^Zow, Rd^Es, Uue^Ii, _f, Rd, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
+_f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Rd, _f, Xuc, Rd, Uue^Zow, Uue^Zow, Uue^Zow, Rd^Zow, Rd^Zow, Uue^Zow, Rd^Es, Uue^Ii, _f, Rd, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uhe^Zow, _f, Uue^Zow, Rd^Zow, Uue^Zow, Uue^Zow, Rd^Zow, Uue^Zow, Rd^Zow, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uue^Ii, Uue^Zow, Uue^Zow, Rd^Zow, Uue^Zow, Rd^Zow, Uue^Zow, Uue^Zow, Uhe^Zow, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
-_f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uue, Uue^Dr, Uhe, _f, Rd^Zow, _f, Uhe^Zow, Xuce^Zow, Uhe, Uhe, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
+_f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uue, Uue^Dr, Uhe, _f, Rd^Zow, _f, Uhe^Zow, Xuc^Zow, Uhe, Uhe, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uue, _f, _f, Rd^Dr, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, Uhe, Uue, _f, _f, Uue, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
 _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
