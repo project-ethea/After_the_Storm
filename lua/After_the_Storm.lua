@@ -737,3 +737,15 @@ function wesnoth.wml_actions.seismic_impact(cfg)
 		impact_additional_target(splash_u)
 	end
 end
+
+function ats_unit_swam_in_fountain_of_courage(u)
+	local mods = wml.get_child(u.__cfg, "modifications")
+	if mods then
+		for obj in wml.child_range(mods, "object") do
+			if obj.id == "fountain_of_courage" then
+				return true
+			end
+		end
+	end
+	return false
+end
