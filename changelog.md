@@ -13,6 +13,9 @@ Version 0.10.10+dev:
     to be removed in a future version: E1S7, E1S9.2, E1S9.3, E1S13, E3S1.
   * E1S9.1 - The Triad, part 1:
     * Give the player a greater sense of urgency.
+  * E1S9.2 - The Triad, part 2:
+    * Re-done terrain substitution mask for the final cutscene, as well as
+      minor changes to unit positioning and debris placement.
   * E2S11 - A Final Confrontation:
     * Fixed a bug where Elynia's temporary item given to her for story
       progression would carry over into the next scenario (and E3 by proxy).
