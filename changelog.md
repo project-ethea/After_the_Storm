@@ -19,6 +19,8 @@ Version 0.10.10+dev:
   * E2S11 - A Final Confrontation:
     * Fixed a bug where Elynia's temporary item given to her for story
       progression would carry over into the next scenario (and E3 by proxy).
+    * Fixed a bug where the boss fight sequence caused Lua errors on Easy
+      difficulty during the Shaxthal spawn at the end of every boss side turn.
   * E3S2.1 - Return to Raelthyn:
     * The Fearless Faerie returns as a loyal unit here if she survives until
       the start of E1S11.2 and is not recalled there.
