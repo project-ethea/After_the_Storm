@@ -3,7 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.11+dev:
 --------------------
-
+* Scenarios:
+  * E3S8A - Interim:
+    * Fixed incorrect object interaction with a brazier.
 
 
 Version 0.10.11:
