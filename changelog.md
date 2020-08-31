@@ -7,6 +7,10 @@ Version 0.10.11+dev:
   * E3S8A - Interim:
     * Fixed incorrect object interaction with a brazier.
 
+* Units:
+  * Units with the aqueous ability have any non-arcane resistances lower than
+    10% raised to 10% (but not tripled) on applicable terrain.
+
 
 Version 0.10.11:
 ----------------
