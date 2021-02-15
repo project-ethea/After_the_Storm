@@ -4,6 +4,8 @@ After the Storm - Changelog
 Version 0.10.11+dev:
 --------------------
 * Scenarios:
+  * Reintroduced Igor from IftU, available on E1S1 if he's alive at the
+    beginning of IftU S24.
   * E3S3 - Amidst the Ruins of Glamdrol:
     * Force Nar-hamoth to flee if the player kills both enemy leaders first.
   * E3S8A - Interim:
