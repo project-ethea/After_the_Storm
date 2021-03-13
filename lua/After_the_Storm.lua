@@ -320,25 +320,19 @@ local CREDITS_DISPLAY_MS                 = 5000
 local CREDITS_CONSECUTIVE_SCREENS_GAP_MS = 750
 local CREDITS_BASE_FONT_SIZE             = 30
 
-local function credits_alpha_print(text, size, alpha, duration)
+local function credits_alpha_print(text, size, alpha)
 	-- [print] does not support alpha blending. However, we know we are
 	-- rendering onto a black screen, so we can just emulate it by adjusting
 	-- the color between #00 and #FFF procedurally
 
 	local c = helper.round(255 * alpha)
 
-	if duration == nil then
-		-- This is used by non-fully-opaque steps so the text doesn't stay on
-		-- screen forever in case we miss frames or something.
-		duration = 1000
-	end
-
 	--wesnoth.message(string.format("alpha %0.1f, step %d", alpha, c))
 
 	wesnoth.wml_actions.print {
 		text     = text,
 		size     = size,
-		duration = duration,
+		duration = 100000,
 		red      = c,
 		green    = c,
 		blue     = c,
@@ -374,7 +368,7 @@ local function credits_single_block(title, body, duration, size)
 		credits_alpha_print(text, size, alpha)
 	end
 
-	credits_alpha_print(text, size, 1.0, duration)
+	credits_alpha_print(text, size, 1.0)
 	wesnoth.delay(duration)
 
 	-- Fade out

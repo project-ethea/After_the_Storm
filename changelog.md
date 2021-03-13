@@ -12,6 +12,8 @@ Version 0.10.11+dev:
     * Force Nar-hamoth to flee if the player kills both enemy leaders first.
   * E3S8A - Interim:
     * Fixed incorrect object interaction with a brazier.
+  * E3S11 - After the Storm:
+    * Fixed a timing issue causing double text fade-out on Wesnoth 1.15.x.
 
 * Units:
   * Units with the aqueous ability have any non-arcane resistances lower than
