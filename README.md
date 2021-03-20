@@ -57,9 +57,8 @@ campaign’s own directory.
 
 [4]: <https://github.com/project-ethea/Naia>
 
-A game screen resolution of **800x600 or greater** is recommended. Some
-sequences make use of floating labels, halos, and standing unit animations, so
-you might want to make sure these options are enabled under
+Some sequences make use of floating labels, halos, and standing unit
+animations, so you might want to make sure these options are enabled under
 **Preferences** → **Display**.
 
 
