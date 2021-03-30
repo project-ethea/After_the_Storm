@@ -3,8 +3,10 @@ type="campaign"
 version="@ PBLPOST:VERSION @"
 dependencies="AtS_Music,IftU_Music"
 
-author="shadowm (Iris Morelle)"
+author="Iris Morelle (shadowm)"
 email="shadowm@wesnoth.org"
+
+tags="IftU,AtS,UtBS,sequel,DiD,undead,outlaws,Chaos,demons,faeries,fairy,fairies,desert,cave,dungeon crawl,hell,inferno"
 
 description="This campaign is the immediate sequel to Invasion from the Unknown (IftU).
 
