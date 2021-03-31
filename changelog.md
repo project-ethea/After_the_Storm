@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.11+dev:
 --------------------
+* Language and i18n:
+  * Updated translations: French, Russian.
+
 * Scenarios:
   * Reintroduced Igor from IftU, available on E1S1 if he's alive at the
     beginning of IftU S24.
