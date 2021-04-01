@@ -1,8 +1,11 @@
 After the Storm - Changelog
 ===========================
 
-Version 0.10.11+dev:
---------------------
+Version 0.10.12:
+----------------
+* General:
+  * Update to Naia 20210401.
+
 * Language and i18n:
   * Updated translations: French, Russian.
 
