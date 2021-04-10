@@ -3,6 +3,8 @@ After the Storm - Changelog
 
 Version 0.10.12+dev:
 --------------------
+* Graphics:
+  * New or updated unit graphics: Elvish Avatar.
 
 
 Version 0.10.12:
