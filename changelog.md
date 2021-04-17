@@ -6,6 +6,10 @@ Version 0.10.12+dev:
 * Graphics:
   * New or updated unit graphics: Elvish Avatar.
 
+* Scenarios:
+  * E1S3 - Civil War in the North:
+    * Fixed Igor not teleporting along with the other heroes at the start.
+
 
 Version 0.10.12:
 ----------------
