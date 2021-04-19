@@ -10,6 +10,9 @@ Version 0.10.12+dev:
   * E1S3 - Civil War in the North:
     * Fixed Igor not teleporting along with the other heroes at the start.
 
+* Units:
+  * New unit type descriptions: Naiad.
+
 
 Version 0.10.12:
 ----------------
