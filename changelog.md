@@ -12,6 +12,9 @@ Version 0.10.12+dev:
 
 * Units:
   * New unit type descriptions: Naiad.
+  * Demon Messenger, Demon Spelldancer, Demon Stormtide, Demon Hellbent Tide,
+    Demon Slashing Gale, and Errant Executor can now receive the Fearless
+    trait.
 
 
 Version 0.10.12:
