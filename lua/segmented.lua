@@ -48,6 +48,7 @@ function wesnoth.wml_actions.change_floor(cfg)
 
 	wml.variables["floor_config.current"] = new_floor_num
 
+	wesnoth.wml_actions.clear_map_labels {}
 	wesnoth.wml_actions.remove_item {}
 
 	wesnoth.wml_actions.kill {
