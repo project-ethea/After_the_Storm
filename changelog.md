@@ -11,6 +11,8 @@ Version 0.10.12+dev:
 
 * Scenarios:
   * Made it so map labels are removed before specific cutscenes.
+  * E1S1 - The Skirmish:
+    * Igor can no longer smuggle items from IftU S21 through S24 into AtS.
   * E1S3 - Civil War in the North:
     * Fixed Igor not teleporting along with the other heroes at the start.
   * E3S8B - Destiny, part 1:
