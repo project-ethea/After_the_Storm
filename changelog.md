@@ -10,6 +10,8 @@ Version 0.10.12+dev:
   * Made it so map labels are removed before specific cutscenes.
   * E1S3 - Civil War in the North:
     * Fixed Igor not teleporting along with the other heroes at the start.
+  * E3S8B - Destiny, part 1:
+    * Fixed Igor's presence triggering a BUG condition.
 
 * Units:
   * New unit type descriptions: Naiad.
