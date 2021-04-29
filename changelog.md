@@ -17,6 +17,8 @@ Version 0.10.12+dev:
     * Fixed Igor not teleporting along with the other heroes at the start.
   * E3S8B - Destiny, part 1:
     * Fixed Igor's presence triggering a BUG condition.
+  * E3S11 - After the Storm:
+    * Igor now shows up in the cutscene if he is still alive at this point.
 
 * Units:
   * New unit type descriptions: Naiad.
