@@ -9,6 +9,9 @@ Version 0.10.12+dev:
 * Graphics:
   * New or updated unit graphics: Elvish Avatar.
 
+* Language and i18n:
+  * Updated translations: French, Russian.
+
 * Scenarios:
   * Made it so map labels are removed before specific cutscenes.
   * E1S1 - The Skirmish:
