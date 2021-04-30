@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.13+dev:
 --------------------
+* Language and i18n:
+  * Updated translations: Russian.
+
 * Scenarios:
   * E3S7B - Dark Sea:
     * Fixed a rare bug where the player defeating all enemies before turn 10
