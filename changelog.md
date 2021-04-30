@@ -3,6 +3,10 @@ After the Storm - Changelog
 
 Version 0.10.13+dev:
 --------------------
+* Scenarios:
+  * E3S8B - Destiny, part 1:
+    * Fixed Igor ending up stuck outside the boss room.
+
 * Units:
   * Reworked the implementation of Elynia's animations used in the E1S6.1 and
     E2S8 cutscenes so her regular playable unit type is used instead of a
