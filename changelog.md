@@ -4,6 +4,10 @@ After the Storm - Changelog
 Version 0.10.13+dev:
 --------------------
 * Scenarios:
+  * E3S7B - Dark Sea:
+    * Fixed a rare bug where the player defeating all enemies before turn 10
+      would result in early victory and incorrect player configuration for
+      subsequent scenarios.
   * E3S8B - Destiny, part 1:
     * Fixed Igor ending up stuck outside the boss room.
 
