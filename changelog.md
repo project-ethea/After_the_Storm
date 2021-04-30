@@ -3,6 +3,10 @@ After the Storm - Changelog
 
 Version 0.10.13+dev:
 --------------------
+* Units:
+  * Reworked the implementation of Elynia's animations used in the E1S6.1 and
+    E2S8 cutscenes so her regular playable unit type is used instead of a
+    cutscene-specific dummy.
 
 
 Version 0.10.13:
