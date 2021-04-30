@@ -1,8 +1,8 @@
 After the Storm - Changelog
 ===========================
 
-Version 0.10.12+dev:
---------------------
+Version 0.10.13:
+----------------
 * General:
   * Dropped support for Wesnoth versions 1.15.4 through 1.15.11.
   * Update to Naia 20210430.
