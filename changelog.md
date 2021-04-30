@@ -5,6 +5,7 @@ Version 0.10.12+dev:
 --------------------
 * General:
   * Dropped support for Wesnoth versions 1.15.4 through 1.15.11.
+  * Update to Naia 20210430.
 
 * Graphics:
   * New or updated unit graphics: Elvish Avatar.
