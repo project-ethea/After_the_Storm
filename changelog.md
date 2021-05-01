@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.14+dev:
 --------------------
+* Units:
+  * Enabled random name generation for Verlissh components for new
+    playthroughs.
 
 
 Version 0.10.14:
