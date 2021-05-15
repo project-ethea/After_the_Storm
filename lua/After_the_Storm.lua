@@ -416,7 +416,7 @@ function wesnoth.wml_actions.credits_sequence(cfg)
 	-- Debugging failsafe
 
 	wesnoth.wml_actions.hide_unit {}
-	wesnoth.color_adjust { red = 0, green = 0, blue = 0 }
+	wesnoth.wml_actions.reset_screen {}
 
 	-- Replace the game map with an empty void
 

@@ -3,6 +3,10 @@ After the Storm - Changelog
 
 Version 0.10.14+dev:
 --------------------
+* Scenarios:
+  * E3S11 - After the Storm:
+    * Fixed Lua error on Wesnoth 1.15.13 and later.
+
 * Units:
   * Enabled random name generation for Verlissh components for new
     playthroughs.
