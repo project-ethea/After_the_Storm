@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.14+dev:
 --------------------
+* Language and i18n:
+  * Updated translations: Russian.
+
 * Scenarios:
   * E3S11 - After the Storm:
     * Fixed Lua error on Wesnoth 1.15.13 and later.
