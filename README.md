@@ -37,8 +37,9 @@ Installing After the Storm
 
 Requirements:
  * Battle for Wesnoth 1.14.x (1.14.3 or later) or 1.15.x (1.15.12 or later).
- * *After the Storm Music* add-on from the Wesnoth add-ons server (optional,
-   includes additional music used throughout the campaign).
+ * *After the Storm Music* and *Invasion from the Unknown Music* add-ons from
+   the Wesnoth add-ons server (optional, include additional music used
+   throughout the campaign).
 
 Released versions of AtS should be obtained from the Battle for Wesnoth add-ons
 server using the game’s built-in client. Alternatively, players who know how to
