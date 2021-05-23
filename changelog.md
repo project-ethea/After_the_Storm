@@ -7,6 +7,7 @@ Version 0.10.15+dev:
   * E3S6 - Divergence:
     * Fixed Elynia saying good night after triggering a different dialogue if
       she is moved straight away from Anya to another character.
+    * Fixed Igor becoming impossible to interact with after talking to Anya.
 
 
 Version 0.10.15:
