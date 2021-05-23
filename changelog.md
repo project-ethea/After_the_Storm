@@ -3,6 +3,10 @@ After the Storm - Changelog
 
 Version 0.10.15+dev:
 --------------------
+* Scenarios:
+  * E3S6 - Divergence:
+    * Fixed Elynia saying good night after triggering a different dialogue if
+      she is moved straight away from Anya to another character.
 
 
 Version 0.10.15:
