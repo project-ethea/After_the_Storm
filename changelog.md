@@ -1,8 +1,8 @@
 After the Storm - Changelog
 ===========================
 
-Version 0.10.15+dev:
---------------------
+Version 0.10.16:
+----------------
 * Language and i18n:
   * Updated translations: Russian.
 
