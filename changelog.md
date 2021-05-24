@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.15+dev:
 --------------------
+* Language and i18n:
+  * Updated translations: Russian.
+
 * Scenarios:
   * E3S6 - Divergence:
     * Fixed Elynia saying good night after triggering a different dialogue if
