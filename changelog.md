@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.16+dev:
 --------------------
+* Units:
+  * Increased Lumeril Guard's melee attack from 14-3 to 16-3.
+  * Increased Lumeril Guard's ranged attack from 11-2 to 12-2.
 
 
 Version 0.10.16:
