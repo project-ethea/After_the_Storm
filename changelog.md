@@ -3,6 +3,11 @@ After the Storm - Changelog
 
 Version 0.10.16+dev:
 --------------------
+* Scenarios:
+  * Fixed Fire Guardian summoning to account for Fire Wraiths in Wesnoth
+    1.15.14 and later, including both event filtering fixes and balance changes
+    to the innate buff for the summons.
+
 * Units:
   * Increased Lumeril Guard's melee attack from 14-3 to 16-3.
   * Increased Lumeril Guard's ranged attack from 11-2 to 12-2.
