@@ -1,8 +1,8 @@
 After the Storm - Changelog
 ===========================
 
-Version 0.10.16+dev:
---------------------
+Version 0.10.17:
+----------------
 * Scenarios:
   * Fixed Fire Guardian summoning to account for Fire Wraiths in Wesnoth
     1.15.14 and later, including both event filtering fixes and balance changes
