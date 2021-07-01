@@ -4,6 +4,8 @@ After the Storm - Changelog
 Version 0.10.17+dev:
 --------------------
 * Scenarios:
+  * Replaced Fire Guardian summoning with Fire Wraith summoning for an
+    extra-crispy sensation.
   * E3S10 - Blood:
     * Changed Blood Core buffs to use `[object]` in order to fix an issue with
       them being purged by subsequent unit rebuilds.
