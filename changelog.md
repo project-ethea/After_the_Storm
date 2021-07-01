@@ -15,6 +15,7 @@ Version 0.10.17+dev:
     Wesnoth 1.16. This should fix an issue where one of the player characters
     may get buried under a pile of auxiliary Daze `[object]` modifiers in late
     Episode 3 scenarios.
+  * Lumeril Glyph is now a Monster unit with the Elemental trait.
 
 
 Version 0.10.17:
