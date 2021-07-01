@@ -3,7 +3,11 @@ After the Storm - Changelog
 
 Version 0.10.17+dev:
 --------------------
-
+* Units:
+  * Use the Wesnoth 1.15.3 implementation of the Daze weapon special on
+    Wesnoth 1.16. This should fix an issue where one of the player characters
+    may get buried under a pile of auxiliary Daze `[object]` modifiers in late
+    Episode 3 scenarios.
 
 
 Version 0.10.17:
