@@ -107,12 +107,12 @@ Demon unit sprites:
  * images/units/demons/hellbent-tide.png
  * images/units/demons/lumeril-glyph-mistress.png
  * images/units/demons/slashing-gale+female.png
- * images/units/spirits/lumeril-glyph-break-1.png
- * images/units/spirits/lumeril-glyph-break-2.png
- * images/units/spirits/lumeril-glyph-break-3.png
- * images/units/spirits/lumeril-glyph-break-4.png
- * images/units/spirits/lumeril-glyph-break-5.png
- * images/units/spirits/lumeril-glyph.png
+ * images/units/monsters/lumeril-glyph-break-1.png
+ * images/units/monsters/lumeril-glyph-break-2.png
+ * images/units/monsters/lumeril-glyph-break-3.png
+ * images/units/monsters/lumeril-glyph-break-4.png
+ * images/units/monsters/lumeril-glyph-break-5.png
+ * images/units/monsters/lumeril-glyph.png
 
 Mal Hekuba unit sprites:
 
