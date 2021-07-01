@@ -3,6 +3,11 @@ After the Storm - Changelog
 
 Version 0.10.17+dev:
 --------------------
+* Scenarios:
+  * E3S10 - Blood:
+    * Changed Blood Core buffs to use `[object]` in order to fix an issue with
+      them being purged by subsequent unit rebuilds.
+
 * Units:
   * Use the Wesnoth 1.15.3 implementation of the Daze weapon special on
     Wesnoth 1.16. This should fix an issue where one of the player characters
