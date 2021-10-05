@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 0.10.17+dev:
 --------------------
+* Language and i18n:
+  * Updated translations: French, Russian.
+
 * Scenarios:
   * Replaced Fire Guardian summoning with Fire Wraith summoning for an
     extra-crispy sensation.
