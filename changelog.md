@@ -1394,7 +1394,7 @@ Version 0.9.1:
 * Units:
   * Added sidebar icon for units affected by the 'stun' weapon special.
   * Added sidebar icon for units affected by the movement range bind spell.
-  * Applied changes from bumbadadabum's "The Aragwaithi" add-on, versions 1.0.6
+  * Applied changes from Astrid's "The Aragwaithi" add-on, versions 1.0.6
     through 1.0.9, and "Era of Chaos" version 1.1.0:
     * Archer HP increased from 26 to 28.
     * Granted the new 'precision' weapon special to the Greatbow's ranged
@@ -1697,7 +1697,7 @@ Version 0.8.1:
     * Decreased Shaxthal Razorbird's melee attack from 10-1 to 8-1.
     * Decreased Shaxthal Thunderbird's melee attack from 13-1 to 10-1.
   * Gave Doors a unit icon for the sidebar and the attack dialog.
-  * Updated Aragwaith units to match the faction from bumbadadabum's
+  * Updated Aragwaith units to match the faction from Astrid's
     "The Aragwaithi" add-on. This has resulted in the following changes:
     * Protection only affects allied L1 and L0 units instead of any allied
       lower level unit
