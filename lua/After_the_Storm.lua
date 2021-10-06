@@ -161,7 +161,7 @@ function wesnoth.wml_actions.final_boss_hp_tint(cfg)
 	--
 
 	local hp_ratio = u.hitpoints / u.max_hitpoints
-	local s = helper.round(-10 - 50 * (1.0 - hp_ratio))
+	local s = mathx.round(-10 - 50 * (1.0 - hp_ratio))
 
 	wprintf(W_DBG, "[screen_hp_tint] HP: %d/%d (%.1f) -> %d", u.hitpoints, u.max_hitpoints, hp_ratio, s)
 
@@ -325,7 +325,7 @@ local function credits_alpha_print(text, size, alpha)
 	-- rendering onto a black screen, so we can just emulate it by adjusting
 	-- the color between #00 and #FFF procedurally
 
-	local c = helper.round(255 * alpha)
+	local c = mathx.round(255 * alpha)
 
 	--wesnoth.message(string.format("alpha %0.1f, step %d", alpha, c))
 
