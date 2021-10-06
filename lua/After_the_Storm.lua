@@ -681,7 +681,7 @@ function wesnoth.wml_actions.seismic_impact(cfg)
 		-- happen (such as running into the concurrent sound samples limit)
 
 		if status_changed and not ui_sound_played then
-			wesnoth.play_sound("slowed.wav")
+			wesnoth.audio.play("slowed.wav")
 			ui_sound_played = true
 		end
 
