@@ -661,7 +661,7 @@ function wesnoth.wml_actions.seismic_impact(cfg)
 			status_changed = true
 		end
 
-		wesnoth.add_modification(u, "object", {
+		u:add_modification("object", {
 			id = "seismic_effect_obj",
 			take_only_once = false,
 			silent = true,
