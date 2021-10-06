@@ -543,7 +543,7 @@ function wesnoth.wml_conditionals.player_ghost_limit_reached(cfg)
 	local variable = cfg.variable or helper.wml_error("[cpgl] Missing required variable= attribute")
 	local limit = cfg.limit or helper.wml_error("[cpgl] Missing required limit= attribute")
 
-	local count = #wesnoth.get_units(SUF_GHOST_UNITS) + #wesnoth.get_recall_units(SUF_GHOST_UNITS)
+	local count = #wesnoth.get_units(SUF_GHOST_UNITS) + #wesnoth.units.find_on_recall(SUF_GHOST_UNITS)
 
 	wml.variables[variable] = count
 
@@ -562,7 +562,7 @@ function wesnoth.wml_actions.player_ghost_trap()
 	local recall_or_map = wesnoth.random(2)
 
 	local on_map = wesnoth.get_units(SUF_GHOST_UNITS)
-	local off_map = wesnoth.get_recall_units(SUF_GHOST_UNITS)
+	local off_map = wesnoth.units.find_on_recall(SUF_GHOST_UNITS)
 
 	local r, u = 0, nil
 
