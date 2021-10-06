@@ -3,7 +3,14 @@ After the Storm - Changelog
 
 Version 0.11.0-dev:
 -------------------
+* General:
+  * First fully-supported Wesnoth 1.16 release, supporting Wesnoth 1.15.14 and
+    later.
+  * Removed all compatibility code for Wesnoth 1.15.13 and earlier.
 
+* Units:
+  * Switched all units, abilities, and weapon specials to the 1.16 special
+    notes syntax.
 
 
 Version 0.10.18:
