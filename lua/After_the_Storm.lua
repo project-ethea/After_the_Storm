@@ -339,7 +339,7 @@ local function credits_alpha_print(text, size, alpha)
 	}
 
 	-- Don't let the game busy loop during fade-in/fade-out
-	wesnoth.delay(20)
+	wesnoth.interface.delay(20)
 end
 
 local function credits_single_block(title, body, duration, size)
@@ -369,14 +369,14 @@ local function credits_single_block(title, body, duration, size)
 	end
 
 	credits_alpha_print(text, size, 1.0)
-	wesnoth.delay(duration)
+	wesnoth.interface.delay(duration)
 
 	-- Fade out
 	for alpha = 1.0, 0.0, -0.1 do
 		credits_alpha_print(text, size, alpha)
 	end
 
-	wesnoth.delay(CREDITS_CONSECUTIVE_SCREENS_GAP_MS)
+	wesnoth.interface.delay(CREDITS_CONSECUTIVE_SCREENS_GAP_MS)
 end
 
 local function generate_empty_map(width, height)
@@ -440,7 +440,7 @@ function wesnoth.wml_actions.credits_sequence(cfg)
 	wesnoth.music_list.add("silence.ogg", true)
 	wesnoth.music_list.play(music)
 
-	wesnoth.delay(pre_wait)
+	wesnoth.interface.delay(pre_wait)
 
 	for section in wml.child_range(cfg, "section") do
 		-- we do allow nil for these two
@@ -495,7 +495,7 @@ function wesnoth.wml_actions.credits_sequence(cfg)
 	ms = wesnoth.get_time_stamp() - ms
 	wprintf(W_DBG, "CREDITS: took %0.3f seconds", ms / 1000.0)
 
-	wesnoth.delay(post_wait)
+	wesnoth.interface.delay(post_wait)
 	wesnoth.wml_actions.fade_out_music { duration = music_fade_out }
 
 	-- In case there actually were units on the map at the start
