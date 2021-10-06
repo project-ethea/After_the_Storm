@@ -685,7 +685,7 @@ function wesnoth.wml_actions.seismic_impact(cfg)
 			ui_sound_played = true
 		end
 
-		wesnoth.float_label(u.x, u.y, ("<span foreground='#c4c480'>%s</span>"):format(_("seism")))
+		wesnoth.interface.float_label(u.x, u.y, ("<span foreground='#c4c480'>%s</span>"):format(_("seism")))
 	end
 
 
