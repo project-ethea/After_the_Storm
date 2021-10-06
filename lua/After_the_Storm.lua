@@ -60,7 +60,7 @@ function wesnoth.wml_actions.animate_control_spires(cfg)
 		return
 	end
 
-	local animator = wesnoth.create_animator()
+	local animator = wesnoth.units.create_animator()
 
 	for i, u in ipairs(units) do
 		local loc = wesnoth.get_locations({
