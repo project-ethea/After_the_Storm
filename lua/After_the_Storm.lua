@@ -54,7 +54,7 @@ end
 -----------
 
 function wesnoth.wml_actions.animate_control_spires(cfg)
-	local units = wesnoth.get_units(cfg)
+	local units = wesnoth.units.find_on_map(cfg)
 
 	if not units then
 		return
@@ -144,7 +144,7 @@ function wesnoth.wml_actions.final_boss_hp_tint(cfg)
 	-- advanced semantics, different from an actual SUF.
 	local unit_id = cfg.id or
 		helper.wml_error("[screen_hp_tint]: No unit id specified")
-	local u = wesnoth.get_units({ id = unit_id })[1]
+	local u = wesnoth.units.find_on_map({ id = unit_id })[1]
 
 	if not u then
 		wprintf(W_WARN, "[screen_hp_tint]: Unit disappeared early?")
@@ -180,7 +180,7 @@ function wesnoth.wml_actions.dreamwalk(cfg)
 		helper.wml_error("[marsap]: Destination invalid or out of map bounds!")
 	end
 
-	local u = wesnoth.get_units(cfg)[1] or helper.wml_error("[marsap]: No matching units!")
+	local u = wesnoth.units.find_on_map(cfg)[1] or helper.wml_error("[marsap]: No matching units!")
 
 	-- We use a fixed reach value for visibility calculation. It doesn't take
 	-- into account vision, jamming, or movement costs, but that's okay for our
@@ -244,7 +244,7 @@ function wesnoth.wml_actions.push_units_away_from(cfg)
 	local suf = wml.get_child(cfg, "filter") or
 		helper.wml_error("[puaf]: Missing SUF")
 
-	local units = wesnoth.get_units(suf)
+	local units = wesnoth.units.find_on_map(suf)
 
 	if not units then
 		wprintf(W_WARN, "[puaf]: No units matched SUF (???)")
@@ -270,7 +270,7 @@ function wesnoth.wml_actions.push_units_away_from(cfg)
 
 		if location_is_on_map(new_pos) and unit_can_stand_on_location(new_pos, u) then
 			-- NOTE: This is redundant but you can never be too safe, right?
-			if wesnoth.get_unit(new_pos[1], new_pos[2]) then
+			if wesnoth.units.get(new_pos[1], new_pos[2]) then
 				helper.wml_error("[puaf]: Wesnoth is on drugs, call an ambulance")
 			end
 
@@ -507,7 +507,7 @@ end
 function wesnoth.wml_actions.dbg_test_variation(cfg)
 	local new_variation = cfg.variation_name
 
-	local units = wesnoth.get_units({ side=2, canrecruit=true })
+	local units = wesnoth.units.find_on_map({ side=2, canrecruit=true })
 	if not units then
 		return
 	end
@@ -536,14 +536,14 @@ local SUF_GHOST_UNITS = {
 }
 
 function wesnoth.wml_conditionals.player_ghost_limit_reached(cfg)
-	--if not wesnoth.get_unit("Zynara") then
+	--if not wesnoth.units.get("Zynara") then
 	--	return false
 	--end
 
 	local variable = cfg.variable or helper.wml_error("[cpgl] Missing required variable= attribute")
 	local limit = cfg.limit or helper.wml_error("[cpgl] Missing required limit= attribute")
 
-	local count = #wesnoth.get_units(SUF_GHOST_UNITS) + #wesnoth.units.find_on_recall(SUF_GHOST_UNITS)
+	local count = #wesnoth.units.find_on_map(SUF_GHOST_UNITS) + #wesnoth.units.find_on_recall(SUF_GHOST_UNITS)
 
 	wml.variables[variable] = count
 
@@ -561,7 +561,7 @@ function wesnoth.wml_actions.player_ghost_trap()
 
 	local recall_or_map = wesnoth.random(2)
 
-	local on_map = wesnoth.get_units(SUF_GHOST_UNITS)
+	local on_map = wesnoth.units.find_on_map(SUF_GHOST_UNITS)
 	local off_map = wesnoth.units.find_on_recall(SUF_GHOST_UNITS)
 
 	local r, u = 0, nil
@@ -584,7 +584,7 @@ function wesnoth.wml_actions.player_ghost_trap()
 		local recall_id = u.id
 
 		wesnoth.wml_actions.recall { id = recall_id, x = recall_x, y = recall_y, show = false }
-		wesnoth.get_unit(recall_id).side = wild_ghosts_side
+		wesnoth.units.get(recall_id).side = wild_ghosts_side
 	else
 		-- Transfer the unit to its new side at the end of the player's turn.
 		local T = wml.tag
@@ -626,10 +626,10 @@ function wesnoth.wml_actions.seismic_impact(cfg)
 	-- unit's lifespan.
 	--
 
-	local src = wesnoth.get_unit(ctx.x1, ctx.y1)
+	local src = wesnoth.units.get(ctx.x1, ctx.y1)
 	local src_atk = wml.get_child(ctx, "weapon")
 
-	local dst = wesnoth.get_unit(ctx.x2, ctx.y2)
+	local dst = wesnoth.units.get(ctx.x2, ctx.y2)
 	local dst_atk = wml.get_child(ctx, "second_weapon")
 
 	if src.variables.seismic_last_turn == wesnoth.current.turn then
@@ -718,7 +718,7 @@ function wesnoth.wml_actions.seismic_impact(cfg)
 
 	-- Find additional targets
 
-	local splash_units = wesnoth.get_units {
+	local splash_units = wesnoth.units.find_on_map {
 		T.filter_adjacent { x = dst.x, y = dst.y },
 		T.filter_side { T.enemy_of { side = src.side } }
 	}
