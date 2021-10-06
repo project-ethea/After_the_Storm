@@ -434,7 +434,7 @@ function wesnoth.wml_actions.credits_sequence(cfg)
 
 	-- Start the actual credits display
 
-	local ms = wesnoth.get_time_stamp()
+	local ms = wesnoth.ms_since_init()
 
 	wesnoth.music_list.clear()
 	wesnoth.music_list.add("silence.ogg", true)
@@ -492,7 +492,7 @@ function wesnoth.wml_actions.credits_sequence(cfg)
 		credits_single_block(title, body, duration)
 	end
 
-	ms = wesnoth.get_time_stamp() - ms
+	ms = wesnoth.ms_since_init() - ms
 	wprintf(W_DBG, "CREDITS: took %0.3f seconds", ms / 1000.0)
 
 	wesnoth.interface.delay(post_wait)
