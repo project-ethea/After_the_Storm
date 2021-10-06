@@ -32,7 +32,7 @@ function wesnoth.wml_actions.s9_area_spawns(cfg)
 		if #locs == 0 then
 			return
 		end
-		local r = helper.rand(("1..%d"):format(#locs))
+		local r = mathx.random_choice(("1..%d"):format(#locs))
 		local x, y = locs[r][1], locs[r][2]
 		spawn_loyal_player_unit("Skeleton", x, y)
 		table.remove(locs, r)
@@ -42,7 +42,7 @@ function wesnoth.wml_actions.s9_area_spawns(cfg)
 		if #locs == 0 then
 			return
 		end
-		local r = helper.rand(("1..%d"):format(#locs))
+		local r = mathx.random_choice(("1..%d"):format(#locs))
 		local x, y = locs[r][1], locs[r][2]
 		spawn_loyal_player_unit("Ghost", x, y)
 		table.remove(locs, r)
@@ -642,7 +642,7 @@ function wesnoth.wml_actions.seismic_impact(cfg)
 
 	-- 25% chance to return true
 	local function confirm_status_inflict()
-		return helper.rand("A,A,A,A,B,B,B,B,C,C,C,C,D,D,D,D") == "A"
+		return mathx.random_choice("A,A,A,A,B,B,B,B,C,C,C,C,D,D,D,D") == "A"
 	end
 
 	local ui_sound_played = false
