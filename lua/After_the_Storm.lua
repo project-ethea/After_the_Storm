@@ -552,14 +552,14 @@ end
 
 local function random_map_location()
 	local locs = wesnoth.get_locations { include_borders = false }
-	local r = wesnoth.random(#locs)
+	local r = mathx.random(#locs)
 	return locs[r][1], locs[r][2]
 end
 
 function wesnoth.wml_actions.player_ghost_trap()
 	local wild_ghosts_side = wml.variables.wild_ghosts_side or 2
 
-	local recall_or_map = wesnoth.random(2)
+	local recall_or_map = mathx.random(2)
 
 	local on_map = wesnoth.units.find_on_map(SUF_GHOST_UNITS)
 	local off_map = wesnoth.units.find_on_recall(SUF_GHOST_UNITS)
@@ -567,10 +567,10 @@ function wesnoth.wml_actions.player_ghost_trap()
 	local r, u = 0, nil
 
 	if recall_or_map == 2 and #off_map > 0 then
-		r = wesnoth.random(#off_map) or helper.wml_error("[pgt] bad off-map selection")
+		r = mathx.random(#off_map) or helper.wml_error("[pgt] bad off-map selection")
 		u = off_map[r]
 	else
-		r = wesnoth.random(#on_map) or helper.wml_error("[pgt] bad on-map selection")
+		r = mathx.random(#on_map) or helper.wml_error("[pgt] bad on-map selection")
 		u = on_map[r]
 	end
 
