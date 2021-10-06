@@ -259,7 +259,7 @@ function wesnoth.wml_actions.push_units_away_from(cfg)
 
 	local function unit_can_stand_on_location(pos, unit)
 		local new_pos = {0, 0}
-		new_pos[1], new_pos[2] = wesnoth.paths.find_vacant_tile(pos[1], pos[2], unit)
+		new_pos[1], new_pos[2] = wesnoth.paths.find_vacant_hex(pos[1], pos[2], unit)
 		return new_pos[1] == pos[1] and new_pos[2] == pos[2]
 	end
 
