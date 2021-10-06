@@ -18,7 +18,7 @@ local T = wml.tag
 function wesnoth.wml_actions.item_choice_dialog(cfg)
 	-- Some early sanity checking.
 	if not wml.get_child(cfg, "option") then
-		helper.wml_error("[item_choice_dialog]: missing mandatory [option] children")
+		wml.error("[item_choice_dialog]: missing mandatory [option] children")
 	end
 
 	local variable = nil

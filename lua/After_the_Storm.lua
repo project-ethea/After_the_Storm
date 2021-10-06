@@ -88,18 +88,18 @@ end
 
 function wesnoth.wml_actions.store_vacant_spawn_location(cfg)
 	local variable = cfg.variable or "location"
-	local direction = cfg.direction or helper.wml_error("[store_vacant_spawn_location]: Missing direction!")
+	local direction = cfg.direction or wml.error("[store_vacant_spawn_location]: Missing direction!")
 	local x = tonumber(cfg.x)
 	local y = tonumber(cfg.y)
 
 	if not (x and y) then
-		helper.wml_error("[store_vacant_spawn_location]: x,y must describe an on-map location!")
+		wml.error("[store_vacant_spawn_location]: x,y must describe an on-map location!")
 	end
 
 	local radius = tonumber(cfg.radius)
 
 	if not radius or radius < 1 then
-		helper.wml_error("[store_vacant_spawn_location]: Radius must be greater than 1!")
+		wml.error("[store_vacant_spawn_location]: Radius must be greater than 1!")
 	end
 
 	local w, h = wesnoth.get_map_size()
@@ -143,7 +143,7 @@ function wesnoth.wml_actions.final_boss_hp_tint(cfg)
 	-- NOTE: This is not a SUF. In the future the id= attribute may have more
 	-- advanced semantics, different from an actual SUF.
 	local unit_id = cfg.id or
-		helper.wml_error("[screen_hp_tint]: No unit id specified")
+		wml.error("[screen_hp_tint]: No unit id specified")
 	local u = wesnoth.units.find_on_map({ id = unit_id })[1]
 
 	if not u then
@@ -177,10 +177,10 @@ function wesnoth.wml_actions.dreamwalk(cfg)
 	local map_w, map_h, map_b = wesnoth.get_map_size()
 
 	if dst_x <= 0 or dst_x > map_w or dst_y <= 0 or dst_y > map_h then
-		helper.wml_error("[marsap]: Destination invalid or out of map bounds!")
+		wml.error("[marsap]: Destination invalid or out of map bounds!")
 	end
 
-	local u = wesnoth.units.find_on_map(cfg)[1] or helper.wml_error("[marsap]: No matching units!")
+	local u = wesnoth.units.find_on_map(cfg)[1] or wml.error("[marsap]: No matching units!")
 
 	-- We use a fixed reach value for visibility calculation. It doesn't take
 	-- into account vision, jamming, or movement costs, but that's okay for our
@@ -189,7 +189,7 @@ function wesnoth.wml_actions.dreamwalk(cfg)
 
 	local src_x, src_y = u.x, u.y
 	if not src_x or not src_y then
-		helper.wml_error("[marsap]: Bad source location!")
+		wml.error("[marsap]: Bad source location!")
 	end
 
 	-- Compute a set of locations to remove shroud from so that we don't pass
@@ -238,11 +238,11 @@ end
 function wesnoth.wml_actions.push_units_away_from(cfg)
 	local center = { x = cfg.from_x, y = cfg.from_y }
 	if not center.x or not center.y then
-		helper.wml_error("[puaf]: Missing center coordinates")
+		wml.error("[puaf]: Missing center coordinates")
 	end
 
 	local suf = wml.get_child(cfg, "filter") or
-		helper.wml_error("[puaf]: Missing SUF")
+		wml.error("[puaf]: Missing SUF")
 
 	local units = wesnoth.units.find_on_map(suf)
 
@@ -271,7 +271,7 @@ function wesnoth.wml_actions.push_units_away_from(cfg)
 		if location_is_on_map(new_pos) and unit_can_stand_on_location(new_pos, u) then
 			-- NOTE: This is redundant but you can never be too safe, right?
 			if wesnoth.units.get(new_pos[1], new_pos[2]) then
-				helper.wml_error("[puaf]: Wesnoth is on drugs, call an ambulance")
+				wml.error("[puaf]: Wesnoth is on drugs, call an ambulance")
 			end
 
 			wprintf(W_DBG, "[puaf]: Move unit %s -%s (%d,%d) -> (%d,%d)", u.id, dir, pos[1], pos[2], new_pos[1], new_pos[2])
@@ -291,7 +291,7 @@ function wesnoth.wml_actions.store_area_edge(cfg)
 	local variable= cfg.variable
 
 	if not cfg.x or not cfg.y or not cfg.radius or not cfg.variable then
-		helper.wml_error("[store_radius_edge] Missing required x=, y=, radius=, or variable= attribute")
+		wml.error("[store_radius_edge] Missing required x=, y=, radius=, or variable= attribute")
 	end
 
 	local location_set = wesnoth.require "lua/location_set.lua"
@@ -394,7 +394,7 @@ local function generate_empty_map(width, height)
 end
 
 local function do_credits_error(message)
-	-- Do NOT use helper.wml_error here -- it causes the game to skip to E3S12
+	-- Do NOT use wml.error here -- it causes the game to skip to E3S12
 	-- directly due to the E3S11 event handling structure never giving the
 	-- game a chance to return control to the player. This results in a silent
 	-- failure that can come across as intentional behaviour.
@@ -540,8 +540,8 @@ function wesnoth.wml_conditionals.player_ghost_limit_reached(cfg)
 	--	return false
 	--end
 
-	local variable = cfg.variable or helper.wml_error("[cpgl] Missing required variable= attribute")
-	local limit = cfg.limit or helper.wml_error("[cpgl] Missing required limit= attribute")
+	local variable = cfg.variable or wml.error("[cpgl] Missing required variable= attribute")
+	local limit = cfg.limit or wml.error("[cpgl] Missing required limit= attribute")
 
 	local count = #wesnoth.units.find_on_map(SUF_GHOST_UNITS) + #wesnoth.units.find_on_recall(SUF_GHOST_UNITS)
 
@@ -567,10 +567,10 @@ function wesnoth.wml_actions.player_ghost_trap()
 	local r, u = 0, nil
 
 	if recall_or_map == 2 and #off_map > 0 then
-		r = mathx.random(#off_map) or helper.wml_error("[pgt] bad off-map selection")
+		r = mathx.random(#off_map) or wml.error("[pgt] bad off-map selection")
 		u = off_map[r]
 	else
-		r = mathx.random(#on_map) or helper.wml_error("[pgt] bad on-map selection")
+		r = mathx.random(#on_map) or wml.error("[pgt] bad on-map selection")
 		u = on_map[r]
 	end
 

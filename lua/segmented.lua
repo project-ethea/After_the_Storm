@@ -30,7 +30,7 @@ function wesnoth.wml_actions.change_floor(cfg)
 	local new_floor_num = tonumber(cfg.floor_number or 0)
 
 	if not new_floor_num or new_floor_num > num_floors then
-		helper.wml_error(("Attempted to enter floor %d, which is out of range ([1..%d])"):format(new_floor_num, num_floors))
+		wml.error(("Attempted to enter floor %d, which is out of range ([1..%d])"):format(new_floor_num, num_floors))
 	end
 
 	local floor = wml.variables[("floor_config.floor[%d]"):format(new_floor_num - 1)]
