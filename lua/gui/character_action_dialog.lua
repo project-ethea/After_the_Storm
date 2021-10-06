@@ -92,7 +92,7 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 		}
 	} -- end dialog_definition
 
-	local res = wesnoth.synchronize_choice(function()
+	local res = wesnoth.sync.evaluate_single(function()
 		local choice = 0
 
 		local function on_select()

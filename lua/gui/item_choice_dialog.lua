@@ -226,7 +226,7 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 		on_select()
 	end
 
-	local res = wesnoth.synchronize_choice(function()
+	local res = wesnoth.sync.evaluate_single(function()
 		local choice = -1
 		local retval = wesnoth.show_dialog(
 			dialog_definition, preshow,

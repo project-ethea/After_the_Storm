@@ -367,7 +367,7 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 	end
 
 	-- This dialog is merely informative, so we don't
-	-- need to use wesnoth.synchronize_choice or set
+	-- need to use wesnoth.sync.evaluate_single or set
 	-- any state after it finishes.
 
 	wesnoth.show_dialog(dialog_definition, preshow)
