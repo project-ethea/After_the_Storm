@@ -196,7 +196,7 @@ function wesnoth.wml_actions.dreamwalk(cfg)
 	-- the same coordinates more than once.
 	-- FIXME: Probably could optimize the radius search somehow.
 
-	local path = wesnoth.find_path(src_x, src_y, dst_x, dst_y)
+	local path = wesnoth.paths.find_path(src_x, src_y, dst_x, dst_y)
 	local region = location_set.of_pairs(path)
 	local rawsize = 0
 
