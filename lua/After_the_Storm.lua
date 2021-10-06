@@ -436,9 +436,9 @@ function wesnoth.wml_actions.credits_sequence(cfg)
 
 	local ms = wesnoth.ms_since_init()
 
-	wesnoth.music_list.clear()
-	wesnoth.music_list.add("silence.ogg", true)
-	wesnoth.music_list.play(music)
+	wesnoth.audio.music_list.clear()
+	wesnoth.audio.music_list.add("silence.ogg", true)
+	wesnoth.audio.music_list.play(music)
 
 	wesnoth.interface.delay(pre_wait)
 
