@@ -12,7 +12,7 @@ Version 0.11.0-dev:
   * Cosmetic changes to scenario maps: E1S9.2, E1S9.3, E1S13, E2S0, E3S0.1,
     E3S7A.1F1, E3S7A.1F2, E3S7A.2, E3S8A.1, E3S8A.2, E3S8C, E3S9F1, E3S9F2,
     E3S9F3, E3S10, E3S11F4, E3S12, E3S7B, E3S8B, E3S13, E1S11.2, E1S12,
-    E1S11.1, E1S1, E1S3, E1S7.
+    E1S11.1, E1S1, E1S3, E1S7, E2S2, E2S5, E2S9, E2S10, E2S11.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
