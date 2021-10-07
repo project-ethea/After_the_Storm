@@ -8,6 +8,11 @@ Version 0.11.0-dev:
     later.
   * Removed all compatibility code for Wesnoth 1.15.13 and earlier.
 
+* Scenarios:
+  * Cosmetic changes to scenario maps: E1S9.2, E1S9.3, E1S13, E2S0, E3S0.1,
+    E3S7A.1F1, E3S7A.1F2, E3S7A.2, E3S8A.1, E3S8A.2, E3S8C, E3S9F1, E3S9F2,
+    E3S9F3, E3S10, E3S11F4, E3S12, E3S7B, E3S8B, E3S13.
+
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
     notes syntax.
