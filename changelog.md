@@ -3,7 +3,8 @@ After the Storm - Changelog
 
 Version 0.10.18+dev:
 --------------------
-
+* General:
+  * Accept Wesnoth 1.16.x.
 
 
 Version 0.10.18:
