@@ -11,3 +11,6 @@ _server.pbl
 
 # Maintenance mode toggle
 base-maint.cfg
+
+# Comes from applying patches
+*.orig
