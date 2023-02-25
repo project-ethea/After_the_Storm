@@ -2,7 +2,7 @@
 -- Segmented scenario library
 --
 -- After the Storm
--- Copyright (C) 2012 - 2021 by Iris Morelle <shadowm@wesnoth.org>
+-- Copyright (C) 2012 - 2023 by Iris Morelle <shadowm@wesnoth.org>
 --
 -- See COPYING for usage terms.
 --
