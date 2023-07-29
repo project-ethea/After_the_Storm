@@ -124,7 +124,7 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 			on_select()
 		end
 
-		wesnoth.show_dialog(dialog_definition, preshow, nil)
+		gui.show_dialog(dialog_definition, preshow, nil)
 
 		return { value = choice }
 	end)

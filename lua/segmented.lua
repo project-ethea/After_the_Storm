@@ -20,8 +20,8 @@ end
 
 local function dispatch_floor_events(action)
 	wprintf(W_INFO, "dispatching floor events for action %s on floor %d", action, current_floor())
-	wesnoth.fire_event(("%s floor"):format(action))
-	wesnoth.fire_event(("%s floor %d"):format(action, current_floor()))
+	wesnoth.game_events.fire(("%s floor"):format(action))
+	wesnoth.game_events.fire(("%s floor %d"):format(action, current_floor()))
 end
 
 function wesnoth.wml_actions.change_floor(cfg)

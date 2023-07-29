@@ -53,5 +53,5 @@ function wesnoth.wml_actions.top_message(cfg)
 		wesnoth.set_dialog_markup(true, "message")
 	end
 
-	wesnoth.show_dialog(dd, preshow, nil)
+	gui.show_dialog(dd, preshow, nil)
 end

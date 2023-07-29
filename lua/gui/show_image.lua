@@ -38,5 +38,5 @@ function wesnoth.wml_actions.show_image(cfg)
 		wesnoth.set_dialog_value(img, "image")
 	end
 
-	wesnoth.show_dialog(dd, preshow, nil)
+	gui.show_dialog(dd, preshow, nil)
 end

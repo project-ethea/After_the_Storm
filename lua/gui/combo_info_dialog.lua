@@ -370,5 +370,5 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 	-- need to use wesnoth.sync.evaluate_single or set
 	-- any state after it finishes.
 
-	wesnoth.show_dialog(dialog_definition, preshow)
+	gui.show_dialog(dialog_definition, preshow)
 end
