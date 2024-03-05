@@ -13,7 +13,7 @@ local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
 function spawn_loyal_player_unit(type_id, loc_x, loc_y)
 	-- Inelegant, I know, but put_unit() invokes a code path
 	-- where animate= doesn't have a meaning.
-	wesnoth.fire("unit", {
+	wml.fire("unit", {
 		x = loc_x,
 		y = loc_y,
 		side = 1,
