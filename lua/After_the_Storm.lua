@@ -26,14 +26,14 @@ end
 function wesnoth.wml_actions.s9_area_spawns(cfg)
 	local num_skels = cfg.skeletons or 1
 	local num_ghosts = cfg.ghosts or 1
-	local locs = wesnoth.get_locations(cfg)
+	local locs = wesnoth.map.find(cfg)
 
 	for i = 1, num_skels do
 		if #locs == 0 then
 			return
 		end
 		local r = mathx.random_choice(("1..%d"):format(#locs))
-		local x, y = locs[r][1], locs[r][2]
+		local x, y = locs[r].x, locs[r].y
 		spawn_loyal_player_unit("Skeleton", x, y)
 		table.remove(locs, r)
 	end
@@ -43,7 +43,7 @@ function wesnoth.wml_actions.s9_area_spawns(cfg)
 			return
 		end
 		local r = mathx.random_choice(("1..%d"):format(#locs))
-		local x, y = locs[r][1], locs[r][2]
+		local x, y = locs[r].x, locs[r].y
 		spawn_loyal_player_unit("Ghost", x, y)
 		table.remove(locs, r)
 	end
@@ -63,13 +63,13 @@ function wesnoth.wml_actions.animate_control_spires(cfg)
 	local animator = wesnoth.units.create_animator()
 
 	for i, u in ipairs(units) do
-		local loc = wesnoth.get_locations({
+		local loc = wesnoth.map.find({
 			{ "filter_adjacent_location", {
 				x = u.x, y = u.y, adjacent = "-n"
 			}}
 		})[1]
 
-		local dir = wesnoth.map.get_relative_dir(u.x, u.y, loc[1], loc[2])
+		local dir = wesnoth.map.get_relative_dir(u.x, u.y, loc.x, loc.y)
 		u.facing = dir
 
 		animator:add(u, "portal beam", "hits", {
@@ -105,7 +105,7 @@ function wesnoth.wml_actions.store_vacant_spawn_location(cfg)
 	local w, h = wesnoth.get_map_size()
 
 	for k = 1, radius do
-		local loc = wesnoth.get_locations({
+		local loc = wesnoth.map.find({
 			-- On map.
 			x = ("1-%d"):format(w),
 			y = ("1-%d"):format(h),
@@ -122,8 +122,8 @@ function wesnoth.wml_actions.store_vacant_spawn_location(cfg)
 		})[1]
 
 		if loc then
-			x = loc[1]
-			y = loc[2]
+			x = loc.x
+			y = loc.y
 		else
 			x = 0
 			y = 0
@@ -201,7 +201,7 @@ function wesnoth.wml_actions.dreamwalk(cfg)
 	local rawsize = 0
 
 	for n, loc in ipairs(path) do
-		local subregion = wesnoth.get_locations { x = loc[1], y = loc[2], radius = reach }
+		local subregion = wesnoth.map.find { x = loc.x, y = loc.y, radius = reach }
 		region:union(location_set.of_pairs(subregion))
 		rawsize = rawsize + #subregion
 
@@ -296,13 +296,13 @@ function wesnoth.wml_actions.store_area_edge(cfg)
 
 	local location_set = wesnoth.require "lua/location_set.lua"
 
-	local locs1 = location_set.of_pairs(wesnoth.get_locations({
+	local locs1 = location_set.of_pairs(wesnoth.map.find({
 		x      = center_x,
 		y      = center_y,
 		radius = radius,
 	}))
 
-	local locs2 = location_set.of_pairs(wesnoth.get_locations({
+	local locs2 = location_set.of_pairs(wesnoth.map.find({
 		x      = center_x,
 		y      = center_y,
 		radius = radius - 1,
@@ -551,9 +551,9 @@ function wesnoth.wml_conditionals.player_ghost_limit_reached(cfg)
 end
 
 local function random_map_location()
-	local locs = wesnoth.get_locations { include_borders = false }
+	local locs = wesnoth.map.find { include_borders = false }
 	local r = mathx.random(#locs)
-	return locs[r][1], locs[r][2]
+	return locs[r].x, locs[r].y
 end
 
 function wesnoth.wml_actions.player_ghost_trap()
