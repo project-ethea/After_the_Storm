@@ -1,11 +1,11 @@
 Art Licenses
 ============
 
-Included content that is not listed below or in Naia/ART_LICENSE is provided under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 or (at your option) any later version.
+Included content that is not listed below or in `Naia/ART_LICENSE` is provided under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 or (at your option) any later version.
 
-A copy of the GNU General Public License is provided in COPYING.
+A copy of the GNU General Public License is provided in `COPYING`.
 
-See Naia/ART_LICENSE for licensing information on content provided under the Naia/ subdirectory.
+See `Naia/ART_LICENSE` for licensing information on content provided under the `Naia/` subdirectory.
 
 
 Original Unique Art (CC BY-NC-ND 4.0)
@@ -15,7 +15,7 @@ Copyright (C) 2006 - 2024 by Iris Morelle <shadowm@wesnoth.org>
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-nd/4.0/> or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-Elynia unit sprites:
+### Elynia unit sprites
 
  * images/campaign-icon-episode1.png
  * images/items/staff-elynia-niryone.png
@@ -48,7 +48,7 @@ Elynia unit sprites:
  * images/units/faeries/elynia-zzz-2.png
  * images/units/faeries/elynia.png
 
-Anya unit sprites:
+### Anya unit sprites
 
  * images/units/human-peasants/civilian+female.png
  * images/units/faeries/dusk.png
@@ -64,7 +64,7 @@ Anya unit sprites:
  * images/units/faeries/nightshade-fire-injured.png
  * images/units/faeries/nightshade-fire.png
 
-Elyssa unit sprites:
+### Elyssa unit sprites
 
  * images/items/claw-of-urvatha.png
  * images/units/shaxthal/warlord-elyssa-cutscene-1.png
@@ -82,23 +82,23 @@ Elyssa unit sprites:
  * images/units/shaxthal/warlord-elyssa-f+sword.png
  * images/units/shaxthal/warlord-elyssa.png
 
-Argan unit sprites:
+### Argan unit sprites
 
  * images/units/human-norsulans/master-of-darkness.png
  * images/units/shaxthal/master-of-darkness.png
  * images/units/shaxthal/master-of-darkness+unmasked.png
 
-Ivyel unit sprites:
+### Ivyel unit sprites
 
  * images/units/faeries/ivyel.png
  * images/units/faeries/ivyel-damaged.png
 
-Shaxthal unit sprites:
+### Shaxthal unit sprites
 
  * images/units/shaxthal/queen.png
  * images/units/shaxthal/turret.png
 
-Demon unit sprites:
+### Demon unit sprites
 
  * images/units/demons/errant-executor.png
  * images/units/demons/gatekeeper-blood.png
@@ -114,17 +114,17 @@ Demon unit sprites:
  * images/units/monsters/lumeril-glyph-break-5.png
  * images/units/monsters/lumeril-glyph.png
 
-Mal Hekuba unit sprites:
+### Mal Hekuba unit sprites
 
  * images/units/undead-necromancers/chaos-cardinal-fused-fl.png
  * images/units/undead-necromancers/chaos-cardinal-fused.png
 
-Elvish unit sprites:
+### Elvish unit sprites
 
  * images/units/elves-wood/anlinde-avatar.png
  * images/units/elves-wood/spellbinder.png
 
-Faerie unit sprites:
+### Faerie unit sprites
 
  * images/scenery/statue-xiael.png
  * images/terrain/tile-icons/statue-xiael.png
@@ -134,11 +134,11 @@ Faerie unit sprites:
  * images/units/faeries/guardian-of-earth-aradellys-dying-4.png
  * images/units/faeries/guardian-of-earth-aradellys.png
 
-Mechanical unit sprites:
+### Mechanical unit sprites
 
  * images/units/mechanical/magnum-suit.png
 
-Aspect sigils:
+### Aspect sigils
 
  * images/icons/original-ten-sigils.png
  * images/story/original-ten.png
