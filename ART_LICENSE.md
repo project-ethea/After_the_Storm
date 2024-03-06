@@ -1,11 +1,11 @@
 Art Licenses
 ============
 
-Included content that is not listed below or in `Naia/ART_LICENSE` is provided under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 or (at your option) any later version.
+Included content that is not listed below or in `Naia/ART_LICENSE.md` is provided under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 or (at your option) any later version.
 
 A copy of the GNU General Public License is provided in `COPYING`.
 
-See `Naia/ART_LICENSE` for licensing information on content provided under the `Naia/` subdirectory.
+See `Naia/ART_LICENSE.md` for licensing information on content provided under the `Naia/` subdirectory.
 
 
 Original Unique Art (CC BY-NC-ND 4.0)
