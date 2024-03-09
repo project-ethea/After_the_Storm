@@ -15,8 +15,7 @@ function wesnoth.wml_actions.show_image(cfg)
 	local img = cfg.image or do_error("required 'image' attribute is missing")
 
 	local dd = {
-		-- NOTE: Can't use transparency until mainline #19165 is fixed!
-		-- definition = "message",
+		definition = "message",
 		maximum_width = 800,
 		maximum_height = 480,
 		click_dismiss = true,
