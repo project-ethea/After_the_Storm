@@ -25,18 +25,18 @@ function wesnoth.wml_actions.show_image(cfg)
 		T.grid {
 			T.row {
 				T.column {
-					border = "all", border_size = 5,
+					border = "all",
+					border_size = 5,
 					T.image {
-						id = "image", definition = "default"
+						id = "image",
+						definition = "default"
 					}
 				}
 			}
 		}
 	}
 
-	local function preshow()
-		wesnoth.set_dialog_value(img, "image")
-	end
-
-	wesnoth.show_dialog(dd, preshow, nil)
+	gui.show_dialog(dd, function(self)
+		self.image.label = img
+	end, nil)
 end
