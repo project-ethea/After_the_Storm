@@ -36,10 +36,14 @@ function wesnoth.wml_actions.top_message(cfg)
 		T.grid {
 			T.row {
 				T.column {
-					border = "all", border_size = 20,
+					border = "all",
+					border_size = 20,
 					horizontal_alignment = "center",
 					vertical_alignment = "center",
-					T.label { id = "message", definition = "default" }
+					T.label {
+						id = "message",
+						definition = "default"
+					}
 				}
 			}
 		}
@@ -48,10 +52,7 @@ function wesnoth.wml_actions.top_message(cfg)
 	local message = cfg.message
 	if message == nil then message = "" end
 
-	local function preshow()
-		wesnoth.set_dialog_value(message, "message")
-		wesnoth.set_dialog_markup(true, "message")
-	end
-
-	wesnoth.show_dialog(dd, preshow, nil)
+	gui.show_dialog(dd, function(self)
+		self.message.marked_up_text = message
+	end, nil)
 end
