@@ -102,7 +102,8 @@ function wesnoth.wml_actions.store_vacant_spawn_location(cfg)
 		wml.error("[store_vacant_spawn_location]: Radius must be greater than 1!")
 	end
 
-	local w, h = wesnoth.get_map_size()
+	local w = wesnoth.current.map.playable_width
+	local h = wesnoth.current.map.playable_height
 
 	for k = 1, radius do
 		local loc = wesnoth.map.find({
@@ -174,7 +175,8 @@ function wesnoth.wml_actions.dreamwalk(cfg)
 	local dst_x = cfg.to_x
 	local dst_y = cfg.to_y
 
-	local map_w, map_h, map_b = wesnoth.get_map_size()
+	local map_w = wesnoth.current.map.playable_width
+	local map_h = wesnoth.current.map.playable_height
 
 	if dst_x <= 0 or dst_x > map_w or dst_y <= 0 or dst_y > map_h then
 		wml.error("[marsap]: Destination invalid or out of map bounds!")
@@ -251,7 +253,8 @@ function wesnoth.wml_actions.push_units_away_from(cfg)
 		return
 	end
 
-	local map_w, map_h = wesnoth.get_map_size()
+	local map_w = wesnoth.current.map.playable_width
+	local map_h = wesnoth.current.map.playable_height
 
 	local function location_is_on_map(pos)
 		return pos and pos[1] >= 1 and pos[2] >= 1 and pos[1] <= map_w and pos[2] <= map_h
