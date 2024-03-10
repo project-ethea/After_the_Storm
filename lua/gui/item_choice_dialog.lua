@@ -148,6 +148,7 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 								T.multi_page {
 									id = "current_option_pager",
 									T.page_definition {
+										id = "page",
 										T.row {
 											T.column {
 												border = "all", border_size = 5,
@@ -179,58 +180,52 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 
 	local page_count = 0
 
-	local function on_select()
-		local i = wesnoth.get_dialog_value("option_list")
-
-		if(i > page_count) then
-			wput(W_ERR, "invalid option_list row number")
-			return
-		end
-
-		wesnoth.set_dialog_value(i, "current_option_pager")
-	end
-
-	local function preshow()
+	local function preshow(self)
 		if cfg.title then
-			wesnoth.set_dialog_value(cfg.title, "title")
+			self.title.label = cfg.title
 		end
 
 		if cfg.text then
-			wesnoth.set_dialog_value(cfg.text, "text")
+			self.text.label = cfg.text
 		end
-
-		local i = 1
 
 		for entry in wml.child_range(cfg, "option") do
-			local image = entry.image
-			if image == nil then image = "" end
-			local title = entry.title
-			if title == nil then title = "-" end
-			local text = entry.text
-			if text == nil then text = "" end
+			local image = entry.image or ""
+			local title = entry.title or "-"
+			local text = entry.text or ""
 
-			wesnoth.set_dialog_value(image, "option_list", i, "option_icon")
-			wesnoth.set_dialog_value(title, "option_list", i, "option_title")
-			wesnoth.set_dialog_value("<b>" .. title .. ":</b>\n\n" .. text, "current_option_pager", i, "current_option_text")
-			wesnoth.set_dialog_markup(true, "current_option_pager", i, "current_option_text")
+			local row = self.option_list:add_item()
+			row.option_icon.label = image
+			row.option_title.label = title
 
-			i = i + 1
+			local page = self.current_option_pager:add_item_of_type("page")
+			page.current_option_text.marked_up_text = ("<b>%s:</b>\n\n%s"):format(title, text)
 		end
 
-		page_count = i
+		page_count = self.current_option_pager.item_count
 
-		wesnoth.set_dialog_callback(on_select, "option_list")
+		local function on_select()
+			local i = self.option_list.selected_index
+			if i > page_count then
+				wput(W_ERR, "invalid option_list row number")
+				return
+			end
 
+			self.current_option_pager.selected_index = i
+		end
+
+		self.option_list.on_modified = on_select
 		-- Select the first entry by default.
-		wesnoth.set_dialog_value(1, "option_list")
+		self.option_list.selected_index = 1
+		self.option_list:focus()
 		on_select()
 	end
 
 	local res = wesnoth.sync.evaluate_single(function()
 		local choice = -1
-		local retval = wesnoth.show_dialog(
+		local retval = gui.show_dialog(
 			dialog_definition, preshow,
-			function() choice = (wesnoth.get_dialog_value("option_list") - 1) end
+			function(self) choice = (self.option_list.selected_index - 1) end
 		)
 		return { status = retval, value = choice }
 	end)
