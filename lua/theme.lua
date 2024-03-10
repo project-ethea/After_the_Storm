@@ -6,12 +6,6 @@
 local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
 
 register_unit_status_display {
-	id      = "stunned",
-	icon    = "misc/stunned-status-icon.png",
-	tooltip = _ "stunned: This unit is stunned. It cannot enforce its Zone of Control.",
-}
-
-register_unit_status_display {
 	id      = "dazed",
 	icon    = "misc/dazed-status-icon.png",
 	tooltip = _ "dazed: This unit is dazed. It suffers a -10% penalty to both its defense and chance to hit (except for magical attacks).",

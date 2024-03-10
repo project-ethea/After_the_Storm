@@ -17,6 +17,7 @@ Version 0.11.0-dev:
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
     notes syntax.
+  * Using mainline definition of the stun weapon special.
 
 
 Version 0.10.18:
