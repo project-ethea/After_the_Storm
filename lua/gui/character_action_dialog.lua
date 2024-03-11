@@ -1,5 +1,8 @@
 local T = wml.tag
 
+-- #textdomain wesnoth-After_the_Storm
+local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
+
 ---
 -- [character_action_dialog]
 --     variable=choice
@@ -17,8 +20,6 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 	local var = cfg.variable or "choice"
 	local can_dismiss = cfg.can_dismiss
 	if can_dismiss == nil then can_dismiss = true end
-
-	local _ = nil
 
 	local list_definition = {
 		T.row {
@@ -95,36 +96,31 @@ function wesnoth.wml_actions.character_action_dialog(cfg)
 	local res = wesnoth.sync.evaluate_single(function()
 		local choice = 0
 
-		local function on_select()
-			choice = wesnoth.get_dialog_value("listbox") - 1
-		end
-
-		local function preshow()
+		local function preshow(self)
 			local list_pos = 1
 
 			for opt in wml.child_range(cfg, "option") do
-				wesnoth.set_dialog_value(opt.message, "listbox", list_pos, "item")
-				list_pos = list_pos + 1
+				self.listbox:add_item().item.label = opt.message
 			end
 
 			if can_dismiss then
-				-- #textdomain wesnoth-After_the_Storm
-				local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
-				local tstring = _ "Continue."
-
 				-- The mandatory "carry on" option.
-				wesnoth.set_dialog_value(tstring, "listbox", list_pos, "item")
-				wesnoth.set_dialog_value(list_pos, "listbox")
+				self.listbox:add_item().item.label = _ "Continue."
+				self.listbox.selected_index = self.listbox.item_count
 			else
-				wesnoth.set_dialog_value(1, "listbox")
+				self.listbox.selected_index = 1
 			end
 
-			wesnoth.set_dialog_callback(on_select, "listbox")
+			local function on_select()
+				choice = self.listbox.selected_index - 1
+			end
 
+			self.listbox.on_modified = on_select
+			self.listbox:focus()
 			on_select()
 		end
 
-		wesnoth.show_dialog(dialog_definition, preshow, nil)
+		gui.show_dialog(dialog_definition, preshow, nil)
 
 		return { value = choice }
 	end)
