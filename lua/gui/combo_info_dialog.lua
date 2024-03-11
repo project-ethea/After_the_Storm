@@ -1,5 +1,8 @@
 local T = wml.tag
 
+-- #textdomain wesnoth-After_the_Storm
+local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
+
 ---
 -- [combo_info_dialog]
 --     variable=(string) (optional, defaults to "combo_attacks" and specifies
@@ -8,7 +11,6 @@ local T = wml.tag
 ---
 
 function wesnoth.wml_actions.combo_info_dialog(cfg)
-
 	local variable = cfg.variable
 
 	if variable == nil then
@@ -83,10 +85,6 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 		}
 	} -- end list_definition
 
-	-- #textdomain wesnoth-After_the_Storm
-	local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
-	local title_label = _ "Attack Combinations"
-
 	local dialog_definition = {
 		click_dismiss = false,
 
@@ -110,7 +108,7 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 					T.label {
 						id = "title",
 						definition = "title",
-						label = title_label,
+						label =  _ "Attack Combinations",
 						wrap = true
 					}
 				}
@@ -153,6 +151,7 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 											T.multi_page {
 												id = "current_combo_pager",
 												T.page_definition {
+													id = "page",
 													T.row {
 														T.column {
 															border = "all", border_size = 5,
@@ -177,11 +176,15 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 												T.row {
 													T.column {
 														horizontal_alignment = "right",
-														T.image { label = sigil_image_path(0, 1) }
+														T.image {
+															label = sigil_image_path(0, 1)
+														}
 													},
 													T.column {
 														horizontal_alignment = "left",
-														T.image { label = sigil_image_path(3, 0) }
+														T.image {
+															label = sigil_image_path(3, 0)
+														}
 													}
 												}
 											}
@@ -212,7 +215,10 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 						T.row {
 							T.column {
 								border = "all", border_size = 5,
-								T.button { id = "ok", label = wgettext("Close") }
+								T.button {
+									id = "ok",
+									label = wgettext("Close")
+								}
 							}
 						}
 					}
@@ -227,23 +233,12 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 		wput(W_ERR, "BUG: [combo_info_dialog] " .. text)
 	end
 
-	local function on_select()
-		local i = wesnoth.get_dialog_value("combo_list")
-
-		if(i > page_count) then
-			do_error("invalid combo_list row number")
-			return
-		end
-
-		wesnoth.set_dialog_value(i, "current_combo_pager")
-	end
-
 	local function bullet_list_item(text)
 		-- U+2022 BULLET
 		return "  • " .. text .. "\n"
 	end
 
-	local function preshow()
+	local function preshow(self)
 		local info_ary = wml.array_access.get(variable)
 		if info_ary == nil then
 			do_error(("could not read data from container '%s'"):format(variable))
@@ -251,7 +246,6 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 		end
 
 		for i, info_cfg in ipairs(info_ary) do
-
 			local label = info_cfg.name
 			local symmetric = info_cfg.symmetric
 
@@ -280,18 +274,12 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 			--
 			-- Parse [effect].
 			--
-
-			local effect_desc
-
 			-- font::weapon_details is #A69275
-			effect_desc = "<b>%s:</b>\n%s <span color='#A69275'>+</span> %s\n\n"
-
-			effect_desc = effect_desc:format(
-				tostring(info_cfg.name),
-				tostring(ui_side_a_data.attack_name),
-				tostring(ui_side_b_data.attack_name))
-
-			effect_desc = effect_desc .. "<b>" .. _ "Effects:" .. "</b>\n"
+			local effect_desc = ("<b>%s:</b>\n%s <span color='#A69275'>+</span> %s\n\n<b>%s</b>\n"):format(
+				info_cfg.name,
+				ui_side_a_data.attack_name,
+				ui_side_b_data.attack_name,
+				_ "Effects")
 
 			if effect_data.apply_to == "damage" then
 				--
@@ -302,32 +290,27 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 				-- The options we should handle here are 'value', 'add', 'sub',
 				-- 'multiply', and 'divide'.
 				--
-
 				local fmt = ''
 
 				if effect_data.value ~= nil then
 					fmt = tostring( _ "attack damage base value set to %d")
-					effect_desc = effect_desc .. bullet_list_item(string.format(fmt, effect_data.value))
+					effect_desc = effect_desc .. bullet_list_item(fmt:format(effect_data.value))
 				end
-
 				if effect_data.add ~= nil then
 					fmt = tostring( _ "+%d bonus to attack damage")
-					effect_desc = effect_desc .. bullet_list_item(string.format(fmt, effect_data.add))
+					effect_desc = effect_desc .. bullet_list_item(fmt:format(effect_data.add))
 				end
-
 				if effect_data.sub ~= nil then
 					fmt = tostring( _ "−%d penalty to attack damage")
-					effect_desc = effect_desc .. bullet_list_item(string.format(fmt, effect_data.sub))
+					effect_desc = effect_desc .. bullet_list_item(fmt:format(effect_data.sub))
 				end
-
 				if effect_data.multiply ~= nil then
 					fmt = tostring( _ "×%d multiplier bonus to attack damage")
-					effect_desc = effect_desc .. bullet_list_item(string.format(fmt, effect_data.multiply))
+					effect_desc = effect_desc .. bullet_list_item(fmt:format(effect_data.multiply))
 				end
-
 				if effect_data.divide ~= nil then
 					fmt = tostring( _ "÷%d divider penalty to attack damage")
-					effect_desc = effect_desc .. bullet_list_item(string.format(fmt, effect_data.divide))
+					effect_desc = effect_desc .. bullet_list_item(fmt:format(effect_data.divide))
 				end
 			elseif effect_data.apply_to == nil then
 				do_error(("%s[%d].effect.apply_to attribute missing"):format(variable, i - 1))
@@ -340,29 +323,36 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 			local symmetry_icon = "misc/gui-combo-arrows.png~CROP(0, 0, 60, 60)"
 			if symmetric then
 				symmetry_icon = "misc/gui-combo-arrows.png~CROP(60, 0, 60, 60)"
-
-				effect_desc = effect_desc .. "\n<span color='#baac7d'>"
-				effect_desc = effect_desc .. _ "This combination is symmetric, and the attacks involved may be used in any order."
-				effect_desc = effect_desc .. "</span>"
+				effect_desc = effect_desc .. ("\n<span color='#baac7d'>%s</span>"):format(
+					_ "This combination is symmetric, and the attacks involved may be used in any order.")
 			end
 
-			wesnoth.set_dialog_value(ui_side_a_data.attack_icon, "combo_list", i, "side_a_icon")
-			wesnoth.set_dialog_value(symmetry_icon,              "combo_list", i, "symmetry_icon")
-			wesnoth.set_dialog_value(ui_side_b_data.attack_icon, "combo_list", i, "side_b_icon")
+			local row = self.combo_list:add_item()
+			local page = self.current_combo_pager:add_item_of_type("page")
 
-			wesnoth.set_dialog_value("<b>" .. info_cfg.name .. "</b>", "combo_list", i, "combo_name")
-			wesnoth.set_dialog_markup(true,                            "combo_list", i, "combo_name")
-
-			wesnoth.set_dialog_value(effect_desc, "current_combo_pager", i, "current_combo_text")
-			wesnoth.set_dialog_markup(true,       "current_combo_pager", i, "current_combo_text")
-
-			page_count = i
+			row.side_a_icon.label = ui_side_a_data.attack_icon
+			row.symmetry_icon.label = symmetry_icon
+			row.side_b_icon.label = ui_side_b_data.attack_icon
+			row.combo_name.marked_up_text = ("<b>%s</b>"):format(info_cfg.name)
+			page.current_combo_text.marked_up_text = effect_desc
 		end
 
-		wesnoth.set_dialog_callback(on_select, "combo_list")
+		page_count = self.current_combo_pager.item_count
 
+		local function on_select()
+			local i = self.combo_list.selected_index
+			if i > page_count then
+				do_error("invalid combo_list row number")
+				return
+			end
+
+			self.current_combo_pager.selected_index = i
+		end
+
+		self.combo_list.on_modified = on_select
 		-- Select the first entry by default.
-		wesnoth.set_dialog_value(1, "combo_list")
+		self.combo_list.selected_index = 1
+		self.combo_list:focus()
 		on_select()
 	end
 
@@ -370,5 +360,5 @@ function wesnoth.wml_actions.combo_info_dialog(cfg)
 	-- need to use wesnoth.sync.evaluate_single or set
 	-- any state after it finishes.
 
-	wesnoth.show_dialog(dialog_definition, preshow)
+	gui.show_dialog(dialog_definition, preshow)
 end
