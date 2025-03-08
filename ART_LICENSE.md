@@ -11,7 +11,7 @@ See `Naia/ART_LICENSE.md` for licensing information on content provided under th
 Original Unique Art (CC BY-NC-ND 4.0)
 -------------------------------------
 
-Copyright (C) 2006 - 2024 by Iris Morelle <shadowm@wesnoth.org>
+Copyright (C) 2006 - 2025 by Iris Morelle <iris@irydacea.me>
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit <https://creativecommons.org/licenses/by-nc-nd/4.0/> or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
@@ -147,7 +147,7 @@ This work is licensed under the Creative Commons Attribution-NonCommercial-NoDer
 Original Generic Art (CC BY-SA 4.0)
 -----------------------------------
 
-Copyright (C) 2006 - 2024 by Iris Morelle <shadowm@wesnoth.org>
+Copyright (C) 2006 - 2025 by Iris Morelle <iris@irydacea.me>
 
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <https://creativecommons.org/licenses/by-sa/4.0/> or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
