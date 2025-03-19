@@ -20,6 +20,9 @@ Version 0.11.0-dev:
   * Switched all units, abilities, and weapon specials to the 1.16 special
     notes syntax.
   * Using mainline definition of the stun weapon special.
+  * Fixed Lumeril Glyph Mistress resistance overrides not working due to a
+    small typo (was always supposed to be 0% fire, -20% arcane, as opposed to
+    20% fire, -10% arcane).
 
 
 Version 0.10.18:
