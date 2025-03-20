@@ -23,6 +23,8 @@ Version 0.11.0-dev:
   * Fixed Lumeril Glyph Mistress resistance overrides not working due to a
     small typo (was always supposed to be 0% fire, -20% arcane, as opposed to
     20% fire, -10% arcane).
+  * Implemented new unit lines and AMLAs for Galas and Mal Keshar (see Naia
+    changelog).
 
 
 Version 0.10.18:
