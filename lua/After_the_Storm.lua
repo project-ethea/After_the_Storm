@@ -326,20 +326,27 @@ local CREDITS_BASE_FONT_SIZE             = 30
 local function credits_alpha_print(text, size, alpha)
 	-- [print] does not support alpha blending. However, we know we are
 	-- rendering onto a black screen, so we can just emulate it by adjusting
-	-- the color between #00 and #FFF procedurally
+	-- the color between #000000 and #FFFFFF procedurally
 
 	local c = mathx.round(255 * alpha)
 
 	--wesnoth.message(string.format("alpha %0.1f, step %d", alpha, c))
 
-	wesnoth.wml_actions.print {
-		text     = text,
+	-- This approximate height is a very inaccurate guess and in particular
+	-- does NOT (properly) take into account line heights. We just want an
+	-- offset to use so text doesn't look oddly off-center on the Y axis
+	-- whenever it's more than a single line (valign = 'center' does not take
+	-- the label's height into account).
+	local approx_h = line_count(text) * size * 1.33
+
+	wesnoth.interface.add_overlay_text(text, {
 		size     = size,
-		duration = 100000,
-		red      = c,
-		green    = c,
-		blue     = c,
-	}
+		duration = 'unlimited',
+		color    = { c, c, c },
+		halign   = 'center',
+		valign   = 'center',
+		location = { 0, -mathx.round(approx_h / 2) }
+	})
 
 	-- Don't let the game busy loop during fade-in/fade-out
 	wesnoth.interface.delay(20)
