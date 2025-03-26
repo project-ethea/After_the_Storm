@@ -63,9 +63,9 @@ function wesnoth.wml_actions.change_floor(cfg)
 
 	wesnoth.wml_actions.replace_map {
 		-- TODO: map_file support
-		map    = floor.map_data,
-		shrink = true,
-		expand = true,
+		map_data = floor.map_data,
+		shrink   = true,
+		expand   = true,
 	}
 
 	wesnoth.wml_actions.replace_schedule(schedule)
