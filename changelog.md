@@ -15,6 +15,8 @@ Version 0.11.0-dev:
     E1S11.1, E1S1, E1S3, E1S7, E2S2, E2S5, E2S9, E2S10, E2S11, E2S3.2.
   * E1S1 - The Skirmish:
     * Gave allied speakers more identity.
+  * E1S2 - High Pass:
+    * Added snowfall turns.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
