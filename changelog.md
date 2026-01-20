@@ -17,6 +17,9 @@ Version 0.11.0-dev:
     * Gave allied speakers more identity.
   * E1S2 - High Pass:
     * Added snowfall turns.
+  * E1S5 - Bay of Tirigaz:
+    * Fixed fountain description not being shown if the first unit to interact
+      with it is a faerie.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
