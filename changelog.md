@@ -22,6 +22,8 @@ Version 0.11.0-dev:
     * Fixed fountain description not being shown if the first unit to interact
       with it is a faerie.
     * Added notes to scenario objectives explaining a few gameplay points.
+  * E1S7 - The Search for the Past:
+    * Various aesthetic and functional changes, added more semi-optional lore.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
