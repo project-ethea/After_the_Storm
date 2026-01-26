@@ -5,6 +5,7 @@
 
 -- #textdomain wesnoth-After_the_Storm
 local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
+local T = wml.tag
 
 ----------
 -- E1S9 --
@@ -597,7 +598,6 @@ function wesnoth.wml_actions.player_ghost_trap()
 		wesnoth.units.get(recall_id).side = wild_ghosts_side
 	else
 		-- Transfer the unit to its new side at the end of the player's turn.
-		local T = wml.tag
 		wesnoth.wml_actions.event {
 			name = ("side %d turn end"):format(u.side),
 
@@ -612,7 +612,6 @@ function wesnoth.wml_actions.player_ghost_trap()
 end
 
 function wesnoth.wml_actions.seismic_impact(cfg)
-	local T = wml.tag
 	local ctx = wesnoth.current.event_context
 
 	--
