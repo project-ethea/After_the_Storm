@@ -24,6 +24,12 @@ Version 0.11.0-dev:
     * Added notes to scenario objectives explaining a few gameplay points.
   * E1S7 - The Search for the Past:
     * Various aesthetic and functional changes, added more semi-optional lore.
+  * E1S9.1 - The Triad, Part 1:
+    * Minor cutscene changes.
+  * E1S9.1 - The Triad, Part 2:
+    * Minor cutscene changes.
+  * E1S9.1 - The Triad, Part 3:
+    * Minor cutscene changes.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
