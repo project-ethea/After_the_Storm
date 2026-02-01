@@ -26,10 +26,12 @@ Version 0.11.0-dev:
     * Various aesthetic and functional changes, added more semi-optional lore.
   * E1S9.1 - The Triad, Part 1:
     * Minor cutscene changes.
-  * E1S9.1 - The Triad, Part 2:
+  * E1S9.2 - The Triad, Part 2:
     * Minor cutscene changes.
-  * E1S9.1 - The Triad, Part 3:
+  * E1S9.3 - The Triad, Part 3:
     * Minor cutscene changes.
+  * E1S10 - Tears:
+    * Allow undo if Elynia reaches the northern edge of the map too soon.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
