@@ -58,6 +58,8 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 								T.label {
 									id = "option_title",
 									linked_group = "option_title",
+									wrap = true,
+									characters_per_line = 24,
 								}
 							}
 						}
@@ -75,8 +77,12 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 
 	local control_buttons_row = {
 		T.column {
-			border = "all", border_size = 5,
-			T.button { id = "ok", label = ok_label }
+			border = "all",
+			border_size = 5,
+			T.button {
+				id = "ok",
+				label = ok_label
+			}
 		}
 	}
 
@@ -87,11 +93,63 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 		}
 	end
 
+	local inner_grid = {
+		T.row {
+			T.column {
+				horizontal_grow = true,
+				vertical_grow = true,
+				T.multi_page {
+					id = "current_option_pager",
+					T.page_definition {
+						id = "page",
+						T.row {
+							grow_factor = 0,
+							T.column {
+								border = "all",
+								border_size = 10,
+								horizontal_grow = true,
+								vertical_grow = false,
+								T.label {
+									id = "current_option_title",
+									definition = "gold_large"
+								}
+							}
+						},
+						T.row {
+							grow_factor = 1,
+							T.column {
+								border = "all",
+								border_size = 10,
+								horizontal_grow = true,
+								vertical_grow = true,
+								T.scrollbar_panel {
+									definition = "naia_journeylog_scrollbar_panel",
+									T.definition {
+										T.row {
+											T.column {
+												horizontal_grow = true,
+												vertical_grow = true,
+												T.label {
+													id = "current_option_text",
+													wrap = true
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	local dialog_definition = {
 		click_dismiss = false,
 
-		maximum_width = 640,
-		maximum_height = 400,
+		maximum_width = 720,
+		maximum_height = 600,
 
 		T.helptip { id = "tooltip_large" },
 		T.tooltip { id = "tooltip_large" },
@@ -131,35 +189,26 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 					T.grid {
 						T.row {
 							T.column {
-								grow_factor = 1,
-								border = "all", border_size = 5,
+								grow_factor = 0,
 								horizontal_alignment = "left",
 								vertical_alignment = "top",
+								border = "all",
+								border_size = 5,
 								T.listbox {
 									id = "option_list",
-									definition = "default",
+									definition = "naia_journeylog_listbox",
 									T.list_definition(list_definition),
 								}
 							},
 							T.column {
-								grow_factor = 2,
-								horizontal_alignment = "left",
-								vertical_alignment = "top",
-								T.multi_page {
-									id = "current_option_pager",
-									T.page_definition {
-										id = "page",
-										T.row {
-											T.column {
-												border = "all", border_size = 5,
-												horizontal_alignment = "left",
-												vertical_grow = true,
-												T.scroll_label {
-													id = "current_option_text",
-												}
-											}
-										}
-									}
+								grow_factor = 1,
+								horizontal_grow = true,
+								vertical_grow = true,
+								border = "all",
+								border_size = 5,
+								T.panel {
+									definition = "naia_journeylog_panel",
+									T.grid(inner_grid)
 								}
 							}
 						}
@@ -199,7 +248,8 @@ function wesnoth.wml_actions.item_choice_dialog(cfg)
 			row.option_title.label = title
 
 			local page = self.current_option_pager:add_item_of_type("page")
-			page.current_option_text.marked_up_text = ("<b>%s:</b>\n\n%s"):format(title, text)
+			page.current_option_title.label = title
+			page.current_option_text.marked_up_text = transform_markup(text)
 		end
 
 		page_count = self.current_option_pager.item_count
