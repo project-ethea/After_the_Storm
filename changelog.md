@@ -40,6 +40,8 @@ Version 0.11.0-dev:
       rolls.
   * E2S2 - The Heart Forest:
     * Durvan now starts with a small amount of XP.
+  * E2S5 - The Eastern Front:
+    * Added wild animals.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
