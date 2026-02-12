@@ -51,6 +51,50 @@ function wesnoth.wml_actions.s9_area_spawns(cfg)
 end
 
 -----------
+-- E1S12 --
+-----------
+
+-- path:   str: { "a", "b" }
+-- redraw: bool
+function wesnoth.wml_actions._e1s12_select_path(cfg)
+	local path = cfg.path
+	if path ~= "a" and path ~= "b" then
+		wml.error("[_e1s12_select_path] bad path value")
+	end
+
+	local FLIP_MARKER = "*^&D"
+	local BARRIER = {
+		ne_sw = "^Pr/",
+		nw_se = "^Pr\\",
+	}
+	local CHOICE = {
+		-- note: open marker currently unused
+		a = { open = "*^&A", close = "*^&B" },
+		b = { open = "*^&B", close = "*^&A" },
+	}
+	local function place_barriers(direction, flip)
+		local cond = "not"
+		if flip then
+			cond = "and"
+		end
+
+		wesnoth.wml_actions.terrain {
+			layer   = "overlay",
+			terrain = BARRIER[direction],
+			T["and"] { terrain = CHOICE[path].close },
+			T[cond]  { T.filter_adjacent_location { terrain = FLIP_MARKER } }
+		}
+	end
+
+	place_barriers("ne_sw")
+	place_barriers("nw_se", true)
+
+	if cfg.redraw then
+		wesnoth.wml_actions.redraw {}
+	end
+end
+
+-----------
 -- E2S11 --
 -----------
 
@@ -339,6 +383,15 @@ local function credits_alpha_print(text, size, alpha)
 	-- whenever it's more than a single line (valign = 'center' does not take
 	-- the label's height into account).
 	local approx_h = line_count(text) * size * 1.33
+
+	-- HACK: Retrieves the script font for the current language by piggybacking
+	-- on the same mechanism used by <game data>/data/hardwired/fonts.cfg to
+	-- allow translators to pick font families for the UI.
+	local script_font = tostring(wgettext("Oldania ADF Std"))
+
+	if #script_font > 0 then
+		text = ("<span face='%s'>%s</span>"):format(script_font, text)
+	end
 
 	wesnoth.interface.add_overlay_text(text, {
 		size     = size,

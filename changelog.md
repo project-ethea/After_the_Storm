@@ -32,6 +32,12 @@ Version 0.11.0-dev:
     * Minor cutscene changes.
   * E1S10 - Tears:
     * Allow undo if Elynia reaches the northern edge of the map too soon.
+  * E1S12 - Return to Wesmere:
+    * Significant rework of what used to be E1S11.2 and E1S12, which are now
+      renumbered E1S12.1 and E1S12.2 respectively (identified together as E1S12
+      in JourneyLog and story screens).
+    * Lowered difficulty of the boss fight to be less reliant on favorable RNG
+      rolls.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
