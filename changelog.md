@@ -38,6 +38,8 @@ Version 0.11.0-dev:
       in JourneyLog and story screens).
     * Lowered difficulty of the boss fight to be less reliant on favorable RNG
       rolls.
+  * E2S2 - The Heart Forest:
+    * Durvan now starts with a small amount of XP.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
