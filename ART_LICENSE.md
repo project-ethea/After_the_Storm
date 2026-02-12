@@ -169,3 +169,19 @@ This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 Inte
  * images/units/demons/storm+female.png
  * images/units/imps/serpent-messenger.png
  * images/units/imps/valdemon-basher.png
+
+
+Frogatto & Friends Sound Effects  (CC BY-NC-SA 4.0)
+---------------------------------------------------
+
+Copyright (C) 2013 - 2026 by the Frogatto & Friends Development Team
+<https://www.frogatto.com>
+
+This work is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/.
+
+ * sounds/ambient/lurking-horror1.wav
+ * sounds/ambient/lurking-horror2.wav
+ * sounds/ambient/lurking-horror3.wav
+ * sounds/ambient/lurking-horror4.wav
+ * sounds/ambient/lurking-horror5.wav
+ * sounds/ambient/lurking-horror6.wav
