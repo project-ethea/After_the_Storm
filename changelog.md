@@ -42,6 +42,8 @@ Version 0.11.0-dev:
     * Durvan now starts with a small amount of XP.
   * E2S5 - The Eastern Front:
     * Added wild animals.
+  * E2S6 - The Voyage Home:
+    * Added wild animals.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
