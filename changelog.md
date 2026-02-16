@@ -55,6 +55,7 @@ Version 0.11.0-dev:
   * Implemented new unit lines and AMLAs for Galas and Mal Keshar (see Naia
     changelog).
   * Increased Chaos Cardinal Fused's HP from 109 to 136.
+  * Rename arcane rage attack to arcane fury.
 
 
 Version 0.10.18:
