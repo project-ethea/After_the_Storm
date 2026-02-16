@@ -7,6 +7,27 @@
 local _ = wesnoth.textdomain "wesnoth-After_the_Storm"
 local T = wml.tag
 
+wprintf(W_INFO, "unlocking essential JourneyLog milestones")
+
+local req_milestones = {
+	-- From IftU
+	"elyssa_revealed_iftu",
+	"elyssa_defeated",
+	"joined_alliance",
+	"emperor_defeated",
+}
+
+if wesnoth.scenario.campaign.id == "After_the_Storm_III" then
+	table.insert(req_milestones, "After_the_Storm_II")
+	table.insert(req_milestones, "After_the_Storm_I")
+	table.insert(req_milestones, "escaped_kalari")
+elseif wesnoth.scenario.campaign.id == "After_the_Storm_II" then
+	table.insert(req_milestones, "After_the_Storm_I")
+	table.insert(req_milestones, "escaped_kalari")
+end
+
+journeylog.unlock_milestone(req_milestones,  false)
+
 ----------
 -- E1S9 --
 ----------
