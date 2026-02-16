@@ -44,6 +44,8 @@ Version 0.11.0-dev:
     * Added wild animals.
   * E2S6 - The Voyage Home:
     * Added wild animals.
+  * E3S9 - Dark Depths:
+    * Added ambient lighting effects.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
