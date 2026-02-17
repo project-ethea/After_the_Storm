@@ -44,6 +44,8 @@ Version 0.11.0-dev:
     * Added wild animals.
   * E2S6 - The Voyage Home:
     * Added wild animals.
+  * E3S2.1 - Return to Raelthyn:
+    * Expanded Irylean's Walking Corpse repertoire with 1.18 animal variants.
   * E3S9 - Dark Depths:
     * Added ambient lighting effects.
   * E3S10 - Blood:
