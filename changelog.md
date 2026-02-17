@@ -46,6 +46,9 @@ Version 0.11.0-dev:
     * Added wild animals.
   * E3S9 - Dark Depths:
     * Added ambient lighting effects.
+  * E3S10 - Blood:
+    * Fix missing combo name labels during combo attacks (broken since version
+      0.10.0).
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
