@@ -3,8 +3,8 @@ type="campaign"
 version="@ PBLPOST:VERSION @"
 dependencies="AtS_Music,IftU_Music"
 
-author="Iris Morelle (Irydacea/shadowm)"
-email="shadowm@wesnoth.org"
+author="Iris Morelle (Irydacea)"
+email="iris@irydacea.me"
 
 tags="IftU,AtS,UtBS,sequel,DiD,outlaws,undead,faeries,fairies,Chaos,demons,dungeon crawl"
 
