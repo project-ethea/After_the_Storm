@@ -7,6 +7,7 @@ Version 0.11.0-dev:
   * First fully-supported Wesnoth 1.18 release, supporting Wesnoth 1.17.23 and
     later.
   * Removed all compatibility code for Wesnoth 1.15.13 and earlier.
+  * Implemented achievements.
 
 * Scenarios:
   * Cosmetic changes to scenario maps: E1S9.2, E1S9.3, E1S13, E2S0, E3S0.1,
