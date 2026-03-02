@@ -8,6 +8,8 @@ Version 0.11.0-dev:
     later.
   * Removed all compatibility code for Wesnoth 1.15.13 and earlier.
   * Implemented achievements.
+  * Implemented JourneyLog system for collecting character profiles, world
+    lore entries, and a dialogue journal.
 
 * Scenarios:
   * Cosmetic changes to scenario maps: E1S9.2, E1S9.3, E1S13, E2S0, E3S0.1,
@@ -47,7 +49,9 @@ Version 0.11.0-dev:
     * Added wild animals.
   * E2S6 - The Voyage Home:
     * Added wild animals.
-  * E3S2.1 - Return to Raelthyn:
+  * E3S1 - Beyond her Smile (A Light in the Darkness):
+    * Added forest fires.
+  * E3S2 - Return to Raelthyn (Reckoning):
     * Expanded Irylean's Walking Corpse repertoire with 1.18 animal variants.
   * E3S9 - Dark Depths:
     * Added ambient lighting effects.
