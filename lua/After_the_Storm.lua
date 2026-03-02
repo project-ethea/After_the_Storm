@@ -9,24 +9,55 @@ local T = wml.tag
 
 wprintf(W_INFO, "unlocking essential JourneyLog milestones")
 
-local req_milestones = {
-	-- From IftU
-	"elyssa_revealed_iftu",
-	"elyssa_defeated",
-	"joined_alliance",
-	"emperor_defeated",
+local required_milestones = {
+	IftU = {
+		"malin_encountered",
+		"elynia_encountered",
+		"anlinde_end",
+		"joined_alliance",
+		"elyssa_revealed_iftu",
+		"elyssa_defeated",
+		"emperor_defeated",
+		"Invasion_from_the_Unknown",
+	},
+
+	AtS_E1 = {
+		"After_the_Storm_I",
+		"quenoth_council",
+		"escaped_kalari",
+	},
+
+	AtS_E2 = {
+		"durvan_encountered",
+		"anya_encountered"
+	}
 }
 
-if wesnoth.scenario.campaign.id == "After_the_Storm_III" then
-	table.insert(req_milestones, "After_the_Storm_II")
-	table.insert(req_milestones, "After_the_Storm_I")
-	table.insert(req_milestones, "escaped_kalari")
-elseif wesnoth.scenario.campaign.id == "After_the_Storm_II" then
-	table.insert(req_milestones, "After_the_Storm_I")
-	table.insert(req_milestones, "escaped_kalari")
+function required_milestones.add(key)
+	if required_milestones._queue == nil then
+		required_milestones._queue = {}
+	end
+
+	for i, id in ipairs(required_milestones[key]) do
+		table.insert(required_milestones._queue, id)
+	end
 end
 
-journeylog.unlock_milestone(req_milestones,  false)
+function required_milestones.commit()
+	journeylog.unlock_milestone(required_milestones._queue, false)
+	required_milestones._queue = nil
+end
+
+required_milestones.add("IftU")
+
+if wesnoth.scenario.campaign.id == "After_the_Storm_III" then
+	required_milestones.add("AtS_E1")
+	required_milestones.add("AtS_E2")
+elseif wesnoth.scenario.campaign.id == "After_the_Storm_II" then
+	required_milestones.add("AtS_E1")
+end
+
+required_milestones.commit()
 
 ----------
 -- E1S9 --
