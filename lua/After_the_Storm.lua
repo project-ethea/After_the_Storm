@@ -179,6 +179,54 @@ function wesnoth.wml_actions.animate_control_spires(cfg)
 	animator:clear()
 end
 
+-------------------------------------
+-- E3F sequence (Divergence, etc.) --
+-------------------------------------
+
+function ats_e3f_disable_economy_ui()
+	local function theme_ui_placeholder_func()
+		-- NOTE: We use a hyphen-minus instead of a horizontal bar here
+		-- because the horizontal bar looks horribly misaligned vertically on
+		-- the default latin font for some reason (as of 1.18)
+		return { T.element { text = " - " } }
+	end
+
+	local always_disable_ui_elements = {
+		"gold", "villages", "upkeep", "income"
+	}
+
+	for i, id in ipairs(always_disable_ui_elements) do
+		wesnoth.interface.game_display[id] = theme_ui_placeholder_func
+	end
+
+	-- The unit count indicator is a special case since Elyssa becomes able
+	-- to "recruit" Fire Wraiths and we want to help the player keep count of
+	-- those. Instead of displaying the total unit count, we just show the
+	-- number of units other than Elyssa or Elynia controlled by the player.
+
+	if wesnoth.scenario.id ~= "06_Divergence" and wesnoth.scenario.id ~= "08A_Interim" then
+		wesnoth.interface.game_display.num_units = function()
+			-- Assume Elynia and Elyssa present in side 1. This should be
+			-- correct unless the player has been messing about in debug mode
+			local unit_count = wesnoth.sides[1].num_units - 2
+			if unit_count > 0 then
+				return { T.element {
+					text = tostring(unit_count),
+					tooltip = _ "The number of summons on your side."
+				} }
+			end
+			-- Else it's only Elynia/Elyssa/Anya, which means no recruits
+			return theme_ui_placeholder_func()
+		end
+	else
+		-- In E3S6 and E3S8A we don't need the unit count at all since there
+		-- is no strategy gameplay
+		wesnoth.interface.game_display.num_units = theme_ui_placeholder_func
+		-- We don't need the turn counter either
+		wesnoth.interface.game_display.turn = theme_ui_placeholder_func
+	end
+end
+
 -------------
 -- E3S7A.2 --
 -------------
