@@ -16,7 +16,7 @@ Version 0.11.0-dev:
     E3S7A.1F1, E3S7A.1F2, E3S7A.2, E3S8A.1, E3S8A.2, E3S8C, E3S9F1, E3S9F2,
     E3S9F3, E3S10, E3S11F4, E3S12, E3S7B, E3S8B, E3S13, E1S11, E1S1, E1S3,
     E1S7, E2S2, E2S5, E2S9, E2S10, E2S11, E2S3.2, E1S4, E1S5, E1S6.2, E1S10,
-    E3S5, E2S6, E1S10, E3S4.1.
+    E3S5, E2S6, E1S10, E3S4.1, E2S1.
   * Added night-time firefly visuals to several maps.
   * E1S1 - The Skirmish:
     * Gave allied speakers more identity.
