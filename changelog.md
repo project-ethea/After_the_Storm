@@ -50,6 +50,10 @@ Version 0.11.0-dev:
     * Added wild animals.
   * E2S6 - The Voyage Home:
     * Added wild animals.
+  * E2S11 - A Final Confrontation:
+    * Added measures to work around the "Shydes can fly over chasm" nonsense
+      that certain so-called experts decided should be the case in 1.18 and
+      later releases.
   * E3S1 - Beyond her Smile (A Light in the Darkness):
     * Added forest fires.
   * E3S2 - Return to Raelthyn (Reckoning):
