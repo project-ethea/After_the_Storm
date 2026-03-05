@@ -179,6 +179,9 @@ Copyright (C) 2013 - 2026 by the Frogatto & Friends Development Team
 
 This work is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/.
 
+ * sounds/ambient/eldritch-rumination1.ogg
+ * sounds/ambient/eldritch-rumination2.ogg
+ * sounds/ambient/eldritch-rumination3.ogg
  * sounds/ambient/lurking-horror1.ogg
  * sounds/ambient/lurking-horror2.ogg
  * sounds/ambient/lurking-horror3.ogg
