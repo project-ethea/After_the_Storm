@@ -225,6 +225,24 @@ function ats_e3f_disable_economy_ui()
 		-- We don't need the turn counter either
 		wesnoth.interface.game_display.turn = theme_ui_placeholder_func
 	end
+
+	-- We also handle special things that happen during stage 3 of E3S9 here
+	-- because why not <3
+
+	if wesnoth.scenario.id == "09_Dark_Depths" and wml.variables.finale_b_part == 3 then
+		-- Special stuff happens here
+		local function theme_ui_null_func()
+			return { T.element { text = "" } }
+		end
+
+		local function theme_ui_nightmare_a_func()
+			return { T.element { text = "a" } }
+		end
+
+		wesnoth.interface.game_display.terrain = theme_ui_null_func
+		wesnoth.interface.game_display.terrain_info = theme_ui_null_func
+		wesnoth.interface.game_display.position = theme_ui_null_func
+	end
 end
 
 -------------

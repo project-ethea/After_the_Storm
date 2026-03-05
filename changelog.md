@@ -60,6 +60,7 @@ Version 0.11.0-dev:
     * Expanded Irylean's Walking Corpse repertoire with 1.18 animal variants.
   * E3S9 - Dark Depths:
     * Added ambient lighting effects.
+    * Various cutscene tweaks.
   * E3S10 - Blood:
     * Fix missing combo name labels during combo attacks (broken since version
       0.10.0).
