@@ -18,6 +18,8 @@ Version 0.11.0-dev:
     E1S7, E2S2, E2S5, E2S9, E2S10, E2S11, E2S3.2, E1S4, E1S5, E1S6.2, E1S10,
     E3S5, E2S6, E1S10, E3S4.1, E2S1.
   * Added night-time firefly visuals to several maps.
+  * Cutscene-mandated opening of gates now replaces the affected tiles with
+    open gates instead of removing them entirely.
   * E1S1 - The Skirmish:
     * Gave allied speakers more identity.
   * E1S2 - High Pass:
