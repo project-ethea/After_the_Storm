@@ -29,6 +29,7 @@ Version 0.11.0-dev:
       with it is a faerie.
     * Added notes to scenario objectives explaining a few gameplay points.
     * Gave the southwest leader additional starting villages (issue #23).
+    * Slightly reduced initial gold for southwest leader.
   * E1S6.2 - Elves of a Different Land:
     * Fixed a character mention using an outdated name from before 0.10.0.
   * E1S7 - The Search for the Past:
