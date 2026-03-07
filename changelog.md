@@ -68,6 +68,8 @@ Version 0.11.0-dev:
   * E3S8B - Destiny, part 1:
     * Fixed a long-standing issue causing extra shroud to be removed during
       the final cutscene.
+    * Fixed a spoiler being shown in the replay summary in the Load Game UI
+      (issue #79).
   * E3S9 - Dark Depths:
     * Added ambient lighting effects.
     * Various cutscene tweaks.
