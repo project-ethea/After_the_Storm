@@ -65,6 +65,9 @@ Version 0.11.0-dev:
   * E3S7A - Dark Fire:
     * Fixed player being able to obtain (useless) extra gold by repeatedly
       attempting to overrecruit in part 1 (issue #100).
+  * E3S8B - Destiny, part 1:
+    * Fixed a long-standing issue causing extra shroud to be removed during
+      the final cutscene.
   * E3S9 - Dark Depths:
     * Added ambient lighting effects.
     * Various cutscene tweaks.
