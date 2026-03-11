@@ -94,6 +94,3 @@
   * [L] More variety in dark hive tilesets
   * [L] Dark hive artifacts/engines/etc.
   * [D] Gate graphics suck
-
-
-; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;

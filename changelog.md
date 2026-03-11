@@ -2339,7 +2339,3 @@ Version 0.3.1:
 Version 0.3.0:
 --------------
 * Way too many changes to list.
-
-
-; kate: indent-mode normal; encoding utf-8; space-indent on; word-wrap on;
-; kate: indent-width 2;
