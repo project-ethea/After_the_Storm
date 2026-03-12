@@ -62,6 +62,9 @@ Version 0.11.0-dev:
     * Added forest fires.
   * E3S2 - Return to Raelthyn (Reckoning):
     * Expanded Irylean's Walking Corpse repertoire with 1.18 animal variants.
+  * E3S6 - Divergence:
+    * Fixed a bug that allowed Elynia to inquire with Irylean about a certain
+      item even if she did not actually retrieve it.
   * E3S7A - Dark Fire:
     * Fixed player being able to obtain (useless) extra gold by repeatedly
       attempting to overrecruit in part 1 (issue #100).
