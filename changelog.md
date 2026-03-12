@@ -77,8 +77,8 @@ Version 0.11.0-dev:
     * Added ambient lighting effects.
     * Various cutscene tweaks.
   * E3S10 - Blood:
-    * Fix missing combo name labels during combo attacks (broken since version
-      0.10.0).
+    * Fixed missing combo name labels during combo attacks (broken since
+      version 0.10.0).
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
@@ -90,7 +90,7 @@ Version 0.11.0-dev:
   * Implemented new unit lines and AMLAs for Galas and Mal Keshar (see Naia
     changelog).
   * Increased Chaos Cardinal Fused's HP from 109 to 136.
-  * Rename arcane rage attack to arcane fury.
+  * Renamed arcane rage attack to arcane fury.
 
 
 Version 0.10.18:
