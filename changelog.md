@@ -58,6 +58,7 @@ Version 0.11.0-dev:
     * Added measures to work around the "Shydes can fly over chasm" nonsense
       that certain so-called experts decided should be the case in 1.18 and
       later releases.
+    * Minor layout changes for the initial area.
   * E3S1 - Beyond her Smile (A Light in the Darkness):
     * Added forest fires.
   * E3S2 - Return to Raelthyn (Reckoning):
