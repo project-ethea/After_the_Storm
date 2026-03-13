@@ -82,6 +82,7 @@ Version 0.11.0-dev:
   * E3S12 - Destiny, part 3:
     * The missing pages are no longer required for the secret optional
       encounter with ??????.
+    * Some minor changes, no big deal.
 
 * Units:
   * Switched all units, abilities, and weapon specials to the 1.16 special
