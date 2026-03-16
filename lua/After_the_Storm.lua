@@ -44,7 +44,9 @@ function required_milestones.add(key)
 end
 
 function required_milestones.commit()
-	journeylog.unlock_milestone(required_milestones._queue, false)
+	-- Technically unnecessary to set highlight=false since this function will
+	-- be called before the JourneyLog data is registered.
+	journeylog.unlock_milestone(required_milestones._queue, false, false)
 	required_milestones._queue = nil
 end
 
