@@ -251,6 +251,22 @@ end
 -- E3S7A.2 --
 -------------
 
+function wesnoth.wml_conditionals.location_within_radius(cfg)
+	local x, y = cfg.x, cfg.y
+	if x == nil or y == nil then
+		wml.error("[location_within_radius] missing required x or y attributes")
+	end
+
+	local u, v = cfg.center_x, cfg.center_y
+	if u == nil or v == nil then
+		wml.error("[location_within_radius] missing required center_x or center_y attributes")
+	end
+
+	local radius = cfg.radius or wml.error("[location_within_radius] missing required radius attribute")
+
+	return wesnoth.map.distance_between(x, y, u, v) <= radius
+end
+
 function wesnoth.wml_actions.store_vacant_spawn_location(cfg)
 	local variable = cfg.variable or "location"
 	local direction = cfg.direction or wml.error("[store_vacant_spawn_location]: Missing direction!")
