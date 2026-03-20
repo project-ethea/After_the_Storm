@@ -1,0 +1,58 @@
+name:        Bug report
+description: Report an issue that affects playability of the content in some manner
+labels:      ['bug']
+
+body:
+  - id:   version_info
+    type: textarea
+
+    attributes:
+      label:       Version and system information
+      description: |
+        - Which version of the content are you playing?
+        - What is the Wesnoth game version you are using to play?
+        - On which platform are you running the game? (e.g. Windows, macOS, Linux, Android, iOS)
+        - If running the game on a mobile platform, what is the model of the device you are using to play?
+      value: |
+        - **Content version:**
+        - **Wesnoth version:**
+        - **Platform:**
+        - **Device:**
+
+  - id:   bug_description
+    type: textarea
+
+    validations:
+      required:    true
+    attributes:
+      label:       Describe the issue
+      description: Provide a clear and concise description of the issue.
+
+  - id:   reproduction_steps
+    type: textarea
+
+    attributes:
+      label:       Reproduction steps
+      description: |
+        Specify the steps to follow in order to reproduce the issue.
+      placeholder: |
+        1.
+        2.
+        3.
+
+  - id:   uploads
+    type: upload
+
+    attributes:
+      label:       Attachments
+      description: |
+        If applicable, you may drag here screenshots or saved games to help illustrate or reproduce the issue.
+        > **Tip:** The folder containing your saved games can be accessed on Windows/macOS/Linux by opening the Load Game dialog, then clicking on the folder icon.
+
+  - id:   additional_context
+    type: textarea
+
+    attributes:
+      label:       Additional context
+      description: |
+        Include any additional information you think may be helpful in solving the issue here.

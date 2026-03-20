@@ -1,0 +1,45 @@
+name:        Text typos and improvements
+description: Report issues involving prose and UI text elements
+labels:      ['bug', 'prose']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Not mistakes**
+
+        > Before reporting prose corrections, make sure you consider the game's guide to [things that are not spelling mistakes](https://wiki.wesnoth.org/NotSpellingMistakes).
+
+        **Multiple mistakes**
+
+        > In order to speed up work, try to include as many closely-related text issues as possible in a single report; e.g. don't file 10 reports in a row for individual typos you noticed during the same scenario/dialogue sequence.
+
+        **Translation mistakes**
+
+        > Issues with translations should not be reported via this tracker, but rather via [Ethea-i18n](https://github.com/project-ethea/Ethea-i18n).
+
+  - id:   text_source
+    type: textarea
+
+    validations:
+      required:    true
+    attributes:
+      label:       Source
+      description: |
+        Specify the location/situation where you spotted the faulty text, including campaign and scenario number if applicable.
+
+  - id:   text_original
+    type: textarea
+
+    validations:
+      required:    true
+    attributes:
+      label:       Original text
+      description: |
+        Quote the text verbatim. You can use `**bold**` to highlight the issue.
+
+  - id:   text_proposed
+    type: textarea
+
+    attributes:
+      label:       Proposed changes
