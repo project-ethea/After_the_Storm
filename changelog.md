@@ -24,6 +24,8 @@ Version 0.11.0-dev:
     * Gave allied speakers more identity.
   * E1S2 - High Pass:
     * Added snowfall turns.
+  * E1S3 - Civil War in the North:
+    * Increased pressure (issue #110, #111).
   * E1S5 - Bay of Tirigaz:
     * Fixed fountain description not being shown if the first unit to interact
       with it is a faerie.
