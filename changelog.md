@@ -65,6 +65,8 @@ Version 0.11.0-dev:
     * Added forest fires.
   * E3S2 - Return to Raelthyn (Reckoning):
     * Expanded Irylean's Walking Corpse repertoire with 1.18 animal variants.
+    * Fixed objective notes mentioning early finish bonus even though this is
+      part of a purely optional objective (issue #114).
   * E3S6 - Divergence:
     * Fixed a bug that allowed Elynia to inquire with Irylean about a certain
       item even if she did not actually retrieve it.
