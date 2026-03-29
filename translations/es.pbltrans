@@ -1,0 +1,20 @@
+#
+# Add-ons server meta translation for Spanish
+#
+
+[translation]
+    language="es"
+    title="Después de la tormenta"
+    description="Esta campaña es la secuela inmediata de Invasión desde el más Allá (IftU).
+
+Tras la derrota del Emperador del Caos, las civilizaciones libres del Gran Continente esperaban que sus seguidores abandonaran la guerra en curso. Mientras tanto, Galas y su peculiar grupo de héroes regresan a las tierras del norte a solicitar ayuda para su próximo viaje.
+
+(Nivel intermedio, tres episodios separados con 13 escenarios cada uno).
+
+Requiere Wesnoth 1.18.0 o posterior, o 1.19.22 o posterior.
+
+Hilos de discusión en los foros de Wesnoth.org:
+
+• Hilo de discusión principal: ‹https://r.wesnoth.org/t32091›
+• Hilo de comentarios: ‹https://r.wesnoth.org/t39495›."
+[/translation]

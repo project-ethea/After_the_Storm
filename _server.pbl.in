@@ -27,6 +27,6 @@ passphrase="@ PBLPOST:PASSPHRASE After_the_Storm @"
 	topic_id=32091
 [/feedback]
 
-@ PBLPOST:L10N ru @
+@ PBLPOST:L10N es @
 
 icon="@ PBLPOST:BASE64 images/campaign-icon-episode1.png @"
