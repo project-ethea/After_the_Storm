@@ -3,6 +3,11 @@ After the Storm - Changelog
 
 Version 1.0.0+dev:
 ------------------
+* Scenarios:
+  * E1S9.1 - The Triad (part 1):
+    * Drop usage of deprecated `{ANIMATED_BRAZIER}` macro.
+  * E3S7A - Dark Fire:
+    * Fix inconsistency with E1S9.1 due to missing braziers.
 
 
 Version 1.0.0:
