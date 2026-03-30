@@ -520,10 +520,7 @@ local function credits_alpha_print(text, size, alpha)
 	-- the label's height into account).
 	local approx_h = line_count(text) * size * 1.33
 
-	-- HACK: Retrieves the script font for the current language by piggybacking
-	-- on the same mechanism used by <game data>/data/hardwired/fonts.cfg to
-	-- allow translators to pick font families for the UI.
-	local script_font = tostring(wgettext("Oldania ADF Std"))
+	local script_font = ui_script_font_name()
 
 	if #script_font > 0 then
 		text = ("<span face='%s'>%s</span>"):format(script_font, text)
