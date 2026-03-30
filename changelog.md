@@ -1,8 +1,8 @@
 After the Storm - Changelog
 ===========================
 
-Version 1.0.0-dev:
-------------------
+Version 1.0.0:
+--------------
 * General:
   * First fully-supported Wesnoth 1.18 release, supporting Wesnoth 1.17.23 and
     later; as well as Wesnoth 1.19.22 through 1.20.x.
