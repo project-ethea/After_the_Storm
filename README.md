@@ -59,9 +59,9 @@ campaign’s own directory.
 
 [4]: <https://github.com/project-ethea/Naia>
 
-Some sequences make use of floating labels, halos, and standing unit
-animations, so you might want to make sure these options are enabled under
-**Preferences** → **Display**.
+Certain sequences make use of standing unit animations, so you may want to
+ensure this option is enabled (it is by default) under **Preferences** →
+**Display**.
 
 
 Reporting issues
