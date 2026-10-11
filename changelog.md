@@ -8,6 +8,10 @@ Version 1.0.0+dev:
     * Drop usage of deprecated `{ANIMATED_BRAZIER}` macro.
   * E3S7A - Dark Fire:
     * Fix inconsistency with E1S9.1 due to missing braziers.
+    * Fix JourneyLog state corruption leading to Lua crashes during game
+      initialization (issue #117). Note that the fix for pre-existing
+      corrupted saves will fully unlock all potentially impacted lore entries
+      regardless of whether they have actually been encountered.
 
 
 Version 1.0.0:
