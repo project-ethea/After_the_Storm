@@ -1,8 +1,8 @@
 After the Storm - Changelog
 ===========================
 
-Version 1.0.0+dev:
-------------------
+Version 1.0.1:
+--------------
 * Scenarios:
   * E1S9.1 - The Triad (part 1):
     * Drop usage of deprecated `{ANIMATED_BRAZIER}` macro.
