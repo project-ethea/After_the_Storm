@@ -3,6 +3,9 @@ After the Storm - Changelog
 
 Version 1.0.1+dev:
 ------------------
+* General:
+  * Add icons for more achievements previously missing them.
+
 * Language and i18n:
   * Updated translations: Spanish.
 
