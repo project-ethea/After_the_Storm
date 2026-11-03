@@ -9,6 +9,9 @@ Version 1.0.1+dev:
 * Language and i18n:
   * Updated translations: Spanish.
 
+* Terrains:
+  * Moved Blood terrains to Naia.
+
 
 Version 1.0.1:
 --------------
