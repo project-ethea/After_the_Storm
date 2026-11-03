@@ -9,6 +9,10 @@ Version 1.0.1+dev:
 * Language and i18n:
   * Updated translations: Spanish.
 
+* Scenarios:
+  * E3S10 - Blood:
+    * Fix Pango markup warning in stderr caused by a late boss stage.
+
 * Terrains:
   * Moved Blood terrains to Naia.
 
