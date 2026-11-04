@@ -5,6 +5,7 @@ Version 1.0.1+dev:
 ------------------
 * General:
   * Add icons for more achievements previously missing them.
+  * Disabled experimental port notice on Wesnoth 1.20.x.
 
 * Language and i18n:
   * Updated translations: Spanish.
